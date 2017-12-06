@@ -1,0 +1,14 @@
+<svg width="46" height="27" viewBox="0 0 46 27" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>Meduza_logo</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(-285 -6869)">
+<g id="Meduza_logo">
+<g id="Imported Layers">
+<use xlink:href="#path0_fill" transform="translate(285 6869)" fill="#331D50"/>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" fill-rule="evenodd" d="M 18.873 7.05575L 18.873 24.4599L 27.127 27L 27.127 7.05575L 32.4365 7.05575L 32.4365 24.4599L 40.6422 27L 46 19.9443L 40.6904 19.9443L 40.6904 2.77526L 32.4848 0L 27.127 6.11498L 27.127 2.77526L 18.9213 0L 13.5635 6.11498L 13.5635 2.77526L 5.35782 0L 0 7.05575L 5.30955 7.05575L 5.30955 24.4599L 13.5635 27L 13.5635 7.05575L 18.873 7.05575Z"/>
+</defs>
+</svg>
