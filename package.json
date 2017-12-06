@@ -9,7 +9,7 @@
     "build": "NODE_ENV=prod react-static build",
     "serve": "serve dist -p 3000",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"    
+    "deploy": "gh-pages -d dist"    
   },
   "dependencies": {
     "polished": "^1.9.0",
