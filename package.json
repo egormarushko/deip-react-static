@@ -1,12 +1,15 @@
 {
   "name": "deip",
+  "homepage": "https://egormarushko.github.io/deip-react-static",
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
   "scripts": {
     "start": "react-static start",
     "build": "NODE_ENV=prod react-static build",
-    "serve": "serve dist -p 3000"
+    "serve": "serve dist -p 3000",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"    
   },
   "dependencies": {
     "polished": "^1.9.0",
@@ -26,6 +29,7 @@
   },
   "devDependencies": {
     "babel-plugin-styled-components": "^1.3.0",
+    "gh-pages": "^1.1.0",
     "image-webpack-loader": "^3.4.2",
     "serve": "^6.4.1"
   }
