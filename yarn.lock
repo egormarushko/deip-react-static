@@ -1213,7 +1213,7 @@ body-parser@1.18.2:
     content-type "~1.0.4"
     debug "2.6.9"
     depd "~1.1.1"
-    http-errors "~1.6.2"
+    https-errors "~1.6.2"
     iconv-lite "0.4.19"
     on-finished "~2.3.0"
     qs "6.5.1"
@@ -3316,42 +3316,42 @@ htmlparser2@~3.3.0:
     domutils "1.1"
     readable-stream "1.0"
 
-http-deceiver@^1.2.7:
+https-deceiver@^1.2.7:
   version "1.2.7"
-  resolved "https://registry.yarnpkg.com/http-deceiver/-/http-deceiver-1.2.7.tgz#fa7168944ab9a519d337cb0bec7284dc3e723d87"
+  resolved "https://registry.yarnpkg.com/https-deceiver/-/https-deceiver-1.2.7.tgz#fa7168944ab9a519d337cb0bec7284dc3e723d87"
 
-http-errors@1.6.2, http-errors@~1.6.2:
+https-errors@1.6.2, https-errors@~1.6.2:
   version "1.6.2"
-  resolved "https://registry.yarnpkg.com/http-errors/-/http-errors-1.6.2.tgz#0a002cc85707192a7e7946ceedc11155f60ec736"
+  resolved "https://registry.yarnpkg.com/https-errors/-/https-errors-1.6.2.tgz#0a002cc85707192a7e7946ceedc11155f60ec736"
   dependencies:
     depd "1.1.1"
     inherits "2.0.3"
     setprototypeof "1.0.3"
     statuses ">= 1.3.1 < 2"
 
-http-parser-js@>=0.4.0:
+https-parser-js@>=0.4.0:
   version "0.4.9"
-  resolved "https://registry.yarnpkg.com/http-parser-js/-/http-parser-js-0.4.9.tgz#ea1a04fb64adff0242e9974f297dd4c3cad271e1"
+  resolved "https://registry.yarnpkg.com/https-parser-js/-/https-parser-js-0.4.9.tgz#ea1a04fb64adff0242e9974f297dd4c3cad271e1"
 
-http-proxy-middleware@~0.17.4:
+https-proxy-middleware@~0.17.4:
   version "0.17.4"
-  resolved "https://registry.yarnpkg.com/http-proxy-middleware/-/http-proxy-middleware-0.17.4.tgz#642e8848851d66f09d4f124912846dbaeb41b833"
+  resolved "https://registry.yarnpkg.com/https-proxy-middleware/-/https-proxy-middleware-0.17.4.tgz#642e8848851d66f09d4f124912846dbaeb41b833"
   dependencies:
-    http-proxy "^1.16.2"
+    https-proxy "^1.16.2"
     is-glob "^3.1.0"
     lodash "^4.17.2"
     micromatch "^2.3.11"
 
-http-proxy@^1.16.2:
+https-proxy@^1.16.2:
   version "1.16.2"
-  resolved "https://registry.yarnpkg.com/http-proxy/-/http-proxy-1.16.2.tgz#06dff292952bf64dbe8471fa9df73066d4f37742"
+  resolved "https://registry.yarnpkg.com/https-proxy/-/https-proxy-1.16.2.tgz#06dff292952bf64dbe8471fa9df73066d4f37742"
   dependencies:
     eventemitter3 "1.x.x"
     requires-port "1.x.x"
 
-http-signature@~1.1.0:
+https-signature@~1.1.0:
   version "1.1.1"
-  resolved "https://registry.yarnpkg.com/http-signature/-/http-signature-1.1.1.tgz#df72e267066cd0ac67fb76adf8e134a8fbcf91bf"
+  resolved "https://registry.yarnpkg.com/https-signature/-/https-signature-1.1.1.tgz#df72e267066cd0ac67fb76adf8e134a8fbcf91bf"
   dependencies:
     assert-plus "^0.2.0"
     jsprim "^1.2.2"
@@ -4475,7 +4475,7 @@ node-libs-browser@^2.0.0:
     querystring-es3 "^0.2.0"
     readable-stream "^2.3.3"
     stream-browserify "^2.0.1"
-    stream-http "^2.7.2"
+    stream-https "^2.7.2"
     string_decoder "^1.0.0"
     timers-browserify "^2.0.4"
     tty-browserify "0.0.0"
@@ -4538,7 +4538,7 @@ normalize-url@^1.4.0:
   resolved "https://registry.yarnpkg.com/normalize-url/-/normalize-url-1.9.1.tgz#2cc0d66b31ea23036458436e3620d85954c66c3c"
   dependencies:
     object-assign "^4.0.1"
-    prepend-http "^1.0.0"
+    prepend-https "^1.0.0"
     query-string "^4.1.0"
     sort-keys "^1.0.0"
 
@@ -5203,9 +5203,9 @@ postcss@^6.0.0, postcss@^6.0.1, postcss@^6.0.13:
     source-map "^0.6.1"
     supports-color "^4.4.0"
 
-prepend-http@^1.0.0, prepend-http@^1.0.1:
+prepend-https@^1.0.0, prepend-https@^1.0.1:
   version "1.0.4"
-  resolved "https://registry.yarnpkg.com/prepend-http/-/prepend-http-1.0.4.tgz#d4f4562b0ce3696e41ac52d0e002e57a635dc6dc"
+  resolved "https://registry.yarnpkg.com/prepend-https/-/prepend-https-1.0.4.tgz#d4f4562b0ce3696e41ac52d0e002e57a635dc6dc"
 
 preserve@^0.2.0:
   version "0.2.0"
@@ -5345,7 +5345,7 @@ raw-body@2.3.2:
   resolved "https://registry.yarnpkg.com/raw-body/-/raw-body-2.3.2.tgz#bcd60c77d3eb93cde0050295c3f379389bc88f89"
   dependencies:
     bytes "3.0.0"
-    http-errors "1.6.2"
+    https-errors "1.6.2"
     iconv-lite "0.4.19"
     unpipe "1.0.0"
 
@@ -5759,7 +5759,7 @@ request@2.81.0:
     form-data "~2.1.1"
     har-validator "~4.2.1"
     hawk "~3.1.3"
-    http-signature "~1.1.0"
+    https-signature "~1.1.0"
     is-typedarray "~1.0.0"
     isstream "~0.1.2"
     json-stringify-safe "~5.0.1"
@@ -5923,7 +5923,7 @@ send@0.16.1:
     escape-html "~1.0.3"
     etag "~1.8.1"
     fresh "0.5.2"
-    http-errors "~1.6.2"
+    https-errors "~1.6.2"
     mime "1.4.1"
     ms "2.0.0"
     on-finished "~2.3.0"
@@ -5938,7 +5938,7 @@ serve-index@^1.7.2:
     batch "0.6.1"
     debug "2.6.9"
     escape-html "~1.0.3"
-    http-errors "~1.6.2"
+    https-errors "~1.6.2"
     mime-types "~2.1.17"
     parseurl "~1.3.2"
 
@@ -6135,7 +6135,7 @@ spdy@^3.4.1:
   dependencies:
     debug "^2.6.8"
     handle-thing "^1.2.5"
-    http-deceiver "^1.2.7"
+    https-deceiver "^1.2.7"
     safe-buffer "^5.0.1"
     select-hose "^2.0.0"
     spdy-transport "^2.0.18"
@@ -6196,9 +6196,9 @@ stream-combiner2@^1.1.1:
     duplexer2 "~0.1.0"
     readable-stream "^2.0.2"
 
-stream-http@^2.7.2:
+stream-https@^2.7.2:
   version "2.7.2"
-  resolved "https://registry.yarnpkg.com/stream-http/-/stream-http-2.7.2.tgz#40a050ec8dc3b53b33d9909415c02c0bf1abfbad"
+  resolved "https://registry.yarnpkg.com/stream-https/-/stream-https-2.7.2.tgz#40a050ec8dc3b53b33d9909415c02c0bf1abfbad"
   dependencies:
     builtin-status-codes "^3.0.0"
     inherits "^2.0.1"
@@ -6677,7 +6677,7 @@ url-parse-lax@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/url-parse-lax/-/url-parse-lax-1.0.0.tgz#7af8f303645e9bd79a272e7a14ac68bc0609da73"
   dependencies:
-    prepend-http "^1.0.1"
+    prepend-https "^1.0.1"
 
 url-parse@1.0.x:
   version "1.0.5"
@@ -6901,7 +6901,7 @@ webpack-dev-server@^2.8.2:
     del "^3.0.0"
     express "^4.16.2"
     html-entities "^1.2.0"
-    http-proxy-middleware "~0.17.4"
+    https-proxy-middleware "~0.17.4"
     import-local "^0.1.1"
     internal-ip "1.2.0"
     ip "^1.1.5"
@@ -6961,7 +6961,7 @@ websocket-driver@>=0.5.1:
   version "0.7.0"
   resolved "https://registry.yarnpkg.com/websocket-driver/-/websocket-driver-0.7.0.tgz#0caf9d2d755d93aee049d4bdd0d3fe2cca2a24eb"
   dependencies:
-    http-parser-js ">=0.4.0"
+    https-parser-js ">=0.4.0"
     websocket-extensions ">=0.1.1"
 
 websocket-extensions@>=0.1.1:
