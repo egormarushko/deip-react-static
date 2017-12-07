@@ -254,32 +254,32 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 function _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
 
-var personsFirstRow = [{ src: _ashkor2.default, name: 'Alex Shkor', role: 'CO-FOUNDER & CEO', linkedin: 'https://www.linkedin.com/in/alexshkor/', github: 'https://github.com/alexshkor' }, { src: _etsaryk2.default, name: 'Egor Tsaryk', role: 'CO-FOUNDER & CTO', linkedin: 'https://www.linkedin.com/in/yahor-tsaryk-92032a68/', github: 'https://github.com/egortsaryk9' }, { src: _aermolaev2.default, name: 'Artur Yermalayeu', role: 'CFO', facebook: 'https://www.facebook.com/ArturYermalayeu' }, { src: _akulik2.default, name: 'Alexey Kulik', role: 'CHIEF ARCHITECT', linkedin: 'https://www.linkedin.com/in/alexey-kulik-61576027/', github: 'https://github.com/akulik-paralect' }];
+var personsFirstRow = [{ src: _ashkor2.default, name: 'Alex Shkor', role: 'CHIEF EXECUTIVE OFFICER', linkedin: 'https://www.linkedin.com/in/alexshkor/', github: 'https://github.com/alexshkor' }, { src: _etsaryk2.default, name: 'Egor Tsaryk', role: 'CHIEF TECHNOLOGY OFFICER', linkedin: 'https://www.linkedin.com/in/yahor-tsaryk-92032a68/', github: 'https://github.com/egortsaryk9' }, { src: _akulik2.default, name: 'Alexey Kulik', role: 'CHIEF ARCHITECT', linkedin: 'https://www.linkedin.com/in/alexey-kulik-61576027/', github: 'https://github.com/akulik-paralect' }, { src: _aermolaev2.default, name: 'Artur Yermalayeu', role: 'CHIEF FINANCIAL OFFICER', facebook: 'https://www.facebook.com/ArturYermalayeu' }];
 
-var personsSecondRow = [{ src: _arusetskiy2.default, name: 'Artyom Rusetskiy', role: 'CHIEF SCIENTIST', linkedin: 'https://www.linkedin.com/in/artyom-ruseckiy-8521a89a/' }, { src: _akulichkin2.default, name: 'Anton Kulichkin', role: 'CHIEF INVESTMENT OFFICER', linkedin: 'https://www.linkedin.com/in/anton-kulichkin-b158a886/' }, { src: _nsvyaznoy2.default, name: 'Nikolay Svyaznoy', role: 'CMO', linkedin: 'src' }, { src: _emarushko2.default, name: 'Egor Marushko', role: 'CORE DEVELOPER', linkedin: 'https://www.linkedin.com/in/egor-marushko-477175122/', github: 'https://github.com/egormarushko' }];
+var personsSecondRow = [{ src: _arusetskiy2.default, name: 'Artyom Rusetskiy', role: 'CHIEF SCIENTIST', linkedin: 'https://www.linkedin.com/in/artyom-ruseckiy-8521a89a/' }, { src: _akulichkin2.default, name: 'Anton Kulichkin', role: 'CHIEF PARTNERSHIPS OFFICER', linkedin: 'https://www.linkedin.com/in/anton-kulichkin-b158a886/' }, { src: _nsvyaznoy2.default, name: 'Nikolay Svyaznoy', role: 'CHIEF MARKETING OFFICER', linkedin: 'src' }, { src: _emarushko2.default, name: 'Egor Marushko', role: 'CORE DEVELOPER', linkedin: 'https://www.linkedin.com/in/egor-marushko-477175122/', github: 'https://github.com/egormarushko' }];
 
 // reused in the advisors section
 var Root = exports.Root = _styledComponents2.default.section.withConfig({
   displayName: '04_Team__Root',
-  componentId: 'fktpbo-0'
+  componentId: 'tjlnr6-0'
 })(['', ';'], _styles.container);
 
 // reused in the advisors section
 var Container = exports.Container = _styledComponents2.default.div.withConfig({
   displayName: '04_Team__Container',
-  componentId: 'fktpbo-1'
+  componentId: 'tjlnr6-1'
 })(['text-align:center;width:', '%;margin-left:', '%;margin-top:64px;margin-bottom:64px;', ';'], 100 * 2 / 3, 100 / 6, _styles.m.lessThan('small')(_templateObject));
 
 // reused in the advisors section
 var Block = exports.Block = _styledComponents2.default.div.withConfig({
   displayName: '04_Team__Block',
-  componentId: 'fktpbo-2'
+  componentId: 'tjlnr6-2'
 })(['display:flex;justify-content:space-between;&:first-of-type{margin-top:48px;}', ';'], _styles.m.lessThan('small')(_templateObject2));
 
 // reused in the advisors section
 var Person = exports.Person = (0, _styledComponents2.default)(_Person2.default).withConfig({
   displayName: '04_Team__Person',
-  componentId: 'fktpbo-3'
+  componentId: 'tjlnr6-3'
 })(['margin:24px 0;&:list-of-type{margin-bottom:0;}']);
 
 var Team = function Team(p) {
@@ -4475,4 +4475,4 @@ exports.default = function () {
 /***/ })
 /******/ ]);
 });
-//# sourceMappingURL=app.static.e1a97dbf.js.map
+//# sourceMappingURL=app.static.17886064.js.map
