@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { ServerStyleSheet } from 'styled-components'
 
 export default {
+  siteRoot: 'https://deip.me',
   getSiteProps: () => ({
     title: 'React Static',
   }),
