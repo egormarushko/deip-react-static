@@ -6,7 +6,7 @@ import { Container as c } from './04_Team'
 import Heading from 'components/Heading'
 import partner from 'components/Partner'
 
-const ph = 'https://via.placeholder.com/350x150?text=Partner'
+const ph = 'http://via.placeholder.com/350x150?text=Partner'
 
 const Bg = styled.div`background: ${p => p.theme.palette.background.primary};`
 
