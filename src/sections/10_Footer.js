@@ -9,7 +9,7 @@ const Container = styled.div`
   display: flex;
   padding: 16px 32px 16px 32px;
 
-  ${m.lessThan('medium')`
+  ${m.lessThan('small')`
     flex-flow: column;
   `};
 `
@@ -22,7 +22,7 @@ const Block = styled.div`
   width: ${100 * 6 / 12}%;
   margin-left: ${100 * 3 / 12}%;
 
-  ${m.lessThan('medium')`
+  ${m.lessThan('small')`
     width: 100%;
     margin: 0 0 16px 0;
   `};
@@ -34,7 +34,7 @@ const Wrap = styled.div`
   justify-content: flex-end;
   width: ${100 * 3 / 12}%;
 
-  ${m.lessThan('medium')`
+  ${m.lessThan('small')`
     justify-content: center;
     width: 100%;
   `};

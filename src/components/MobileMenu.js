@@ -22,7 +22,7 @@ const Toggler = styled.a`
     display: none;
   }
 
-  ${m.greaterThan('medium')`
+  ${m.greaterThan('small')`
     display: none;
   `};
 `
@@ -102,7 +102,7 @@ const Root = styled.div`
   ${p => (p.attached ? attached : '')};
   ${p => (p.opened ? opened : '')};
 
-  ${m.greaterThan('medium')`
+  ${m.greaterThan('small')`
     display: none;
   `};
 
@@ -184,7 +184,7 @@ class MobileMenu extends Component {
               Researches
             </Anchor>
           </Links>
-          <Button primary to="/join">
+          <Button primary to="/join" onClick={this.handleClick}>
             Join us
           </Button>
         </Nav>

@@ -51,7 +51,7 @@ const Root = styled.div`
   left: 0;
   ${p => (p.attached ? attached : '')};
 
-  ${m.lessThan('medium')`
+  ${m.lessThan('small')`
     display: none;
   `};
 `

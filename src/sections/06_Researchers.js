@@ -69,9 +69,7 @@ const MessageBox = styled(messageBox)`
   `};
 `
 
-const Button = button.extend`
-  margin-top: 48px;
-`
+const Button = styled(button)`margin-top: 48px;`
 
 const Researchers = p => (
   <Root {...p}>

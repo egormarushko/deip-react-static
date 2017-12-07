@@ -16,7 +16,7 @@ const Root = styled.section`
   background: ${p => p.theme.palette.background.primary};
   padding: 64px 0;
 
-  ${m.lessThan('small') `
+  ${m.lessThan('small')`
     background: #fff;
     padding-left: 32px;
     padding-right: 32px;
@@ -37,7 +37,7 @@ const Icon = styled.img`
   width: 64px;
   height: 64px;
   margin: 0 auto 24px auto;
-  ${m.greaterThan('small') `
+  ${m.greaterThan('small')`
     display: none;
   `};
 `
@@ -47,7 +47,7 @@ const Block = styled.div`
   width: ${100 * 10 / 12}%;
   margin-left: ${100 / 12}%;
 
-  ${m.lessThan('small') `
+  ${m.lessThan('small')`
     flex-flow: column;
     width: 100%;
     margin-left: 0;
@@ -57,7 +57,7 @@ const Block = styled.div`
 const baseCell = styled.div`
   display: flex;
   width: ${100 * 3 / 10}%;
-  ${m.lessThan('small') `
+  ${m.lessThan('small')`
     width: 100%;
     padding: 32px 0;
   `};
@@ -77,7 +77,7 @@ const CenterMiddle = baseCell.extend`
   align-items: center;
   justify-content: center;
   width: ${100 * 4 / 10}%;
-  ${m.lessThan('small') `
+  ${m.lessThan('small')`
     display: none;
   `}
 `
@@ -85,7 +85,6 @@ const CenterMiddle = baseCell.extend`
 const RightBottom = baseCell.extend`
   flex-flow: column;
   justify-content: flex-end;
-  padding-bottom: 1.6em;
 `
 
 const We = p => (
@@ -108,7 +107,8 @@ const We = p => (
           <Icon src={iconDollar} />
           <Heading type="title">Research financing</Heading>
           <Text>
-            Various mechanisms to fund a research. Getting financing by automated reward distribution or receive a direct grant of investment.
+            To fund a research you no longer need to negotiate for months and
+            years with any fund.
           </Text>
         </LeftBottom>
 
@@ -120,7 +120,8 @@ const We = p => (
           <Icon src={iconSpeech} />
           <Heading type="title">Review system</Heading>
           <Text>
-            Economic model that incentivizes fair and qualitative feedback to provide collaborative environment for researches.
+            To fund a research you no longer need to negotiate for months and
+            years with any fund.
           </Text>
         </RightBottom>
       </Block>

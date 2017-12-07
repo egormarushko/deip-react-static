@@ -6,6 +6,7 @@ import { m } from '../util/styles'
 import bg from './images/bg.png'
 
 export const Main = styled.div`
+  overflow: hidden;
   position: relative;
   background-image: url(${bg});
   background-repeat: repeat-y;
