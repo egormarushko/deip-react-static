@@ -15,16 +15,16 @@ import nsvyaznoy from 'components/images/team/nsvyaznoy.png'
 import emarushko from 'components/images/team/emarushko.png'
 
 const personsFirstRow = [
-  { src: ashkor, name: 'Alex Shkor', role: 'CO-FOUNDER & CEO', linkedin: 'https://www.linkedin.com/in/alexshkor/', github: 'https://github.com/alexshkor' },
-  { src: etsaryk, name: 'Egor Tsaryk', role: 'CO-FOUNDER & CTO', linkedin: 'https://www.linkedin.com/in/yahor-tsaryk-92032a68/', github: 'https://github.com/egortsaryk9' },
-  { src: aermolaev, name: 'Artur Yermalayeu', role: 'CFO', facebook: 'https://www.facebook.com/ArturYermalayeu' },
+  { src: ashkor, name: 'Alex Shkor', role: 'CHIEF EXECUTIVE OFFICER', linkedin: 'https://www.linkedin.com/in/alexshkor/', github: 'https://github.com/alexshkor' },
+  { src: etsaryk, name: 'Egor Tsaryk', role: 'CHIEF TECHNOLOGY OFFICER', linkedin: 'https://www.linkedin.com/in/yahor-tsaryk-92032a68/', github: 'https://github.com/egortsaryk9' },
   { src: akulik, name: 'Alexey Kulik', role: 'CHIEF ARCHITECT', linkedin: 'https://www.linkedin.com/in/alexey-kulik-61576027/', github: 'https://github.com/akulik-paralect' },
+  { src: aermolaev, name: 'Artur Yermalayeu', role: 'CHIEF FINANCIAL OFFICER', facebook: 'https://www.facebook.com/ArturYermalayeu' },  
 ]
 
 const personsSecondRow = [
   { src: arusetskiy, name: 'Artyom Rusetskiy', role: 'CHIEF SCIENTIST', linkedin: 'https://www.linkedin.com/in/artyom-ruseckiy-8521a89a/' },
-  { src: akulichkin, name: 'Anton Kulichkin', role: 'CHIEF INVESTMENT OFFICER', linkedin: 'https://www.linkedin.com/in/anton-kulichkin-b158a886/'},
-  { src: nsvyaznoy, name: 'Nikolay Svyaznoy', role: 'CMO', linkedin: 'src'},
+  { src: akulichkin, name: 'Anton Kulichkin', role: 'CHIEF PARTNERSHIPS OFFICER', linkedin: 'https://www.linkedin.com/in/anton-kulichkin-b158a886/'},
+  { src: nsvyaznoy, name: 'Nikolay Svyaznoy', role: 'CHIEF MARKETING OFFICER', linkedin: 'src'},
   { src: emarushko, name: 'Egor Marushko', role: 'CORE DEVELOPER', linkedin: 'https://www.linkedin.com/in/egor-marushko-477175122/', github: 'https://github.com/egormarushko'},
 ]
 
