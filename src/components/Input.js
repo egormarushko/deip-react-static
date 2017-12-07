@@ -45,9 +45,9 @@ const Icon = styled(icon)`
   right: 16px;
 `
 
-const Input = ({ icon, placeholder, ...rest }) => (
+const Input = ({ icon, type, name, placeholder, ...rest }) => (
   <Root {...rest}>
-    <Comp placeholder={placeholder} />
+    <Comp type={type} name={name} placeholder={placeholder} />
     <Icon>{icon}</Icon>
   </Root>
 )

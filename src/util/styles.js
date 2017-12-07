@@ -8,6 +8,7 @@ export const container = p => css`
 `
 
 export const m = generateMedia({
-  small: '750px',
+  small: '900px',
   medium: '920px',
+
 })

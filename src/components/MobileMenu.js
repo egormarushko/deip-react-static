@@ -184,7 +184,7 @@ class MobileMenu extends Component {
               Researches
             </Anchor>
           </Links>
-          <Button primary to="/join">
+          <Button primary to="/join" onClick={this.handleClick}>
             Join us
           </Button>
         </Nav>

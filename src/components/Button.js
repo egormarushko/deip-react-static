@@ -30,7 +30,8 @@ const contrast = css`
   color: #fff;
 `
 
-const Root = styled(link)`
+const common = css`
+  border: 0px solid transparent;
   border-radius: 5px;
   display: inline-block;
   font-weight: 500;
@@ -45,35 +46,33 @@ const Root = styled(link)`
   ${p => (p.primary ? primary : p.contrast ? contrast : secondary)};
 `
 
-const RootAnchor = Root.withComponent('a')
+const Link = styled(link)`${common};`
+const Anchor = styled.a`${common};`
+const Submit = styled.button`${common};`
 
-Root.propTypes = {
-  to: PropTypes.string.isRequired,
+const Button = ({ href, to, submit, primary, constrast, ...rest }) => {
+  if (submit) {
+    return <Submit primary={primary} contrast={contrast} {...rest} />
+  }
+
+  if (href) {
+    return (
+      <Anchor href={href} primary={primary} contrast={contrast} {...rest} />
+    )
+  }
+
+  return <Link to={to} primary={primary} contrast={contrast} {...rest} />
+}
+
+Button.propTypes = {
+  to: PropTypes.string,
+  href: PropTypes.string,
+  submit: PropTypes.bool,
   primary: PropTypes.bool,
   contrast: PropTypes.bool,
   children: PropTypes.node,
 }
 
-const Button = ({ href, to, primary, constrast, children }) => {
-  if (href) {
-    return (
-      <RootAnchor
-        href={href}
-        primary={primary}
-        contrast={contrast}
-        children={children}
-      />
-    )
-  }
+export default styled(Button)`
 
-  return (
-    <RootAnchor
-      href={href}
-      primary={primary}
-      contrast={contrast}
-      children={children}
-    />
-  )
-}
-
-export default Root
+`

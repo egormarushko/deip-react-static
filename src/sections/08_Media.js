@@ -29,9 +29,7 @@ const mentions = [
   },
 ]
 
-const Button = button.extend`
-  margin-top: 48px;
-`
+const Button = styled(button)`margin-top: 48px;`
 
 const Mention = styled(mention)`margin-top: 32px;`
 
