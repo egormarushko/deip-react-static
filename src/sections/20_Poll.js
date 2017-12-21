@@ -227,12 +227,9 @@ class Poll extends Component {
       }
 
     };
-    var self = this;
-    self.showFormSection = false,
       console.log(form);
     axios.post('http://146.185.140.12/api/subscriber', form)
       .then(function (response) {
-        self.showSuccessText = true;
         console.log(response);
       })
       .catch(function (error) {
@@ -256,12 +253,9 @@ class Poll extends Component {
       }
 
     };
-    var self = this;
-    self.showFormSection = false,
       console.log(form);
     axios.post('http://146.185.140.12/api/subscriber', form)
       .then(function (response) {
-        self.showSuccessText = true;
         console.log(response);
       })
       .catch(function (error) {
