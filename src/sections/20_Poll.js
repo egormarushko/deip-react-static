@@ -131,9 +131,10 @@ class Poll extends Component {
 
   setShow = e => this.setState({ value: e.target.id })
   setValue = e => this.setState({ [e.target.name]: e.target.type === 'checkbox' ? e.target.checked : e.target.value })
-  sendForm = () => {
+  sendForm = e => {
     var val = this.state.value;
-    debugger;
+    e.preventDefault();
+    
     switch (val) {
       case "researcher":
         this.sendResearcherForm();
@@ -177,11 +178,9 @@ class Poll extends Component {
     console.log(form);
     axios.post('http://146.185.140.12/api/subscriber', form)
       .then(function (response) {
-        debugger;
         console.log(response);
       })
       .catch(function (error) {
-        debugger;
         console.log(error);
       });
   }
@@ -272,7 +271,7 @@ class Poll extends Component {
         <Menu attached />
         <MobileMenu attached />
         <Container>
-          <form action="">
+          <form onSubmit={this.sendForm} action="">
             <Section>
               <Heading>Join Us</Heading>
               <Heading type="sub">Choose your role</Heading>
@@ -545,7 +544,7 @@ class Poll extends Component {
               </Show>
             </Shower>
 
-            <Button onClick={sendForm} submit primary>
+            <Button submit primary>
               Send
             </Button>
           </form>
