@@ -254,32 +254,32 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 function _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
 
-var personsFirstRow = [{ src: _ashkor2.default, name: 'Alex Shkor', role: 'CHIEF EXECUTIVE OFFICER', linkedin: 'https://www.linkedin.com/in/alexshkor/', github: 'https://github.com/alexshkor' }, { src: _etsaryk2.default, name: 'Egor Tsaryk', role: 'CHIEF TECHNOLOGY OFFICER', linkedin: 'https://www.linkedin.com/in/yahor-tsaryk-92032a68/', github: 'https://github.com/egortsaryk9' }, { src: _akulik2.default, name: 'Alexey Kulik', role: 'CHIEF ARCHITECT', linkedin: 'https://www.linkedin.com/in/alexey-kulik-61576027/', github: 'https://github.com/akulik-paralect' }, { src: _aermolaev2.default, name: 'Artur Yermalayeu', role: 'CHIEF FINANCIAL OFFICER', facebook: 'https://www.facebook.com/ArturYermalayeu' }];
+var personsFirstRow = [{ src: _ashkor2.default, name: 'Alex Shkor', role: 'CHIEF EXECUTIVE OFFICER', linkedin: 'https://www.linkedin.com/in/alexshkor/', github: 'https://github.com/alexshkor' }, { src: _etsaryk2.default, name: 'Egor Tsaryk', role: 'CHIEF TECHNOLOGY OFFICER', linkedin: 'https://www.linkedin.com/in/yahor-tsaryk-92032a68/', github: 'https://github.com/egortsaryk9' }, { src: _akulik2.default, name: 'Alexey Kulik', role: 'CHIEF ARCHITECT', linkedin: 'https://www.linkedin.com/in/alexey-kulik-61576027/', github: 'https://github.com/akulik-paralect' }, { src: _aermolaev2.default, name: 'Artur Yermalayeu', role: 'CHIEF FINANCIAL OFFICER', facebook: 'https://www.facebook.com/ArturYe' }];
 
 var personsSecondRow = [{ src: _arusetskiy2.default, name: 'Artyom Rusetskiy', role: 'CHIEF SCIENTIST', linkedin: 'https://www.linkedin.com/in/artyom-ruseckiy-8521a89a/' }, { src: _akulichkin2.default, name: 'Anton Kulichkin', role: 'CHIEF PARTNERSHIPS OFFICER', linkedin: 'https://www.linkedin.com/in/anton-kulichkin-b158a886/' }, { src: _nsvyaznoy2.default, name: 'Nikolay Svyaznoy', role: 'CHIEF MARKETING OFFICER', linkedin: 'src' }, { src: _emarushko2.default, name: 'Egor Marushko', role: 'CORE DEVELOPER', linkedin: 'https://www.linkedin.com/in/egor-marushko-477175122/', github: 'https://github.com/egormarushko' }];
 
 // reused in the advisors section
 var Root = exports.Root = _styledComponents2.default.section.withConfig({
   displayName: '04_Team__Root',
-  componentId: 'tjlnr6-0'
+  componentId: 's1o4tlo3-0'
 })(['', ';'], _styles.container);
 
 // reused in the advisors section
 var Container = exports.Container = _styledComponents2.default.div.withConfig({
   displayName: '04_Team__Container',
-  componentId: 'tjlnr6-1'
+  componentId: 's1o4tlo3-1'
 })(['text-align:center;width:', '%;margin-left:', '%;margin-top:64px;margin-bottom:64px;', ';'], 100 * 2 / 3, 100 / 6, _styles.m.lessThan('small')(_templateObject));
 
 // reused in the advisors section
 var Block = exports.Block = _styledComponents2.default.div.withConfig({
   displayName: '04_Team__Block',
-  componentId: 'tjlnr6-2'
+  componentId: 's1o4tlo3-2'
 })(['display:flex;justify-content:space-between;&:first-of-type{margin-top:48px;}', ';'], _styles.m.lessThan('small')(_templateObject2));
 
 // reused in the advisors section
 var Person = exports.Person = (0, _styledComponents2.default)(_Person2.default).withConfig({
   displayName: '04_Team__Person',
-  componentId: 'tjlnr6-3'
+  componentId: 's1o4tlo3-3'
 })(['margin:24px 0;&:list-of-type{margin-bottom:0;}']);
 
 var Team = function Team(p) {
@@ -1452,7 +1452,7 @@ var _Join = __webpack_require__(60);
 
 var _Join2 = _interopRequireDefault(_Join);
 
-var _ = __webpack_require__(67);
+var _ = __webpack_require__(69);
 
 var _2 = _interopRequireDefault(_);
 
@@ -2396,7 +2396,7 @@ module.exports = __webpack_require__.p + "static/etsaryk.052cb4d2.png";
 /* 37 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "static/aermolaev.53699c58.png";
+module.exports = __webpack_require__.p + "static/aermolaev.bf4059ea.png";
 
 /***/ }),
 /* 38 */
@@ -3560,7 +3560,17 @@ var _TextArea = __webpack_require__(66);
 
 var _TextArea2 = _interopRequireDefault(_TextArea);
 
+var _axios = __webpack_require__(67);
+
+var _axios2 = _interopRequireDefault(_axios);
+
+var _reactToggleDisplay = __webpack_require__(68);
+
+var _reactToggleDisplay2 = _interopRequireDefault(_reactToggleDisplay);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
@@ -3572,37 +3582,42 @@ function _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defi
 
 var Root = _styledComponents2.default.section.withConfig({
   displayName: '20_Poll__Root',
-  componentId: 's1slnfbc-0'
+  componentId: 'zpq9sm-0'
 })(['', ';padding:48px 0 0 0;'], _styles.container);
 
 var Section = _styledComponents2.default.div.withConfig({
   displayName: '20_Poll__Section',
-  componentId: 's1slnfbc-1'
+  componentId: 'zpq9sm-1'
 })(['margin:48px 0;']);
+
+var Message = _styledComponents2.default.div.withConfig({
+  displayName: '20_Poll__Message',
+  componentId: 'zpq9sm-2'
+})(['padding-top:100px;height:450px;']);
 
 var Description = (0, _styledComponents2.default)(_Text2.default).withConfig({
   displayName: '20_Poll__Description',
-  componentId: 's1slnfbc-2'
+  componentId: 'zpq9sm-3'
 })(['display:block;width:', '%;margin:0 auto;', ';'], 100 * 6 / 8, _styles.m.lessThan('small')(_templateObject));
 
 var ControlBlock = _styledComponents2.default.div.withConfig({
   displayName: '20_Poll__ControlBlock',
-  componentId: 's1slnfbc-3'
+  componentId: 'zpq9sm-4'
 })(['display:flex;flex-wrap:wrap;text-align:left;margin:0 -16px 32px -16px;', ';'], _styles.m.lessThan('small')(_templateObject2));
 
 var Radio = (0, _styledComponents2.default)(_RadioButton2.default).withConfig({
   displayName: '20_Poll__Radio',
-  componentId: 's1slnfbc-4'
+  componentId: 'zpq9sm-5'
 })(['width:calc(100% / 4 - 32px);margin:16px;', ';'], _styles.m.lessThan('small')(_templateObject3));
 
 var Input = (0, _styledComponents2.default)(_Input2.default).withConfig({
   displayName: '20_Poll__Input',
-  componentId: 's1slnfbc-5'
+  componentId: 'zpq9sm-6'
 })(['width:calc(100% / 2 - 32px);margin:16px;', ';'], _styles.m.lessThan('small')(_templateObject4));
 
 var Checkbox = (0, _styledComponents2.default)(_Checkbox2.default).withConfig({
   displayName: '20_Poll__Checkbox',
-  componentId: 's1slnfbc-6'
+  componentId: 'zpq9sm-7'
 })(['width:calc(100% / 2 - 32px);margin:16px;', ';'], _styles.m.lessThan('small')(_templateObject4));
 
 var Poll = function (_Component) {
@@ -3620,16 +3635,200 @@ var Poll = function (_Component) {
     }
 
     return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = Poll.__proto__ || Object.getPrototypeOf(Poll)).call.apply(_ref, [this].concat(args))), _this), _this.state = {
-      value: 'researcher'
+      value: 'researcher',
+      isVisibleSuccesSubscriptionMessage: false,
+
+      researcherName: '',
+      researcherEmail: '',
+      researcherAcademicDegree: '',
+      researcherAssociation: '',
+      researcherPublishResearch: false,
+      researcherLookingForInvestment: false,
+      researcherCarryOutResearch: false,
+      researcherSearchScientists: false,
+      researcherReviewResearch: false,
+      researcherGbResearchPreparation: false,
+      researcherExpTokensDistributionPromotion: false,
+      researcherPrototypeReviewer: false,
+      researcherAdvisor: false,
+      researcherIntroduce: false,
+      researcherMessage: '',
+
+      collaboratorName: '',
+      collaboratorEmail: '',
+      collaboratorRegion: '',
+      collaboratorPromote: false,
+      collaboratorSpeech: false,
+      collaboratorAttractResearchers: false,
+      collaboratorParticipateInResearch: false,
+      collaboratorGatherFeedback: false,
+      collaboratorAdvisor: false,
+      collaboratorMessage: '',
+
+      investorName: '',
+      investorEmail: '',
+      investorBuyResearchTokens: false,
+      investorPrivatePresale: false,
+      investorCrowdsale: false,
+      investorResearchesGrant: false,
+      investorDisciplineGrant: false,
+      investorMessage: '',
+
+      organisationName: '',
+      organisationFieldOfActivity: '',
+      organisationDelegateName: '',
+      organisationEmail: '',
+      organisationApplyTechnologies: false,
+      organisationAttractFunding: false,
+      organisationDetermineDirection: false,
+      organisationProvideEquipment: false,
+      organisationMessage: ''
     }, _this.setShow = function (e) {
       return _this.setState({ value: e.target.id });
+    }, _this.setValue = function (e) {
+      return _this.setState(_defineProperty({}, e.target.name, e.target.type === 'checkbox' ? e.target.checked : e.target.value));
+    }, _this.sendForm = function (e) {
+      var val = _this.state.value;
+      e.preventDefault();
+
+      switch (val) {
+        case "researcher":
+          _this.sendResearcherForm();
+          break;
+        case "collaborator":
+          _this.sendCollaboratorForm();
+          break;
+        case "investor":
+          _this.sendInvestorForm();
+          break;
+        case "organisation":
+          _this.sendOrganisationForm();
+          break;
+      }
+    }, _this.sendResearcherForm = function () {
+      var self = _this;
+      var form = {
+        generalInfo: {
+          fullName: _this.state.researcherName,
+          email: _this.state.researcherEmail
+        },
+        researcherInfo: {
+          academicDegree: _this.state.researcherAcademicDegree,
+          association: _this.state.researcherAssociation,
+          publishResearch: _this.state.researcherPublishResearch,
+          lookingForInvestment: _this.state.researcherLookingForInvestment,
+          carryOutResearch: _this.state.researcherCarryOutResearch,
+          searchScientists: _this.state.researcherSearchScientists,
+          reviewResearch: _this.state.researcherReviewResearch,
+          gbResearchPreparation: _this.state.researcherGbResearchPreparation,
+          expTokensDistributionPromotion: _this.state.researcherExpTokensDistributionPromotion,
+          prototypeReviewer: _this.state.researcherPrototypeReviewer,
+          advisor: _this.state.researcherAdvisor,
+          introduce: _this.state.researcherIntroduce,
+          message: _this.state.researcherMessage
+        }
+
+      };
+      console.log(form);
+      _axios2.default.post('http://146.185.140.12/api/subscriber', form).then(function (response) {
+        self.state.isVisibleSuccesSubscriptionMessage = true;
+        self.forceUpdate();
+        console.log(response);
+      }).catch(function (error) {
+        console.log(error);
+      });
+    }, _this.sendCollaboratorForm = function () {
+      var self = _this;
+      var form = {
+        generalInfo: {
+          fullName: _this.collaboratorForm.name,
+          email: _this.collaboratorForm.email
+        },
+        contributorInfo: {
+          region: _this.collaboratorForm.region,
+          promote: _this.collaboratorForm.promote,
+          speech: _this.collaboratorForm.speech,
+          attractResearchers: _this.collaboratorForm.attractResearchers,
+          participateInResearch: _this.collaboratorForm.participateInResearch,
+          gatherFeedback: _this.collaboratorForm.gatherFeedback,
+          advisor: _this.collaboratorForm.advisor,
+          message: _this.collaboratorForm.message
+        }
+
+      };
+      _axios2.default.post('http://146.185.140.12/api/subscriber', form).then(function (response) {
+        self.state.isVisibleSuccesSubscriptionMessage = true;
+        self.forceUpdate();
+        console.log(response);
+      }).catch(function (error) {
+        console.log(error);
+      });
     }, _temp), _possibleConstructorReturn(_this, _ret);
   }
 
   _createClass(Poll, [{
+    key: 'sendInvestorForm',
+    value: function sendInvestorForm() {
+      var sel = this;
+      var form = {
+        generalInfo: {
+          fullName: this.investorForm.name,
+          email: this.investorForm.email
+        },
+        investorInfo: {
+          buyResearchesTokens: this.investorForm.buyResearchesTokens,
+          privatePresale: this.investorForm.privatePresale,
+          crowdsale: this.investorForm.crowdsale,
+          researchesGrant: this.investorForm.researchesGrant,
+          disciplineGrant: this.investorForm.disciplineGrant,
+          message: this.investorForm.message
+        }
+
+      };
+      console.log(form);
+      _axios2.default.post('http://146.185.140.12/api/subscriber', form).then(function (response) {
+        self.state.isVisibleSuccesSubscriptionMessage = true;
+        self.forceUpdate();
+        console.log(response);
+      }).catch(function (error) {
+        console.log(error);
+      });
+    }
+  }, {
+    key: 'sendOrganisationForm',
+    value: function sendOrganisationForm() {
+      var self = this;
+      var form = {
+        generalInfo: {
+          fullName: this.organisationForm.delegateName,
+          email: this.organisationForm.email
+        },
+        organisationInfo: {
+          organisationName: this.organisationForm.organisationName,
+          fieldOfActivity: this.organisationForm.fieldOfActivity,
+          applyTechnologies: this.organisationForm.applyTechnologies,
+          attractFunding: this.organisationForm.attractFunding,
+          determineDirection: this.organisationForm.determineDirection,
+          provideEquipment: this.organisationForm.provideEquipment,
+          message: this.organisationForm.message
+        }
+
+      };
+      console.log(form);
+      _axios2.default.post('http://146.185.140.12/api/subscriber', form).then(function (response) {
+        self.state.isVisibleSuccesSubscriptionMessage = true;
+        self.forceUpdate();
+        console.log(response);
+      }).catch(function (error) {
+        console.log(error);
+      });
+    }
+  }, {
     key: 'render',
     value: function render() {
       var setShow = this.setShow;
+      var sendForm = this.sendForm;
+      var setValue = this.setValue;
 
       return _react2.default.createElement(
         Root,
@@ -3640,425 +3839,459 @@ var Poll = function (_Component) {
           _Team.Container,
           null,
           _react2.default.createElement(
-            'form',
-            { action: '' },
+            _reactToggleDisplay2.default,
+            { show: !this.state.isVisibleSuccesSubscriptionMessage, tag: 'section' },
             _react2.default.createElement(
-              Section,
-              null,
+              'form',
+              { onSubmit: this.sendForm, action: '' },
               _react2.default.createElement(
-                _Heading2.default,
+                Section,
                 null,
-                'Join Us'
+                _react2.default.createElement(
+                  _Heading2.default,
+                  null,
+                  'Join Us'
+                ),
+                _react2.default.createElement(
+                  _Heading2.default,
+                  { type: 'sub' },
+                  'Choose your role'
+                ),
+                _react2.default.createElement(
+                  ControlBlock,
+                  null,
+                  _react2.default.createElement(Radio, {
+                    checked: true,
+                    id: 'researcher',
+                    name: 'type',
+                    icon: 'flask',
+                    children: 'Researcher',
+                    onClick: setShow
+                  }),
+                  _react2.default.createElement(Radio, {
+                    id: 'collaborator',
+                    name: 'type',
+                    icon: 'user-plus',
+                    children: 'Collaborator',
+                    onClick: setShow
+                  }),
+                  _react2.default.createElement(Radio, {
+                    id: 'investor',
+                    name: 'type',
+                    icon: 'usd',
+                    children: 'Investor',
+                    onClick: setShow
+                  }),
+                  _react2.default.createElement(Radio, {
+                    id: 'organisation',
+                    name: 'type',
+                    icon: 'building',
+                    children: 'Organisation',
+                    onClick: setShow
+                  })
+                )
               ),
               _react2.default.createElement(
-                _Heading2.default,
-                { type: 'sub' },
-                'Choose your role'
+                _Shower.Shower,
+                { value: this.state.value },
+                _react2.default.createElement(
+                  _Shower.Show,
+                  { value: 'researcher' },
+                  _react2.default.createElement(
+                    Section,
+                    null,
+                    _react2.default.createElement(
+                      Description,
+                      null,
+                      'You will be one of the first members of DEIP platform, who will start and lead DEIP community. Every scientist and researcher, who joins DEIP platform before its official release (genesis block) will have an ability to participate in initial expertise token distribution and obtain tokens in conformity with his proficiency. These tokens are not only the measure of your influence within your disciplines, on early stages it is also a great responsibility because your vote will have a big impact on emission distribution thus affecting how much each research is rewarded.'
+                    )
+                  ),
+                  _react2.default.createElement(
+                    Section,
+                    null,
+                    _react2.default.createElement(
+                      _Heading2.default,
+                      { type: 'sub' },
+                      'Basic information'
+                    ),
+                    _react2.default.createElement(
+                      ControlBlock,
+                      null,
+                      _react2.default.createElement(Input, { name: 'researcherName', icon: 'user', placeholder: 'Full name', onChange: setValue }),
+                      _react2.default.createElement(Input, {
+                        name: 'researcherAcademicDegree',
+                        icon: 'graduation-cap',
+                        placeholder: 'Academic degree',
+                        onChange: setValue
+                      }),
+                      _react2.default.createElement(Input, { name: 'researcherEmail', icon: 'envelope', placeholder: 'Email', onChange: setValue }),
+                      _react2.default.createElement(Input, {
+                        name: 'researcherAssociation',
+                        icon: 'users',
+                        placeholder: 'Association',
+                        onChange: setValue
+                      })
+                    )
+                  ),
+                  _react2.default.createElement(
+                    Section,
+                    null,
+                    _react2.default.createElement(
+                      _Heading2.default,
+                      { type: 'sub' },
+                      'How do you intend to use DEIP?'
+                    ),
+                    _react2.default.createElement(
+                      ControlBlock,
+                      null,
+                      _react2.default.createElement(
+                        Checkbox,
+                        { type: 'checkbox', name: 'researcherPublishResearch', onChange: setValue },
+                        'Publish research on the platform'
+                      ),
+                      _react2.default.createElement(
+                        Checkbox,
+                        { type: 'checkbox', name: 'researcherLookingForInvestment', onChange: setValue },
+                        'Obtain funding for your research'
+                      ),
+                      _react2.default.createElement(
+                        Checkbox,
+                        { type: 'checkbox', name: 'researcherCarryOutResearch', onChange: setValue },
+                        'Manage your research'
+                      ),
+                      _react2.default.createElement(
+                        Checkbox,
+                        { type: 'checkbox', name: 'researcherSearchScientists', onChange: setValue },
+                        'Collaborate with scientists and researchers on your research'
+                      ),
+                      _react2.default.createElement(
+                        Checkbox,
+                        { type: 'checkbox', name: 'researcherReviewResearch', onChange: setValue },
+                        'Review and evaluate other researches'
+                      )
+                    )
+                  ),
+                  _react2.default.createElement(
+                    Section,
+                    null,
+                    _react2.default.createElement(
+                      _Heading2.default,
+                      { type: 'sub' },
+                      'How can you help the platform?'
+                    ),
+                    _react2.default.createElement(
+                      ControlBlock,
+                      null,
+                      _react2.default.createElement(
+                        Checkbox,
+                        { type: 'checkbox', name: 'researcherGbResearchPreparation', onChange: setValue },
+                        'Prepare your previous researches to be included into genesis block'
+                      ),
+                      _react2.default.createElement(
+                        Checkbox,
+                        { type: 'checkbox', name: 'researcherExpTokensDistributionPromotion', onChange: setValue },
+                        'Invite scientists and researches to participate in initial discipline specific tokens distribution'
+                      ),
+                      _react2.default.createElement(
+                        Checkbox,
+                        { type: 'checkbox', name: 'researcherPrototypeReviewer', onChange: setValue },
+                        'Use prototype of DEIP platform and provide feedback to the development team'
+                      ),
+                      _react2.default.createElement(
+                        Checkbox,
+                        { type: 'checkbox', name: 'researcherAdvisor', onChange: setValue },
+                        'Advise on any specific matter correlated to your expertise'
+                      ),
+                      _react2.default.createElement(
+                        Checkbox,
+                        { type: 'checkbox', name: 'researcherIntroduce', onChange: setValue },
+                        'Introduce us with your academic community'
+                      )
+                    ),
+                    _react2.default.createElement(_TextArea2.default, { name: 'researcherMessage', placeholder: 'Please, provide your background', onChange: setValue })
+                  )
+                ),
+                _react2.default.createElement(
+                  _Shower.Show,
+                  { value: 'collaborator' },
+                  _react2.default.createElement(
+                    Section,
+                    null,
+                    _react2.default.createElement(
+                      Description,
+                      null,
+                      'We are constantly looking for people who are willing to spread the word about DEIP around the world. You can join our team if you are lecturer at university or take part in conferences, or can speak to potential DEIP user in any other way. Please let us know how you can help DEIP and we will be in touch with you shortly.'
+                    )
+                  ),
+                  _react2.default.createElement(
+                    Section,
+                    null,
+                    _react2.default.createElement(
+                      _Heading2.default,
+                      { type: 'sub' },
+                      'Basic information'
+                    ),
+                    _react2.default.createElement(
+                      ControlBlock,
+                      null,
+                      _react2.default.createElement(Input, { name: 'collaboratorName', icon: 'user', placeholder: 'Full name', onChange: setValue }),
+                      _react2.default.createElement(Input, { name: 'collaboratorRegion', icon: 'globe', placeholder: 'Region', onChange: setValue }),
+                      _react2.default.createElement(Input, { name: 'collaboratorEmail', icon: 'envelope', placeholder: 'Email', onChange: setValue })
+                    )
+                  ),
+                  _react2.default.createElement(
+                    Section,
+                    null,
+                    _react2.default.createElement(
+                      _Heading2.default,
+                      { type: 'sub' },
+                      'How can you help the platform?'
+                    ),
+                    _react2.default.createElement(
+                      ControlBlock,
+                      null,
+                      _react2.default.createElement(
+                        Checkbox,
+                        { type: 'checkbox', name: 'collaboratorPromote', onChange: setValue },
+                        'Share information about DIEP (blog posts / social media / offline / etc.)'
+                      ),
+                      _react2.default.createElement(
+                        Checkbox,
+                        { type: 'checkbox', name: 'collaboratorParticipateInResearch', onChange: setValue },
+                        'Participate in researches on the platform'
+                      ),
+                      _react2.default.createElement(
+                        Checkbox,
+                        { type: 'checkbox', name: 'collaboratorSpeech', onChange: setValue },
+                        'Tell about DEIP in your public speech'
+                      ),
+                      _react2.default.createElement(
+                        Checkbox,
+                        { type: 'checkbox', name: 'collaboratorGatherFeedback', onChange: setValue },
+                        'Gather feedback from potential users'
+                      ),
+                      _react2.default.createElement(
+                        Checkbox,
+                        { type: 'checkbox', name: 'collaboratorAttractResearchers', onChange: setValue },
+                        'Engage researchers to use DEIP'
+                      ),
+                      _react2.default.createElement(
+                        Checkbox,
+                        { type: 'checkbox', name: 'collaboratorAdvisor', onChange: setValue },
+                        'Advise on any specific matter correlated to your expertise'
+                      )
+                    ),
+                    _react2.default.createElement(_TextArea2.default, { name: 'collaboratorMessage', placeholder: 'Please, provide your background', onChange: setValue })
+                  )
+                ),
+                _react2.default.createElement(
+                  _Shower.Show,
+                  { value: 'investor' },
+                  _react2.default.createElement(
+                    Section,
+                    null,
+                    _react2.default.createElement(
+                      Description,
+                      null,
+                      'Either you are interested in funding researches on our platform or just want to grant specific research we believe you may be interested in DEIP token sale. Please provide your contact information and we will let you know what we can offer.'
+                    )
+                  ),
+                  _react2.default.createElement(
+                    Section,
+                    null,
+                    _react2.default.createElement(
+                      _Heading2.default,
+                      { type: 'sub' },
+                      'Basic information'
+                    ),
+                    _react2.default.createElement(
+                      ControlBlock,
+                      null,
+                      _react2.default.createElement(Input, { name: 'investorName', icon: 'user', placeholder: 'Full name', onChange: setValue }),
+                      _react2.default.createElement(Input, { name: 'investorEmail', icon: 'envelope', placeholder: 'Email', onChange: setValue })
+                    )
+                  ),
+                  _react2.default.createElement(
+                    Section,
+                    null,
+                    _react2.default.createElement(
+                      _Heading2.default,
+                      { type: 'sub' },
+                      'Are you interested in investing in research on DEIP platform?'
+                    ),
+                    _react2.default.createElement(
+                      ControlBlock,
+                      null,
+                      _react2.default.createElement(
+                        Checkbox,
+                        { type: 'checkbox', name: 'investorBuyResearchTokens', onChange: setValue },
+                        'Buy researches tokens'
+                      )
+                    )
+                  ),
+                  _react2.default.createElement(
+                    Section,
+                    null,
+                    _react2.default.createElement(
+                      _Heading2.default,
+                      { type: 'sub' },
+                      'Are you interested in investing in DEIP platform?'
+                    ),
+                    _react2.default.createElement(
+                      ControlBlock,
+                      null,
+                      _react2.default.createElement(
+                        Checkbox,
+                        { type: 'checkbox', name: 'investorPrivatePresale', onChange: setValue },
+                        'Private presale'
+                      ),
+                      _react2.default.createElement(
+                        Checkbox,
+                        { type: 'checkbox', name: 'investorCrowdsale', onChange: setValue },
+                        'Public tokensale'
+                      )
+                    )
+                  ),
+                  _react2.default.createElement(
+                    Section,
+                    null,
+                    _react2.default.createElement(
+                      _Heading2.default,
+                      { type: 'sub' },
+                      'Use DEIP to allocate grants'
+                    ),
+                    _react2.default.createElement(
+                      ControlBlock,
+                      null,
+                      _react2.default.createElement(
+                        Checkbox,
+                        { type: 'checkbox', name: 'investorResearchesGrant', onChange: setValue },
+                        'Grant for researches'
+                      ),
+                      _react2.default.createElement(
+                        Checkbox,
+                        { type: 'checkbox', name: 'investorDisciplineGrant', onChange: setValue },
+                        'Grant for disciplines'
+                      )
+                    ),
+                    _react2.default.createElement(_TextArea2.default, { name: 'investorMessage', placeholder: 'Please, provide your background', onChange: setValue })
+                  )
+                ),
+                _react2.default.createElement(
+                  _Shower.Show,
+                  { value: 'organisation' },
+                  _react2.default.createElement(
+                    Section,
+                    null,
+                    _react2.default.createElement(
+                      Description,
+                      null,
+                      'We are open to partnership proposals, so if your organization have an interest in collaboration with DEIP or be presented on the platform as funding agency or group of researchers we are ready to find best win-win strategies with you.'
+                    )
+                  ),
+                  _react2.default.createElement(
+                    Section,
+                    null,
+                    _react2.default.createElement(
+                      _Heading2.default,
+                      { type: 'sub' },
+                      'Basic information'
+                    ),
+                    _react2.default.createElement(
+                      ControlBlock,
+                      null,
+                      _react2.default.createElement(Input, {
+                        name: 'organisationName',
+                        icon: 'building',
+                        placeholder: 'Organisation (Company, Univercity)',
+                        onChange: setValue
+                      }),
+                      _react2.default.createElement(Input, {
+                        name: 'organisationDelegateName',
+                        icon: 'user',
+                        placeholder: 'Contact person name',
+                        onChange: setValue
+                      }),
+                      _react2.default.createElement(Input, {
+                        name: 'organisationFieldOfActivity',
+                        icon: 'book',
+                        placeholder: 'Field of activity',
+                        onChange: setValue
+                      }),
+                      _react2.default.createElement(Input, { name: 'organisationEmail', icon: 'envelope', placeholder: 'Email', onChange: setValue })
+                    )
+                  ),
+                  _react2.default.createElement(
+                    Section,
+                    null,
+                    _react2.default.createElement(
+                      _Heading2.default,
+                      { type: 'sub' },
+                      'How do you intend to use DEIP?'
+                    ),
+                    _react2.default.createElement(
+                      ControlBlock,
+                      null,
+                      _react2.default.createElement(
+                        Checkbox,
+                        { type: 'checkbox', name: 'organisationApplyTechnologies', onChange: setValue },
+                        'Apply DEIP technologies within the organization'
+                      ),
+                      _react2.default.createElement(
+                        Checkbox,
+                        { type: 'checkbox', name: 'organisationAttractFunding', onChange: setValue },
+                        'Attract funding for your researches'
+                      ),
+                      _react2.default.createElement(
+                        Checkbox,
+                        { type: 'checkbox', name: 'organisationDetermineDirection', onChange: setValue },
+                        'Determine the direction of research using the DEIP statistics'
+                      )
+                    )
+                  ),
+                  _react2.default.createElement(
+                    Section,
+                    null,
+                    _react2.default.createElement(
+                      _Heading2.default,
+                      { type: 'sub' },
+                      'How can you help the platform?'
+                    ),
+                    _react2.default.createElement(
+                      ControlBlock,
+                      null,
+                      _react2.default.createElement(
+                        Checkbox,
+                        { type: 'checkbox', name: 'organisationProvideEquipment', onChange: setValue },
+                        'Provide your equipment for research on the DEIP platform.'
+                      )
+                    ),
+                    _react2.default.createElement(_TextArea2.default, { name: 'organisationMessage', placeholder: 'Please, provide your background', onChange: setValue })
+                  )
+                )
               ),
               _react2.default.createElement(
-                ControlBlock,
+                _Button2.default,
+                { submit: true, primary: true },
+                'Send'
+              )
+            )
+          ),
+          _react2.default.createElement(
+            _reactToggleDisplay2.default,
+            { show: this.state.isVisibleSuccesSubscriptionMessage },
+            _react2.default.createElement(
+              'form',
+              { onSubmit: this.sendForm, action: '' },
+              _react2.default.createElement(
+                Message,
                 null,
-                _react2.default.createElement(Radio, {
-                  checked: true,
-                  id: 'researcher',
-                  name: 'type',
-                  icon: 'flask',
-                  children: 'Researcher',
-                  onClick: setShow
-                }),
-                _react2.default.createElement(Radio, {
-                  id: 'collaborator',
-                  name: 'type',
-                  icon: 'user-plus',
-                  children: 'Collaborator',
-                  onClick: setShow
-                }),
-                _react2.default.createElement(Radio, {
-                  id: 'investor',
-                  name: 'type',
-                  icon: 'usd',
-                  children: 'Investor',
-                  onClick: setShow
-                }),
-                _react2.default.createElement(Radio, {
-                  id: 'organisation',
-                  name: 'type',
-                  icon: 'building',
-                  children: 'Organisation',
-                  onClick: setShow
-                })
-              )
-            ),
-            _react2.default.createElement(
-              _Shower.Shower,
-              { value: this.state.value },
-              _react2.default.createElement(
-                _Shower.Show,
-                { value: 'researcher' },
                 _react2.default.createElement(
-                  Section,
+                  _Text2.default,
                   null,
-                  _react2.default.createElement(
-                    Description,
-                    null,
-                    'You will be one of the first members of DEIP platform, who will start and lead DEIP community. Every scientist and researcher, who joins DEIP platform before its official release (genesis block) will have an ability to participate in initial expertise token distribution and obtain tokens in conformity with his proficiency. These tokens are not only the measure of your influence within your disciplines, on early stages it is also a great responsibility because your vote will have a big impact on emission distribution thus affecting how much each research is rewarded.'
-                  )
-                ),
-                _react2.default.createElement(
-                  Section,
-                  null,
-                  _react2.default.createElement(
-                    _Heading2.default,
-                    { type: 'sub' },
-                    'Basic information'
-                  ),
-                  _react2.default.createElement(
-                    ControlBlock,
-                    null,
-                    _react2.default.createElement(Input, { name: 'name', icon: 'user', placeholder: 'Full name' }),
-                    _react2.default.createElement(Input, {
-                      name: 'degree',
-                      icon: 'graduation-cap',
-                      placeholder: 'Academic degree'
-                    }),
-                    _react2.default.createElement(Input, { name: 'email', icon: 'envelope', placeholder: 'Email' }),
-                    _react2.default.createElement(Input, {
-                      name: 'association',
-                      icon: 'users',
-                      placeholder: 'Association'
-                    })
-                  )
-                ),
-                _react2.default.createElement(
-                  Section,
-                  null,
-                  _react2.default.createElement(
-                    _Heading2.default,
-                    { type: 'sub' },
-                    'How do you intend to use DEIP?'
-                  ),
-                  _react2.default.createElement(
-                    ControlBlock,
-                    null,
-                    _react2.default.createElement(
-                      Checkbox,
-                      { checked: true, name: '1' },
-                      'Publish research on the platform'
-                    ),
-                    _react2.default.createElement(
-                      Checkbox,
-                      { name: '2' },
-                      'Invite scientists and researchers to your research'
-                    ),
-                    _react2.default.createElement(
-                      Checkbox,
-                      { name: '3' },
-                      'Attract fundings for your research'
-                    ),
-                    _react2.default.createElement(
-                      Checkbox,
-                      { name: '4' },
-                      'Work as reviewer for other research'
-                    ),
-                    _react2.default.createElement(
-                      Checkbox,
-                      { checked: true, name: '5' },
-                      'Manage your research'
-                    )
-                  )
-                ),
-                _react2.default.createElement(
-                  Section,
-                  null,
-                  _react2.default.createElement(
-                    _Heading2.default,
-                    { type: 'sub' },
-                    'How can you help the platform?'
-                  ),
-                  _react2.default.createElement(
-                    ControlBlock,
-                    null,
-                    _react2.default.createElement(
-                      Checkbox,
-                      { checked: true, name: '6' },
-                      'Prepare your previous researches to be included into genesis block'
-                    ),
-                    _react2.default.createElement(
-                      Checkbox,
-                      { name: '7' },
-                      'To become advisor'
-                    ),
-                    _react2.default.createElement(
-                      Checkbox,
-                      { name: '8' },
-                      'Invite scientists for participate in disciplines tokens distribution'
-                    ),
-                    _react2.default.createElement(
-                      Checkbox,
-                      { checked: true, name: '9' },
-                      'Use prototype of DEIP platform and provide feedback to the development team'
-                    )
-                  ),
-                  _react2.default.createElement(_TextArea2.default, { placeholder: 'Please, provide your background' })
-                )
-              ),
-              _react2.default.createElement(
-                _Shower.Show,
-                { value: 'collaborator' },
-                _react2.default.createElement(
-                  Section,
-                  null,
-                  _react2.default.createElement(
-                    Description,
-                    null,
-                    'We are constantly looking for people who are willing to spread the word about DEIP around the world. You can join our team if you are lecturer at university or take part in conferences, or can speak to potential DEIP user in any other way. Please let us know how you can help DEIP and we will be in touch with you shortly.'
-                  )
-                ),
-                _react2.default.createElement(
-                  Section,
-                  null,
-                  _react2.default.createElement(
-                    _Heading2.default,
-                    { type: 'sub' },
-                    'Basic information'
-                  ),
-                  _react2.default.createElement(
-                    ControlBlock,
-                    null,
-                    _react2.default.createElement(Input, { name: 'name', icon: 'user', placeholder: 'Full name' }),
-                    _react2.default.createElement(Input, { name: 'region', icon: 'globe', placeholder: 'Region' }),
-                    _react2.default.createElement(Input, { name: 'email', icon: 'envelope', placeholder: 'Email' })
-                  )
-                ),
-                _react2.default.createElement(
-                  Section,
-                  null,
-                  _react2.default.createElement(
-                    _Heading2.default,
-                    { type: 'sub' },
-                    'How can you help the platform?'
-                  ),
-                  _react2.default.createElement(
-                    ControlBlock,
-                    null,
-                    _react2.default.createElement(
-                      Checkbox,
-                      { checked: true, name: '9' },
-                      'Share information about DIEP (blog posts / social media / offline / etc.)'
-                    ),
-                    _react2.default.createElement(
-                      Checkbox,
-                      { name: '10' },
-                      'Participate in researches on the platform'
-                    ),
-                    _react2.default.createElement(
-                      Checkbox,
-                      { name: '11' },
-                      'Tell about DEIP in your public speech'
-                    ),
-                    _react2.default.createElement(
-                      Checkbox,
-                      { name: '12' },
-                      'Gather feedback from potential users'
-                    ),
-                    _react2.default.createElement(
-                      Checkbox,
-                      { checked: true, name: '13' },
-                      'Engage researchers to use DEIP'
-                    ),
-                    _react2.default.createElement(
-                      Checkbox,
-                      { checked: true, name: '14' },
-                      'Advise on any specific matter correlated to your expertise Engage researchers to use DEIP'
-                    )
-                  )
-                )
-              ),
-              _react2.default.createElement(
-                _Shower.Show,
-                { value: 'investor' },
-                _react2.default.createElement(
-                  Section,
-                  null,
-                  _react2.default.createElement(
-                    Description,
-                    null,
-                    'Either you are interested in funding researches on our platform or just want to grant specific research we believe you may be interested in DEIP token sale. Please provide your contact information and we will let you know what we can offer.'
-                  )
-                ),
-                _react2.default.createElement(
-                  Section,
-                  null,
-                  _react2.default.createElement(
-                    _Heading2.default,
-                    { type: 'sub' },
-                    'Basic information'
-                  ),
-                  _react2.default.createElement(
-                    ControlBlock,
-                    null,
-                    _react2.default.createElement(Input, { name: 'name', icon: 'user', placeholder: 'Full name' }),
-                    _react2.default.createElement(Input, { name: 'email', icon: 'envelope', placeholder: 'Email' })
-                  )
-                ),
-                _react2.default.createElement(
-                  Section,
-                  null,
-                  _react2.default.createElement(
-                    _Heading2.default,
-                    { type: 'sub' },
-                    'Are you interested in investing in research on DEIP platform?'
-                  ),
-                  _react2.default.createElement(
-                    ControlBlock,
-                    null,
-                    _react2.default.createElement(
-                      Checkbox,
-                      { checked: true, name: '15' },
-                      'Buy researches tokens'
-                    )
-                  )
-                ),
-                _react2.default.createElement(
-                  Section,
-                  null,
-                  _react2.default.createElement(
-                    _Heading2.default,
-                    { type: 'sub' },
-                    'Are you interested in investing in research on DEIP platform?'
-                  ),
-                  _react2.default.createElement(
-                    ControlBlock,
-                    null,
-                    _react2.default.createElement(
-                      Checkbox,
-                      { checked: true, name: '16' },
-                      'Private presale'
-                    ),
-                    _react2.default.createElement(
-                      Checkbox,
-                      { checked: true, name: '17' },
-                      'Public tokensale'
-                    )
-                  )
-                ),
-                _react2.default.createElement(
-                  Section,
-                  null,
-                  _react2.default.createElement(
-                    _Heading2.default,
-                    { type: 'sub' },
-                    'Use DEIP to allocate grants'
-                  ),
-                  _react2.default.createElement(
-                    ControlBlock,
-                    null,
-                    _react2.default.createElement(
-                      Checkbox,
-                      { checked: true, name: '18' },
-                      'Grant for researches'
-                    ),
-                    _react2.default.createElement(
-                      Checkbox,
-                      { checked: true, name: '19' },
-                      'Grant for disciplines'
-                    )
-                  )
-                )
-              ),
-              _react2.default.createElement(
-                _Shower.Show,
-                { value: 'organisation' },
-                _react2.default.createElement(
-                  Section,
-                  null,
-                  _react2.default.createElement(
-                    Description,
-                    null,
-                    'We are open to partnership proposals, so if your organization have an interest in collaboration with DEIP or be presented on the platform as funding agency or group of researchers we are ready to find best win-win strategies with you.'
-                  )
-                ),
-                _react2.default.createElement(
-                  Section,
-                  null,
-                  _react2.default.createElement(
-                    _Heading2.default,
-                    { type: 'sub' },
-                    'Basic information'
-                  ),
-                  _react2.default.createElement(
-                    ControlBlock,
-                    null,
-                    _react2.default.createElement(Input, {
-                      name: 'org',
-                      icon: 'building',
-                      placeholder: 'Organisation (Company, Univercity)'
-                    }),
-                    _react2.default.createElement(Input, {
-                      name: 'name',
-                      icon: 'user',
-                      placeholder: 'Contact person name'
-                    }),
-                    _react2.default.createElement(Input, {
-                      name: 'activity',
-                      icon: 'book',
-                      placeholder: 'Field of activity'
-                    }),
-                    _react2.default.createElement(Input, { name: 'email', icon: 'envelope', placeholder: 'Email' })
-                  )
-                ),
-                _react2.default.createElement(
-                  Section,
-                  null,
-                  _react2.default.createElement(
-                    _Heading2.default,
-                    { type: 'sub' },
-                    'How do you intend to use DEIP?'
-                  ),
-                  _react2.default.createElement(
-                    ControlBlock,
-                    null,
-                    _react2.default.createElement(
-                      Checkbox,
-                      { checked: true, name: '20' },
-                      'Apply DEIP technologies within the organization'
-                    ),
-                    _react2.default.createElement(
-                      Checkbox,
-                      { checked: true, name: '21' },
-                      'Attract funding for your researches'
-                    ),
-                    _react2.default.createElement(
-                      Checkbox,
-                      { checked: true, name: '22' },
-                      'Determine the direction of research using the DEIP statistics'
-                    )
-                  )
-                ),
-                _react2.default.createElement(
-                  Section,
-                  null,
-                  _react2.default.createElement(
-                    _Heading2.default,
-                    { type: 'sub' },
-                    'How can you help the platform?'
-                  ),
-                  _react2.default.createElement(
-                    ControlBlock,
-                    null,
-                    _react2.default.createElement(
-                      Checkbox,
-                      { checked: true, name: '23' },
-                      'Provide your equipment for research on the DEIP platform.'
-                    )
-                  )
+                  'Thank you for joining DEIP community. We have added you to our initial users list and provide you with a link as soon as an alfa version of DEIP platform is released.'
                 )
               )
-            ),
-            _react2.default.createElement(
-              _Button2.default,
-              { submit: true, primary: true },
-              'Send'
             )
           )
         )
@@ -4443,6 +4676,18 @@ exports.default = TextArea;
 
 /***/ }),
 /* 67 */
+/***/ (function(module, exports) {
+
+module.exports = require("axios");
+
+/***/ }),
+/* 68 */
+/***/ (function(module, exports) {
+
+module.exports = require("react-toggle-display");
+
+/***/ }),
+/* 69 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4475,4 +4720,4 @@ exports.default = function () {
 /***/ })
 /******/ ]);
 });
-//# sourceMappingURL=app.static.17886064.js.map
+//# sourceMappingURL=app.static.81ad0376.js.map
