@@ -16,6 +16,7 @@ import checkbox from 'components/Checkbox'
 import TextArea from 'components/TextArea'
 
 import axios from 'axios'
+import ToggleDisplay from 'react-toggle-display'
 
 const Root = styled.section`
   ${container};
@@ -23,6 +24,10 @@ const Root = styled.section`
 `
 
 const Section = styled.div`margin: 48px 0;`
+
+const Message = styled.div`
+  padding-top: 100px;
+  height:450px;`
 
 const Description = styled(Text) `
   display: block;
@@ -81,6 +86,7 @@ const Checkbox = styled(checkbox) `
 class Poll extends Component {
   state = {
     value: 'researcher',
+    isVisibleSuccesSubscriptionMessage: false,
 
     researcherName: '',
     researcherEmail: '',
@@ -134,7 +140,7 @@ class Poll extends Component {
   sendForm = e => {
     var val = this.state.value;
     e.preventDefault();
-    
+
     switch (val) {
       case "researcher":
         this.sendResearcherForm();
@@ -152,7 +158,7 @@ class Poll extends Component {
   }
 
   sendResearcherForm = () => {
-    debugger
+    var self = this;
     var form = {
       generalInfo: {
         fullName: this.state.researcherName,
@@ -178,13 +184,16 @@ class Poll extends Component {
     console.log(form);
     axios.post('http://146.185.140.12/api/subscriber', form)
       .then(function (response) {
-        console.log(response);
+        self.state.isVisibleSuccesSubscriptionMessage = true;
+        self.forceUpdate();
+        console.log(response);        
       })
       .catch(function (error) {
         console.log(error);
-      });
+      }); 
   }
   sendCollaboratorForm = () => {
+    var self = this;
     var form = {
       generalInfo: {
         fullName: this.collaboratorForm.name,
@@ -204,13 +213,17 @@ class Poll extends Component {
     };
     axios.post('http://146.185.140.12/api/subscriber', form)
       .then(function (response) {
+        self.state.isVisibleSuccesSubscriptionMessage = true;
+        self.forceUpdate();
         console.log(response);
       })
       .catch(function (error) {
         console.log(error);
       });
+      
   }
   sendInvestorForm() {
+    var sel = this;
     var form = {
       generalInfo: {
         fullName: this.investorForm.name,
@@ -226,9 +239,11 @@ class Poll extends Component {
       }
 
     };
-      console.log(form);
+    console.log(form);
     axios.post('http://146.185.140.12/api/subscriber', form)
       .then(function (response) {
+        self.state.isVisibleSuccesSubscriptionMessage = true;
+        self.forceUpdate();
         console.log(response);
       })
       .catch(function (error) {
@@ -236,6 +251,7 @@ class Poll extends Component {
       });
   }
   sendOrganisationForm() {
+    var self = this;
     var form = {
       generalInfo: {
         fullName: this.organisationForm.delegateName,
@@ -252,9 +268,11 @@ class Poll extends Component {
       }
 
     };
-      console.log(form);
+    console.log(form);
     axios.post('http://146.185.140.12/api/subscriber', form)
       .then(function (response) {
+        self.state.isVisibleSuccesSubscriptionMessage = true;
+        self.forceUpdate();
         console.log(response);
       })
       .catch(function (error) {
@@ -271,47 +289,48 @@ class Poll extends Component {
         <Menu attached />
         <MobileMenu attached />
         <Container>
-          <form onSubmit={this.sendForm} action="">
-            <Section>
-              <Heading>Join Us</Heading>
-              <Heading type="sub">Choose your role</Heading>
-              <ControlBlock>
-                <Radio
-                  checked
-                  id="researcher"
-                  name="type"
-                  icon="flask"
-                  children="Researcher"
-                  onClick={setShow}
-                />
-                <Radio
-                  id="collaborator"
-                  name="type"
-                  icon="user-plus"
-                  children="Collaborator"
-                  onClick={setShow}
-                />
-                <Radio
-                  id="investor"
-                  name="type"
-                  icon="usd"
-                  children="Investor"
-                  onClick={setShow}
-                />
-                <Radio
-                  id="organisation"
-                  name="type"
-                  icon="building"
-                  children="Organisation"
-                  onClick={setShow}
-                />
-              </ControlBlock>
-            </Section>
-            <Shower value={this.state.value}>
-              <Show value="researcher">
-                <Section>
-                  <Description>
-                    You will be one of the first members of DEIP platform, who
+          <ToggleDisplay show={!this.state.isVisibleSuccesSubscriptionMessage} tag="section">
+            <form onSubmit={this.sendForm} action="">
+              <Section>
+                <Heading>Join Us</Heading>
+                <Heading type="sub">Choose your role</Heading>
+                <ControlBlock>
+                  <Radio
+                    checked
+                    id="researcher"
+                    name="type"
+                    icon="flask"
+                    children="Researcher"
+                    onClick={setShow}
+                  />
+                  <Radio
+                    id="collaborator"
+                    name="type"
+                    icon="user-plus"
+                    children="Collaborator"
+                    onClick={setShow}
+                  />
+                  <Radio
+                    id="investor"
+                    name="type"
+                    icon="usd"
+                    children="Investor"
+                    onClick={setShow}
+                  />
+                  <Radio
+                    id="organisation"
+                    name="type"
+                    icon="building"
+                    children="Organisation"
+                    onClick={setShow}
+                  />
+                </ControlBlock>
+              </Section>
+              <Shower value={this.state.value}>
+                <Show value="researcher">
+                  <Section>
+                    <Description>
+                      You will be one of the first members of DEIP platform, who
                     will start and lead DEIP community. Every scientist and
                     researcher, who joins DEIP platform before its official
                     release (genesis block) will have an ability to participate
@@ -322,232 +341,242 @@ class Poll extends Component {
                     vote will have a big impact on emission distribution thus
                     affecting how much each research is rewarded.
                   </Description>
-                </Section>
-                <Section>
-                  <Heading type="sub">Basic information</Heading>
-                  <ControlBlock>
-                    <Input name="researcherName" icon="user" placeholder="Full name" onChange={setValue} />
-                    <Input
-                      name="researcherAcademicDegree"
-                      icon="graduation-cap"
-                      placeholder="Academic degree"
-                      onChange={setValue}
-                    />
-                    <Input name="researcherEmail" icon="envelope" placeholder="Email" onChange={setValue} />
-                    <Input
-                      name="researcherAssociation"
-                      icon="users"
-                      placeholder="Association"
-                      onChange={setValue}
-                    />
+                  </Section>
+                  <Section>
+                    <Heading type="sub">Basic information</Heading>
+                    <ControlBlock>
+                      <Input name="researcherName" icon="user" placeholder="Full name" onChange={setValue} />
+                      <Input
+                        name="researcherAcademicDegree"
+                        icon="graduation-cap"
+                        placeholder="Academic degree"
+                        onChange={setValue}
+                      />
+                      <Input name="researcherEmail" icon="envelope" placeholder="Email" onChange={setValue} />
+                      <Input
+                        name="researcherAssociation"
+                        icon="users"
+                        placeholder="Association"
+                        onChange={setValue}
+                      />
+                    </ControlBlock>
+                  </Section>
+                  <Section>
+                    <Heading type="sub">How do you intend to use DEIP?</Heading>
+                    <ControlBlock>
+                      <Checkbox type="checkbox" name="researcherPublishResearch" onChange={setValue}>
+                        Publish research on the platform
+                    </Checkbox>
+                      <Checkbox type="checkbox" name="researcherLookingForInvestment" onChange={setValue}>
+                        Obtain funding for your research
+                    </Checkbox>
+                      <Checkbox type="checkbox" name="researcherCarryOutResearch" onChange={setValue}>
+                        Manage your research
+                    </Checkbox>
+                      <Checkbox type="checkbox" name="researcherSearchScientists" onChange={setValue}>
+                        Collaborate with scientists and researchers on your research
+                    </Checkbox>
+                      <Checkbox type="checkbox" name="researcherReviewResearch" onChange={setValue}>
+                        Review and evaluate other researches
+                    </Checkbox>
+                    </ControlBlock>
+                  </Section>
+                  <Section>
+                    <Heading type="sub">How can you help the platform?</Heading>
+                    <ControlBlock>
+                      <Checkbox type="checkbox" name="researcherGbResearchPreparation" onChange={setValue}>
+                        Prepare your previous researches to be included into genesis block
+                    </Checkbox>
+                      <Checkbox type="checkbox" name="researcherExpTokensDistributionPromotion" onChange={setValue}>Invite scientists and researches to participate in initial discipline specific tokens distribution</Checkbox>
+                      <Checkbox type="checkbox" name="researcherPrototypeReviewer" onChange={setValue}>
+                        Use prototype of DEIP platform and provide feedback to the development team
+                    </Checkbox>
+                      <Checkbox type="checkbox" name="researcherAdvisor" onChange={setValue}>
+                        Advise on any specific matter correlated to your expertise
+                    </Checkbox>
+                      <Checkbox type="checkbox" name="researcherIntroduce" onChange={setValue}>
+                        Introduce us with your academic community
+                    </Checkbox>
                   </ControlBlock>
-                </Section>
-                <Section>
-                  <Heading type="sub">How do you intend to use DEIP?</Heading>
-                  <ControlBlock>
-                    <Checkbox type="checkbox" name="researcherPublishResearch" onChange={setValue}>
-                      Publish research on the platform
-                    </Checkbox>
-                    <Checkbox type="checkbox" name="researcherLookingForInvestment" onChange={setValue}>
-                      Obtain funding for your research
-                    </Checkbox>
-                    <Checkbox type="checkbox" name="researcherCarryOutResearch" onChange={setValue}>
-                      Manage your research
-                    </Checkbox>
-                    <Checkbox type="checkbox" name="researcherSearchScientists" onChange={setValue}>
-                      Collaborate with scientists and researchers on your research
-                    </Checkbox>
-                    <Checkbox type="checkbox" name="researcherReviewResearch" onChange={setValue}>
-                      Review and evaluate other researches
-                    </Checkbox>
-                  </ControlBlock>
-                </Section>
-                <Section>
-                  <Heading type="sub">How can you help the platform?</Heading>
-                  <ControlBlock>
-                    <Checkbox type="checkbox" name="researcherGbResearchPreparation" onChange={setValue}>
-                      Prepare your previous researches to be included into genesis block
-                    </Checkbox>
-                    <Checkbox type="checkbox" name="researcherExpTokensDistributionPromotion" onChange={setValue}>Invite scientists and researches to participate in initial discipline specific tokens distribution</Checkbox>
-                    <Checkbox type="checkbox" name="researcherPrototypeReviewer" onChange={setValue}>
-                      Use prototype of DEIP platform and provide feedback to the development team
-                    </Checkbox>
-                    <Checkbox type="checkbox" name="researcherAdvisor" onChange={setValue}>
-                      Advise on any specific matter correlated to your expertise
-                    </Checkbox>
-                    <Checkbox type="checkbox" name="researcherIntroduce" onChange={setValue}>
-                      Introduce us with your academic community
-                    </Checkbox>
-                  </ControlBlock>
-                  <TextArea name="researcherMessage" placeholder="Please, provide your background" onChange={setValue} />
-                </Section>
-              </Show>
+                    <TextArea name="researcherMessage" placeholder="Please, provide your background" onChange={setValue} />
+                  </Section>
+                </Show>
 
-              <Show value="collaborator">
-                <Section>
-                  <Description>
-                    We are constantly looking for people who are willing to
+                <Show value="collaborator">
+                  <Section>
+                    <Description>
+                      We are constantly looking for people who are willing to
                     spread the word about DEIP around the world. You can join
                     our team if you are lecturer at university or take part in
                     conferences, or can speak to potential DEIP user in any
                     other way. Please let us know how you can help DEIP and we
                     will be in touch with you shortly.
                   </Description>
-                </Section>
-                <Section>
-                  <Heading type="sub">Basic information</Heading>
-                  <ControlBlock>
-                    <Input name="collaboratorName" icon="user" placeholder="Full name" onChange={setValue}/>
-                    <Input name="collaboratorRegion" icon="globe" placeholder="Region" onChange={setValue}/>
-                    <Input name="collaboratorEmail" icon="envelope" placeholder="Email" onChange={setValue}/>
-                  </ControlBlock>
-                </Section>
-                <Section>
-                  <Heading type="sub">How can you help the platform?</Heading>
-                  <ControlBlock>
-                    <Checkbox type="checkbox" name="collaboratorPromote" onChange={setValue}>
-                      Share information about DIEP (blog posts / social media /
+                  </Section>
+                  <Section>
+                    <Heading type="sub">Basic information</Heading>
+                    <ControlBlock>
+                      <Input name="collaboratorName" icon="user" placeholder="Full name" onChange={setValue} />
+                      <Input name="collaboratorRegion" icon="globe" placeholder="Region" onChange={setValue} />
+                      <Input name="collaboratorEmail" icon="envelope" placeholder="Email" onChange={setValue} />
+                    </ControlBlock>
+                  </Section>
+                  <Section>
+                    <Heading type="sub">How can you help the platform?</Heading>
+                    <ControlBlock>
+                      <Checkbox type="checkbox" name="collaboratorPromote" onChange={setValue}>
+                        Share information about DIEP (blog posts / social media /
                       offline / etc.)
                     </Checkbox>
-                    <Checkbox type="checkbox" name="collaboratorParticipateInResearch" onChange={setValue}>
-                      Participate in researches on the platform
+                      <Checkbox type="checkbox" name="collaboratorParticipateInResearch" onChange={setValue}>
+                        Participate in researches on the platform
                     </Checkbox>
-                    <Checkbox type="checkbox" name="collaboratorSpeech" onChange={setValue}>
-                      Tell about DEIP in your public speech
+                      <Checkbox type="checkbox" name="collaboratorSpeech" onChange={setValue}>
+                        Tell about DEIP in your public speech
                     </Checkbox>
-                    <Checkbox type="checkbox" name="collaboratorGatherFeedback" onChange={setValue}>
-                      Gather feedback from potential users
+                      <Checkbox type="checkbox" name="collaboratorGatherFeedback" onChange={setValue}>
+                        Gather feedback from potential users
                     </Checkbox>
-                    <Checkbox type="checkbox" name="collaboratorAttractResearchers" onChange={setValue}>
-                      Engage researchers to use DEIP
+                      <Checkbox type="checkbox" name="collaboratorAttractResearchers" onChange={setValue}>
+                        Engage researchers to use DEIP
                     </Checkbox>
-                    <Checkbox type="checkbox" name="collaboratorAdvisor" onChange={setValue}>
-                      Advise on any specific matter correlated to your expertise
+                      <Checkbox type="checkbox" name="collaboratorAdvisor" onChange={setValue}>
+                        Advise on any specific matter correlated to your expertise
                     </Checkbox>
-                  </ControlBlock>
-                  <TextArea name="collaboratorMessage" placeholder="Please, provide your background" onChange={setValue} />                  
-                </Section>
-              </Show>
+                    </ControlBlock>
+                    <TextArea name="collaboratorMessage" placeholder="Please, provide your background" onChange={setValue} />
+                  </Section>
+                </Show>
 
-              <Show value="investor">
-                <Section>
-                  <Description>
-                    Either you are interested in funding researches on our
+                <Show value="investor">
+                  <Section>
+                    <Description>
+                      Either you are interested in funding researches on our
                     platform or just want to grant specific research we believe
                     you may be interested in DEIP token sale. Please provide
                     your contact information and we will let you know what we
                     can offer.
                   </Description>
-                </Section>
-                <Section>
-                  <Heading type="sub">Basic information</Heading>
-                  <ControlBlock>
-                    <Input name="investorName" icon="user" placeholder="Full name" onChange={setValue} />
-                    <Input name="investorEmail" icon="envelope" placeholder="Email" onChange={setValue} />
-                  </ControlBlock>
-                </Section>
-                <Section>
-                  <Heading type="sub">
-                    Are you interested in investing in research on DEIP platform?
+                  </Section>
+                  <Section>
+                    <Heading type="sub">Basic information</Heading>
+                    <ControlBlock>
+                      <Input name="investorName" icon="user" placeholder="Full name" onChange={setValue} />
+                      <Input name="investorEmail" icon="envelope" placeholder="Email" onChange={setValue} />
+                    </ControlBlock>
+                  </Section>
+                  <Section>
+                    <Heading type="sub">
+                      Are you interested in investing in research on DEIP platform?
                   </Heading>
-                  <ControlBlock>
-                    <Checkbox type="checkbox" name="investorBuyResearchTokens" onChange={setValue}>
-                      Buy researches tokens
+                    <ControlBlock>
+                      <Checkbox type="checkbox" name="investorBuyResearchTokens" onChange={setValue}>
+                        Buy researches tokens
                     </Checkbox>
-                  </ControlBlock>
-                </Section>
-                <Section>
-                  <Heading type="sub">
-                    Are you interested in investing in DEIP platform?
+                    </ControlBlock>
+                  </Section>
+                  <Section>
+                    <Heading type="sub">
+                      Are you interested in investing in DEIP platform?
                   </Heading>
-                  <ControlBlock>
-                    <Checkbox type="checkbox" name="investorPrivatePresale" onChange={setValue}>
-                      Private presale
+                    <ControlBlock>
+                      <Checkbox type="checkbox" name="investorPrivatePresale" onChange={setValue}>
+                        Private presale
                     </Checkbox>
-                    <Checkbox type="checkbox" name="investorCrowdsale" onChange={setValue}>
-                      Public tokensale
+                      <Checkbox type="checkbox" name="investorCrowdsale" onChange={setValue}>
+                        Public tokensale
                     </Checkbox>
-                  </ControlBlock>
-                </Section>
-                <Section>
-                  <Heading type="sub">Use DEIP to allocate grants</Heading>
-                  <ControlBlock>
-                    <Checkbox type="checkbox" name="investorResearchesGrant" onChange={setValue}>
-                      Grant for researches
+                    </ControlBlock>
+                  </Section>
+                  <Section>
+                    <Heading type="sub">Use DEIP to allocate grants</Heading>
+                    <ControlBlock>
+                      <Checkbox type="checkbox" name="investorResearchesGrant" onChange={setValue}>
+                        Grant for researches
                     </Checkbox>
-                    <Checkbox type="checkbox" name="investorDisciplineGrant" onChange={setValue}>
-                      Grant for disciplines
+                      <Checkbox type="checkbox" name="investorDisciplineGrant" onChange={setValue}>
+                        Grant for disciplines
                     </Checkbox>
-                  </ControlBlock>
-                  <TextArea name="investorMessage" placeholder="Please, provide your background" onChange={setValue} />                  
-                </Section>
-              </Show>
+                    </ControlBlock>
+                    <TextArea name="investorMessage" placeholder="Please, provide your background" onChange={setValue} />
+                  </Section>
+                </Show>
 
-              <Show value="organisation">
-                <Section>
-                  <Description>
-                    We are open to partnership proposals, so if your
+                <Show value="organisation">
+                  <Section>
+                    <Description>
+                      We are open to partnership proposals, so if your
                     organization have an interest in collaboration with DEIP or
                     be presented on the platform as funding agency or group of
                     researchers we are ready to find best win-win strategies
                     with you.
                   </Description>
-                </Section>
-                <Section>
-                  <Heading type="sub">Basic information</Heading>
-                  <ControlBlock>
-                    <Input
-                      name="organisationName"
-                      icon="building"
-                      placeholder="Organisation (Company, Univercity)"
-                      onChange={setValue}
-                    />
-                    <Input
-                      name="organisationDelegateName"
-                      icon="user"
-                      placeholder="Contact person name"
-                      onChange={setValue}
-                    />
-                    <Input
-                      name="organisationFieldOfActivity"
-                      icon="book"
-                      placeholder="Field of activity"
-                      onChange={setValue}
-                    />
-                    <Input name="organisationEmail" icon="envelope" placeholder="Email" onChange={setValue} />
-                  </ControlBlock>
-                </Section>
-                <Section>
-                  <Heading type="sub">How do you intend to use DEIP?</Heading>
-                  <ControlBlock>
-                    <Checkbox type="checkbox" name="organisationApplyTechnologies" onChange={setValue} >
-                      Apply DEIP technologies within the organization
+                  </Section>
+                  <Section>
+                    <Heading type="sub">Basic information</Heading>
+                    <ControlBlock>
+                      <Input
+                        name="organisationName"
+                        icon="building"
+                        placeholder="Organisation (Company, Univercity)"
+                        onChange={setValue}
+                      />
+                      <Input
+                        name="organisationDelegateName"
+                        icon="user"
+                        placeholder="Contact person name"
+                        onChange={setValue}
+                      />
+                      <Input
+                        name="organisationFieldOfActivity"
+                        icon="book"
+                        placeholder="Field of activity"
+                        onChange={setValue}
+                      />
+                      <Input name="organisationEmail" icon="envelope" placeholder="Email" onChange={setValue} />
+                    </ControlBlock>
+                  </Section>
+                  <Section>
+                    <Heading type="sub">How do you intend to use DEIP?</Heading>
+                    <ControlBlock>
+                      <Checkbox type="checkbox" name="organisationApplyTechnologies" onChange={setValue} >
+                        Apply DEIP technologies within the organization
                     </Checkbox>
-                    <Checkbox type="checkbox" name="organisationAttractFunding" onChange={setValue} >
-                      Attract funding for your researches
+                      <Checkbox type="checkbox" name="organisationAttractFunding" onChange={setValue} >
+                        Attract funding for your researches
                     </Checkbox>
-                    <Checkbox type="checkbox" name="organisationDetermineDirection" onChange={setValue}>
-                      Determine the direction of research using the DEIP
+                      <Checkbox type="checkbox" name="organisationDetermineDirection" onChange={setValue}>
+                        Determine the direction of research using the DEIP
                       statistics
                     </Checkbox>
-                  </ControlBlock>
-                </Section>
-                <Section>
-                  <Heading type="sub">How can you help the platform?</Heading>
-                  <ControlBlock>
-                    <Checkbox type="checkbox" name="organisationProvideEquipment" onChange={setValue} >
-                      Provide your equipment for research on the DEIP platform.
+                    </ControlBlock>
+                  </Section>
+                  <Section>
+                    <Heading type="sub">How can you help the platform?</Heading>
+                    <ControlBlock>
+                      <Checkbox type="checkbox" name="organisationProvideEquipment" onChange={setValue} >
+                        Provide your equipment for research on the DEIP platform.
                     </Checkbox>
-                  </ControlBlock>
-                  <TextArea name="organisationMessage" placeholder="Please, provide your background" onChange={setValue} />                  
-                </Section>
-              </Show>
-            </Shower>
+                    </ControlBlock>
+                    <TextArea name="organisationMessage" placeholder="Please, provide your background" onChange={setValue} />
+                  </Section>
+                </Show>
+              </Shower>
 
-            <Button submit primary>
-              Send
+              <Button submit primary>
+                Send
             </Button>
+            </form>
+          </ToggleDisplay>
+          <ToggleDisplay show={this.state.isVisibleSuccesSubscriptionMessage} >
+          <form onSubmit={this.sendForm} action="">
+            <Message>
+              <Text>
+                Thank you for joining DEIP community. We have added you to our initial users list and provide you with a link as soon as an alfa version of DEIP platform is released.
+            </Text>
+            </Message>
           </form>
+          </ToggleDisplay>
         </Container>
       </Root>
     )
