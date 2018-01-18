@@ -71,7 +71,7 @@ const Hero = () => (
         <Button primary to="/join">
           join us
         </Button>
-        <Button contrast to="/">
+        <Button contrast to="/whitepaper">
           white paper
         </Button>
       </ButtonsLine>

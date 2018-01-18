@@ -19,6 +19,11 @@ export default {
         getProps: () => ({ someData: 'someData' }),
       },
       {
+        path: '/whitepaper',
+        component: 'src/containers/Whitepaper',
+        getProps: () => ({ someData: 'someData' }),
+      },
+      {
         is404: true,
         component: 'src/containers/404',
       },
