@@ -4,13 +4,15 @@
 
     import src_containers_Index from '../src/containers/Index'
 import src_containers_Join from '../src/containers/Join'
+import src_containers_Whitepaper from '../src/containers/Whitepaper'
 import src_containers_404 from '../src/containers/404'
     const templateMap = {
     t_0: src_containers_Index,
 t_1: src_containers_Join,
-t_2: src_containers_404
+t_2: src_containers_Whitepaper,
+t_3: src_containers_404
   }
-    const templateTree = {c:{"404":{t:"t_2"},"/":{t:"t_0"},"join":{t:"t_1"}}}
+    const templateTree = {c:{"404":{t:"t_3"},"/":{t:"t_0"},"join":{t:"t_1"},"whitepaper":{t:"t_2"}}}
     
     const getTemplateForPath = path => {
       const parts = path === '/' ? ['/'] : path.split('/').filter(d => d)

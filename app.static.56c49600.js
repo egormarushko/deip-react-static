@@ -70,7 +70,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /******/ 	__webpack_require__.p = "/";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 15);
+/******/ 	return __webpack_require__(__webpack_require__.s = 16);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -214,7 +214,7 @@ var _Heading = __webpack_require__(4);
 
 var _Heading2 = _interopRequireDefault(_Heading);
 
-var _Person = __webpack_require__(13);
+var _Person = __webpack_require__(15);
 
 var _Person2 = _interopRequireDefault(_Person);
 
@@ -340,7 +340,7 @@ var _propTypes = __webpack_require__(2);
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
-var _reactStatic = __webpack_require__(9);
+var _reactStatic = __webpack_require__(8);
 
 var _styledComponents = __webpack_require__(1);
 
@@ -431,6 +431,72 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
+var _templateObject = _taggedTemplateLiteral(['\n  font-weight: 300;\n  font-size: 16px;\n  line-height: 1.5;\n  color: ', ';\n'], ['\n  font-weight: 300;\n  font-size: 16px;\n  line-height: 1.5;\n  color: ', ';\n']),
+    _templateObject2 = _taggedTemplateLiteral(['\n  font-size: 12px;\n  color: ', ';\n'], ['\n  font-size: 12px;\n  color: ', ';\n']);
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _propTypes = __webpack_require__(2);
+
+var _propTypes2 = _interopRequireDefault(_propTypes);
+
+var _styledComponents = __webpack_require__(1);
+
+var _styledComponents2 = _interopRequireDefault(_styledComponents);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
+
+function _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
+
+var p = _styledComponents2.default.p.withConfig({
+  displayName: 'Text__p',
+  componentId: 's1ldn5q5-0'
+})(['margin:0;']);
+
+var Normal = p.extend(_templateObject, function (p) {
+  return p.theme.palette.primary;
+});
+
+var Small = p.extend(_templateObject2, function (p) {
+  return p.theme.palette.text.secondary;
+});
+
+var Text = function Text(_ref) {
+  var type = _ref.type,
+      rest = _objectWithoutProperties(_ref, ['type']);
+
+  if (type === 'normal') return _react2.default.createElement(Normal, rest);
+  if (type === 'small') return _react2.default.createElement(Small, rest);
+  return _react2.default.createElement(Normal, rest);
+};
+
+Text.propTypes = {
+  type: _propTypes2.default.oneOf(['normal', 'small'])
+};
+
+exports.default = Text;
+
+/***/ }),
+/* 8 */
+/***/ (function(module, exports) {
+
+module.exports = require("react-static");
+
+/***/ }),
+/* 9 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
 var _react = __webpack_require__(0);
@@ -492,72 +558,6 @@ Icon.propTypes = {
 exports.default = Icon;
 
 /***/ }),
-/* 8 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _templateObject = _taggedTemplateLiteral(['\n  font-weight: 300;\n  font-size: 16px;\n  line-height: 1.5;\n  color: ', ';\n'], ['\n  font-weight: 300;\n  font-size: 16px;\n  line-height: 1.5;\n  color: ', ';\n']),
-    _templateObject2 = _taggedTemplateLiteral(['\n  font-size: 12px;\n  color: ', ';\n'], ['\n  font-size: 12px;\n  color: ', ';\n']);
-
-var _react = __webpack_require__(0);
-
-var _react2 = _interopRequireDefault(_react);
-
-var _propTypes = __webpack_require__(2);
-
-var _propTypes2 = _interopRequireDefault(_propTypes);
-
-var _styledComponents = __webpack_require__(1);
-
-var _styledComponents2 = _interopRequireDefault(_styledComponents);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
-
-function _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
-
-var p = _styledComponents2.default.p.withConfig({
-  displayName: 'Text__p',
-  componentId: 's1ldn5q5-0'
-})(['margin:0;']);
-
-var Normal = p.extend(_templateObject, function (p) {
-  return p.theme.palette.primary;
-});
-
-var Small = p.extend(_templateObject2, function (p) {
-  return p.theme.palette.text.secondary;
-});
-
-var Text = function Text(_ref) {
-  var type = _ref.type,
-      rest = _objectWithoutProperties(_ref, ['type']);
-
-  if (type === 'normal') return _react2.default.createElement(Normal, rest);
-  if (type === 'small') return _react2.default.createElement(Small, rest);
-  return _react2.default.createElement(Normal, rest);
-};
-
-Text.propTypes = {
-  type: _propTypes2.default.oneOf(['normal', 'small'])
-};
-
-exports.default = Text;
-
-/***/ }),
-/* 9 */
-/***/ (function(module, exports) {
-
-module.exports = require("react-static");
-
-/***/ }),
 /* 10 */
 /***/ (function(module, exports) {
 
@@ -587,7 +587,7 @@ var _propTypes = __webpack_require__(2);
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
-var _reactStatic = __webpack_require__(9);
+var _reactStatic = __webpack_require__(8);
 
 var _styledComponents = __webpack_require__(1);
 
@@ -770,6 +770,288 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
+var _templateObject = _taggedTemplateLiteral(['\n    flex-flow: column;\n  '], ['\n    flex-flow: column;\n  ']),
+    _templateObject2 = _taggedTemplateLiteral(['\n    width: 100%;\n    margin: 0 0 16px 0;\n  '], ['\n    width: 100%;\n    margin: 0 0 16px 0;\n  ']),
+    _templateObject3 = _taggedTemplateLiteral(['\n    justify-content: center;\n    width: 100%;\n  '], ['\n    justify-content: center;\n    width: 100%;\n  ']);
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _styledComponents = __webpack_require__(1);
+
+var _styledComponents2 = _interopRequireDefault(_styledComponents);
+
+var _styles = __webpack_require__(3);
+
+var _Team = __webpack_require__(5);
+
+var _Icon = __webpack_require__(9);
+
+var _Icon2 = _interopRequireDefault(_Icon);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
+
+var Container = _styledComponents2.default.div.withConfig({
+  displayName: '10_Footer__Container',
+  componentId: 's17hdqcd-0'
+})(['display:flex;padding:16px 32px 16px 32px;', ';'], _styles.m.lessThan('medium')(_templateObject));
+
+var Block = _styledComponents2.default.div.withConfig({
+  displayName: '10_Footer__Block',
+  componentId: 's17hdqcd-1'
+})(['display:flex;flex-wrap:wrap;align-items:center;justify-content:center;width:', '%;margin-left:', '%;', ';'], 100 * 6 / 12, 100 * 3 / 12, _styles.m.lessThan('medium')(_templateObject2));
+
+var Wrap = _styledComponents2.default.div.withConfig({
+  displayName: '10_Footer__Wrap',
+  componentId: 's17hdqcd-2'
+})(['display:flex;align-items:center;justify-content:flex-end;width:', '%;', ';'], 100 * 3 / 12, _styles.m.lessThan('medium')(_templateObject3));
+
+var Copyright = _styledComponents2.default.p.withConfig({
+  displayName: '10_Footer__Copyright',
+  componentId: 's17hdqcd-3'
+})(['font-size:16px;color:', ';margin:0;'], function (p) {
+  return p.theme.palette.text.secondary;
+});
+
+var Icon = (0, _styledComponents2.default)(_Icon2.default).withConfig({
+  displayName: '10_Footer__Icon',
+  componentId: 's17hdqcd-4'
+})(['font-size:24px;color:', ';'], function (p) {
+  return p.theme.palette.primary;
+});
+
+var Link = _styledComponents2.default.a.withConfig({
+  displayName: '10_Footer__Link',
+  componentId: 's17hdqcd-5'
+})(['margin:16px;']);
+
+var Footer = function Footer(p) {
+  return _react2.default.createElement(
+    _Team.Root,
+    p,
+    _react2.default.createElement(
+      Container,
+      null,
+      _react2.default.createElement(
+        Block,
+        null,
+        _react2.default.createElement(
+          Link,
+          { href: '#' },
+          _react2.default.createElement(
+            Icon,
+            null,
+            'gitlab'
+          )
+        ),
+        _react2.default.createElement(
+          Link,
+          { href: '#' },
+          _react2.default.createElement(
+            Icon,
+            null,
+            'telegram'
+          )
+        ),
+        _react2.default.createElement(
+          Link,
+          { href: '#' },
+          _react2.default.createElement(
+            Icon,
+            null,
+            'slack'
+          )
+        ),
+        _react2.default.createElement(
+          Link,
+          { href: '#' },
+          _react2.default.createElement(
+            Icon,
+            null,
+            'medium'
+          )
+        ),
+        _react2.default.createElement(
+          Link,
+          { href: '#' },
+          _react2.default.createElement(
+            Icon,
+            null,
+            'twitter'
+          )
+        ),
+        _react2.default.createElement(
+          Link,
+          { href: '#' },
+          _react2.default.createElement(
+            Icon,
+            null,
+            'instagram'
+          )
+        ),
+        _react2.default.createElement(
+          Link,
+          { href: '#' },
+          _react2.default.createElement(
+            Icon,
+            null,
+            'facebook'
+          )
+        ),
+        _react2.default.createElement(
+          Link,
+          { href: '#' },
+          _react2.default.createElement(
+            Icon,
+            null,
+            'envelope'
+          )
+        )
+      ),
+      _react2.default.createElement(
+        Wrap,
+        null,
+        _react2.default.createElement(
+          Copyright,
+          null,
+          '\xA9 DEIP, ',
+          new Date().getFullYear()
+        )
+      )
+    )
+  );
+};
+
+exports.default = Footer;
+
+/***/ }),
+/* 13 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _templateObject = _taggedTemplateLiteral(['\n    font-size: 16px;\n    letter-spacing: 0;\n  '], ['\n    font-size: 16px;\n    letter-spacing: 0;\n  ']),
+    _templateObject2 = _taggedTemplateLiteral(['\n    display: flex;\n    flex-flow: column;\n  '], ['\n    display: flex;\n    flex-flow: column;\n  ']),
+    _templateObject3 = _taggedTemplateLiteral(['\n      margin: 0 16px 16px 16px;\n    '], ['\n      margin: 0 16px 16px 16px;\n    ']),
+    _templateObject4 = _taggedTemplateLiteral(['\n      width: 225px;\n      margin-bottom: 16px;\n    '], ['\n      width: 225px;\n      margin-bottom: 16px;\n    ']);
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _propTypes = __webpack_require__(2);
+
+var _propTypes2 = _interopRequireDefault(_propTypes);
+
+var _styledComponents = __webpack_require__(1);
+
+var _styledComponents2 = _interopRequireDefault(_styledComponents);
+
+var _styles = __webpack_require__(3);
+
+var _Menu = __webpack_require__(11);
+
+var _Menu2 = _interopRequireDefault(_Menu);
+
+var _MobileMenu = __webpack_require__(14);
+
+var _MobileMenu2 = _interopRequireDefault(_MobileMenu);
+
+var _HeroBackground = __webpack_require__(24);
+
+var _HeroBackground2 = _interopRequireDefault(_HeroBackground);
+
+var _Logo = __webpack_require__(26);
+
+var _Logo2 = _interopRequireDefault(_Logo);
+
+var _Button = __webpack_require__(6);
+
+var _Button2 = _interopRequireDefault(_Button);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
+
+var Root = _styledComponents2.default.section.withConfig({
+  displayName: '00_Hero__Root',
+  componentId: 's17xwbgr-0'
+})(['position:relative;text-align:center;height:100vh;']);
+
+var Container = _styledComponents2.default.div.withConfig({
+  displayName: '00_Hero__Container',
+  componentId: 's17xwbgr-1'
+})(['', ';display:flex;flex-flow:column;align-items:center;justify-content:center;padding-bottom:5vh;height:100vh;'], _styles.container);
+
+var Description = _styledComponents2.default.p.withConfig({
+  displayName: '00_Hero__Description',
+  componentId: 's17xwbgr-2'
+})(['font-weight:400;font-size:24px;letter-spacing:2.16px;color:#fff;margin:0;', ';'], _styles.m.lessThan('small')(_templateObject));
+
+var ButtonsLine = _styledComponents2.default.div.withConfig({
+  displayName: '00_Hero__ButtonsLine',
+  componentId: 's17xwbgr-3'
+})(['text-align:center;margin-top:50px;', ';', '{', ';', ';}'], _styles.m.lessThan('small')(_templateObject2), _Button2.default, _styles.m.greaterThan('small')(_templateObject3), _styles.m.lessThan('small')(_templateObject4));
+
+var Hero = function Hero() {
+  return _react2.default.createElement(
+    Root,
+    null,
+    _react2.default.createElement(_HeroBackground2.default, null),
+    _react2.default.createElement(_Menu2.default, null),
+    _react2.default.createElement(_MobileMenu2.default, null),
+    _react2.default.createElement(
+      Container,
+      null,
+      _react2.default.createElement(
+        _Logo2.default,
+        null,
+        'DEIP'
+      ),
+      _react2.default.createElement(
+        Description,
+        null,
+        'Decentralized research platform'
+      ),
+      _react2.default.createElement(
+        ButtonsLine,
+        null,
+        _react2.default.createElement(
+          _Button2.default,
+          { primary: true, to: '/join' },
+          'join us'
+        ),
+        _react2.default.createElement(
+          _Button2.default,
+          { contrast: true, to: '/whitepaper' },
+          'white paper'
+        )
+      )
+    )
+  );
+};
+
+exports.default = Hero;
+
+/***/ }),
+/* 14 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 var _templateObject = _taggedTemplateLiteral(['\n    display: none;\n  '], ['\n    display: none;\n  ']);
@@ -790,7 +1072,7 @@ var _styles = __webpack_require__(3);
 
 var _Menu = __webpack_require__(11);
 
-var _Icon = __webpack_require__(7);
+var _Icon = __webpack_require__(9);
 
 var _Icon2 = _interopRequireDefault(_Icon);
 
@@ -975,7 +1257,7 @@ MobileMenu.propTypes = {
 exports.default = MobileMenu;
 
 /***/ }),
-/* 13 */
+/* 15 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1001,7 +1283,7 @@ var _styledComponents2 = _interopRequireDefault(_styledComponents);
 
 var _styles = __webpack_require__(3);
 
-var _Text = __webpack_require__(8);
+var _Text = __webpack_require__(7);
 
 var _Text2 = _interopRequireDefault(_Text);
 
@@ -1009,7 +1291,7 @@ var _Heading = __webpack_require__(4);
 
 var _Heading2 = _interopRequireDefault(_Heading);
 
-var _Icon = __webpack_require__(7);
+var _Icon = __webpack_require__(9);
 
 var _Icon2 = _interopRequireDefault(_Icon);
 
@@ -1125,175 +1407,7 @@ Person.propTypes = {
 exports.default = Person;
 
 /***/ }),
-/* 14 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _templateObject = _taggedTemplateLiteral(['\n    flex-flow: column;\n  '], ['\n    flex-flow: column;\n  ']),
-    _templateObject2 = _taggedTemplateLiteral(['\n    width: 100%;\n    margin: 0 0 16px 0;\n  '], ['\n    width: 100%;\n    margin: 0 0 16px 0;\n  ']),
-    _templateObject3 = _taggedTemplateLiteral(['\n    justify-content: center;\n    width: 100%;\n  '], ['\n    justify-content: center;\n    width: 100%;\n  ']);
-
-var _react = __webpack_require__(0);
-
-var _react2 = _interopRequireDefault(_react);
-
-var _styledComponents = __webpack_require__(1);
-
-var _styledComponents2 = _interopRequireDefault(_styledComponents);
-
-var _styles = __webpack_require__(3);
-
-var _Team = __webpack_require__(5);
-
-var _Icon = __webpack_require__(7);
-
-var _Icon2 = _interopRequireDefault(_Icon);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
-
-var Container = _styledComponents2.default.div.withConfig({
-  displayName: '10_Footer__Container',
-  componentId: 's17hdqcd-0'
-})(['display:flex;padding:16px 32px 16px 32px;', ';'], _styles.m.lessThan('medium')(_templateObject));
-
-var Block = _styledComponents2.default.div.withConfig({
-  displayName: '10_Footer__Block',
-  componentId: 's17hdqcd-1'
-})(['display:flex;flex-wrap:wrap;align-items:center;justify-content:center;width:', '%;margin-left:', '%;', ';'], 100 * 6 / 12, 100 * 3 / 12, _styles.m.lessThan('medium')(_templateObject2));
-
-var Wrap = _styledComponents2.default.div.withConfig({
-  displayName: '10_Footer__Wrap',
-  componentId: 's17hdqcd-2'
-})(['display:flex;align-items:center;justify-content:flex-end;width:', '%;', ';'], 100 * 3 / 12, _styles.m.lessThan('medium')(_templateObject3));
-
-var Copyright = _styledComponents2.default.p.withConfig({
-  displayName: '10_Footer__Copyright',
-  componentId: 's17hdqcd-3'
-})(['font-size:16px;color:', ';margin:0;'], function (p) {
-  return p.theme.palette.text.secondary;
-});
-
-var Icon = (0, _styledComponents2.default)(_Icon2.default).withConfig({
-  displayName: '10_Footer__Icon',
-  componentId: 's17hdqcd-4'
-})(['font-size:24px;color:', ';'], function (p) {
-  return p.theme.palette.primary;
-});
-
-var Link = _styledComponents2.default.a.withConfig({
-  displayName: '10_Footer__Link',
-  componentId: 's17hdqcd-5'
-})(['margin:16px;']);
-
-var Footer = function Footer(p) {
-  return _react2.default.createElement(
-    _Team.Root,
-    p,
-    _react2.default.createElement(
-      Container,
-      null,
-      _react2.default.createElement(
-        Block,
-        null,
-        _react2.default.createElement(
-          Link,
-          { href: '#' },
-          _react2.default.createElement(
-            Icon,
-            null,
-            'gitlab'
-          )
-        ),
-        _react2.default.createElement(
-          Link,
-          { href: '#' },
-          _react2.default.createElement(
-            Icon,
-            null,
-            'telegram'
-          )
-        ),
-        _react2.default.createElement(
-          Link,
-          { href: '#' },
-          _react2.default.createElement(
-            Icon,
-            null,
-            'slack'
-          )
-        ),
-        _react2.default.createElement(
-          Link,
-          { href: '#' },
-          _react2.default.createElement(
-            Icon,
-            null,
-            'medium'
-          )
-        ),
-        _react2.default.createElement(
-          Link,
-          { href: '#' },
-          _react2.default.createElement(
-            Icon,
-            null,
-            'twitter'
-          )
-        ),
-        _react2.default.createElement(
-          Link,
-          { href: '#' },
-          _react2.default.createElement(
-            Icon,
-            null,
-            'instagram'
-          )
-        ),
-        _react2.default.createElement(
-          Link,
-          { href: '#' },
-          _react2.default.createElement(
-            Icon,
-            null,
-            'facebook'
-          )
-        ),
-        _react2.default.createElement(
-          Link,
-          { href: '#' },
-          _react2.default.createElement(
-            Icon,
-            null,
-            'envelope'
-          )
-        )
-      ),
-      _react2.default.createElement(
-        Wrap,
-        null,
-        _react2.default.createElement(
-          Copyright,
-          null,
-          '\xA9 DEIP, ',
-          new Date().getFullYear()
-        )
-      )
-    )
-  );
-};
-
-exports.default = Footer;
-
-/***/ }),
-/* 15 */
+/* 16 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1307,15 +1421,15 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactDom = __webpack_require__(16);
+var _reactDom = __webpack_require__(17);
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
-var _reactHotLoader = __webpack_require__(17);
+var _reactHotLoader = __webpack_require__(18);
 
 var _styledComponents = __webpack_require__(1);
 
-var _App = __webpack_require__(18);
+var _App = __webpack_require__(19);
 
 var _App2 = _interopRequireDefault(_App);
 
@@ -1350,19 +1464,19 @@ if (typeof document !== 'undefined') {
 }
 
 /***/ }),
-/* 16 */
+/* 17 */
 /***/ (function(module, exports) {
 
 module.exports = require("react-dom");
 
 /***/ }),
-/* 17 */
+/* 18 */
 /***/ (function(module, exports) {
 
 module.exports = require("react-hot-loader");
 
 /***/ }),
-/* 18 */
+/* 19 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1378,13 +1492,13 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactStatic = __webpack_require__(9);
+var _reactStatic = __webpack_require__(8);
 
 var _styledComponents = __webpack_require__(1);
 
 var _styledComponents2 = _interopRequireDefault(_styledComponents);
 
-var _reactStaticRoutes = __webpack_require__(19);
+var _reactStaticRoutes = __webpack_require__(20);
 
 var _reactStaticRoutes2 = _interopRequireDefault(_reactStaticRoutes);
 
@@ -1426,7 +1540,7 @@ exports.default = function () {
 };
 
 /***/ }),
-/* 19 */
+/* 20 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1442,9 +1556,9 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactRouterDom = __webpack_require__(20);
+var _reactRouterDom = __webpack_require__(21);
 
-var _Index = __webpack_require__(21);
+var _Index = __webpack_require__(22);
 
 var _Index2 = _interopRequireDefault(_Index);
 
@@ -1452,7 +1566,11 @@ var _Join = __webpack_require__(60);
 
 var _Join2 = _interopRequireDefault(_Join);
 
-var _ = __webpack_require__(69);
+var _Whitepaper = __webpack_require__(69);
+
+var _Whitepaper2 = _interopRequireDefault(_Whitepaper);
+
+var _ = __webpack_require__(72);
 
 var _2 = _interopRequireDefault(_);
 
@@ -1467,9 +1585,10 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 var templateMap = {
   t_0: _Index2.default,
   t_1: _Join2.default,
-  t_2: _2.default
+  t_2: _Whitepaper2.default,
+  t_3: _2.default
 };
-var templateTree = { c: { "404": { t: "t_2" }, "/": { t: "t_0" }, "join": { t: "t_1" } } };
+var templateTree = { c: { "404": { t: "t_3" }, "/": { t: "t_0" }, "join": { t: "t_1" }, "whitepaper": { t: "t_2" } } };
 
 var getTemplateForPath = function getTemplateForPath(path) {
   var parts = path === '/' ? ['/'] : path.split('/').filter(function (d) {
@@ -1514,13 +1633,13 @@ var Routes = function (_Component) {
 exports.default = Routes;
 
 /***/ }),
-/* 20 */
+/* 21 */
 /***/ (function(module, exports) {
 
 module.exports = require("react-router-dom");
 
 /***/ }),
-/* 21 */
+/* 22 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1534,9 +1653,9 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactStatic = __webpack_require__(9);
+var _reactStatic = __webpack_require__(8);
 
-var _Hero = __webpack_require__(22);
+var _Hero = __webpack_require__(13);
 
 var _Hero2 = _interopRequireDefault(_Hero);
 
@@ -1576,7 +1695,7 @@ var _Subscribe = __webpack_require__(57);
 
 var _Subscribe2 = _interopRequireDefault(_Subscribe);
 
-var _Footer = __webpack_require__(14);
+var _Footer = __webpack_require__(12);
 
 var _Footer2 = _interopRequireDefault(_Footer);
 
@@ -1602,120 +1721,6 @@ var Index = function Index(_ref) {
 };
 
 exports.default = (0, _reactStatic.getSiteProps)(Index);
-
-/***/ }),
-/* 22 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _templateObject = _taggedTemplateLiteral(['\n    font-size: 16px;\n    letter-spacing: 0;\n  '], ['\n    font-size: 16px;\n    letter-spacing: 0;\n  ']),
-    _templateObject2 = _taggedTemplateLiteral(['\n    display: flex;\n    flex-flow: column;\n  '], ['\n    display: flex;\n    flex-flow: column;\n  ']),
-    _templateObject3 = _taggedTemplateLiteral(['\n      margin: 0 16px 16px 16px;\n    '], ['\n      margin: 0 16px 16px 16px;\n    ']),
-    _templateObject4 = _taggedTemplateLiteral(['\n      width: 225px;\n      margin-bottom: 16px;\n    '], ['\n      width: 225px;\n      margin-bottom: 16px;\n    ']);
-
-var _react = __webpack_require__(0);
-
-var _react2 = _interopRequireDefault(_react);
-
-var _propTypes = __webpack_require__(2);
-
-var _propTypes2 = _interopRequireDefault(_propTypes);
-
-var _styledComponents = __webpack_require__(1);
-
-var _styledComponents2 = _interopRequireDefault(_styledComponents);
-
-var _styles = __webpack_require__(3);
-
-var _Menu = __webpack_require__(11);
-
-var _Menu2 = _interopRequireDefault(_Menu);
-
-var _MobileMenu = __webpack_require__(12);
-
-var _MobileMenu2 = _interopRequireDefault(_MobileMenu);
-
-var _HeroBackground = __webpack_require__(24);
-
-var _HeroBackground2 = _interopRequireDefault(_HeroBackground);
-
-var _Logo = __webpack_require__(26);
-
-var _Logo2 = _interopRequireDefault(_Logo);
-
-var _Button = __webpack_require__(6);
-
-var _Button2 = _interopRequireDefault(_Button);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
-
-var Root = _styledComponents2.default.section.withConfig({
-  displayName: '00_Hero__Root',
-  componentId: 's1gzheyy-0'
-})(['position:relative;text-align:center;height:100vh;']);
-
-var Container = _styledComponents2.default.div.withConfig({
-  displayName: '00_Hero__Container',
-  componentId: 's1gzheyy-1'
-})(['', ';display:flex;flex-flow:column;align-items:center;justify-content:center;padding-bottom:5vh;height:100vh;'], _styles.container);
-
-var Description = _styledComponents2.default.p.withConfig({
-  displayName: '00_Hero__Description',
-  componentId: 's1gzheyy-2'
-})(['font-weight:400;font-size:24px;letter-spacing:2.16px;color:#fff;margin:0;', ';'], _styles.m.lessThan('small')(_templateObject));
-
-var ButtonsLine = _styledComponents2.default.div.withConfig({
-  displayName: '00_Hero__ButtonsLine',
-  componentId: 's1gzheyy-3'
-})(['text-align:center;margin-top:50px;', ';', '{', ';', ';}'], _styles.m.lessThan('small')(_templateObject2), _Button2.default, _styles.m.greaterThan('small')(_templateObject3), _styles.m.lessThan('small')(_templateObject4));
-
-var Hero = function Hero() {
-  return _react2.default.createElement(
-    Root,
-    null,
-    _react2.default.createElement(_HeroBackground2.default, null),
-    _react2.default.createElement(_Menu2.default, null),
-    _react2.default.createElement(_MobileMenu2.default, null),
-    _react2.default.createElement(
-      Container,
-      null,
-      _react2.default.createElement(
-        _Logo2.default,
-        null,
-        'DEIP'
-      ),
-      _react2.default.createElement(
-        Description,
-        null,
-        'Decentralized research platform'
-      ),
-      _react2.default.createElement(
-        ButtonsLine,
-        null,
-        _react2.default.createElement(
-          _Button2.default,
-          { primary: true, to: '/join' },
-          'join us'
-        ),
-        _react2.default.createElement(
-          _Button2.default,
-          { contrast: true, to: '/' },
-          'white paper'
-        )
-      )
-    )
-  );
-};
-
-exports.default = Hero;
 
 /***/ }),
 /* 23 */
@@ -1963,7 +1968,7 @@ var _Heading = __webpack_require__(4);
 
 var _Heading2 = _interopRequireDefault(_Heading);
 
-var _Text = __webpack_require__(8);
+var _Text = __webpack_require__(7);
 
 var _Text2 = _interopRequireDefault(_Text);
 
@@ -2059,7 +2064,7 @@ var _Heading = __webpack_require__(4);
 
 var _Heading2 = _interopRequireDefault(_Heading);
 
-var _Text = __webpack_require__(8);
+var _Text = __webpack_require__(7);
 
 var _Text2 = _interopRequireDefault(_Text);
 
@@ -2701,7 +2706,7 @@ var _Heading = __webpack_require__(4);
 
 var _Heading2 = _interopRequireDefault(_Heading);
 
-var _Person = __webpack_require__(13);
+var _Person = __webpack_require__(15);
 
 var _Person2 = _interopRequireDefault(_Person);
 
@@ -2840,7 +2845,7 @@ var _Heading = __webpack_require__(4);
 
 var _Heading2 = _interopRequireDefault(_Heading);
 
-var _Text = __webpack_require__(8);
+var _Text = __webpack_require__(7);
 
 var _Text2 = _interopRequireDefault(_Text);
 
@@ -3219,7 +3224,7 @@ var _styledComponents = __webpack_require__(1);
 
 var _styledComponents2 = _interopRequireDefault(_styledComponents);
 
-var _Text = __webpack_require__(8);
+var _Text = __webpack_require__(7);
 
 var _Text2 = _interopRequireDefault(_Text);
 
@@ -3468,13 +3473,13 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactStatic = __webpack_require__(9);
+var _reactStatic = __webpack_require__(8);
 
 var _Poll = __webpack_require__(61);
 
 var _Poll2 = _interopRequireDefault(_Poll);
 
-var _Footer = __webpack_require__(14);
+var _Footer = __webpack_require__(12);
 
 var _Footer2 = _interopRequireDefault(_Footer);
 
@@ -3526,7 +3531,7 @@ var _Menu = __webpack_require__(11);
 
 var _Menu2 = _interopRequireDefault(_Menu);
 
-var _MobileMenu = __webpack_require__(12);
+var _MobileMenu = __webpack_require__(14);
 
 var _MobileMenu2 = _interopRequireDefault(_MobileMenu);
 
@@ -3534,7 +3539,7 @@ var _Heading = __webpack_require__(4);
 
 var _Heading2 = _interopRequireDefault(_Heading);
 
-var _Text = __webpack_require__(8);
+var _Text = __webpack_require__(7);
 
 var _Text2 = _interopRequireDefault(_Text);
 
@@ -4381,7 +4386,7 @@ var _styledComponents = __webpack_require__(1);
 
 var _styledComponents2 = _interopRequireDefault(_styledComponents);
 
-var _Icon = __webpack_require__(7);
+var _Icon = __webpack_require__(9);
 
 var _Icon2 = _interopRequireDefault(_Icon);
 
@@ -4475,7 +4480,7 @@ var _styledComponents2 = _interopRequireDefault(_styledComponents);
 
 var _polished = __webpack_require__(10);
 
-var _Icon = __webpack_require__(7);
+var _Icon = __webpack_require__(9);
 
 var _Icon2 = _interopRequireDefault(_Icon);
 
@@ -4564,7 +4569,7 @@ var _styledComponents2 = _interopRequireDefault(_styledComponents);
 
 var _polished = __webpack_require__(10);
 
-var _Icon = __webpack_require__(7);
+var _Icon = __webpack_require__(9);
 
 var _Icon2 = _interopRequireDefault(_Icon);
 
@@ -4701,6 +4706,193 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
+var _reactStatic = __webpack_require__(8);
+
+var _Hero = __webpack_require__(13);
+
+var _Hero2 = _interopRequireDefault(_Hero);
+
+var _Footer = __webpack_require__(12);
+
+var _Footer2 = _interopRequireDefault(_Footer);
+
+var _LanguageSwitcher = __webpack_require__(70);
+
+var _LanguageSwitcher2 = _interopRequireDefault(_LanguageSwitcher);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var Whitepaper = function Whitepaper(_ref) {
+  var someData = _ref.someData;
+  return _react2.default.createElement(
+    'div',
+    null,
+    _react2.default.createElement(_LanguageSwitcher2.default, { id: 'language_switcher' })
+  );
+};
+
+exports.default = (0, _reactStatic.getSiteProps)(Whitepaper);
+
+/***/ }),
+/* 70 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _styledComponents = __webpack_require__(1);
+
+var _styledComponents2 = _interopRequireDefault(_styledComponents);
+
+var _Team = __webpack_require__(5);
+
+var _Heading = __webpack_require__(4);
+
+var _Heading2 = _interopRequireDefault(_Heading);
+
+var _Button = __webpack_require__(6);
+
+var _Button2 = _interopRequireDefault(_Button);
+
+var _Language = __webpack_require__(71);
+
+var _Language2 = _interopRequireDefault(_Language);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var Button = (0, _styledComponents2.default)(_Button2.default).withConfig({
+  displayName: '11_LanguageSwitcher__Button',
+  componentId: 's1d3qvf7-0'
+})(['margin-top:48px;']);
+
+var Language = (0, _styledComponents2.default)(_Language2.default).withConfig({
+  displayName: '11_LanguageSwitcher__Language',
+  componentId: 's1d3qvf7-1'
+})(['margin-top:12px;text-align:center;']);
+
+var LanguageSwitcher = function LanguageSwitcher(p) {
+  return _react2.default.createElement(
+    _Team.Root,
+    p,
+    _react2.default.createElement(
+      _Team.Container,
+      null,
+      _react2.default.createElement(
+        _Heading2.default,
+        null,
+        'DEIP White Paper'
+      ),
+      _react2.default.createElement(
+        _Heading2.default,
+        { type: 'sub' },
+        'Change language'
+      ),
+      _react2.default.createElement(
+        Language,
+        { href: '/WP_DEIP_ENG.pdf' },
+        'English'
+      ),
+      _react2.default.createElement(
+        Language,
+        { href: '/WP_DEIP_RUS.pdf' },
+        '\u0420\u0443\u0441\u0441\u043A\u0438\u0439'
+      )
+    )
+  );
+};
+
+exports.default = LanguageSwitcher;
+
+/***/ }),
+/* 71 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _propTypes = __webpack_require__(2);
+
+var _propTypes2 = _interopRequireDefault(_propTypes);
+
+var _styledComponents = __webpack_require__(1);
+
+var _styledComponents2 = _interopRequireDefault(_styledComponents);
+
+var _Text = __webpack_require__(7);
+
+var _Text2 = _interopRequireDefault(_Text);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
+
+var Root = _styledComponents2.default.a.withConfig({
+  displayName: 'Language__Root',
+  componentId: 'docu6p-0'
+})(['display:flex;align-items:center;border-radius:4px;border:1px solid ', ';text-align:left;text-decoration:none;padding:24px 32px;transition:background 0.15s,border 0.15s;&:hover{background:', ';border:1px solid ', ';}p{margin:0;width:100%;transition:color 0.15s;}'], function (p) {
+  return p.theme.palette.primaryLight;
+}, function (p) {
+  return p.theme.palette.background.primary;
+}, function (p) {
+  return p.theme.palette.primary;
+});
+
+var Language = function Language(_ref) {
+  var href = _ref.href,
+      children = _ref.children,
+      rest = _objectWithoutProperties(_ref, ['href', 'children']);
+
+  return _react2.default.createElement(
+    Root,
+    _extends({ href: href }, rest),
+    _react2.default.createElement(
+      _Text2.default,
+      null,
+      children
+    )
+  );
+};
+
+Language.propTypes = {
+  href: _propTypes2.default.string.isRequired,
+  children: _propTypes2.default.node.isRequired
+};
+
+exports.default = Language;
+
+/***/ }),
+/* 72 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 //
@@ -4720,4 +4912,4 @@ exports.default = function () {
 /***/ })
 /******/ ]);
 });
-//# sourceMappingURL=app.static.81ad0376.js.map
+//# sourceMappingURL=app.static.56c49600.js.map
