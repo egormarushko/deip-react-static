@@ -4770,12 +4770,12 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 var Button = (0, _styledComponents2.default)(_Button2.default).withConfig({
   displayName: '11_LanguageSwitcher__Button',
-  componentId: 's1d3qvf7-0'
+  componentId: 's1mbrx5t-0'
 })(['margin-top:48px;']);
 
 var Language = (0, _styledComponents2.default)(_Language2.default).withConfig({
   displayName: '11_LanguageSwitcher__Language',
-  componentId: 's1d3qvf7-1'
+  componentId: 's1mbrx5t-1'
 })(['margin-top:12px;text-align:center;']);
 
 var LanguageSwitcher = function LanguageSwitcher(p) {
@@ -4793,7 +4793,7 @@ var LanguageSwitcher = function LanguageSwitcher(p) {
       _react2.default.createElement(
         _Heading2.default,
         { type: 'sub' },
-        'Change language'
+        'Choose language'
       ),
       _react2.default.createElement(
         Language,
@@ -4912,4 +4912,4 @@ exports.default = function () {
 /***/ })
 /******/ ]);
 });
-//# sourceMappingURL=app.static.56c49600.js.map
+//# sourceMappingURL=app.static.48118f43.js.map
