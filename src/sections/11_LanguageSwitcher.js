@@ -15,7 +15,7 @@ const LanguageSwitcher = p => (
   <Root {...p}>
     <Container>
       <Heading>DEIP White Paper</Heading>
-      <Heading type="sub">Change language</Heading>
+      <Heading type="sub">Choose language</Heading>
       <Language href="/WP_DEIP_ENG.pdf">
         English
       </Language>
