@@ -52,12 +52,7 @@ const Vision = p => (
         “Fair rewarding for contribution to human knowledge creation”
       </Heading>
       <Text>
-        We aim to revolutionize science and resolve its current crisis by
-        applying decentralization to most important processes, like publication,
-        financing, assessment of expertises, peer review and collaboration. We
-        are trying to create an environment, where all researchers can
-        collaborate as efficient as possible ocusing on primary goal - to gain
-        new insights into Universe for Humanity.
+        We believe that science will be open and anyone will be able to use results of scientific findings. This should reveal huge human capital and boost knowledge creation. New science will work on global scale and let everyone from any place in the world to participate in scientific research. Review and assessment of academic papers will be transparent and controlled by decentralized protocol, which increases collaboration and incentivizes contribution to global science.
       </Text>
     </Block>
     <Decor src={vision} />
