@@ -13,6 +13,8 @@ import arusetskiy from 'components/images/team/arusetskiy.png'
 import akulichkin from 'components/images/team/akulichkin.png'
 import nsvyaznoy from 'components/images/team/nsvyaznoy.png'
 import emarushko from 'components/images/team/emarushko.png'
+import ayantsevich from 'components/images/team/ayantsevich.png'
+import dklevzhits from 'components/images/team/dklevzhits.png'
 
 const personsFirstRow = [
   { src: ashkor, name: 'Alex Shkor', role: 'CHIEF EXECUTIVE OFFICER', linkedin: 'https://www.linkedin.com/in/alexshkor/', github: 'https://github.com/alexshkor' },
@@ -26,6 +28,11 @@ const personsSecondRow = [
   { src: akulichkin, name: 'Anton Kulichkin', role: 'CHIEF PARTNERSHIPS OFFICER', linkedin: 'https://www.linkedin.com/in/anton-kulichkin-b158a886/'},
   { src: nsvyaznoy, name: 'Nikolay Svyaznoy', role: 'CHIEF MARKETING OFFICER', linkedin: 'src'},
   { src: emarushko, name: 'Egor Marushko', role: 'CORE DEVELOPER', linkedin: 'https://www.linkedin.com/in/egor-marushko-477175122/', github: 'https://github.com/egormarushko'},
+]
+
+const personsThirdRow = [
+  { src: ayantsevich, name: 'Aleksei Yantsevich', role: 'SENIOR RESEARCHER IN BIOORGANIC CHEMISTRY, PhD' },
+  { src: dklevzhits, name: 'Dmitry Klevzhits', role: 'PhD', linkedin: 'https://www.linkedin.com/in/dmitry-klevzhits-25917413/'},
 ]
 
 // reused in the advisors section
@@ -76,6 +83,7 @@ const Team = p => (
       <Heading type="sub">Who's develop DEIP platform</Heading>
       <Block>{personsFirstRow.map(p => <Person {...p} key={p.name} />)}</Block>
       <Block>{personsSecondRow.map(p => <Person {...p} key={p.name} />)}</Block>
+      <Block>{personsThirdRow.map(p => <Person {...p} key={p.name} />)}</Block>      
     </Container>
   </Root>
 )
