@@ -49,7 +49,7 @@ const Vision = p => (
     <Block>
       <Heading>Our vision</Heading>
       <Heading type="sub">
-        “Fair rewarding for contribution to human knowledge creation”
+        “Open science and rewarding for knowledge creation”
       </Heading>
       <Text>
         We believe that science will be open and anyone will be able to use results of scientific findings. This should reveal huge human capital and boost knowledge creation. New science will work on global scale and let everyone from any place in the world to participate in scientific research. Review and assessment of academic papers will be transparent and controlled by decentralized protocol, which increases collaboration and incentivizes contribution to global science.
