@@ -1999,17 +1999,17 @@ function _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defi
 
 var Root = _styledComponents2.default.section.withConfig({
   displayName: '01_Vision__Root',
-  componentId: 'xphz6l-0'
+  componentId: 'xugmet-0'
 })(['overflow:hidden;position:relative;display:flex;align-items:center;justify-content:space-between;height:100vh;', ';'], _styles.m.lessThan('small')(_templateObject));
 
 var Block = _styledComponents2.default.div.withConfig({
   displayName: '01_Vision__Block',
-  componentId: 'xphz6l-1'
+  componentId: 'xugmet-1'
 })(['display:inline-block;margin-left:', '%;width:', '%;', ';'], 100 / 12, 100 * 5 / 12, _styles.m.lessThan('small')(_templateObject2));
 
 var Decor = _styledComponents2.default.img.withConfig({
   displayName: '01_Vision__Decor',
-  componentId: 'xphz6l-2'
+  componentId: 'xugmet-2'
 })(['height:40vw;', ';'], _styles.m.lessThan('small')(_templateObject3));
 
 var Vision = function Vision(p) {
@@ -2032,7 +2032,7 @@ var Vision = function Vision(p) {
       _react2.default.createElement(
         _Text2.default,
         null,
-        'We aim to revolutionize science and resolve its current crisis by applying decentralization to most important processes, like publication, financing, assessment of expertises, peer review and collaboration. We are trying to create an environment, where all researchers can collaborate as efficient as possible ocusing on primary goal - to gain new insights into Universe for Humanity.'
+        'We believe that science will be open and anyone will be able to use results of scientific findings. This should reveal huge human capital and boost knowledge creation. New science will work on global scale and let everyone from any place in the world to participate in scientific research. Review and assessment of academic papers will be transparent and controlled by decentralized protocol, which increases collaboration and incentivizes contribution to global science.'
       )
     ),
     _react2.default.createElement(Decor, { src: _vision2.default })
@@ -4941,4 +4941,4 @@ exports.default = function () {
 /***/ })
 /******/ ]);
 });
-//# sourceMappingURL=app.static.e71d7f74.js.map
+//# sourceMappingURL=app.static.a8fb54b6.js.map
