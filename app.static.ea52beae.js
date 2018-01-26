@@ -250,14 +250,6 @@ var _emarushko = __webpack_require__(42);
 
 var _emarushko2 = _interopRequireDefault(_emarushko);
 
-var _ayantsevich = __webpack_require__(43);
-
-var _ayantsevich2 = _interopRequireDefault(_ayantsevich);
-
-var _dklevzhits = __webpack_require__(44);
-
-var _dklevzhits2 = _interopRequireDefault(_dklevzhits);
-
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
@@ -266,30 +258,28 @@ var personsFirstRow = [{ src: _ashkor2.default, name: 'Alex Shkor', role: 'CHIEF
 
 var personsSecondRow = [{ src: _arusetskiy2.default, name: 'Artyom Rusetskiy', role: 'CHIEF SCIENTIST', linkedin: 'https://www.linkedin.com/in/artyom-ruseckiy-8521a89a/' }, { src: _akulichkin2.default, name: 'Anton Kulichkin', role: 'CHIEF PARTNERSHIPS OFFICER', linkedin: 'https://www.linkedin.com/in/anton-kulichkin-b158a886/' }, { src: _nsvyaznoy2.default, name: 'Nikolay Svyaznoy', role: 'CHIEF MARKETING OFFICER', linkedin: 'src' }, { src: _emarushko2.default, name: 'Egor Marushko', role: 'CORE DEVELOPER', linkedin: 'https://www.linkedin.com/in/egor-marushko-477175122/', github: 'https://github.com/egormarushko' }];
 
-var personsThirdRow = [{ src: _ayantsevich2.default, name: 'Aleksei Yantsevich', role: 'SENIOR RESEARCHER IN BIOORGANIC CHEMISTRY, PhD' }, { src: _dklevzhits2.default, name: 'Dmitry Klevzhits', role: 'PhD', linkedin: 'https://www.linkedin.com/in/dmitry-klevzhits-25917413/' }];
-
 // reused in the advisors section
 var Root = exports.Root = _styledComponents2.default.section.withConfig({
   displayName: '04_Team__Root',
-  componentId: 's13x24rv-0'
+  componentId: 's1o4tlo3-0'
 })(['', ';'], _styles.container);
 
 // reused in the advisors section
 var Container = exports.Container = _styledComponents2.default.div.withConfig({
   displayName: '04_Team__Container',
-  componentId: 's13x24rv-1'
+  componentId: 's1o4tlo3-1'
 })(['text-align:center;width:', '%;margin-left:', '%;margin-top:64px;margin-bottom:64px;', ';'], 100 * 2 / 3, 100 / 6, _styles.m.lessThan('small')(_templateObject));
 
 // reused in the advisors section
 var Block = exports.Block = _styledComponents2.default.div.withConfig({
   displayName: '04_Team__Block',
-  componentId: 's13x24rv-2'
+  componentId: 's1o4tlo3-2'
 })(['display:flex;justify-content:space-between;&:first-of-type{margin-top:48px;}', ';'], _styles.m.lessThan('small')(_templateObject2));
 
 // reused in the advisors section
 var Person = exports.Person = (0, _styledComponents2.default)(_Person2.default).withConfig({
   displayName: '04_Team__Person',
-  componentId: 's13x24rv-3'
+  componentId: 's1o4tlo3-3'
 })(['margin:24px 0;&:list-of-type{margin-bottom:0;}']);
 
 var Team = function Team(p) {
@@ -320,13 +310,6 @@ var Team = function Team(p) {
         Block,
         null,
         personsSecondRow.map(function (p) {
-          return _react2.default.createElement(Person, _extends({}, p, { key: p.name }));
-        })
-      ),
-      _react2.default.createElement(
-        Block,
-        null,
-        personsThirdRow.map(function (p) {
           return _react2.default.createElement(Person, _extends({}, p, { key: p.name }));
         })
       )
@@ -1692,7 +1675,7 @@ var _Team = __webpack_require__(5);
 
 var _Team2 = _interopRequireDefault(_Team);
 
-var _Advisors = __webpack_require__(49);
+var _Advisors = __webpack_require__(47);
 
 var _Advisors2 = _interopRequireDefault(_Advisors);
 
@@ -1999,17 +1982,17 @@ function _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defi
 
 var Root = _styledComponents2.default.section.withConfig({
   displayName: '01_Vision__Root',
-  componentId: 'xugmet-0'
+  componentId: 's1y6iquf-0'
 })(['overflow:hidden;position:relative;display:flex;align-items:center;justify-content:space-between;height:100vh;', ';'], _styles.m.lessThan('small')(_templateObject));
 
 var Block = _styledComponents2.default.div.withConfig({
   displayName: '01_Vision__Block',
-  componentId: 'xugmet-1'
+  componentId: 's1y6iquf-1'
 })(['display:inline-block;margin-left:', '%;width:', '%;', ';'], 100 / 12, 100 * 5 / 12, _styles.m.lessThan('small')(_templateObject2));
 
 var Decor = _styledComponents2.default.img.withConfig({
   displayName: '01_Vision__Decor',
-  componentId: 'xugmet-2'
+  componentId: 's1y6iquf-2'
 })(['height:40vw;', ';'], _styles.m.lessThan('small')(_templateObject3));
 
 var Vision = function Vision(p) {
@@ -2027,7 +2010,7 @@ var Vision = function Vision(p) {
       _react2.default.createElement(
         _Heading2.default,
         { type: 'sub' },
-        '\u201CFair rewarding for contribution to human knowledge creation\u201D'
+        '\u201COpen science and rewarding for knowledge creation\u201D'
       ),
       _react2.default.createElement(
         _Text2.default,
@@ -2277,13 +2260,13 @@ var _Heading = __webpack_require__(4);
 
 var _Heading2 = _interopRequireDefault(_Heading);
 
-var _Roadmap = __webpack_require__(45);
+var _Roadmap = __webpack_require__(43);
 
-var _roadmap = __webpack_require__(47);
+var _roadmap = __webpack_require__(45);
 
 var _roadmap2 = _interopRequireDefault(_roadmap);
 
-var _roadmap_mobile = __webpack_require__(48);
+var _roadmap_mobile = __webpack_require__(46);
 
 var _roadmap_mobile2 = _interopRequireDefault(_roadmap_mobile);
 
@@ -2454,18 +2437,6 @@ module.exports = __webpack_require__.p + "static/emarushko.9a95db57.png";
 /* 43 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "static/ayantsevich.ac4ef1f3.png";
-
-/***/ }),
-/* 44 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/dklevzhits.fba700ae.png";
-
-/***/ }),
-/* 45 */
-/***/ (function(module, exports, __webpack_require__) {
-
 "use strict";
 
 
@@ -2499,7 +2470,7 @@ var _styledComponents2 = _interopRequireDefault(_styledComponents);
 
 var _styles = __webpack_require__(3);
 
-var _bg = __webpack_require__(46);
+var _bg = __webpack_require__(44);
 
 var _bg2 = _interopRequireDefault(_bg);
 
@@ -2626,25 +2597,25 @@ var Popup = exports.Popup = function Popup(_ref2) {
 };
 
 /***/ }),
-/* 46 */
+/* 44 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "static/bg.ebfd0c34.png";
 
 /***/ }),
-/* 47 */
+/* 45 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "static/roadmap.b1d587c0.svg";
 
 /***/ }),
-/* 48 */
+/* 46 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "static/roadmap_mobile.6eedd7c7.svg";
 
 /***/ }),
-/* 49 */
+/* 47 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2653,8 +2624,11 @@ module.exports = __webpack_require__.p + "static/roadmap_mobile.6eedd7c7.svg";
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
+exports.Block = undefined;
 
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+var _templateObject = _taggedTemplateLiteral(['\n    flex-flow: column;\n    align-items: center;\n    justify-content: flex-start;\n  '], ['\n    flex-flow: column;\n    align-items: center;\n    justify-content: flex-start;\n  ']);
 
 var _react = __webpack_require__(0);
 
@@ -2664,17 +2638,32 @@ var _styledComponents = __webpack_require__(1);
 
 var _styledComponents2 = _interopRequireDefault(_styledComponents);
 
+var _styles = __webpack_require__(3);
+
 var _Heading = __webpack_require__(4);
 
 var _Heading2 = _interopRequireDefault(_Heading);
 
 var _Team = __webpack_require__(5);
 
+var _ayantsevich = __webpack_require__(48);
+
+var _ayantsevich2 = _interopRequireDefault(_ayantsevich);
+
+var _dklevzhits = __webpack_require__(49);
+
+var _dklevzhits2 = _interopRequireDefault(_dklevzhits);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var ph = 'http://via.placeholder.com/350/eee/777?text=Person';
+function _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
 
-var persons = [{ src: ph, name: 'Name', role: 'Role', linkedin: 'src', github: 'src' }, { src: ph, name: 'Name', role: 'Role', linkedin: 'src', github: 'src' }, { src: ph, name: 'Name', role: 'Role', linkedin: 'src', github: 'src' }];
+var Block = exports.Block = _styledComponents2.default.div.withConfig({
+  displayName: '05_Advisors__Block',
+  componentId: 'rp4yn6-0'
+})(['display:flex;justify-content:space-around;&:first-of-type{margin-top:48px;}', ';'], _styles.m.lessThan('small')(_templateObject));
+
+var persons = [{ src: _ayantsevich2.default, name: 'Aleksei Yantsevich', role: 'SENIOR RESEARCHER IN BIOORGANIC CHEMISTRY, PhD' }, { src: _dklevzhits2.default, name: 'Dmitry Klevzhits', role: 'PhD IN ECONOMICS', linkedin: 'https://www.linkedin.com/in/dmitry-klevzhits-25917413/' }];
 
 var Advisors = function Advisors(p) {
   return _react2.default.createElement(
@@ -2694,7 +2683,7 @@ var Advisors = function Advisors(p) {
         'Who\'s mentored DEIP platform'
       ),
       _react2.default.createElement(
-        _Team.Block,
+        Block,
         null,
         persons.map(function (p) {
           return _react2.default.createElement(_Team.Person, _extends({ special: true }, p, { key: p.name }));
@@ -2705,6 +2694,18 @@ var Advisors = function Advisors(p) {
 };
 
 exports.default = Advisors;
+
+/***/ }),
+/* 48 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/ayantsevich.ac4ef1f3.png";
+
+/***/ }),
+/* 49 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/dklevzhits.fba700ae.png";
 
 /***/ }),
 /* 50 */
@@ -4941,4 +4942,4 @@ exports.default = function () {
 /***/ })
 /******/ ]);
 });
-//# sourceMappingURL=app.static.a8fb54b6.js.map
+//# sourceMappingURL=app.static.ea52beae.js.map
