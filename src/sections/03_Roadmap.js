@@ -85,26 +85,35 @@ const Roadmap = p => (
         <div>
           <Main>
             <Section>
-              <Entry
-                done
-                label="Some date"
-                text="Some text some text some text some text some text"
-              />
-              <Entry done label="Some date" text="Some text" />
-              <Entry label="Some date" text="Some text" />
+              <Entry done label="September 2017" text="New protocol design initiated. Started work on new white-paper" />
+              <Entry done label="August 2017" text="Infrastructure change initiated. WP for initial protocol design finished.Graphene infrastructure adjustment" />
+              <Entry done label="July 2017" text="Initial protocol design. Proof-of-concept smart-contracts implementation" />
             </Section>
             <Section>
-              <Entry label="Some date" text="Some text" />
-              <Popup label="Some label" text="some text" />
-              <Entry
-                label="Some date"
-                text="Some text some text some text some text"
-              />
+              <Entry done label="October 2017" text="Protocol final design" />
+              {/* <Popup label="Some label" text="some text" /> */}
+              <Entry done label="November 2017" text="Architecture design finished. WP finished" />
+              <Entry done label="December 2017" text="Graphene framework initial setup. Refactoring. Infrastructure setup" />
             </Section>
             <Section>
-              <Entry label="Some date" text="Some text" />
-              <Popup accent label="Some date" text="Some text" />
-              <Entry label="Some date" text="Some text" />
+              <Entry label="March 2018" text="Test-net launch. Alfa-version of UI release. Wallet UI release (for testnet)" />              
+              <Entry label="February 2018" text="Emission distribution system completed" />
+              <Entry label="January 2018" text="[SHOULDBECHANGED] Blockchaine developer" />              
+            </Section>
+            <Section>
+              <Entry label="April 2018" text="Research Platform Beta UI Launch" />
+              <Entry label="May 2018" text="Expertise tokens distribution" />
+              <Entry label="June 2018" text="Main-net launch. Initial expertise tokens distribution. Initial research publishing preparation. " />              
+            </Section>
+            <Section>
+              <Entry label="September 2018" text="Storage sidechain for research data (beta-version). Disciplines expansion system implementation" />
+              <Entry label="August 2018" text="[SHOULDBECHANGED] Expertise tokens monthly awards for best researchers based on expertise voting (beta-version). " />
+              <Entry label="July 2018" text="Platform launch" />              
+            </Section>
+            <Section>
+              <Entry label="October 2018" text="Scientific Resources marketplace (beta-version)" />
+              <Entry label="November 2018" text="Funding Agency DAO (beta-version). Research tokens Hedge-fund initial implementation" />
+              <Entry label="December 2018" text="Target trade volume $10mln per day" />              
             </Section>
           </Main>
         </div>
