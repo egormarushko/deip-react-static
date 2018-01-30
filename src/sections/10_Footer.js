@@ -57,28 +57,28 @@ const Footer = p => (
   <Root {...p}>
     <Container>
       <Block>
-        <Link href="#">
+        <Link href="https://gitlab.com/DEIP">
           <Icon>gitlab</Icon>
         </Link>
-        <Link href="#">
+        <Link href="https://t.me/deip_world">
           <Icon>telegram</Icon>
         </Link>
-        <Link href="#">
+        <Link href="https://deipteam.slack.com/messages">
           <Icon>slack</Icon>
         </Link>
-        <Link href="#">
+        <Link href="https://medium.com/deip">
           <Icon>medium</Icon>
         </Link>
-        <Link href="#">
+        <Link href="https://twitter.com/@DEIP_World">
           <Icon>twitter</Icon>
         </Link>
-        <Link href="#">
+        <Link href="https://www.instagram.com/deip.world/">
           <Icon>instagram</Icon>
         </Link>
-        <Link href="#">
+        <Link href="https://www.facebook.com/DEIPword/">
           <Icon>facebook</Icon>
         </Link>
-        <Link href="#">
+        <Link href="mailto:team@deip.world">
           <Icon>envelope</Icon>
         </Link>
       </Block>
