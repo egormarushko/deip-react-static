@@ -23,7 +23,7 @@ export const Block = styled.div`
 `
 
 const persons = [
-  { src: ayantsevich, name: 'Aleksei Yantsevich', role: 'SENIOR RESEARCHER IN BIOORGANIC CHEMISTRY, PhD' },
+  // { src: ayantsevich, name: 'Aleksei Yantsevich', role: 'SENIOR RESEARCHER IN BIOORGANIC CHEMISTRY, PhD' },
   { src: dklevzhits, name: 'Dmitry Klevzhits', role: 'PhD IN ECONOMICS', linkedin: 'https://www.linkedin.com/in/dmitry-klevzhits-25917413/'},
 ]
 
@@ -32,7 +32,7 @@ const Advisors = p => (
     <Container>
       <Heading>Advisors</Heading>
       <Heading type="sub">Who's mentoring DEIP team</Heading>
-      <BlockIncomplete>{persons.map(p => <Person special {...p} key={p.name} />)}</BlockIncomplete>
+      <Block>{persons.map(p => <Person special {...p} key={p.name} />)}</Block>
     </Container>
   </Root>
 )

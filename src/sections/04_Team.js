@@ -100,7 +100,7 @@ const Team = p => (
   <Root {...p}>
     <Container>
       <Heading>Team</Heading>
-      <Heading type="sub">Who's develop DEIP platform</Heading>
+      <Heading type="sub">Who's creating DEIP platform</Heading>
       <Block>{personsFirstRow.map(p => <Person {...p} key={p.name} />)}</Block>
       <Block>{personsSecondRow.map(p => <Person {...p} key={p.name} />)}</Block>
       <Block>{personsThirdRow.map(p => <Person {...p} key={p.name} />)}</Block>
