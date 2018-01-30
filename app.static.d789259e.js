@@ -274,36 +274,36 @@ var personsFirstRow = [{ src: _ashkor2.default, name: 'Alex Shkor', role: 'CHIEF
 
 var personsSecondRow = [{ src: _arusetskiy2.default, name: 'Artyom Rusetskiy', role: 'CHIEF SCIENTIST', linkedin: 'https://www.linkedin.com/in/artyom-ruseckiy-8521a89a/' }, { src: _akulichkin2.default, name: 'Anton Kulichkin', role: 'CHIEF PARTNERSHIPS OFFICER', linkedin: 'https://www.linkedin.com/in/anton-kulichkin-b158a886/' }, { src: _nsvyaznoy2.default, name: 'Nikolay Svyaznoy', role: 'CHIEF MARKETING OFFICER', linkedin: 'src' }, { src: _emarushko2.default, name: 'Egor Marushko', role: 'BLOCKCHAIN DEVELOPER', linkedin: 'https://www.linkedin.com/in/egor-marushko-477175122/', github: 'https://github.com/egormarushko' }];
 
-var personsThirdRow = [{ src: _sdzeranov2.default, name: 'Serge Dzeranov', role: 'BLOCKCHAIN DEVELOPER', linkedin: 'https://www.linkedin.com/in/sergey-dzeranov-b86a20127/', github: 'https://gitlab.com/Dzeranov' }, { src: _akorotkov2.default, name: 'Alexey Korotkov', role: 'BLOCKCHAIN DEVELOPER', linkedin: 'https://www.linkedin.com/in/alexey-korotkov-7b2339123/' }, { src: _amekibel2.default, name: 'Alan Mekibel', role: 'DEIP MADRID AMBASSADOR, MARKETING MANAGER', linkedin: 'https://www.linkedin.com/in/amekibel/' }, { src: _ndanilevich2.default, name: 'Natalya Danilevich', role: 'CONTENT WRITER' }];
+var personsThirdRow = [{ src: _sdzeranov2.default, name: 'Serge Dzeranov', role: 'BLOCKCHAIN DEVELOPER', linkedin: 'https://www.linkedin.com/in/sergey-dzeranov-b86a20127/', github: 'https://gitlab.com/Dzeranov' }, { src: _akorotkov2.default, name: 'Alexey Korotkov', role: 'BLOCKCHAIN DEVELOPER', linkedin: 'https://www.linkedin.com/in/alexey-korotkov-7b2339123/' }, { src: _amekibel2.default, name: 'Alan Mekibel', role: 'MARKETING MANAGER', linkedin: 'https://www.linkedin.com/in/amekibel/' }, { src: _ndanilevich2.default, name: 'Natalya Danilevich', role: 'CONTENT WRITER' }];
 
 // reused in the advisors section
 var Root = exports.Root = _styledComponents2.default.section.withConfig({
   displayName: '04_Team__Root',
-  componentId: 's1q7twr7-0'
+  componentId: 's11n68by-0'
 })(['', ';'], _styles.container);
 
 // reused in the advisors section
 var Container = exports.Container = _styledComponents2.default.div.withConfig({
   displayName: '04_Team__Container',
-  componentId: 's1q7twr7-1'
+  componentId: 's11n68by-1'
 })(['text-align:center;width:', '%;margin-left:', '%;margin-top:64px;margin-bottom:64px;', ';'], 100 * 2 / 3, 100 / 6, _styles.m.lessThan('small')(_templateObject));
 
 // reused in the advisors section
 var Block = exports.Block = _styledComponents2.default.div.withConfig({
   displayName: '04_Team__Block',
-  componentId: 's1q7twr7-2'
+  componentId: 's11n68by-2'
 })(['display:flex;justify-content:space-between;&:first-of-type{margin-top:48px;}', ';'], _styles.m.lessThan('small')(_templateObject2));
 
 // reused in the advisors section
 var BlockIncomplete = exports.BlockIncomplete = _styledComponents2.default.div.withConfig({
   displayName: '04_Team__BlockIncomplete',
-  componentId: 's1q7twr7-3'
+  componentId: 's11n68by-3'
 })(['width:50%;display:inline-flex;justify-content:space-between;&:first-of-type{margin-top:48px;}', ';'], _styles.m.lessThan('small')(_templateObject2));
 
 // reused in the advisors section
 var Person = exports.Person = (0, _styledComponents2.default)(_Person2.default).withConfig({
   displayName: '04_Team__Person',
-  componentId: 's1q7twr7-4'
+  componentId: 's11n68by-4'
 })(['margin:24px 0;&:list-of-type{margin-bottom:0;}']);
 
 var Team = function Team(p) {
@@ -2309,24 +2309,24 @@ function _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defi
 
 var Bg = _styledComponents2.default.div.withConfig({
   displayName: '03_Roadmap__Bg',
-  componentId: 's1m9ded-0'
+  componentId: 's1w2rg9a-0'
 })(['background:linear-gradient(180deg,#331d50 51.81%,#247fad 149.89%);']);
 
 var Root = _styledComponents2.default.section.withConfig({
   displayName: '03_Roadmap__Root',
-  componentId: 's1m9ded-1'
+  componentId: 's1w2rg9a-1'
 })(['', ';position:relative;h1{color:#fff;}'], _styles.container);
 
 var Container = _Team.Container.extend(_templateObject, _styles.m.lessThan('small')(_templateObject2));
 
 var Small = _styledComponents2.default.p.withConfig({
   displayName: '03_Roadmap__Small',
-  componentId: 's1m9ded-2'
+  componentId: 's1w2rg9a-2'
 })(['font-weight:700;font-size:10px;color:rgba(255,255,255,0.3);text-transform:uppercase;margin:0 0 4px 0;']);
 
 var Headline = _styledComponents2.default.div.withConfig({
   displayName: '03_Roadmap__Headline',
-  componentId: 's1m9ded-3'
+  componentId: 's1w2rg9a-3'
 })(['padding:64px 0 32px 0;', ';', ';'], _styles.m.greaterThan('small')(_templateObject3), _styles.m.lessThan('small')(_templateObject4));
 
 // const Roadmaps = styled.div`
@@ -2391,7 +2391,7 @@ var Roadmap = function Roadmap(p) {
             _react2.default.createElement(
               _Roadmap.Section,
               null,
-              _react2.default.createElement(_Roadmap.Entry, { label: 'January 2018', text: 'Blockchaine developer' }),
+              _react2.default.createElement(_Roadmap.Entry, { label: 'January 2018', text: 'Core functionality implemented' }),
               _react2.default.createElement(_Roadmap.Entry, { label: 'February 2018', text: 'Emission distribution system completed' }),
               _react2.default.createElement(_Roadmap.Entry, { label: 'March 2018', text: 'Test-net launch. Alfa-version of UI release. Wallet UI release (for testnet)' })
             ),
@@ -3425,24 +3425,24 @@ function _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defi
 
 var Bg = _styledComponents2.default.div.withConfig({
   displayName: '09_Subscribe__Bg',
-  componentId: 's1s8wlkm-0'
+  componentId: 's8gog65-0'
 })(['background:linear-gradient(167.13deg,#331d50 24.88%,#247fad 99.11%);']);
 
 var Root = _styledComponents2.default.section.withConfig({
   displayName: '09_Subscribe__Root',
-  componentId: 's1s8wlkm-1'
+  componentId: 's8gog65-1'
 })(['', ';padding:64px 0;h1{color:#fff;}'], _styles.container);
 
 var Container = _Team.Container.extend(_templateObject, _styles.m.lessThan('small')(_templateObject2));
 
 var Small = _styledComponents2.default.p.withConfig({
   displayName: '09_Subscribe__Small',
-  componentId: 's1s8wlkm-2'
+  componentId: 's8gog65-2'
 })(['font-weight:700;font-size:10px;color:rgba(255,255,255,0.3);text-transform:uppercase;margin:0 0 4px 0;']);
 
 var Form = _styledComponents2.default.form.withConfig({
   displayName: '09_Subscribe__Form',
-  componentId: 's1s8wlkm-3'
+  componentId: 's8gog65-3'
 })(['display:flex;justify-content:center;margin-top:32px;']);
 
 var Subscribe = function Subscribe(p) {
@@ -3458,7 +3458,7 @@ var Subscribe = function Subscribe(p) {
         _react2.default.createElement(
           Small,
           null,
-          'The last news and releases'
+          'THE LATEST NEWS AND RELEASES'
         ),
         _react2.default.createElement(
           _Heading2.default,
@@ -5227,4 +5227,4 @@ exports.default = function () {
 /***/ })
 /******/ ]);
 });
-//# sourceMappingURL=app.static.2a9a2d4f.js.map
+//# sourceMappingURL=app.static.d789259e.js.map
