@@ -4,7 +4,7 @@ import { ServerStyleSheet } from 'styled-components'
 export default {
   siteRoot: 'http://deip.me',
   getSiteProps: () => ({
-    title: 'React Static',
+    title: 'DEIP — decentralized research platform'
   }),
   getRoutes: async () => {
     return [

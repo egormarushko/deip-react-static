@@ -1,6 +1,6 @@
 import React from 'react'
 import { getSiteProps } from 'react-static'
-
+import { Head } from 'react-static'
 import Hero from 'sections/00_Hero'
 import Vision from 'sections/01_Vision'
 import We from 'sections/02_We'
@@ -15,6 +15,9 @@ import Footer from 'sections/10_Footer'
 
 const Index = ({ someData }) => (
   <div>
+    <Head>
+      <title>DEIP — decentralized research platform</title>
+    </Head>
     <Hero id="hero" />
     <Vision id="vision" />
     <We id="about" />
