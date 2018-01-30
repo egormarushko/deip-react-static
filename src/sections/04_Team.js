@@ -35,7 +35,7 @@ const personsSecondRow = [
 const personsThirdRow = [
   { src: sdzeranov, name: 'Serge Dzeranov', role: 'BLOCKCHAIN DEVELOPER', linkedin: 'https://www.linkedin.com/in/sergey-dzeranov-b86a20127/', github: 'https://gitlab.com/Dzeranov' },
   { src: akorotkov, name: 'Alexey Korotkov', role: 'BLOCKCHAIN DEVELOPER', linkedin: 'https://www.linkedin.com/in/alexey-korotkov-7b2339123/'},
-  { src: amekibel, name: 'Alan Mekibel', role: 'DEIP MADRID AMBASSADOR, MARKETING MANAGER', linkedin: 'https://www.linkedin.com/in/amekibel/'},
+  { src: amekibel, name: 'Alan Mekibel', role: 'MARKETING MANAGER', linkedin: 'https://www.linkedin.com/in/amekibel/'},
   { src: ndanilevich, name: 'Natalya Danilevich', role: 'CONTENT WRITER'},
 ]
 
