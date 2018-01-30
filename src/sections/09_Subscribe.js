@@ -45,7 +45,7 @@ const Subscribe = p => (
   <Bg>
     <Root {...p}>
       <Container>
-        <Small>The last news and releases</Small>
+        <Small>THE LATEST NEWS AND RELEASES</Small>
         <Heading>Subscribe on DEIP</Heading>
         <Form method="post">
           <SubscribeInput
