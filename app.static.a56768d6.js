@@ -279,31 +279,31 @@ var personsThirdRow = [{ src: _sdzeranov2.default, name: 'Serge Dzeranov', role:
 // reused in the advisors section
 var Root = exports.Root = _styledComponents2.default.section.withConfig({
   displayName: '04_Team__Root',
-  componentId: 's11n68by-0'
+  componentId: 'dh9zox-0'
 })(['', ';'], _styles.container);
 
 // reused in the advisors section
 var Container = exports.Container = _styledComponents2.default.div.withConfig({
   displayName: '04_Team__Container',
-  componentId: 's11n68by-1'
+  componentId: 'dh9zox-1'
 })(['text-align:center;width:', '%;margin-left:', '%;margin-top:64px;margin-bottom:64px;', ';'], 100 * 2 / 3, 100 / 6, _styles.m.lessThan('small')(_templateObject));
 
 // reused in the advisors section
 var Block = exports.Block = _styledComponents2.default.div.withConfig({
   displayName: '04_Team__Block',
-  componentId: 's11n68by-2'
+  componentId: 'dh9zox-2'
 })(['display:flex;justify-content:space-between;&:first-of-type{margin-top:48px;}', ';'], _styles.m.lessThan('small')(_templateObject2));
 
 // reused in the advisors section
 var BlockIncomplete = exports.BlockIncomplete = _styledComponents2.default.div.withConfig({
   displayName: '04_Team__BlockIncomplete',
-  componentId: 's11n68by-3'
+  componentId: 'dh9zox-3'
 })(['width:50%;display:inline-flex;justify-content:space-between;&:first-of-type{margin-top:48px;}', ';'], _styles.m.lessThan('small')(_templateObject2));
 
 // reused in the advisors section
 var Person = exports.Person = (0, _styledComponents2.default)(_Person2.default).withConfig({
   displayName: '04_Team__Person',
-  componentId: 's11n68by-4'
+  componentId: 'dh9zox-4'
 })(['margin:24px 0;&:list-of-type{margin-bottom:0;}']);
 
 var Team = function Team(p) {
@@ -321,7 +321,7 @@ var Team = function Team(p) {
       _react2.default.createElement(
         _Heading2.default,
         { type: 'sub' },
-        'Who\'s develop DEIP platform'
+        'Who\'s creating DEIP platform'
       ),
       _react2.default.createElement(
         Block,
@@ -2723,10 +2723,12 @@ function _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defi
 
 var Block = exports.Block = _styledComponents2.default.div.withConfig({
   displayName: '05_Advisors__Block',
-  componentId: 'ucl4b4-0'
+  componentId: 'ejcndj-0'
 })(['display:flex;justify-content:space-around;&:first-of-type{margin-top:48px;}', ';'], _styles.m.lessThan('small')(_templateObject));
 
-var persons = [{ src: _ayantsevich2.default, name: 'Aleksei Yantsevich', role: 'SENIOR RESEARCHER IN BIOORGANIC CHEMISTRY, PhD' }, { src: _dklevzhits2.default, name: 'Dmitry Klevzhits', role: 'PhD IN ECONOMICS', linkedin: 'https://www.linkedin.com/in/dmitry-klevzhits-25917413/' }];
+var persons = [
+// { src: ayantsevich, name: 'Aleksei Yantsevich', role: 'SENIOR RESEARCHER IN BIOORGANIC CHEMISTRY, PhD' },
+{ src: _dklevzhits2.default, name: 'Dmitry Klevzhits', role: 'PhD IN ECONOMICS', linkedin: 'https://www.linkedin.com/in/dmitry-klevzhits-25917413/' }];
 
 var Advisors = function Advisors(p) {
   return _react2.default.createElement(
@@ -2746,7 +2748,7 @@ var Advisors = function Advisors(p) {
         'Who\'s mentoring DEIP team'
       ),
       _react2.default.createElement(
-        _Team.BlockIncomplete,
+        Block,
         null,
         persons.map(function (p) {
           return _react2.default.createElement(_Team.Person, _extends({ special: true }, p, { key: p.name }));
@@ -5227,4 +5229,4 @@ exports.default = function () {
 /***/ })
 /******/ ]);
 });
-//# sourceMappingURL=app.static.d789259e.js.map
+//# sourceMappingURL=app.static.a56768d6.js.map
