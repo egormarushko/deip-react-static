@@ -180,9 +180,9 @@ class MobileMenu extends Component {
             <Anchor href="/#advisors" onClick={this.handleClick}>
               Advisors
             </Anchor>
-            <Anchor href="/#researchers" onClick={this.handleClick}>
+            {/* <Anchor href="/#researchers" onClick={this.handleClick}>
               Researches
-            </Anchor>
+            </Anchor> */}
           </Links>
           <Button primary to="/join" onClick={this.handleClick}>
             Join us

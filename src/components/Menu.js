@@ -106,7 +106,7 @@ class Menu extends Component {
             <Anchor href="/#roadmap">Roadmap</Anchor>
             <Anchor href="/#team">Team</Anchor>
             <Anchor href="/#advisors">Advisors</Anchor>
-            <Anchor href="/#researchers">Researches</Anchor>
+            {/* <Anchor href="/#researchers">Researches</Anchor> */}
             {attached ? (
               <Button primary to="/join">
                 Join us
