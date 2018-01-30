@@ -90,7 +90,7 @@ const EntryPoint = styled.div`
 `
 
 const EntryText = styled.div`
-  font-size: 12px;
+  font-size: 14px;
   line-height: 1.5;
   text-align: center;
   margin: 16px 0 0 0;

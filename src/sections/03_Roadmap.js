@@ -96,24 +96,23 @@ const Roadmap = p => (
               <Entry done label="October 2017" text="Protocol final design" />
             </Section>
             <Section>
-              <Entry label="January 2018" text="[SHOULDBECHANGED] Blockchaine developer" />
+              <Entry label="January 2018" text="Blockchaine developer" />
               <Entry label="February 2018" text="Emission distribution system completed" />                
               <Entry label="March 2018" text="Test-net launch. Alfa-version of UI release. Wallet UI release (for testnet)" />                                        
             </Section>
             <Section>
-              <Entry label="June 2018" text="Main-net launch. Initial expertise tokens distribution. Initial research publishing preparation. " />              
+              <Entry label="June 2018" text="Main-net launch. Initial expertise tokens distribution. Initial research publishing preparation" />              
               <Entry label="May 2018" text="Expertise tokens distribution" />
               <Entry label="April 2018" text="Research Platform Beta UI Launch" />
             </Section>
             <Section>
               <Entry label="July 2018" text="Platform launch" />              
-              <Entry label="August 2018" text="Expertise tokens monthly awards for best researchers based on expertise voting (beta-version). " />
-              <Entry label="September 2018" text="Storage sidechain for research data (beta-version). Disciplines expansion system implementation" />
+              <Entry label="August 2018" text="Disciplines expansion system implementation" />
+              <Entry label="September 2018" text="Storage sidechain for research data" />
             </Section>
-            <Section>
-              <Entry label="December 2018" text="Target trade volume $10mln per day" />              
-              <Entry label="November 2018" text="Funding Agency DAO (beta-version). Research tokens Hedge-fund initial implementation" />
-              <Entry label="October 2018" text="Scientific Resources marketplace (beta-version)" />
+            <Section>            
+              <Entry label="November 2018" text="Funding Agency DAO" />
+              <Entry label="October 2018" text="Scientific Resources marketplace" />
             </Section>
           </Main>
         </div>
