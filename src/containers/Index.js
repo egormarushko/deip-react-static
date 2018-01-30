@@ -21,9 +21,9 @@ const Index = ({ someData }) => (
     <Roadmap id="roadmap" />
     <Team id="team" />
     <Advisors id="advisors" />
-    <Researchers id="researchers" />
+    {/* <Researchers id="researchers" />
     <Partners id="partners" />
-    <Media id="media" />
+    <Media id="media" /> */}
     <Subscribe id="subscribe" />
     <Footer id="footer" />
   </div>
