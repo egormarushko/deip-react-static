@@ -193,7 +193,7 @@ exports.default = Heading;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.Person = exports.Block = exports.Container = exports.Root = undefined;
+exports.Person = exports.BlockIncomplete = exports.Block = exports.Container = exports.Root = undefined;
 
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
@@ -250,36 +250,60 @@ var _emarushko = __webpack_require__(43);
 
 var _emarushko2 = _interopRequireDefault(_emarushko);
 
+var _sdzeranov = __webpack_require__(44);
+
+var _sdzeranov2 = _interopRequireDefault(_sdzeranov);
+
+var _akorotkov = __webpack_require__(45);
+
+var _akorotkov2 = _interopRequireDefault(_akorotkov);
+
+var _amekibel = __webpack_require__(46);
+
+var _amekibel2 = _interopRequireDefault(_amekibel);
+
+var _ndanilevich = __webpack_require__(47);
+
+var _ndanilevich2 = _interopRequireDefault(_ndanilevich);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
 
 var personsFirstRow = [{ src: _ashkor2.default, name: 'Alex Shkor', role: 'CHIEF EXECUTIVE OFFICER', linkedin: 'https://www.linkedin.com/in/alexshkor/', github: 'https://github.com/alexshkor' }, { src: _etsaryk2.default, name: 'Egor Tsaryk', role: 'CHIEF TECHNOLOGY OFFICER', linkedin: 'https://www.linkedin.com/in/yahor-tsaryk-92032a68/', github: 'https://github.com/egortsaryk9' }, { src: _akulik2.default, name: 'Alexey Kulik', role: 'CHIEF ARCHITECT', linkedin: 'https://www.linkedin.com/in/alexey-kulik-61576027/', github: 'https://github.com/akulik-paralect' }, { src: _aermolaev2.default, name: 'Artur Yermalayeu', role: 'CHIEF FINANCIAL OFFICER', facebook: 'https://www.facebook.com/ArturYe' }];
 
-var personsSecondRow = [{ src: _arusetskiy2.default, name: 'Artyom Rusetskiy', role: 'CHIEF SCIENTIST', linkedin: 'https://www.linkedin.com/in/artyom-ruseckiy-8521a89a/' }, { src: _akulichkin2.default, name: 'Anton Kulichkin', role: 'CHIEF PARTNERSHIPS OFFICER', linkedin: 'https://www.linkedin.com/in/anton-kulichkin-b158a886/' }, { src: _nsvyaznoy2.default, name: 'Nikolay Svyaznoy', role: 'CHIEF MARKETING OFFICER', linkedin: 'src' }, { src: _emarushko2.default, name: 'Egor Marushko', role: 'CORE DEVELOPER', linkedin: 'https://www.linkedin.com/in/egor-marushko-477175122/', github: 'https://github.com/egormarushko' }];
+var personsSecondRow = [{ src: _arusetskiy2.default, name: 'Artyom Rusetskiy', role: 'CHIEF SCIENTIST', linkedin: 'https://www.linkedin.com/in/artyom-ruseckiy-8521a89a/' }, { src: _akulichkin2.default, name: 'Anton Kulichkin', role: 'CHIEF PARTNERSHIPS OFFICER', linkedin: 'https://www.linkedin.com/in/anton-kulichkin-b158a886/' }, { src: _nsvyaznoy2.default, name: 'Nikolay Svyaznoy', role: 'CHIEF MARKETING OFFICER', linkedin: 'src' }, { src: _emarushko2.default, name: 'Egor Marushko', role: 'BLOCKCHAIN DEVELOPER', linkedin: 'https://www.linkedin.com/in/egor-marushko-477175122/', github: 'https://github.com/egormarushko' }];
+
+var personsThirdRow = [{ src: _sdzeranov2.default, name: 'Serge Dzeranov', role: 'BLOCKCHAIN DEVELOPER', linkedin: 'https://www.linkedin.com/in/sergey-dzeranov-b86a20127/', github: 'https://gitlab.com/Dzeranov' }, { src: _akorotkov2.default, name: 'Alexey Korotkov', role: 'BLOCKCHAIN DEVELOPER', linkedin: 'https://www.linkedin.com/in/alexey-korotkov-7b2339123/' }, { src: _amekibel2.default, name: 'Alan Mekibel', role: 'DEIP MADRID AMBASSADOR, MARKETING MANAGER', linkedin: 'https://www.linkedin.com/in/amekibel/' }, { src: _ndanilevich2.default, name: 'Natalya Danilevich', role: 'CONTENT WRITER' }];
 
 // reused in the advisors section
 var Root = exports.Root = _styledComponents2.default.section.withConfig({
   displayName: '04_Team__Root',
-  componentId: 's1o4tlo3-0'
+  componentId: 's1q7twr7-0'
 })(['', ';'], _styles.container);
 
 // reused in the advisors section
 var Container = exports.Container = _styledComponents2.default.div.withConfig({
   displayName: '04_Team__Container',
-  componentId: 's1o4tlo3-1'
+  componentId: 's1q7twr7-1'
 })(['text-align:center;width:', '%;margin-left:', '%;margin-top:64px;margin-bottom:64px;', ';'], 100 * 2 / 3, 100 / 6, _styles.m.lessThan('small')(_templateObject));
 
 // reused in the advisors section
 var Block = exports.Block = _styledComponents2.default.div.withConfig({
   displayName: '04_Team__Block',
-  componentId: 's1o4tlo3-2'
+  componentId: 's1q7twr7-2'
 })(['display:flex;justify-content:space-between;&:first-of-type{margin-top:48px;}', ';'], _styles.m.lessThan('small')(_templateObject2));
+
+// reused in the advisors section
+var BlockIncomplete = exports.BlockIncomplete = _styledComponents2.default.div.withConfig({
+  displayName: '04_Team__BlockIncomplete',
+  componentId: 's1q7twr7-3'
+})(['width:50%;display:inline-flex;justify-content:space-between;&:first-of-type{margin-top:48px;}', ';'], _styles.m.lessThan('small')(_templateObject2));
 
 // reused in the advisors section
 var Person = exports.Person = (0, _styledComponents2.default)(_Person2.default).withConfig({
   displayName: '04_Team__Person',
-  componentId: 's1o4tlo3-3'
+  componentId: 's1q7twr7-4'
 })(['margin:24px 0;&:list-of-type{margin-bottom:0;}']);
 
 var Team = function Team(p) {
@@ -310,6 +334,13 @@ var Team = function Team(p) {
         Block,
         null,
         personsSecondRow.map(function (p) {
+          return _react2.default.createElement(Person, _extends({}, p, { key: p.name }));
+        })
+      ),
+      _react2.default.createElement(
+        Block,
+        null,
+        personsThirdRow.map(function (p) {
           return _react2.default.createElement(Person, _extends({}, p, { key: p.name }));
         })
       )
@@ -611,21 +642,21 @@ function _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defi
 
 var Logo = exports.Logo = (0, _styledComponents2.default)(_reactStatic.Link).withConfig({
   displayName: 'Menu__Logo',
-  componentId: 's10ar4al-0'
+  componentId: 's12yi3ms-0'
 })(['visibility:hidden;font-weight:700;font-size:32px;text-decoration:none;color:', ';'], function (p) {
   return p.theme.palette.text.primary;
 });
 
 var Link = exports.Link = (0, _styledComponents2.default)(_reactStatic.Link).withConfig({
   displayName: 'Menu__Link',
-  componentId: 's10ar4al-1'
+  componentId: 's12yi3ms-1'
 })(['display:inline-block;font-weight:500;font-size:16px;color:#fff;text-transform:uppercase;text-decoration:none;&:not(:last-child){margin-right:32px;}']);
 
 var Anchor = exports.Anchor = Link.withComponent('a');
 
 var Nav = _styledComponents2.default.div.withConfig({
   displayName: 'Menu__Nav',
-  componentId: 's10ar4al-2'
+  componentId: 's12yi3ms-2'
 })(['']);
 
 var attached = (0, _styledComponents.css)(['position:fixed;background:#fff;box-shadow:0px 1px 14px rgba(0,0,0,0.12);', '{visibility:visible;}', ',', '{color:', ';}'], Logo, Link, Anchor, function (p) {
@@ -634,14 +665,14 @@ var attached = (0, _styledComponents.css)(['position:fixed;background:#fff;box-s
 
 var Root = _styledComponents2.default.div.withConfig({
   displayName: 'Menu__Root',
-  componentId: 's10ar4al-3'
+  componentId: 's12yi3ms-3'
 })(['z-index:10;position:absolute;width:100%;top:0;left:0;', ';', ';'], function (p) {
   return p.attached ? attached : '';
 }, _styles.m.lessThan('medium')(_templateObject));
 
 var Content = _styledComponents2.default.div.withConfig({
   displayName: 'Menu__Content',
-  componentId: 's10ar4al-4'
+  componentId: 's12yi3ms-4'
 })(['display:flex;align-items:center;justify-content:space-between;width:100%;height:60px;padding:0 48px;']);
 
 var Menu = function (_Component) {
@@ -730,11 +761,6 @@ var Menu = function (_Component) {
               { href: '/#advisors' },
               'Advisors'
             ),
-            _react2.default.createElement(
-              Anchor,
-              { href: '/#researchers' },
-              'Researches'
-            ),
             attached ? _react2.default.createElement(
               _Button2.default,
               { primary: true, to: '/join' },
@@ -796,36 +822,36 @@ function _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defi
 
 var Container = _styledComponents2.default.div.withConfig({
   displayName: '10_Footer__Container',
-  componentId: 's17hdqcd-0'
+  componentId: 's1ch2cio-0'
 })(['display:flex;padding:16px 32px 16px 32px;', ';'], _styles.m.lessThan('medium')(_templateObject));
 
 var Block = _styledComponents2.default.div.withConfig({
   displayName: '10_Footer__Block',
-  componentId: 's17hdqcd-1'
+  componentId: 's1ch2cio-1'
 })(['display:flex;flex-wrap:wrap;align-items:center;justify-content:center;width:', '%;margin-left:', '%;', ';'], 100 * 6 / 12, 100 * 3 / 12, _styles.m.lessThan('medium')(_templateObject2));
 
 var Wrap = _styledComponents2.default.div.withConfig({
   displayName: '10_Footer__Wrap',
-  componentId: 's17hdqcd-2'
+  componentId: 's1ch2cio-2'
 })(['display:flex;align-items:center;justify-content:flex-end;width:', '%;', ';'], 100 * 3 / 12, _styles.m.lessThan('medium')(_templateObject3));
 
 var Copyright = _styledComponents2.default.p.withConfig({
   displayName: '10_Footer__Copyright',
-  componentId: 's17hdqcd-3'
+  componentId: 's1ch2cio-3'
 })(['font-size:16px;color:', ';margin:0;'], function (p) {
   return p.theme.palette.text.secondary;
 });
 
 var Icon = (0, _styledComponents2.default)(_Icon2.default).withConfig({
   displayName: '10_Footer__Icon',
-  componentId: 's17hdqcd-4'
+  componentId: 's1ch2cio-4'
 })(['font-size:24px;color:', ';'], function (p) {
   return p.theme.palette.primary;
 });
 
 var Link = _styledComponents2.default.a.withConfig({
   displayName: '10_Footer__Link',
-  componentId: 's17hdqcd-5'
+  componentId: 's1ch2cio-5'
 })(['margin:16px;']);
 
 var Footer = function Footer(p) {
@@ -840,7 +866,7 @@ var Footer = function Footer(p) {
         null,
         _react2.default.createElement(
           Link,
-          { href: '#' },
+          { href: 'https://gitlab.com/DEIP' },
           _react2.default.createElement(
             Icon,
             null,
@@ -849,7 +875,7 @@ var Footer = function Footer(p) {
         ),
         _react2.default.createElement(
           Link,
-          { href: '#' },
+          { href: 'https://t.me/deip_world' },
           _react2.default.createElement(
             Icon,
             null,
@@ -858,7 +884,7 @@ var Footer = function Footer(p) {
         ),
         _react2.default.createElement(
           Link,
-          { href: '#' },
+          { href: 'https://deipteam.slack.com/messages' },
           _react2.default.createElement(
             Icon,
             null,
@@ -867,7 +893,7 @@ var Footer = function Footer(p) {
         ),
         _react2.default.createElement(
           Link,
-          { href: '#' },
+          { href: 'https://medium.com/deip' },
           _react2.default.createElement(
             Icon,
             null,
@@ -876,7 +902,7 @@ var Footer = function Footer(p) {
         ),
         _react2.default.createElement(
           Link,
-          { href: '#' },
+          { href: 'https://twitter.com/@DEIP_World' },
           _react2.default.createElement(
             Icon,
             null,
@@ -885,7 +911,7 @@ var Footer = function Footer(p) {
         ),
         _react2.default.createElement(
           Link,
-          { href: '#' },
+          { href: 'https://www.instagram.com/deip.world/' },
           _react2.default.createElement(
             Icon,
             null,
@@ -894,7 +920,7 @@ var Footer = function Footer(p) {
         ),
         _react2.default.createElement(
           Link,
-          { href: '#' },
+          { href: 'https://www.facebook.com/DEIPword/' },
           _react2.default.createElement(
             Icon,
             null,
@@ -903,7 +929,7 @@ var Footer = function Footer(p) {
         ),
         _react2.default.createElement(
           Link,
-          { href: '#' },
+          { href: 'mailto:team@deip.world' },
           _react2.default.createElement(
             Icon,
             null,
@@ -1092,22 +1118,22 @@ function _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defi
 
 var Toggler = _styledComponents2.default.a.withConfig({
   displayName: 'MobileMenu__Toggler',
-  componentId: 'm7lrw4-0'
+  componentId: 'rdoj3l-0'
 })(['font-size:24px;line-height:60px;color:#fff;width:60px;height:60px;.open{display:inline-block;}.close{display:none;}', ';'], _styles.m.greaterThan('medium')(_templateObject));
 
 var Top = _styledComponents2.default.div.withConfig({
   displayName: 'MobileMenu__Top',
-  componentId: 'm7lrw4-1'
+  componentId: 'rdoj3l-1'
 })(['display:flex;align-items:center;justify-content:space-between;padding-left:16px;height:60px;min-height:60px;']);
 
 var Nav = _styledComponents2.default.div.withConfig({
   displayName: 'MobileMenu__Nav',
-  componentId: 'm7lrw4-2'
+  componentId: 'rdoj3l-2'
 })(['display:none;flex-flow:column;align-items:center;justify-content:space-between;height:100%;']);
 
 var Links = _styledComponents2.default.div.withConfig({
   displayName: 'MobileMenu__Links',
-  componentId: 'm7lrw4-3'
+  componentId: 'rdoj3l-3'
 })(['display:flex;flex-flow:column;align-items:center;padding-top:32px;']);
 
 var opened = (0, _styledComponents.css)(['position:fixed;background:#fff;height:100%;.open{display:none;}.close{display:inline-block;}', '{visibility:visible;}', '{display:flex;}', ',', ',', '{color:inherit;}'], _Menu.Logo, Nav, _Menu.Link, _Menu.Anchor, Toggler);
@@ -1116,7 +1142,7 @@ var attached = (0, _styledComponents.css)(['position:fixed;background:#fff;box-s
 
 var Root = _styledComponents2.default.div.withConfig({
   displayName: 'MobileMenu__Root',
-  componentId: 'm7lrw4-4'
+  componentId: 'rdoj3l-4'
 })(['z-index:10;position:absolute;display:flex;flex-flow:column;width:100%;top:0;left:0;', ';', ';', ';', ',', '{margin:16px 0;}', '{width:50%;margin-bottom:32px;}'], function (p) {
   return p.attached ? attached : '';
 }, function (p) {
@@ -1230,11 +1256,6 @@ var MobileMenu = function (_Component) {
               _Menu.Anchor,
               { href: '/#advisors', onClick: this.handleClick },
               'Advisors'
-            ),
-            _react2.default.createElement(
-              _Menu.Anchor,
-              { href: '/#researchers', onClick: this.handleClick },
-              'Researches'
             )
           ),
           _react2.default.createElement(
@@ -1568,15 +1589,15 @@ var _Index = __webpack_require__(23);
 
 var _Index2 = _interopRequireDefault(_Index);
 
-var _Join = __webpack_require__(64);
+var _Join = __webpack_require__(68);
 
 var _Join2 = _interopRequireDefault(_Join);
 
-var _Whitepaper = __webpack_require__(73);
+var _Whitepaper = __webpack_require__(77);
 
 var _Whitepaper2 = _interopRequireDefault(_Whitepaper);
 
-var _ = __webpack_require__(76);
+var _ = __webpack_require__(80);
 
 var _2 = _interopRequireDefault(_);
 
@@ -1681,23 +1702,23 @@ var _Team = __webpack_require__(5);
 
 var _Team2 = _interopRequireDefault(_Team);
 
-var _Advisors = __webpack_require__(48);
+var _Advisors = __webpack_require__(52);
 
 var _Advisors2 = _interopRequireDefault(_Advisors);
 
-var _Researchers = __webpack_require__(51);
+var _Researchers = __webpack_require__(55);
 
 var _Researchers2 = _interopRequireDefault(_Researchers);
 
-var _Partners = __webpack_require__(53);
+var _Partners = __webpack_require__(57);
 
 var _Partners2 = _interopRequireDefault(_Partners);
 
-var _Media = __webpack_require__(55);
+var _Media = __webpack_require__(59);
 
 var _Media2 = _interopRequireDefault(_Media);
 
-var _Subscribe = __webpack_require__(60);
+var _Subscribe = __webpack_require__(64);
 
 var _Subscribe2 = _interopRequireDefault(_Subscribe);
 
@@ -1712,6 +1733,15 @@ var Index = function Index(_ref) {
   return _react2.default.createElement(
     'div',
     null,
+    _react2.default.createElement(
+      _reactStatic.Head,
+      null,
+      _react2.default.createElement(
+        'title',
+        null,
+        'DEIP \u2014 decentralized research platform'
+      )
+    ),
     _react2.default.createElement(_Hero2.default, { id: 'hero' }),
     _react2.default.createElement(_Vision2.default, { id: 'vision' }),
     _react2.default.createElement(_We2.default, { id: 'about' }),
@@ -2263,13 +2293,13 @@ var _Heading = __webpack_require__(4);
 
 var _Heading2 = _interopRequireDefault(_Heading);
 
-var _Roadmap = __webpack_require__(44);
+var _Roadmap = __webpack_require__(48);
 
-var _roadmap = __webpack_require__(46);
+var _roadmap = __webpack_require__(50);
 
 var _roadmap2 = _interopRequireDefault(_roadmap);
 
-var _roadmap_mobile = __webpack_require__(47);
+var _roadmap_mobile = __webpack_require__(51);
 
 var _roadmap_mobile2 = _interopRequireDefault(_roadmap_mobile);
 
@@ -2279,24 +2309,24 @@ function _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defi
 
 var Bg = _styledComponents2.default.div.withConfig({
   displayName: '03_Roadmap__Bg',
-  componentId: 'wbhvi8-0'
+  componentId: 's1m9ded-0'
 })(['background:linear-gradient(180deg,#331d50 51.81%,#247fad 149.89%);']);
 
 var Root = _styledComponents2.default.section.withConfig({
   displayName: '03_Roadmap__Root',
-  componentId: 'wbhvi8-1'
+  componentId: 's1m9ded-1'
 })(['', ';position:relative;h1{color:#fff;}'], _styles.container);
 
 var Container = _Team.Container.extend(_templateObject, _styles.m.lessThan('small')(_templateObject2));
 
 var Small = _styledComponents2.default.p.withConfig({
   displayName: '03_Roadmap__Small',
-  componentId: 'wbhvi8-2'
+  componentId: 's1m9ded-2'
 })(['font-weight:700;font-size:10px;color:rgba(255,255,255,0.3);text-transform:uppercase;margin:0 0 4px 0;']);
 
 var Headline = _styledComponents2.default.div.withConfig({
   displayName: '03_Roadmap__Headline',
-  componentId: 'wbhvi8-3'
+  componentId: 's1m9ded-3'
 })(['padding:64px 0 32px 0;', ';', ';'], _styles.m.greaterThan('small')(_templateObject3), _styles.m.lessThan('small')(_templateObject4));
 
 // const Roadmaps = styled.div`
@@ -2354,44 +2384,36 @@ var Roadmap = function Roadmap(p) {
             _react2.default.createElement(
               _Roadmap.Section,
               null,
-              _react2.default.createElement(_Roadmap.Entry, { done: true, label: 'September 2017', text: 'New protocol design initiated. Started work on new white-paper' }),
-              _react2.default.createElement(_Roadmap.Entry, { done: true, label: 'August 2017', text: 'Infrastructure change initiated. WP for initial protocol design finished.Graphene infrastructure adjustment' }),
-              _react2.default.createElement(_Roadmap.Entry, { done: true, label: 'July 2017', text: 'Initial protocol design. Proof-of-concept smart-contracts implementation' })
-            ),
-            _react2.default.createElement(
-              _Roadmap.Section,
-              null,
-              _react2.default.createElement(_Roadmap.Entry, { done: true, label: 'October 2017', text: 'Protocol final design' }),
+              _react2.default.createElement(_Roadmap.Entry, { done: true, label: 'December 2017', text: 'Graphene framework initial setup. Refactoring. Infrastructure setup' }),
               _react2.default.createElement(_Roadmap.Entry, { done: true, label: 'November 2017', text: 'Architecture design finished. WP finished' }),
-              _react2.default.createElement(_Roadmap.Entry, { done: true, label: 'December 2017', text: 'Graphene framework initial setup. Refactoring. Infrastructure setup' })
+              _react2.default.createElement(_Roadmap.Entry, { done: true, label: 'October 2017', text: 'Protocol final design' })
             ),
             _react2.default.createElement(
               _Roadmap.Section,
               null,
-              _react2.default.createElement(_Roadmap.Entry, { label: 'March 2018', text: 'Test-net launch. Alfa-version of UI release. Wallet UI release (for testnet)' }),
+              _react2.default.createElement(_Roadmap.Entry, { label: 'January 2018', text: 'Blockchaine developer' }),
               _react2.default.createElement(_Roadmap.Entry, { label: 'February 2018', text: 'Emission distribution system completed' }),
-              _react2.default.createElement(_Roadmap.Entry, { label: 'January 2018', text: '[SHOULDBECHANGED] Blockchaine developer' })
+              _react2.default.createElement(_Roadmap.Entry, { label: 'March 2018', text: 'Test-net launch. Alfa-version of UI release. Wallet UI release (for testnet)' })
             ),
             _react2.default.createElement(
               _Roadmap.Section,
               null,
-              _react2.default.createElement(_Roadmap.Entry, { label: 'April 2018', text: 'Research Platform Beta UI Launch' }),
+              _react2.default.createElement(_Roadmap.Entry, { label: 'June 2018', text: 'Main-net launch. Initial expertise tokens distribution. Initial research publishing preparation' }),
               _react2.default.createElement(_Roadmap.Entry, { label: 'May 2018', text: 'Expertise tokens distribution' }),
-              _react2.default.createElement(_Roadmap.Entry, { label: 'June 2018', text: 'Main-net launch. Initial expertise tokens distribution. Initial research publishing preparation. ' })
+              _react2.default.createElement(_Roadmap.Entry, { label: 'April 2018', text: 'Research Platform Beta UI Launch' })
             ),
             _react2.default.createElement(
               _Roadmap.Section,
               null,
-              _react2.default.createElement(_Roadmap.Entry, { label: 'September 2018', text: 'Storage sidechain for research data (beta-version). Disciplines expansion system implementation' }),
-              _react2.default.createElement(_Roadmap.Entry, { label: 'August 2018', text: '[SHOULDBECHANGED] Expertise tokens monthly awards for best researchers based on expertise voting (beta-version). ' }),
-              _react2.default.createElement(_Roadmap.Entry, { label: 'July 2018', text: 'Platform launch' })
+              _react2.default.createElement(_Roadmap.Entry, { label: 'July 2018', text: 'Platform launch' }),
+              _react2.default.createElement(_Roadmap.Entry, { label: 'August 2018', text: 'Disciplines expansion system implementation' }),
+              _react2.default.createElement(_Roadmap.Entry, { label: 'September 2018', text: 'Storage sidechain for research data' })
             ),
             _react2.default.createElement(
               _Roadmap.Section,
               null,
-              _react2.default.createElement(_Roadmap.Entry, { label: 'October 2018', text: 'Scientific Resources marketplace (beta-version)' }),
-              _react2.default.createElement(_Roadmap.Entry, { label: 'November 2018', text: 'Funding Agency DAO (beta-version). Research tokens Hedge-fund initial implementation' }),
-              _react2.default.createElement(_Roadmap.Entry, { label: 'December 2018', text: 'Target trade volume $10mln per day' })
+              _react2.default.createElement(_Roadmap.Entry, { label: 'November 2018', text: 'Funding Agency DAO' }),
+              _react2.default.createElement(_Roadmap.Entry, { label: 'October 2018', text: 'Scientific Resources marketplace' })
             )
           )
         )
@@ -2454,6 +2476,30 @@ module.exports = __webpack_require__.p + "static/emarushko.9a95db57.png";
 /* 44 */
 /***/ (function(module, exports, __webpack_require__) {
 
+module.exports = __webpack_require__.p + "static/sdzeranov.43d6c226.png";
+
+/***/ }),
+/* 45 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/akorotkov.5d2141cd.png";
+
+/***/ }),
+/* 46 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/amekibel.da99f2c4.png";
+
+/***/ }),
+/* 47 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/ndanilevich.9e54b8df.png";
+
+/***/ }),
+/* 48 */
+/***/ (function(module, exports, __webpack_require__) {
+
 "use strict";
 
 
@@ -2487,7 +2533,7 @@ var _styledComponents2 = _interopRequireDefault(_styledComponents);
 
 var _styles = __webpack_require__(3);
 
-var _bg = __webpack_require__(45);
+var _bg = __webpack_require__(49);
 
 var _bg2 = _interopRequireDefault(_bg);
 
@@ -2497,35 +2543,35 @@ function _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defi
 
 var Main = exports.Main = _styledComponents2.default.div.withConfig({
   displayName: 'Roadmap__Main',
-  componentId: 's1kjkxpd-0'
+  componentId: 's1jmnesu-0'
 })(['overflow:hidden;position:relative;background-image:url(', ');background-repeat:repeat-y;background-size:100% 411px;', ';'], _bg2.default, _styles.m.lessThan('small')(_templateObject));
 
 var Section = exports.Section = _styledComponents2.default.div.withConfig({
   displayName: 'Roadmap__Section',
-  componentId: 's1kjkxpd-1'
+  componentId: 's1jmnesu-1'
 })(['position:relative;display:flex;justify-content:space-around;height:', 'px;', ';'], 411 / 2, _styles.m.lessThan('small')(_templateObject2));
 
 var EntryRoot = _styledComponents2.default.div.withConfig({
   displayName: 'Roadmap__EntryRoot',
-  componentId: 's1kjkxpd-2'
+  componentId: 's1jmnesu-2'
 })(['position:relative;display:flex;flex-flow:column;align-items:center;color:#fff;top:52px;width:25%;min-width:25%;height:100%;opacity:', ';', ';'], function (p) {
   return p.done ? '0.2' : '1';
 }, _styles.m.lessThan('small')(_templateObject3));
 
 var EntryLabel = _styledComponents2.default.div.withConfig({
   displayName: 'Roadmap__EntryLabel',
-  componentId: 's1kjkxpd-3'
+  componentId: 's1jmnesu-3'
 })(['font-weight:700;text-align:center;line-height:1.5;text-transform:uppercase;margin-bottom:16px;', ';'], _styles.m.lessThan('small')(_templateObject4));
 
 var EntryPoint = _styledComponents2.default.div.withConfig({
   displayName: 'Roadmap__EntryPoint',
-  componentId: 's1kjkxpd-4'
+  componentId: 's1jmnesu-4'
 })(['border-radius:100%;background:#fff;width:22px;height:22px;min-width:22px;min-height:22px;box-shadow:0px 4px 4px rgba(0,0,0,0.25);', ';'], _styles.m.lessThan('small')(_templateObject5));
 
 var EntryText = _styledComponents2.default.div.withConfig({
   displayName: 'Roadmap__EntryText',
-  componentId: 's1kjkxpd-5'
-})(['font-size:12px;line-height:1.5;text-align:center;margin:16px 0 0 0;', ';'], _styles.m.lessThan('small')(_templateObject6));
+  componentId: 's1jmnesu-5'
+})(['font-size:14px;line-height:1.5;text-align:center;margin:16px 0 0 0;', ';'], _styles.m.lessThan('small')(_templateObject6));
 
 var Entry = exports.Entry = function Entry(_ref) {
   var done = _ref.done,
@@ -2550,19 +2596,19 @@ var Entry = exports.Entry = function Entry(_ref) {
 
 var PopupRoot = _styledComponents2.default.div.withConfig({
   displayName: 'Roadmap__PopupRoot',
-  componentId: 's1kjkxpd-6'
+  componentId: 's1jmnesu-6'
 })(['position:relative;display:flex;flex-flow:column;align-items:center;text-align:center;color:#fff;top:-38px;height:100%;opacity:', ';', ';'], function (p) {
   return p.done ? '0.2' : '1';
 }, _styles.m.lessThan('small')(_templateObject7));
 
 var PopupContent = _styledComponents2.default.div.withConfig({
   displayName: 'Roadmap__PopupContent',
-  componentId: 's1kjkxpd-7'
+  componentId: 's1jmnesu-7'
 })(['width:150px;min-width:150px;']);
 
 var PopupLabel = _styledComponents2.default.div.withConfig({
   displayName: 'Roadmap__PopupLabel',
-  componentId: 's1kjkxpd-8'
+  componentId: 's1jmnesu-8'
 })(['background:', ';font-weight:400;font-size:15px;color:', ';height:24px;min-height:24px;line-height:24px;width:100%;'], function (p) {
   return p.accent ? '#e71d36' : '#fff';
 }, function (p) {
@@ -2571,17 +2617,17 @@ var PopupLabel = _styledComponents2.default.div.withConfig({
 
 var PopupText = _styledComponents2.default.div.withConfig({
   displayName: 'Roadmap__PopupText',
-  componentId: 's1kjkxpd-9'
+  componentId: 's1jmnesu-9'
 })(['background:rgba(255,255,255,0.1);font-weight:300;font-size:18px;height:72px;line-height:72px;width:100%;']);
 
 var PopupArrow = _styledComponents2.default.div.withConfig({
   displayName: 'Roadmap__PopupArrow',
-  componentId: 's1kjkxpd-10'
+  componentId: 's1jmnesu-10'
 })(['', ';', ';'], _styles.m.greaterThan('small')(_templateObject8), _styles.m.lessThan('small')(_templateObject9));
 
 var PopupPoint = _styledComponents2.default.div.withConfig({
   displayName: 'Roadmap__PopupPoint',
-  componentId: 's1kjkxpd-11'
+  componentId: 's1jmnesu-11'
 })(['border-radius:100%;background:', ';width:9px;min-width:9px;height:9px;min-height:9px;margin-top:16px;', ';'], function (p) {
   return p.accent ? '#e71d36' : '#fff';
 }, _styles.m.lessThan('small')(_templateObject10));
@@ -2614,25 +2660,25 @@ var Popup = exports.Popup = function Popup(_ref2) {
 };
 
 /***/ }),
-/* 45 */
+/* 49 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "static/bg.ebfd0c34.png";
 
 /***/ }),
-/* 46 */
+/* 50 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "static/roadmap.b1d587c0.svg";
 
 /***/ }),
-/* 47 */
+/* 51 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "static/roadmap_mobile.6eedd7c7.svg";
 
 /***/ }),
-/* 48 */
+/* 52 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2663,11 +2709,11 @@ var _Heading2 = _interopRequireDefault(_Heading);
 
 var _Team = __webpack_require__(5);
 
-var _ayantsevich = __webpack_require__(49);
+var _ayantsevich = __webpack_require__(53);
 
 var _ayantsevich2 = _interopRequireDefault(_ayantsevich);
 
-var _dklevzhits = __webpack_require__(50);
+var _dklevzhits = __webpack_require__(54);
 
 var _dklevzhits2 = _interopRequireDefault(_dklevzhits);
 
@@ -2677,7 +2723,7 @@ function _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defi
 
 var Block = exports.Block = _styledComponents2.default.div.withConfig({
   displayName: '05_Advisors__Block',
-  componentId: 'rp4yn6-0'
+  componentId: 'ucl4b4-0'
 })(['display:flex;justify-content:space-around;&:first-of-type{margin-top:48px;}', ';'], _styles.m.lessThan('small')(_templateObject));
 
 var persons = [{ src: _ayantsevich2.default, name: 'Aleksei Yantsevich', role: 'SENIOR RESEARCHER IN BIOORGANIC CHEMISTRY, PhD' }, { src: _dklevzhits2.default, name: 'Dmitry Klevzhits', role: 'PhD IN ECONOMICS', linkedin: 'https://www.linkedin.com/in/dmitry-klevzhits-25917413/' }];
@@ -2697,10 +2743,10 @@ var Advisors = function Advisors(p) {
       _react2.default.createElement(
         _Heading2.default,
         { type: 'sub' },
-        'Who\'s mentored DEIP platform'
+        'Who\'s mentoring DEIP team'
       ),
       _react2.default.createElement(
-        Block,
+        _Team.BlockIncomplete,
         null,
         persons.map(function (p) {
           return _react2.default.createElement(_Team.Person, _extends({ special: true }, p, { key: p.name }));
@@ -2713,19 +2759,19 @@ var Advisors = function Advisors(p) {
 exports.default = Advisors;
 
 /***/ }),
-/* 49 */
+/* 53 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "static/ayantsevich.ac4ef1f3.png";
 
 /***/ }),
-/* 50 */
+/* 54 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "static/dklevzhits.fba700ae.png";
 
 /***/ }),
-/* 51 */
+/* 55 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2757,7 +2803,7 @@ var _Person = __webpack_require__(15);
 
 var _Person2 = _interopRequireDefault(_Person);
 
-var _MessageBox = __webpack_require__(52);
+var _MessageBox = __webpack_require__(56);
 
 var _MessageBox2 = _interopRequireDefault(_MessageBox);
 
@@ -2862,7 +2908,7 @@ var Researchers = function Researchers(p) {
 exports.default = Researchers;
 
 /***/ }),
-/* 52 */
+/* 56 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2974,7 +3020,7 @@ MessageBox.propTypes = {
 exports.default = MessageBox;
 
 /***/ }),
-/* 53 */
+/* 57 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3004,7 +3050,7 @@ var _Heading = __webpack_require__(4);
 
 var _Heading2 = _interopRequireDefault(_Heading);
 
-var _Partner = __webpack_require__(54);
+var _Partner = __webpack_require__(58);
 
 var _Partner2 = _interopRequireDefault(_Partner);
 
@@ -3075,7 +3121,7 @@ var Partners = function Partners(p) {
 exports.default = Partners;
 
 /***/ }),
-/* 54 */
+/* 58 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3133,7 +3179,7 @@ Partner.propTypes = {
 exports.default = Partner;
 
 /***/ }),
-/* 55 */
+/* 59 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3161,19 +3207,19 @@ var _Button = __webpack_require__(6);
 
 var _Button2 = _interopRequireDefault(_Button);
 
-var _Mention = __webpack_require__(56);
+var _Mention = __webpack_require__(60);
 
 var _Mention2 = _interopRequireDefault(_Mention);
 
-var _icon_meduza = __webpack_require__(57);
+var _icon_meduza = __webpack_require__(61);
 
 var _icon_meduza2 = _interopRequireDefault(_icon_meduza);
 
-var _icon_medium = __webpack_require__(58);
+var _icon_medium = __webpack_require__(62);
 
 var _icon_medium2 = _interopRequireDefault(_icon_medium);
 
-var _icon_tj = __webpack_require__(59);
+var _icon_tj = __webpack_require__(63);
 
 var _icon_tj2 = _interopRequireDefault(_icon_tj);
 
@@ -3247,7 +3293,7 @@ var Media = function Media(p) {
 exports.default = Media;
 
 /***/ }),
-/* 56 */
+/* 60 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3322,25 +3368,25 @@ Mention.propTypes = {
 exports.default = Mention;
 
 /***/ }),
-/* 57 */
+/* 61 */
 /***/ (function(module, exports) {
 
 module.exports = "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDYiIGhlaWdodD0iMjciIHZpZXdCb3g9IjAgMCA0NiAyNyIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4KPHRpdGxlPk1lZHV6YV9sb2dvPC90aXRsZT4KPGRlc2M+Q3JlYXRlZCB1c2luZyBGaWdtYTwvZGVzYz4KPGcgaWQ9IkNhbnZhcyIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTI4NSAtNjg2OSkiPgo8ZyBpZD0iTWVkdXphX2xvZ28iPgo8ZyBpZD0iSW1wb3J0ZWQgTGF5ZXJzIj4KPHVzZSB4bGluazpocmVmPSIjcGF0aDBfZmlsbCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMjg1IDY4NjkpIiBmaWxsPSIjMzMxRDUwIi8+CjwvZz4KPC9nPgo8L2c+CjxkZWZzPgo8cGF0aCBpZD0icGF0aDBfZmlsbCIgZmlsbC1ydWxlPSJldmVub2RkIiBkPSJNIDE4Ljg3MyA3LjA1NTc1TCAxOC44NzMgMjQuNDU5OUwgMjcuMTI3IDI3TCAyNy4xMjcgNy4wNTU3NUwgMzIuNDM2NSA3LjA1NTc1TCAzMi40MzY1IDI0LjQ1OTlMIDQwLjY0MjIgMjdMIDQ2IDE5Ljk0NDNMIDQwLjY5MDQgMTkuOTQ0M0wgNDAuNjkwNCAyLjc3NTI2TCAzMi40ODQ4IDBMIDI3LjEyNyA2LjExNDk4TCAyNy4xMjcgMi43NzUyNkwgMTguOTIxMyAwTCAxMy41NjM1IDYuMTE0OThMIDEzLjU2MzUgMi43NzUyNkwgNS4zNTc4MiAwTCAwIDcuMDU1NzVMIDUuMzA5NTUgNy4wNTU3NUwgNS4zMDk1NSAyNC40NTk5TCAxMy41NjM1IDI3TCAxMy41NjM1IDcuMDU1NzVMIDE4Ljg3MyA3LjA1NTc1WiIvPgo8L2RlZnM+Cjwvc3ZnPgo="
 
 /***/ }),
-/* 58 */
+/* 62 */
 /***/ (function(module, exports) {
 
 module.exports = "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMjgiIHZpZXdCb3g9IjAgMCAzMiAyOCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4KPHRpdGxlPiYjMjM5OyYjMTM2OyYjMTg2OzwvdGl0bGU+CjxkZXNjPkNyZWF0ZWQgdXNpbmcgRmlnbWE8L2Rlc2M+CjxnIGlkPSJDYW52YXMiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0yOTUgLTY2MDUpIj4KPGcgaWQ9IiYjMjM5OyYjMTM2OyYjMTg2OyI+Cjx1c2UgeGxpbms6aHJlZj0iI3BhdGgwX2ZpbGwiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDI5NSA2NjA1LjA0KSIgZmlsbD0iIzMzMUQ1MCIvPgo8L2c+CjwvZz4KPGRlZnM+CjxwYXRoIGlkPSJwYXRoMF9maWxsIiBkPSJNIDEwLjY2MDcgNS4wNTM1N0MgMTAuNjYwNyA1LjAzNTcxIDEwLjYyNSA0Ljk4MjE0IDEwLjYwNzEgNC45NjQyOEwgMS40ODIxNCAwLjM5Mjg1N0MgMS4yMzIxNCAwLjI2Nzg1NyAwLjk4MjE0MyAwLjEyNSAwLjY5NjQyOCAwLjEyNUMgMC4yMTQyODUgMC4xMjUgMCAwLjUzNTcxMyAwIDAuOTgyMTQxTCAwIDIxLjMzOTNDIDAgMjEuODc1IDAuMzkyODU4IDIyLjUxNzkgMC44OTI4NTggMjIuNzY3OUwgOS4xOTY0MyAyNi45Mjg2QyA5LjM3NSAyNy4wMTc5IDkuNTcxNDMgMjcuMDcxNCA5Ljc4NTcxIDI3LjA3MTRDIDEwLjM5MjkgMjcuMDcxNCAxMC42NjA3IDI2LjU1MzYgMTAuNjYwNyAyNkwgMTAuNjYwNyA1LjA1MzU3Wk0gMTEuODAzNiA2Ljg1NzE0TCAxMS44MDM2IDE3LjU3MTRMIDIxLjMzOTMgMjIuMzIxNEwgMTEuODAzNiA2Ljg1NzE0Wk0gMzIgNy4xNzg1N0wgMjIuMzU3MSAyMi44MzkzTCAzMC4yMzIxIDI2Ljc2NzlDIDMwLjQ4MjEgMjYuOTEwNyAzMC43Njc5IDI3IDMxLjA3MTQgMjdDIDMxLjY2MDcgMjcgMzIgMjYuNTg5MyAzMiAyNkwgMzIgNy4xNzg1N1pNIDMxLjk0NjQgNS4wMzU3MUMgMzEuOTQ2NCA0Ljk4MjE0IDMxLjkxMDcgNC45NDY0MyAzMS44NzUgNC45Mjg1N0wgMjIuMjE0MyAwLjEwNzE0MUMgMjIuMDcxNCAwLjAzNTcxMzIgMjEuOTEwNyAwIDIxLjc1IDBDIDIxLjM3NSAwIDIxLjAxNzkgMC4xNzg1NyAyMC44MjE0IDAuNUwgMTUuMDM1NyA5LjkxMDcxTCAyMiAyMS4yMzIxQyAyMi43MTQzIDIwLjA4OTMgMzEuOTQ2NCA1LjEwNzE0IDMxLjk0NjQgNS4wMzU3MVoiLz4KPC9kZWZzPgo8L3N2Zz4K"
 
 /***/ }),
-/* 59 */
+/* 63 */
 /***/ (function(module, exports) {
 
 module.exports = "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMiAzMiIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4KPHRpdGxlPkdyb3VwIDY8L3RpdGxlPgo8ZGVzYz5DcmVhdGVkIHVzaW5nIEZpZ21hPC9kZXNjPgo8ZyBpZD0iQ2FudmFzIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMjk1IC02NzM1KSI+CjxnIGlkPSJHcm91cCA2Ij4KPGcgaWQ9IlZlY3RvciAyIj4KPHVzZSB4bGluazpocmVmPSIjcGF0aDBfZmlsbCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMjk1IDY3MzUpIiBmaWxsPSIjMzMxRDUwIi8+CjwvZz4KPC9nPgo8L2c+CjxkZWZzPgo8cGF0aCBpZD0icGF0aDBfZmlsbCIgZD0iTSAwIDBMIDMyIDBMIDMyIDguNjU4ODJMIDIwLjU3MTQgOC42NTg4MkwgMjAuNTcxNCAyNC40NzA2TCAxMS44MDk1IDMyTCAwIDMyTCAwIDI0LjA5NDFMIDExLjgwOTUgMjQuMDk0MUwgMTEuODA5NSA4LjY1ODgyTCAwIDguNjU4ODJMIDAgMFoiLz4KPC9kZWZzPgo8L3N2Zz4K"
 
 /***/ }),
-/* 60 */
+/* 64 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3369,7 +3415,7 @@ var _Heading = __webpack_require__(4);
 
 var _Heading2 = _interopRequireDefault(_Heading);
 
-var _SubscribeInput = __webpack_require__(61);
+var _SubscribeInput = __webpack_require__(65);
 
 var _SubscribeInput2 = _interopRequireDefault(_SubscribeInput);
 
@@ -3436,7 +3482,7 @@ var Subscribe = function Subscribe(p) {
 exports.default = Subscribe;
 
 /***/ }),
-/* 61 */
+/* 65 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3462,7 +3508,7 @@ var _icon_send = __webpack_require__(16);
 
 var _icon_send2 = _interopRequireDefault(_icon_send);
 
-var _SubscribeForm = __webpack_require__(62);
+var _SubscribeForm = __webpack_require__(66);
 
 var _SubscribeForm2 = _interopRequireDefault(_SubscribeForm);
 
@@ -3519,7 +3565,7 @@ var Input = function Input() {
 exports.default = Input;
 
 /***/ }),
-/* 62 */
+/* 66 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3539,7 +3585,7 @@ var _propTypes = __webpack_require__(2);
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
-var _jsonp = __webpack_require__(63);
+var _jsonp = __webpack_require__(67);
 
 var _jsonp2 = _interopRequireDefault(_jsonp);
 
@@ -3722,13 +3768,13 @@ var SubscribeForm = function (_React$Component) {
 exports.default = SubscribeForm;
 
 /***/ }),
-/* 63 */
+/* 67 */
 /***/ (function(module, exports) {
 
 module.exports = require("jsonp");
 
 /***/ }),
-/* 64 */
+/* 68 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3744,7 +3790,7 @@ var _react2 = _interopRequireDefault(_react);
 
 var _reactStatic = __webpack_require__(8);
 
-var _Poll = __webpack_require__(65);
+var _Poll = __webpack_require__(69);
 
 var _Poll2 = _interopRequireDefault(_Poll);
 
@@ -3767,7 +3813,7 @@ var Join = function Join(_ref) {
 exports.default = (0, _reactStatic.getSiteProps)(Join);
 
 /***/ }),
-/* 65 */
+/* 69 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3812,33 +3858,33 @@ var _Text = __webpack_require__(7);
 
 var _Text2 = _interopRequireDefault(_Text);
 
-var _Shower = __webpack_require__(66);
+var _Shower = __webpack_require__(70);
 
 var _Button = __webpack_require__(6);
 
 var _Button2 = _interopRequireDefault(_Button);
 
-var _RadioButton = __webpack_require__(67);
+var _RadioButton = __webpack_require__(71);
 
 var _RadioButton2 = _interopRequireDefault(_RadioButton);
 
-var _Input = __webpack_require__(68);
+var _Input = __webpack_require__(72);
 
 var _Input2 = _interopRequireDefault(_Input);
 
-var _Checkbox = __webpack_require__(69);
+var _Checkbox = __webpack_require__(73);
 
 var _Checkbox2 = _interopRequireDefault(_Checkbox);
 
-var _TextArea = __webpack_require__(70);
+var _TextArea = __webpack_require__(74);
 
 var _TextArea2 = _interopRequireDefault(_TextArea);
 
-var _axios = __webpack_require__(71);
+var _axios = __webpack_require__(75);
 
 var _axios2 = _interopRequireDefault(_axios);
 
-var _reactToggleDisplay = __webpack_require__(72);
+var _reactToggleDisplay = __webpack_require__(76);
 
 var _reactToggleDisplay2 = _interopRequireDefault(_reactToggleDisplay);
 
@@ -4579,7 +4625,7 @@ var Poll = function (_Component) {
 exports.default = Poll;
 
 /***/ }),
-/* 66 */
+/* 70 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4633,7 +4679,7 @@ Show.propTypes = {
 };
 
 /***/ }),
-/* 67 */
+/* 71 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4725,7 +4771,7 @@ RadioButton.propTypes = {
 exports.default = RadioButton;
 
 /***/ }),
-/* 68 */
+/* 72 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4812,7 +4858,7 @@ Input.propTypes = {
 exports.default = Input;
 
 /***/ }),
-/* 69 */
+/* 73 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4911,7 +4957,7 @@ Checkbox.propTypes = {
 exports.default = Checkbox;
 
 /***/ }),
-/* 70 */
+/* 74 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4949,19 +4995,19 @@ var TextArea = _styledComponents2.default.textarea.withConfig({
 exports.default = TextArea;
 
 /***/ }),
-/* 71 */
+/* 75 */
 /***/ (function(module, exports) {
 
 module.exports = require("axios");
 
 /***/ }),
-/* 72 */
+/* 76 */
 /***/ (function(module, exports) {
 
 module.exports = require("react-toggle-display");
 
 /***/ }),
-/* 73 */
+/* 77 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4985,7 +5031,7 @@ var _Footer = __webpack_require__(12);
 
 var _Footer2 = _interopRequireDefault(_Footer);
 
-var _LanguageSwitcher = __webpack_require__(74);
+var _LanguageSwitcher = __webpack_require__(78);
 
 var _LanguageSwitcher2 = _interopRequireDefault(_LanguageSwitcher);
 
@@ -5003,7 +5049,7 @@ var Whitepaper = function Whitepaper(_ref) {
 exports.default = (0, _reactStatic.getSiteProps)(Whitepaper);
 
 /***/ }),
-/* 74 */
+/* 78 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5031,7 +5077,7 @@ var _Button = __webpack_require__(6);
 
 var _Button2 = _interopRequireDefault(_Button);
 
-var _Language = __webpack_require__(75);
+var _Language = __webpack_require__(79);
 
 var _Language2 = _interopRequireDefault(_Language);
 
@@ -5081,7 +5127,7 @@ var LanguageSwitcher = function LanguageSwitcher(p) {
 exports.default = LanguageSwitcher;
 
 /***/ }),
-/* 75 */
+/* 79 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5148,7 +5194,7 @@ Language.propTypes = {
 exports.default = Language;
 
 /***/ }),
-/* 76 */
+/* 80 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5181,4 +5227,4 @@ exports.default = function () {
 /***/ })
 /******/ ]);
 });
-//# sourceMappingURL=app.static.b9824c3a.js.map
+//# sourceMappingURL=app.static.2a9a2d4f.js.map
