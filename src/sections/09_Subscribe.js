@@ -47,7 +47,7 @@ const Subscribe = p => (
       <Container>
         <Small>The last news and releases</Small>
         <Heading>Subscribe on DEIP</Heading>
-        <Form method="post" action="/subscribe">
+        <Form method="post">
           <SubscribeInput
             name="email"
             type="email"

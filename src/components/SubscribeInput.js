@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import styled, { css } from 'styled-components'
 
 import send from './images/icon_send.svg'
+import SubscribeForm from 'components/SubscribeForm'
 
 const Root = styled.div`
   display: inline-flex;
@@ -49,13 +50,32 @@ const Icon = styled.img`
   width: 42px;
 `
 
-const Input = p => (
-  <Root>
-    <InputComp {...p} />
-    <Submit>
-      <Icon src={send} />
-    </Submit>
-  </Root>
+const formProps = {
+  action: 'https://prizoners.us9.list-manage.com/subscribe/post?u=d66d8c5d1ef09114cf8c27ccb&id=3c7edc9b14',
+  messages: {
+    inputPlaceholder: "Enter your email",
+    sending: "Sending...",
+    success: "Thank you! Now check your e-mail.",
+    error: "Try again"
+  },
+  styles: {
+    sending: {
+      fontSize: 18,
+      color: "auto"
+    },
+    success: {
+      fontSize: 18,
+      color: "green"
+    },
+    error: {
+      fontSize: 18,
+      color: "red"
+    }
+  }
+}
+
+const Input = () => (
+    <SubscribeForm {...formProps}/>
 )
 
 export default Input
