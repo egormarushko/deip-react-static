@@ -15,6 +15,8 @@ import nsvyaznoy from 'components/images/team/nsvyaznoy.png'
 import emarushko from 'components/images/team/emarushko.png'
 import sdzeranov from 'components/images/team/sdzeranov.png'
 import akorotkov from 'components/images/team/akorotkov.png'
+import amekibel from 'components/images/team/amekibel.png'
+import ndanilevich from 'components/images/team/ndanilevich.png'
 
 const personsFirstRow = [
   { src: ashkor, name: 'Alex Shkor', role: 'CHIEF EXECUTIVE OFFICER', linkedin: 'https://www.linkedin.com/in/alexshkor/', github: 'https://github.com/alexshkor' },
@@ -33,6 +35,8 @@ const personsSecondRow = [
 const personsThirdRow = [
   { src: sdzeranov, name: 'Serge Dzeranov', role: 'BLOCKCHAIN DEVELOPER', linkedin: 'https://www.linkedin.com/in/sergey-dzeranov-b86a20127/', github: 'https://gitlab.com/Dzeranov' },
   { src: akorotkov, name: 'Alexey Korotkov', role: 'BLOCKCHAIN DEVELOPER', linkedin: 'https://www.linkedin.com/in/alexey-korotkov-7b2339123/'},
+  { src: amekibel, name: 'Alan Mekibel', role: 'DEIP MADRID AMBASSADOR, MARKETING MANAGER', linkedin: 'https://www.linkedin.com/in/amekibel/'},
+  { src: ndanilevich, name: 'Natalya Danilevich', role: 'CONTENT WRITER'},
 ]
 
 // reused in the advisors section
@@ -99,7 +103,7 @@ const Team = p => (
       <Heading type="sub">Who's develop DEIP platform</Heading>
       <Block>{personsFirstRow.map(p => <Person {...p} key={p.name} />)}</Block>
       <Block>{personsSecondRow.map(p => <Person {...p} key={p.name} />)}</Block>
-      <BlockIncomplete>{personsThirdRow.map(p => <Person {...p} key={p.name} />)}</BlockIncomplete>
+      <Block>{personsThirdRow.map(p => <Person {...p} key={p.name} />)}</Block>
     </Container>
   </Root>
 )
