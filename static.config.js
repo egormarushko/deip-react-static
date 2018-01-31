@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { ServerStyleSheet } from 'styled-components'
 
 export default {
-  siteRoot: 'http://deip.world',
+  siteRoot: '',
   getSiteProps: () => ({
     title: 'DEIP — decentralized research platform'
   }),
