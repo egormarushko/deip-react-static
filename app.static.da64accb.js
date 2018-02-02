@@ -3518,26 +3518,26 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 var Root = _styledComponents2.default.div.withConfig({
   displayName: 'SubscribeInput__Root',
-  componentId: 's27t0xl-0'
+  componentId: 's1bwmtgs-0'
 })(['display:inline-flex;align-items:center;border-radius:30px;border:1px solid #fff;']);
 
 var Submit = _styledComponents2.default.button.withConfig({
   displayName: 'SubscribeInput__Submit',
-  componentId: 's27t0xl-1'
+  componentId: 's1bwmtgs-1'
 })(['border:none;background:transparent;cursor:pointer;padding:0;margin-right:9px;transition:opacity 0.3s;opacity:0.6;']);
 
 var InputComp = _styledComponents2.default.input.withConfig({
   displayName: 'SubscribeInput__InputComp',
-  componentId: 's27t0xl-2'
+  componentId: 's1bwmtgs-2'
 })(['border:none;background:transparent;font-size:16px;line-height:60px;color:#fff;width:100%;min-width:0;margin:0 16px 0 30px;&:focus{outline:none;}&:focus ~ button{opacity:1;}&::placeholder{color:rgba(255,255,255,0.5);}']);
 
 var Icon = _styledComponents2.default.img.withConfig({
   displayName: 'SubscribeInput__Icon',
-  componentId: 's27t0xl-3'
+  componentId: 's1bwmtgs-3'
 })(['display:block;width:42px;']);
 
 var formProps = {
-  action: 'https://prizoners.us9.list-manage.com/subscribe/post?u=d66d8c5d1ef09114cf8c27ccb&id=3c7edc9b14',
+  action: 'https://world.us17.list-manage.com/subscribe/post?u=8ad780176f7d9c1b8d56e5152&amp;id=31341d1292',
   messages: {
     inputPlaceholder: "Enter your email",
     sending: "Sending...",
@@ -5229,4 +5229,4 @@ exports.default = function () {
 /***/ })
 /******/ ]);
 });
-//# sourceMappingURL=app.static.a56768d6.js.map
+//# sourceMappingURL=app.static.da64accb.js.map
