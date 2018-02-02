@@ -2452,7 +2452,7 @@ module.exports = __webpack_require__.p + "static/akulik.39060d33.png";
 /* 40 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "static/arusetskiy.f6875500.png";
+module.exports = __webpack_require__.p + "static/arusetskiy.ccb7b92f.png";
 
 /***/ }),
 /* 41 */
@@ -5229,4 +5229,4 @@ exports.default = function () {
 /***/ })
 /******/ ]);
 });
-//# sourceMappingURL=app.static.da64accb.js.map
+//# sourceMappingURL=app.static.1d1db60b.js.map
