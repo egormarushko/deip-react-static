@@ -51,7 +51,7 @@ const Icon = styled.img`
 `
 
 const formProps = {
-  action: 'https://prizoners.us9.list-manage.com/subscribe/post?u=d66d8c5d1ef09114cf8c27ccb&id=3c7edc9b14',
+  action: 'https://world.us17.list-manage.com/subscribe/post?u=8ad780176f7d9c1b8d56e5152&amp;id=31341d1292',
   messages: {
     inputPlaceholder: "Enter your email",
     sending: "Sending...",
