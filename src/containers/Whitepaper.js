@@ -1,14 +1,17 @@
 import React from 'react'
 import { getSiteProps } from 'react-static'
 
-import Hero from 'sections/00_Hero'
-import Footer from 'sections/10_Footer'
+import HeroBackground from 'components/HeroBackground'
+import Menu from 'components/Menu'
+import MobileMenu from 'components/MobileMenu'
 
 import LanguageSwitcher from 'sections/11_LanguageSwitcher'
 
 const Whitepaper = ({ someData }) => (
   <div>
-      <LanguageSwitcher id="language_switcher" />
+    <Menu attached={true} />
+    <MobileMenu attached={true} />
+    <LanguageSwitcher id="language_switcher" />
   </div>
 )
 

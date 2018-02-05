@@ -103,6 +103,7 @@ class Menu extends Component {
           <Logo to="/">DEIP</Logo>
           <Nav>
             <Anchor href="/#about">About us</Anchor>
+            <Anchor href="/whitepaper">Whitepaper</Anchor>
             <Anchor href="/#roadmap">Roadmap</Anchor>
             <Anchor href="/#team">Team</Anchor>
             <Anchor href="/#advisors">Advisors</Anchor>

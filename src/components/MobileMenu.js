@@ -171,6 +171,9 @@ class MobileMenu extends Component {
             <Anchor href="/#about" onClick={this.handleClick}>
               About us
             </Anchor>
+            <Anchor href="/whitepaper" onClick={this.handleClick}>
+              Whitepaper
+            </Anchor>
             <Anchor href="/#roadmap" onClick={this.handleClick}>
               Roadmap
             </Anchor>
