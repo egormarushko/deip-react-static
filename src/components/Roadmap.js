@@ -39,6 +39,18 @@ export const Section = styled.div`
     height: auto;
   `};
 `
+export const SectionReverse = styled.div`
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  height: ${411 / 2}px;
+  flex-direction: row-reverse;
+
+  ${m.lessThan('small')`
+    flex-flow: column;
+    height: auto;
+  `};
+`
 
 const EntryRoot = styled.div`
   position: relative;
@@ -71,6 +83,7 @@ const EntryLabel = styled.div`
   ${m.lessThan('small')`
     text-align: right;
     min-width: 25%;
+    max-width: 25%;
     margin: 0;
   `};
 `
