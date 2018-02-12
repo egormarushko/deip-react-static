@@ -2332,24 +2332,24 @@ function _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defi
 
 var Bg = _styledComponents2.default.div.withConfig({
   displayName: '03_Roadmap__Bg',
-  componentId: 's1w2rg9a-0'
+  componentId: 's1eygxao-0'
 })(['background:linear-gradient(180deg,#331d50 51.81%,#247fad 149.89%);']);
 
 var Root = _styledComponents2.default.section.withConfig({
   displayName: '03_Roadmap__Root',
-  componentId: 's1w2rg9a-1'
+  componentId: 's1eygxao-1'
 })(['', ';position:relative;h1{color:#fff;}'], _styles.container);
 
 var Container = _Team.Container.extend(_templateObject, _styles.m.lessThan('small')(_templateObject2));
 
 var Small = _styledComponents2.default.p.withConfig({
   displayName: '03_Roadmap__Small',
-  componentId: 's1w2rg9a-2'
+  componentId: 's1eygxao-2'
 })(['font-weight:700;font-size:10px;color:rgba(255,255,255,0.3);text-transform:uppercase;margin:0 0 4px 0;']);
 
 var Headline = _styledComponents2.default.div.withConfig({
   displayName: '03_Roadmap__Headline',
-  componentId: 's1w2rg9a-3'
+  componentId: 's1eygxao-3'
 })(['padding:64px 0 32px 0;', ';', ';'], _styles.m.greaterThan('small')(_templateObject3), _styles.m.lessThan('small')(_templateObject4));
 
 // const Roadmaps = styled.div`
@@ -2405,11 +2405,11 @@ var Roadmap = function Roadmap(p) {
             _Roadmap.Main,
             null,
             _react2.default.createElement(
-              _Roadmap.Section,
+              _Roadmap.SectionReverse,
               null,
-              _react2.default.createElement(_Roadmap.Entry, { done: true, label: 'December 2017', text: 'Graphene framework initial setup. Refactoring. Infrastructure setup' }),
+              _react2.default.createElement(_Roadmap.Entry, { done: true, label: 'October 2017', text: 'Protocol final design' }),
               _react2.default.createElement(_Roadmap.Entry, { done: true, label: 'November 2017', text: 'Architecture design finished. WP finished' }),
-              _react2.default.createElement(_Roadmap.Entry, { done: true, label: 'October 2017', text: 'Protocol final design' })
+              _react2.default.createElement(_Roadmap.Entry, { done: true, label: 'December 2017', text: 'Graphene framework initial setup. Refactoring. Infrastructure setup' })
             ),
             _react2.default.createElement(
               _Roadmap.Section,
@@ -2419,11 +2419,11 @@ var Roadmap = function Roadmap(p) {
               _react2.default.createElement(_Roadmap.Entry, { label: 'March 2018', text: 'Test-net launch. Alfa-version of UI release. Wallet UI release (for testnet)' })
             ),
             _react2.default.createElement(
-              _Roadmap.Section,
+              _Roadmap.SectionReverse,
               null,
-              _react2.default.createElement(_Roadmap.Entry, { label: 'June 2018', text: 'Main-net launch. Initial expertise tokens distribution. Initial research publishing preparation' }),
+              _react2.default.createElement(_Roadmap.Entry, { label: 'April 2018', text: 'Research Platform Beta UI Launch' }),
               _react2.default.createElement(_Roadmap.Entry, { label: 'May 2018', text: 'Expertise tokens distribution' }),
-              _react2.default.createElement(_Roadmap.Entry, { label: 'April 2018', text: 'Research Platform Beta UI Launch' })
+              _react2.default.createElement(_Roadmap.Entry, { label: 'June 2018', text: 'Main-net launch. Initial expertise tokens distribution. Initial research publishing preparation' })
             ),
             _react2.default.createElement(
               _Roadmap.Section,
@@ -2433,10 +2433,10 @@ var Roadmap = function Roadmap(p) {
               _react2.default.createElement(_Roadmap.Entry, { label: 'September 2018', text: 'Storage sidechain for research data' })
             ),
             _react2.default.createElement(
-              _Roadmap.Section,
+              _Roadmap.SectionReverse,
               null,
-              _react2.default.createElement(_Roadmap.Entry, { label: 'November 2018', text: 'Funding Agency DAO' }),
-              _react2.default.createElement(_Roadmap.Entry, { label: 'October 2018', text: 'Scientific Resources marketplace' })
+              _react2.default.createElement(_Roadmap.Entry, { label: 'October 2018', text: 'Scientific Resources marketplace' }),
+              _react2.default.createElement(_Roadmap.Entry, { label: 'November 2018', text: 'Funding Agency DAO' })
             )
           )
         )
@@ -2535,12 +2535,12 @@ module.exports = __webpack_require__.p + "static/ndanilevich.9e54b8df.png";
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.Popup = exports.Entry = exports.Section = exports.Main = undefined;
+exports.Popup = exports.Entry = exports.SectionReverse = exports.Section = exports.Main = undefined;
 
 var _templateObject = _taggedTemplateLiteral(['\n    background: transparent;\n\n    &:after {\n      content: \'\';\n      position: absolute;\n      border-radius: 3px;\n      background: rgba(255,255,255,0.2);\n      left: calc(25% + 24px);\n      top: 0;\n      width: 6px;\n      height: 100%;\n    }\n  '], ['\n    background: transparent;\n\n    &:after {\n      content: \'\';\n      position: absolute;\n      border-radius: 3px;\n      background: rgba(255,255,255,0.2);\n      left: calc(25% + 24px);\n      top: 0;\n      width: 6px;\n      height: 100%;\n    }\n  ']),
     _templateObject2 = _taggedTemplateLiteral(['\n    flex-flow: column;\n    height: auto;\n  '], ['\n    flex-flow: column;\n    height: auto;\n  ']),
     _templateObject3 = _taggedTemplateLiteral(['\n    flex-flow: row;\n    top: auto;\n    width: 100%;\n    min-width: 100%;\n    padding: 36px 0;\n  '], ['\n    flex-flow: row;\n    top: auto;\n    width: 100%;\n    min-width: 100%;\n    padding: 36px 0;\n  ']),
-    _templateObject4 = _taggedTemplateLiteral(['\n    text-align: right;\n    min-width: 25%;\n    margin: 0;\n  '], ['\n    text-align: right;\n    min-width: 25%;\n    margin: 0;\n  ']),
+    _templateObject4 = _taggedTemplateLiteral(['\n    text-align: right;\n    min-width: 25%;\n    max-width: 25%;\n    margin: 0;\n  '], ['\n    text-align: right;\n    min-width: 25%;\n    max-width: 25%;\n    margin: 0;\n  ']),
     _templateObject5 = _taggedTemplateLiteral(['\n    margin: 0 16px;\n  '], ['\n    margin: 0 16px;\n  ']),
     _templateObject6 = _taggedTemplateLiteral(['\n    text-align: left;\n    margin: 0;\n  '], ['\n    text-align: left;\n    margin: 0;\n  ']),
     _templateObject7 = _taggedTemplateLiteral(['\n    flex-flow: row-reverse;\n    justify-content: flex-end;\n    top: auto;\n    padding: 16px 0;\n    left: calc(25% + 24px);\n  '], ['\n    flex-flow: row-reverse;\n    justify-content: flex-end;\n    top: auto;\n    padding: 16px 0;\n    left: calc(25% + 24px);\n  ']),
@@ -2572,34 +2572,38 @@ function _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defi
 
 var Main = exports.Main = _styledComponents2.default.div.withConfig({
   displayName: 'Roadmap__Main',
-  componentId: 's1jmnesu-0'
+  componentId: 's1h59kki-0'
 })(['overflow:hidden;position:relative;background-image:url(', ');background-repeat:repeat-y;background-size:100% 411px;', ';'], _bg2.default, _styles.m.lessThan('small')(_templateObject));
 
 var Section = exports.Section = _styledComponents2.default.div.withConfig({
   displayName: 'Roadmap__Section',
-  componentId: 's1jmnesu-1'
+  componentId: 's1h59kki-1'
 })(['position:relative;display:flex;justify-content:space-around;height:', 'px;', ';'], 411 / 2, _styles.m.lessThan('small')(_templateObject2));
+var SectionReverse = exports.SectionReverse = _styledComponents2.default.div.withConfig({
+  displayName: 'Roadmap__SectionReverse',
+  componentId: 's1h59kki-2'
+})(['position:relative;display:flex;justify-content:space-around;height:', 'px;flex-direction:row-reverse;', ';'], 411 / 2, _styles.m.lessThan('small')(_templateObject2));
 
 var EntryRoot = _styledComponents2.default.div.withConfig({
   displayName: 'Roadmap__EntryRoot',
-  componentId: 's1jmnesu-2'
+  componentId: 's1h59kki-3'
 })(['position:relative;display:flex;flex-flow:column;align-items:center;color:#fff;top:52px;width:25%;min-width:25%;height:100%;opacity:', ';', ';'], function (p) {
   return p.done ? '0.2' : '1';
 }, _styles.m.lessThan('small')(_templateObject3));
 
 var EntryLabel = _styledComponents2.default.div.withConfig({
   displayName: 'Roadmap__EntryLabel',
-  componentId: 's1jmnesu-3'
+  componentId: 's1h59kki-4'
 })(['font-weight:700;text-align:center;line-height:1.5;text-transform:uppercase;margin-bottom:16px;', ';'], _styles.m.lessThan('small')(_templateObject4));
 
 var EntryPoint = _styledComponents2.default.div.withConfig({
   displayName: 'Roadmap__EntryPoint',
-  componentId: 's1jmnesu-4'
+  componentId: 's1h59kki-5'
 })(['border-radius:100%;background:#fff;width:22px;height:22px;min-width:22px;min-height:22px;box-shadow:0px 4px 4px rgba(0,0,0,0.25);', ';'], _styles.m.lessThan('small')(_templateObject5));
 
 var EntryText = _styledComponents2.default.div.withConfig({
   displayName: 'Roadmap__EntryText',
-  componentId: 's1jmnesu-5'
+  componentId: 's1h59kki-6'
 })(['font-size:14px;line-height:1.5;text-align:center;margin:16px 0 0 0;', ';'], _styles.m.lessThan('small')(_templateObject6));
 
 var Entry = exports.Entry = function Entry(_ref) {
@@ -2625,19 +2629,19 @@ var Entry = exports.Entry = function Entry(_ref) {
 
 var PopupRoot = _styledComponents2.default.div.withConfig({
   displayName: 'Roadmap__PopupRoot',
-  componentId: 's1jmnesu-6'
+  componentId: 's1h59kki-7'
 })(['position:relative;display:flex;flex-flow:column;align-items:center;text-align:center;color:#fff;top:-38px;height:100%;opacity:', ';', ';'], function (p) {
   return p.done ? '0.2' : '1';
 }, _styles.m.lessThan('small')(_templateObject7));
 
 var PopupContent = _styledComponents2.default.div.withConfig({
   displayName: 'Roadmap__PopupContent',
-  componentId: 's1jmnesu-7'
+  componentId: 's1h59kki-8'
 })(['width:150px;min-width:150px;']);
 
 var PopupLabel = _styledComponents2.default.div.withConfig({
   displayName: 'Roadmap__PopupLabel',
-  componentId: 's1jmnesu-8'
+  componentId: 's1h59kki-9'
 })(['background:', ';font-weight:400;font-size:15px;color:', ';height:24px;min-height:24px;line-height:24px;width:100%;'], function (p) {
   return p.accent ? '#e71d36' : '#fff';
 }, function (p) {
@@ -2646,17 +2650,17 @@ var PopupLabel = _styledComponents2.default.div.withConfig({
 
 var PopupText = _styledComponents2.default.div.withConfig({
   displayName: 'Roadmap__PopupText',
-  componentId: 's1jmnesu-9'
+  componentId: 's1h59kki-10'
 })(['background:rgba(255,255,255,0.1);font-weight:300;font-size:18px;height:72px;line-height:72px;width:100%;']);
 
 var PopupArrow = _styledComponents2.default.div.withConfig({
   displayName: 'Roadmap__PopupArrow',
-  componentId: 's1jmnesu-10'
+  componentId: 's1h59kki-11'
 })(['', ';', ';'], _styles.m.greaterThan('small')(_templateObject8), _styles.m.lessThan('small')(_templateObject9));
 
 var PopupPoint = _styledComponents2.default.div.withConfig({
   displayName: 'Roadmap__PopupPoint',
-  componentId: 's1jmnesu-11'
+  componentId: 's1h59kki-12'
 })(['border-radius:100%;background:', ';width:9px;min-width:9px;height:9px;min-height:9px;margin-top:16px;', ';'], function (p) {
   return p.accent ? '#e71d36' : '#fff';
 }, _styles.m.lessThan('small')(_templateObject10));
@@ -5280,4 +5284,4 @@ exports.default = function () {
 /***/ })
 /******/ ]);
 });
-//# sourceMappingURL=app.static.1721399d.js.map
+//# sourceMappingURL=app.static.79564494.js.map
