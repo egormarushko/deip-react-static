@@ -238,35 +238,27 @@ var _arusetskiy = __webpack_require__(40);
 
 var _arusetskiy2 = _interopRequireDefault(_arusetskiy);
 
-var _akulichkin = __webpack_require__(41);
-
-var _akulichkin2 = _interopRequireDefault(_akulichkin);
-
-var _nsvyaznoy = __webpack_require__(42);
-
-var _nsvyaznoy2 = _interopRequireDefault(_nsvyaznoy);
-
-var _ybokach = __webpack_require__(43);
+var _ybokach = __webpack_require__(41);
 
 var _ybokach2 = _interopRequireDefault(_ybokach);
 
-var _emarushko = __webpack_require__(44);
+var _emarushko = __webpack_require__(42);
 
 var _emarushko2 = _interopRequireDefault(_emarushko);
 
-var _sdzeranov = __webpack_require__(45);
+var _sdzeranov = __webpack_require__(43);
 
 var _sdzeranov2 = _interopRequireDefault(_sdzeranov);
 
-var _akorotkov = __webpack_require__(46);
+var _akorotkov = __webpack_require__(44);
 
 var _akorotkov2 = _interopRequireDefault(_akorotkov);
 
-var _amekibel = __webpack_require__(47);
+var _amekibel = __webpack_require__(45);
 
 var _amekibel2 = _interopRequireDefault(_amekibel);
 
-var _ndanilevich = __webpack_require__(48);
+var _ndanilevich = __webpack_require__(46);
 
 var _ndanilevich2 = _interopRequireDefault(_ndanilevich);
 
@@ -274,42 +266,40 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 function _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
 
-var personsFirstRow = [{ src: _ashkor2.default, name: 'Alex Shkor', role: 'CHIEF EXECUTIVE OFFICER', linkedin: 'https://www.linkedin.com/in/alexshkor/', github: 'https://github.com/alexshkor' }, { src: _etsaryk2.default, name: 'Egor Tsaryk', role: 'CHIEF TECHNOLOGY OFFICER', linkedin: 'https://www.linkedin.com/in/yahor-tsaryk-92032a68/', github: 'https://github.com/egortsaryk9' }, { src: _akulik2.default, name: 'Alexey Kulik', role: 'CHIEF ARCHITECT', linkedin: 'https://www.linkedin.com/in/alexey-kulik-61576027/', github: 'https://github.com/akulik-paralect' }, { src: _aermolaev2.default, name: 'Artur Yermalayeu', role: 'CHIEF FINANCIAL OFFICER', facebook: 'https://www.facebook.com/ArturYe' }];
+var personsFirstRow = [{ src: _ashkor2.default, name: 'Alex Shkor', role: 'BLOCKCHAIN ARCHITECT', linkedin: 'https://www.linkedin.com/in/alexshkor/', github: 'https://github.com/alexshkor' }, { src: _etsaryk2.default, name: 'Egor Tsaryk', role: 'TECH LEAD', linkedin: 'https://www.linkedin.com/in/yahor-tsaryk-92032a68/', github: 'https://github.com/egortsaryk9' }, { src: _akulik2.default, name: 'Alexey Kulik', role: 'SOFTWARE ARCHITECT', linkedin: 'https://www.linkedin.com/in/alexey-kulik-61576027/', github: 'https://github.com/akulik-paralect' }, { src: _aermolaev2.default, name: 'Artur Yermalayeu', role: 'FINANCIAL MANAGER', facebook: 'https://www.facebook.com/ArturYe' }];
 
-var personsSecondRow = [{ src: _arusetskiy2.default, name: 'Artyom Rusetskiy', role: 'CHIEF SCIENTIST', linkedin: 'https://www.linkedin.com/in/artyom-ruseckiy-8521a89a/' }, { src: _akulichkin2.default, name: 'Anton Kulichkin', role: 'CHIEF PARTNERSHIPS OFFICER', linkedin: 'https://www.linkedin.com/in/anton-kulichkin-b158a886/' }, { src: _nsvyaznoy2.default, name: 'Nikolay Svyaznoy', role: 'CHIEF MARKETING OFFICER', linkedin: 'src' }, { src: _ybokach2.default, name: 'Yura Bokach', role: 'PROJECT MANAGER' }];
+var personsSecondRow = [{ src: _arusetskiy2.default, name: 'Artyom Rusetskiy', role: 'SCIENTIST, MATHEMATICIAN', linkedin: 'https://www.linkedin.com/in/artyom-ruseckiy-8521a89a/' }, { src: _ybokach2.default, name: 'Yura Bokach', role: 'PROJECT MANAGER' }, { src: _amekibel2.default, name: 'Alan Mekibel', role: 'MARKETING MANAGER', linkedin: 'https://www.linkedin.com/in/amekibel/' }, { src: _ndanilevich2.default, name: 'Natalya Danilevich', role: 'CONTENT WRITER' }];
 
-var personsThirdRow = [{ src: _emarushko2.default, name: 'Egor Marushko', role: 'BLOCKCHAIN DEVELOPER', linkedin: 'https://www.linkedin.com/in/egor-marushko-477175122/', github: 'https://github.com/egormarushko' }, { src: _sdzeranov2.default, name: 'Serge Dzeranov', role: 'BLOCKCHAIN DEVELOPER', linkedin: 'https://www.linkedin.com/in/sergey-dzeranov-b86a20127/', github: 'https://gitlab.com/Dzeranov' }, { src: _akorotkov2.default, name: 'Alexey Korotkov', role: 'BLOCKCHAIN DEVELOPER', linkedin: 'https://www.linkedin.com/in/alexey-korotkov-7b2339123/' }, { src: _amekibel2.default, name: 'Alan Mekibel', role: 'MARKETING MANAGER', linkedin: 'https://www.linkedin.com/in/amekibel/' }];
-
-var personsFourthRow = [{ src: _ndanilevich2.default, name: 'Natalya Danilevich', role: 'CONTENT WRITER' }];
+var personsThirdRow = [{ src: _emarushko2.default, name: 'Egor Marushko', role: 'BLOCKCHAIN DEVELOPER', linkedin: 'https://www.linkedin.com/in/egor-marushko-477175122/', github: 'https://github.com/egormarushko' }, { src: _sdzeranov2.default, name: 'Serge Dzeranov', role: 'BLOCKCHAIN DEVELOPER', linkedin: 'https://www.linkedin.com/in/sergey-dzeranov-b86a20127/', github: 'https://gitlab.com/Dzeranov' }, { src: _akorotkov2.default, name: 'Alexey Korotkov', role: 'BLOCKCHAIN DEVELOPER', linkedin: 'https://www.linkedin.com/in/alexey-korotkov-7b2339123/' }];
 
 // reused in the advisors section
 var Root = exports.Root = _styledComponents2.default.section.withConfig({
   displayName: '04_Team__Root',
-  componentId: 's1c850b1-0'
+  componentId: 's1i10p5m-0'
 })(['', ';'], _styles.container);
 
 // reused in the advisors section
 var Container = exports.Container = _styledComponents2.default.div.withConfig({
   displayName: '04_Team__Container',
-  componentId: 's1c850b1-1'
+  componentId: 's1i10p5m-1'
 })(['text-align:center;width:', '%;margin-left:', '%;margin-top:64px;margin-bottom:64px;', ';'], 100 * 2 / 3, 100 / 6, _styles.m.lessThan('small')(_templateObject));
 
 // reused in the advisors section
 var Block = exports.Block = _styledComponents2.default.div.withConfig({
   displayName: '04_Team__Block',
-  componentId: 's1c850b1-2'
+  componentId: 's1i10p5m-2'
 })(['display:flex;justify-content:space-between;&:first-of-type{margin-top:48px;}', ';'], _styles.m.lessThan('small')(_templateObject2));
 
 // reused in the advisors section
 var BlockIncomplete = exports.BlockIncomplete = _styledComponents2.default.div.withConfig({
   displayName: '04_Team__BlockIncomplete',
-  componentId: 's1c850b1-3'
-})(['width:100%;display:inline-flex;justify-content:space-between;&:first-of-type{margin-top:48px;}', ';'], _styles.m.lessThan('small')(_templateObject2));
+  componentId: 's1i10p5m-3'
+})(['width:', '%;display:flex;justify-content:space-between;&:first-of-type{margin-top:48px;}', ';'], 100 * 2 / 2.75, _styles.m.lessThan('small')(_templateObject2));
 
 // reused in the advisors section
 var Person = exports.Person = (0, _styledComponents2.default)(_Person2.default).withConfig({
   displayName: '04_Team__Person',
-  componentId: 's1c850b1-4'
+  componentId: 's1i10p5m-4'
 })(['margin:24px 0;&:list-of-type{margin-bottom:0;}']);
 
 var Team = function Team(p) {
@@ -344,16 +334,9 @@ var Team = function Team(p) {
         })
       ),
       _react2.default.createElement(
-        Block,
-        null,
-        personsThirdRow.map(function (p) {
-          return _react2.default.createElement(Person, _extends({}, p, { key: p.name }));
-        })
-      ),
-      _react2.default.createElement(
         BlockIncomplete,
         null,
-        personsFourthRow.map(function (p) {
+        personsThirdRow.map(function (p) {
           return _react2.default.createElement(Person, _extends({}, p, { key: p.name }));
         })
       )
@@ -1782,7 +1765,7 @@ var _Team = __webpack_require__(5);
 
 var _Team2 = _interopRequireDefault(_Team);
 
-var _Advisors = __webpack_require__(53);
+var _Advisors = __webpack_require__(51);
 
 var _Advisors2 = _interopRequireDefault(_Advisors);
 
@@ -2316,13 +2299,13 @@ var _Heading = __webpack_require__(4);
 
 var _Heading2 = _interopRequireDefault(_Heading);
 
-var _Roadmap = __webpack_require__(49);
+var _Roadmap = __webpack_require__(47);
 
-var _roadmap = __webpack_require__(51);
+var _roadmap = __webpack_require__(49);
 
 var _roadmap2 = _interopRequireDefault(_roadmap);
 
-var _roadmap_mobile = __webpack_require__(52);
+var _roadmap_mobile = __webpack_require__(50);
 
 var _roadmap_mobile2 = _interopRequireDefault(_roadmap_mobile);
 
@@ -2481,52 +2464,40 @@ module.exports = __webpack_require__.p + "static/arusetskiy.ccb7b92f.png";
 /* 41 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "static/akulichkin.5d20cb3b.png";
+module.exports = __webpack_require__.p + "static/ybokach.acb12e7e.png";
 
 /***/ }),
 /* 42 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "static/nsvyaznoy.aa798147.png";
+module.exports = __webpack_require__.p + "static/emarushko.9a95db57.png";
 
 /***/ }),
 /* 43 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "static/ybokach.acb12e7e.png";
+module.exports = __webpack_require__.p + "static/sdzeranov.43d6c226.png";
 
 /***/ }),
 /* 44 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "static/emarushko.9a95db57.png";
+module.exports = __webpack_require__.p + "static/akorotkov.5d2141cd.png";
 
 /***/ }),
 /* 45 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "static/sdzeranov.43d6c226.png";
+module.exports = __webpack_require__.p + "static/amekibel.da99f2c4.png";
 
 /***/ }),
 /* 46 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "static/akorotkov.5d2141cd.png";
-
-/***/ }),
-/* 47 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/amekibel.da99f2c4.png";
-
-/***/ }),
-/* 48 */
-/***/ (function(module, exports, __webpack_require__) {
-
 module.exports = __webpack_require__.p + "static/ndanilevich.9e54b8df.png";
 
 /***/ }),
-/* 49 */
+/* 47 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2562,7 +2533,7 @@ var _styledComponents2 = _interopRequireDefault(_styledComponents);
 
 var _styles = __webpack_require__(3);
 
-var _bg = __webpack_require__(50);
+var _bg = __webpack_require__(48);
 
 var _bg2 = _interopRequireDefault(_bg);
 
@@ -2693,25 +2664,25 @@ var Popup = exports.Popup = function Popup(_ref2) {
 };
 
 /***/ }),
-/* 50 */
+/* 48 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "static/bg.ebfd0c34.png";
 
 /***/ }),
-/* 51 */
+/* 49 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "static/roadmap.b1d587c0.svg";
 
 /***/ }),
-/* 52 */
+/* 50 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "static/roadmap_mobile.6eedd7c7.svg";
 
 /***/ }),
-/* 53 */
+/* 51 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2742,6 +2713,14 @@ var _Heading2 = _interopRequireDefault(_Heading);
 
 var _Team = __webpack_require__(5);
 
+var _akulichkin = __webpack_require__(52);
+
+var _akulichkin2 = _interopRequireDefault(_akulichkin);
+
+var _nsvyaznoy = __webpack_require__(53);
+
+var _nsvyaznoy2 = _interopRequireDefault(_nsvyaznoy);
+
 var _ayantsevich = __webpack_require__(54);
 
 var _ayantsevich2 = _interopRequireDefault(_ayantsevich);
@@ -2756,12 +2735,12 @@ function _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defi
 
 var Block = exports.Block = _styledComponents2.default.div.withConfig({
   displayName: '05_Advisors__Block',
-  componentId: 'ejcndj-0'
+  componentId: 'bqdhzf-0'
 })(['display:flex;justify-content:space-around;&:first-of-type{margin-top:48px;}', ';'], _styles.m.lessThan('small')(_templateObject));
 
 var persons = [
 // { src: ayantsevich, name: 'Aleksei Yantsevich', role: 'SENIOR RESEARCHER IN BIOORGANIC CHEMISTRY, PhD' },
-{ src: _dklevzhits2.default, name: 'Dmitry Klevzhits', role: 'PhD IN ECONOMICS', linkedin: 'https://www.linkedin.com/in/dmitry-klevzhits-25917413/' }];
+{ src: _akulichkin2.default, name: 'Anton Kulichkin', role: 'PARTNERSHIP ADVISOR', linkedin: 'https://www.linkedin.com/in/anton-kulichkin-b158a886/' }, { src: _nsvyaznoy2.default, name: 'Nikolay Svyaznoy', role: 'MARKETING ADVISOR', linkedin: 'src' }, { src: _dklevzhits2.default, name: 'Dmitry Klevzhits', role: 'PhD IN ECONOMICS', linkedin: 'https://www.linkedin.com/in/dmitry-klevzhits-25917413/' }];
 
 var Advisors = function Advisors(p) {
   return _react2.default.createElement(
@@ -2792,6 +2771,18 @@ var Advisors = function Advisors(p) {
 };
 
 exports.default = Advisors;
+
+/***/ }),
+/* 52 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/akulichkin.5d20cb3b.png";
+
+/***/ }),
+/* 53 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/nsvyaznoy.aa798147.png";
 
 /***/ }),
 /* 54 */
@@ -5284,4 +5275,4 @@ exports.default = function () {
 /***/ })
 /******/ ]);
 });
-//# sourceMappingURL=app.static.79564494.js.map
+//# sourceMappingURL=app.static.13301870.js.map
