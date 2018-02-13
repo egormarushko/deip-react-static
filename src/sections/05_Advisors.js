@@ -26,9 +26,9 @@ export const Block = styled.div`
 
 const persons = [
   // { src: ayantsevich, name: 'Aleksei Yantsevich', role: 'SENIOR RESEARCHER IN BIOORGANIC CHEMISTRY, PhD' },
+  { src: dklevzhits, name: 'Dmitry Klevzhits', role: 'SCIENTIFIC ADVISOR, PhD IN ECONOMICS', linkedin: 'https://www.linkedin.com/in/dmitry-klevzhits-25917413/'},  
   { src: akulichkin, name: 'Anton Kulichkin', role: 'PARTNERSHIP ADVISOR', linkedin: 'https://www.linkedin.com/in/anton-kulichkin-b158a886/'},
   { src: nsvyaznoy, name: 'Nikolay Svyaznoy', role: 'MARKETING ADVISOR', linkedin: 'src'},
-  { src: dklevzhits, name: 'Dmitry Klevzhits', role: 'PhD IN ECONOMICS', linkedin: 'https://www.linkedin.com/in/dmitry-klevzhits-25917413/'},
 ]
 
 const Advisors = p => (
