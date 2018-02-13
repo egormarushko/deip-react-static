@@ -11,6 +11,7 @@ import aermolaev from 'components/images/team/aermolaev.png'
 import akulik from 'components/images/team/akulik.png'
 import arusetskiy from 'components/images/team/arusetskiy.png'
 import ybokach from 'components/images/team/ybokach.png'
+import akastsiushkina from 'components/images/team/akastsiushkina.png'
 import emarushko from 'components/images/team/emarushko.png'
 import sdzeranov from 'components/images/team/sdzeranov.png'
 import akorotkov from 'components/images/team/akorotkov.png'
@@ -28,10 +29,11 @@ const personsSecondRow = [
   { src: arusetskiy, name: 'Artyom Rusetskiy', role: 'SCIENTIST, MATHEMATICIAN', linkedin: 'https://www.linkedin.com/in/artyom-ruseckiy-8521a89a/' },
   { src: ybokach, name: 'Yura Bokach', role: 'PROJECT MANAGER'},
   { src: amekibel, name: 'Alan Mekibel', role: 'MARKETING MANAGER', linkedin: 'https://www.linkedin.com/in/amekibel/'},
-  { src: ndanilevich, name: 'Natalya Danilevich', role: 'CONTENT WRITER'},      
+  { src: akastsiushkina, name: 'Anastasiya Kastsiushkina', role: 'PR & COMMUNICATION MANAGER'},      
 ]
 
 const personsThirdRow = [
+  { src: ndanilevich, name: 'Natalya Danilevich', role: 'CONTENT WRITER'}, 
   { src: emarushko, name: 'Egor Marushko', role: 'BLOCKCHAIN DEVELOPER', linkedin: 'https://www.linkedin.com/in/egor-marushko-477175122/', github: 'https://github.com/egormarushko'},
   { src: sdzeranov, name: 'Serge Dzeranov', role: 'BLOCKCHAIN DEVELOPER', linkedin: 'https://www.linkedin.com/in/sergey-dzeranov-b86a20127/', github: 'https://gitlab.com/Dzeranov' },
   { src: akorotkov, name: 'Alexey Korotkov', role: 'BLOCKCHAIN DEVELOPER', linkedin: 'https://www.linkedin.com/in/alexey-korotkov-7b2339123/'},
@@ -80,6 +82,7 @@ export const BlockIncomplete = styled.div`
   }
 
   ${m.lessThan('small')`
+    width: 100%;
     flex-flow: column;
     align-items: center;
     justify-content: flex-start;
@@ -101,7 +104,7 @@ const Team = p => (
       <Heading type="sub">Who's creating DEIP platform</Heading>
       <Block>{personsFirstRow.map(p => <Person {...p} key={p.name} />)}</Block>
       <Block>{personsSecondRow.map(p => <Person {...p} key={p.name} />)}</Block>
-      <BlockIncomplete>{personsThirdRow.map(p => <Person {...p} key={p.name} />)}</BlockIncomplete>
+      <Block>{personsThirdRow.map(p => <Person {...p} key={p.name} />)}</Block>
     </Container>
   </Root>
 )

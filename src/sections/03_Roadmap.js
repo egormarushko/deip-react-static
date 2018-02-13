@@ -96,7 +96,7 @@ const Roadmap = p => (
               {/* <Popup label="Some label" text="some text" /> */}
             </SectionReverse>
             <Section>
-              <Entry label="January 2018" text="Core functionality implemented" />
+              <Entry done label="January 2018" text="Core functionality implemented" />
               <Entry label="February 2018" text="Emission distribution system completed" />                
               <Entry label="March 2018" text="Test-net launch. Alfa-version of UI release. Wallet UI release (for testnet)" />                                        
             </Section>
