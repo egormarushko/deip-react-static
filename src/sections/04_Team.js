@@ -10,8 +10,6 @@ import etsaryk from 'components/images/team/etsaryk.png'
 import aermolaev from 'components/images/team/aermolaev.png'
 import akulik from 'components/images/team/akulik.png'
 import arusetskiy from 'components/images/team/arusetskiy.png'
-import akulichkin from 'components/images/team/akulichkin.png'
-import nsvyaznoy from 'components/images/team/nsvyaznoy.png'
 import ybokach from 'components/images/team/ybokach.png'
 import emarushko from 'components/images/team/emarushko.png'
 import sdzeranov from 'components/images/team/sdzeranov.png'
@@ -20,28 +18,23 @@ import amekibel from 'components/images/team/amekibel.png'
 import ndanilevich from 'components/images/team/ndanilevich.png'
 
 const personsFirstRow = [
-  { src: ashkor, name: 'Alex Shkor', role: 'CHIEF EXECUTIVE OFFICER', linkedin: 'https://www.linkedin.com/in/alexshkor/', github: 'https://github.com/alexshkor' },
-  { src: etsaryk, name: 'Egor Tsaryk', role: 'CHIEF TECHNOLOGY OFFICER', linkedin: 'https://www.linkedin.com/in/yahor-tsaryk-92032a68/', github: 'https://github.com/egortsaryk9' },
-  { src: akulik, name: 'Alexey Kulik', role: 'CHIEF ARCHITECT', linkedin: 'https://www.linkedin.com/in/alexey-kulik-61576027/', github: 'https://github.com/akulik-paralect' },
-  { src: aermolaev, name: 'Artur Yermalayeu', role: 'CHIEF FINANCIAL OFFICER', facebook: 'https://www.facebook.com/ArturYe' },  
+  { src: ashkor, name: 'Alex Shkor', role: 'BLOCKCHAIN ARCHITECT', linkedin: 'https://www.linkedin.com/in/alexshkor/', github: 'https://github.com/alexshkor' },
+  { src: etsaryk, name: 'Egor Tsaryk', role: 'TECH LEAD', linkedin: 'https://www.linkedin.com/in/yahor-tsaryk-92032a68/', github: 'https://github.com/egortsaryk9' },
+  { src: akulik, name: 'Alexey Kulik', role: 'SOFTWARE ARCHITECT', linkedin: 'https://www.linkedin.com/in/alexey-kulik-61576027/', github: 'https://github.com/akulik-paralect' },
+  { src: aermolaev, name: 'Artur Yermalayeu', role: 'FINANCIAL MANAGER', facebook: 'https://www.facebook.com/ArturYe' },  
 ]
 
 const personsSecondRow = [
-  { src: arusetskiy, name: 'Artyom Rusetskiy', role: 'CHIEF SCIENTIST', linkedin: 'https://www.linkedin.com/in/artyom-ruseckiy-8521a89a/' },
-  { src: akulichkin, name: 'Anton Kulichkin', role: 'CHIEF PARTNERSHIPS OFFICER', linkedin: 'https://www.linkedin.com/in/anton-kulichkin-b158a886/'},
-  { src: nsvyaznoy, name: 'Nikolay Svyaznoy', role: 'CHIEF MARKETING OFFICER', linkedin: 'src'},
-  { src: ybokach, name: 'Yura Bokach', role: 'PROJECT MANAGER'},  
+  { src: arusetskiy, name: 'Artyom Rusetskiy', role: 'SCIENTIST, MATHEMATICIAN', linkedin: 'https://www.linkedin.com/in/artyom-ruseckiy-8521a89a/' },
+  { src: ybokach, name: 'Yura Bokach', role: 'PROJECT MANAGER'},
+  { src: amekibel, name: 'Alan Mekibel', role: 'MARKETING MANAGER', linkedin: 'https://www.linkedin.com/in/amekibel/'},
+  { src: ndanilevich, name: 'Natalya Danilevich', role: 'CONTENT WRITER'},      
 ]
 
 const personsThirdRow = [
   { src: emarushko, name: 'Egor Marushko', role: 'BLOCKCHAIN DEVELOPER', linkedin: 'https://www.linkedin.com/in/egor-marushko-477175122/', github: 'https://github.com/egormarushko'},
   { src: sdzeranov, name: 'Serge Dzeranov', role: 'BLOCKCHAIN DEVELOPER', linkedin: 'https://www.linkedin.com/in/sergey-dzeranov-b86a20127/', github: 'https://gitlab.com/Dzeranov' },
   { src: akorotkov, name: 'Alexey Korotkov', role: 'BLOCKCHAIN DEVELOPER', linkedin: 'https://www.linkedin.com/in/alexey-korotkov-7b2339123/'},
-  { src: amekibel, name: 'Alan Mekibel', role: 'MARKETING MANAGER', linkedin: 'https://www.linkedin.com/in/amekibel/'},
-]
-
-const personsFourthRow = [
-  { src: ndanilevich, name: 'Natalya Danilevich', role: 'CONTENT WRITER'},  
 ]
 
 // reused in the advisors section
@@ -79,8 +72,8 @@ export const Block = styled.div`
 
 // reused in the advisors section
 export const BlockIncomplete = styled.div`
-  width: 100%;
-  display: inline-flex;
+  width: ${100 * 2 / 2.75}%;
+  display: flex;
   justify-content: space-between;
   &:first-of-type {
     margin-top: 48px;
@@ -108,8 +101,7 @@ const Team = p => (
       <Heading type="sub">Who's creating DEIP platform</Heading>
       <Block>{personsFirstRow.map(p => <Person {...p} key={p.name} />)}</Block>
       <Block>{personsSecondRow.map(p => <Person {...p} key={p.name} />)}</Block>
-      <Block>{personsThirdRow.map(p => <Person {...p} key={p.name} />)}</Block>
-      <BlockIncomplete>{personsFourthRow.map(p => <Person {...p} key={p.name} />)}</BlockIncomplete>
+      <BlockIncomplete>{personsThirdRow.map(p => <Person {...p} key={p.name} />)}</BlockIncomplete>
     </Container>
   </Root>
 )
