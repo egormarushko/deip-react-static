@@ -28,8 +28,8 @@ const personsFirstRow = [
 const personsSecondRow = [
   { src: arusetskiy, name: 'Artyom Rusetskiy', role: 'SCIENTIST, MATHEMATICIAN', linkedin: 'https://www.linkedin.com/in/artyom-ruseckiy-8521a89a/' },
   { src: ybokach, name: 'Yura Bokach', role: 'PROJECT MANAGER'},
+  { src: akastsiushkina, name: 'Anastasiya Kastsiushkina', role: 'PR & COMMUNICATION MANAGER'},  
   { src: amekibel, name: 'Alan Mekibel', role: 'MARKETING MANAGER', linkedin: 'https://www.linkedin.com/in/amekibel/'},
-  { src: akastsiushkina, name: 'Anastasiya Kastsiushkina', role: 'PR & COMMUNICATION MANAGER'},      
 ]
 
 const personsThirdRow = [
