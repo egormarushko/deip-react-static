@@ -273,38 +273,38 @@ function _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defi
 
 var personsFirstRow = [{ src: _ashkor2.default, name: 'Alex Shkor', role: 'BLOCKCHAIN ARCHITECT', linkedin: 'https://www.linkedin.com/in/alexshkor/', github: 'https://github.com/alexshkor' }, { src: _etsaryk2.default, name: 'Egor Tsaryk', role: 'TECH LEAD', linkedin: 'https://www.linkedin.com/in/yahor-tsaryk-92032a68/', github: 'https://github.com/egortsaryk9' }, { src: _akulik2.default, name: 'Alexey Kulik', role: 'SOFTWARE ARCHITECT', linkedin: 'https://www.linkedin.com/in/alexey-kulik-61576027/', github: 'https://github.com/akulik-paralect' }, { src: _aermolaev2.default, name: 'Artur Yermalayeu', role: 'FINANCIAL MANAGER', facebook: 'https://www.facebook.com/ArturYe' }];
 
-var personsSecondRow = [{ src: _arusetskiy2.default, name: 'Artyom Rusetskiy', role: 'SCIENTIST, MATHEMATICIAN', linkedin: 'https://www.linkedin.com/in/artyom-ruseckiy-8521a89a/' }, { src: _ybokach2.default, name: 'Yura Bokach', role: 'PROJECT MANAGER' }, { src: _amekibel2.default, name: 'Alan Mekibel', role: 'MARKETING MANAGER', linkedin: 'https://www.linkedin.com/in/amekibel/' }, { src: _akastsiushkina2.default, name: 'Anastasiya Kastsiushkina', role: 'PR & COMMUNICATION MANAGER' }];
+var personsSecondRow = [{ src: _arusetskiy2.default, name: 'Artyom Rusetskiy', role: 'SCIENTIST, MATHEMATICIAN', linkedin: 'https://www.linkedin.com/in/artyom-ruseckiy-8521a89a/' }, { src: _ybokach2.default, name: 'Yura Bokach', role: 'PROJECT MANAGER' }, { src: _akastsiushkina2.default, name: 'Anastasiya Kastsiushkina', role: 'PR & COMMUNICATION MANAGER' }, { src: _amekibel2.default, name: 'Alan Mekibel', role: 'MARKETING MANAGER', linkedin: 'https://www.linkedin.com/in/amekibel/' }];
 
 var personsThirdRow = [{ src: _ndanilevich2.default, name: 'Natalya Danilevich', role: 'CONTENT WRITER' }, { src: _emarushko2.default, name: 'Egor Marushko', role: 'BLOCKCHAIN DEVELOPER', linkedin: 'https://www.linkedin.com/in/egor-marushko-477175122/', github: 'https://github.com/egormarushko' }, { src: _sdzeranov2.default, name: 'Serge Dzeranov', role: 'BLOCKCHAIN DEVELOPER', linkedin: 'https://www.linkedin.com/in/sergey-dzeranov-b86a20127/', github: 'https://gitlab.com/Dzeranov' }, { src: _akorotkov2.default, name: 'Alexey Korotkov', role: 'BLOCKCHAIN DEVELOPER', linkedin: 'https://www.linkedin.com/in/alexey-korotkov-7b2339123/' }];
 
 // reused in the advisors section
 var Root = exports.Root = _styledComponents2.default.section.withConfig({
   displayName: '04_Team__Root',
-  componentId: 'giswym-0'
+  componentId: 's1em6zm9-0'
 })(['', ';'], _styles.container);
 
 // reused in the advisors section
 var Container = exports.Container = _styledComponents2.default.div.withConfig({
   displayName: '04_Team__Container',
-  componentId: 'giswym-1'
+  componentId: 's1em6zm9-1'
 })(['text-align:center;width:', '%;margin-left:', '%;margin-top:64px;margin-bottom:64px;', ';'], 100 * 2 / 3, 100 / 6, _styles.m.lessThan('small')(_templateObject));
 
 // reused in the advisors section
 var Block = exports.Block = _styledComponents2.default.div.withConfig({
   displayName: '04_Team__Block',
-  componentId: 'giswym-2'
+  componentId: 's1em6zm9-2'
 })(['display:flex;justify-content:space-between;&:first-of-type{margin-top:48px;}', ';'], _styles.m.lessThan('small')(_templateObject2));
 
 // reused in the advisors section
 var BlockIncomplete = exports.BlockIncomplete = _styledComponents2.default.div.withConfig({
   displayName: '04_Team__BlockIncomplete',
-  componentId: 'giswym-3'
+  componentId: 's1em6zm9-3'
 })(['width:', '%;display:flex;justify-content:space-between;&:first-of-type{margin-top:48px;}', ';'], 100 * 2 / 2.75, _styles.m.lessThan('small')(_templateObject3));
 
 // reused in the advisors section
 var Person = exports.Person = (0, _styledComponents2.default)(_Person2.default).withConfig({
   displayName: '04_Team__Person',
-  componentId: 'giswym-4'
+  componentId: 's1em6zm9-4'
 })(['margin:24px 0;&:list-of-type{margin-bottom:0;}']);
 
 var Team = function Team(p) {
@@ -5286,4 +5286,4 @@ exports.default = function () {
 /***/ })
 /******/ ]);
 });
-//# sourceMappingURL=app.static.94d7b6a7.js.map
+//# sourceMappingURL=app.static.06d2f832.js.map
