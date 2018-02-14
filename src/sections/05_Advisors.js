@@ -9,6 +9,7 @@ import akulichkin from 'components/images/team/akulichkin.png'
 import nsvyaznoy from 'components/images/team/nsvyaznoy.png'
 import ayantsevich from 'components/images/team/ayantsevich.png'
 import dklevzhits from 'components/images/team/dklevzhits.png'
+import apobol from 'components/images/team/apobol.png'
 
 export const Block = styled.div`
   display: flex;
@@ -27,6 +28,7 @@ export const Block = styled.div`
 const persons = [
   // { src: ayantsevich, name: 'Aleksei Yantsevich', role: 'SENIOR RESEARCHER IN BIOORGANIC CHEMISTRY, PhD' },
   { src: dklevzhits, name: 'Dmitry Klevzhits', role: 'SCIENTIFIC ADVISOR, PhD IN ECONOMICS', linkedin: 'https://www.linkedin.com/in/dmitry-klevzhits-25917413/'},  
+  { src: apobol, name: 'Anna Pobol', role: 'SCIENTIFIC ADVISOR, PROFESSOR, PHD IN ECONOMICS', linkedin: 'https://www.linkedin.com/in/apobol/'},  
   { src: akulichkin, name: 'Anton Kulichkin', role: 'PARTNERSHIP ADVISOR', linkedin: 'https://www.linkedin.com/in/anton-kulichkin-b158a886/'},
   { src: nsvyaznoy, name: 'Nikolay Svyaznoy', role: 'MARKETING ADVISOR', linkedin: 'src'},
 ]
