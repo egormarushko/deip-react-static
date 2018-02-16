@@ -637,21 +637,21 @@ function _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defi
 
 var Logo = exports.Logo = (0, _styledComponents2.default)(_reactStatic.Link).withConfig({
   displayName: 'Menu__Logo',
-  componentId: 's8v8ab9-0'
+  componentId: 's15q4cd6-0'
 })(['visibility:hidden;font-weight:700;font-size:32px;text-decoration:none;color:', ';'], function (p) {
   return p.theme.palette.text.primary;
 });
 
 var Link = exports.Link = (0, _styledComponents2.default)(_reactStatic.Link).withConfig({
   displayName: 'Menu__Link',
-  componentId: 's8v8ab9-1'
+  componentId: 's15q4cd6-1'
 })(['display:inline-block;font-weight:500;font-size:16px;color:#fff;text-transform:uppercase;text-decoration:none;&:not(:last-child){margin-right:32px;}']);
 
 var Anchor = exports.Anchor = Link.withComponent('a');
 
 var Nav = _styledComponents2.default.div.withConfig({
   displayName: 'Menu__Nav',
-  componentId: 's8v8ab9-2'
+  componentId: 's15q4cd6-2'
 })(['']);
 
 var attached = (0, _styledComponents.css)(['position:fixed;background:#fff;box-shadow:0px 1px 14px rgba(0,0,0,0.12);', '{visibility:visible;}', ',', '{color:', ';}'], Logo, Link, Anchor, function (p) {
@@ -660,14 +660,14 @@ var attached = (0, _styledComponents.css)(['position:fixed;background:#fff;box-s
 
 var Root = _styledComponents2.default.div.withConfig({
   displayName: 'Menu__Root',
-  componentId: 's8v8ab9-3'
+  componentId: 's15q4cd6-3'
 })(['z-index:10;position:absolute;width:100%;top:0;left:0;', ';', ';'], function (p) {
   return p.attached ? attached : '';
 }, _styles.m.lessThan('medium')(_templateObject));
 
 var Content = _styledComponents2.default.div.withConfig({
   displayName: 'Menu__Content',
-  componentId: 's8v8ab9-4'
+  componentId: 's15q4cd6-4'
 })(['display:flex;align-items:center;justify-content:space-between;width:100%;height:60px;padding:0 48px;']);
 
 var Menu = function (_Component) {
@@ -711,6 +711,10 @@ var Menu = function (_Component) {
       } else {
         this.setState({ attached: true });
       }
+
+      var ReactGA = __webpack_require__(13);
+      ReactGA.initialize('UA-114332532-1');
+      ReactGA.pageview(window.location.pathname + window.location.search);
     }
   }, {
     key: 'componentWillUnmount',
@@ -793,12 +797,6 @@ module.exports = require("polished");
 
 /***/ }),
 /* 12 */
-/***/ (function(module, exports) {
-
-module.exports = require("react-ga");
-
-/***/ }),
-/* 13 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -848,22 +846,22 @@ function _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defi
 
 var Toggler = _styledComponents2.default.a.withConfig({
   displayName: 'MobileMenu__Toggler',
-  componentId: 's1yw6ri9-0'
+  componentId: 's10wn7f0-0'
 })(['font-size:24px;line-height:60px;color:#fff;width:60px;height:60px;.open{display:inline-block;}.close{display:none;}', ';'], _styles.m.greaterThan('medium')(_templateObject));
 
 var Top = _styledComponents2.default.div.withConfig({
   displayName: 'MobileMenu__Top',
-  componentId: 's1yw6ri9-1'
+  componentId: 's10wn7f0-1'
 })(['display:flex;align-items:center;justify-content:space-between;padding-left:16px;height:60px;min-height:60px;']);
 
 var Nav = _styledComponents2.default.div.withConfig({
   displayName: 'MobileMenu__Nav',
-  componentId: 's1yw6ri9-2'
+  componentId: 's10wn7f0-2'
 })(['display:none;flex-flow:column;align-items:center;justify-content:space-between;height:100%;']);
 
 var Links = _styledComponents2.default.div.withConfig({
   displayName: 'MobileMenu__Links',
-  componentId: 's1yw6ri9-3'
+  componentId: 's10wn7f0-3'
 })(['display:flex;flex-flow:column;align-items:center;padding-top:32px;']);
 
 var opened = (0, _styledComponents.css)(['position:fixed;background:#fff;height:100%;.open{display:none;}.close{display:inline-block;}', '{visibility:visible;}', '{display:flex;}', ',', ',', '{color:inherit;}'], _Menu.Logo, Nav, _Menu.Link, _Menu.Anchor, Toggler);
@@ -872,7 +870,7 @@ var attached = (0, _styledComponents.css)(['position:fixed;background:#fff;box-s
 
 var Root = _styledComponents2.default.div.withConfig({
   displayName: 'MobileMenu__Root',
-  componentId: 's1yw6ri9-4'
+  componentId: 's10wn7f0-4'
 })(['z-index:10;position:absolute;display:flex;flex-flow:column;width:100%;top:0;left:0;', ';', ';', ';', ',', '{margin:16px 0;}', '{width:50%;margin-bottom:32px;}'], function (p) {
   return p.attached ? attached : '';
 }, function (p) {
@@ -926,6 +924,10 @@ var MobileMenu = function (_Component) {
       } else {
         this.setState({ attached: true });
       }
+
+      var ReactGA = __webpack_require__(13);
+      ReactGA.initialize('UA-114332532-1');
+      ReactGA.pageview(window.location.pathname + window.location.search);
     }
   }, {
     key: 'componentWillUnmount',
@@ -1011,6 +1013,12 @@ MobileMenu.propTypes = {
 };
 
 exports.default = MobileMenu;
+
+/***/ }),
+/* 13 */
+/***/ (function(module, exports) {
+
+module.exports = require("react-ga");
 
 /***/ }),
 /* 14 */
@@ -1800,13 +1808,7 @@ var _Footer = __webpack_require__(17);
 
 var _Footer2 = _interopRequireDefault(_Footer);
 
-var _reactGa = __webpack_require__(12);
-
-var _reactGa2 = _interopRequireDefault(_reactGa);
-
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-_reactGa2.default.initialize('UA-114332532-1');
 
 var Index = function Index(_ref) {
   var someData = _ref.someData;
@@ -1869,7 +1871,7 @@ var _Menu = __webpack_require__(10);
 
 var _Menu2 = _interopRequireDefault(_Menu);
 
-var _MobileMenu = __webpack_require__(13);
+var _MobileMenu = __webpack_require__(12);
 
 var _MobileMenu2 = _interopRequireDefault(_MobileMenu);
 
@@ -3857,13 +3859,7 @@ var _Footer = __webpack_require__(17);
 
 var _Footer2 = _interopRequireDefault(_Footer);
 
-var _reactGa = __webpack_require__(12);
-
-var _reactGa2 = _interopRequireDefault(_reactGa);
-
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-_reactGa2.default.initialize('UA-114332532-1');
 
 var Join = function Join(_ref) {
   var someData = _ref.someData;
@@ -3911,7 +3907,7 @@ var _Menu = __webpack_require__(10);
 
 var _Menu2 = _interopRequireDefault(_Menu);
 
-var _MobileMenu = __webpack_require__(13);
+var _MobileMenu = __webpack_require__(12);
 
 var _MobileMenu2 = _interopRequireDefault(_MobileMenu);
 
@@ -5096,7 +5092,7 @@ var _Menu = __webpack_require__(10);
 
 var _Menu2 = _interopRequireDefault(_Menu);
 
-var _MobileMenu = __webpack_require__(13);
+var _MobileMenu = __webpack_require__(12);
 
 var _MobileMenu2 = _interopRequireDefault(_MobileMenu);
 
@@ -5104,13 +5100,7 @@ var _LanguageSwitcher = __webpack_require__(82);
 
 var _LanguageSwitcher2 = _interopRequireDefault(_LanguageSwitcher);
 
-var _reactGa = __webpack_require__(12);
-
-var _reactGa2 = _interopRequireDefault(_reactGa);
-
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-_reactGa2.default.initialize('UA-114332532-1');
 
 var Whitepaper = function Whitepaper(_ref) {
   var someData = _ref.someData;
@@ -5301,13 +5291,7 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactGa = __webpack_require__(12);
-
-var _reactGa2 = _interopRequireDefault(_reactGa);
-
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-_reactGa2.default.initialize('UA-114332532-1');
 
 exports.default = function () {
   return _react2.default.createElement(
@@ -5324,4 +5308,4 @@ exports.default = function () {
 /***/ })
 /******/ ]);
 });
-//# sourceMappingURL=app.static.5c55cb5b.js.map
+//# sourceMappingURL=app.static.e17169d2.js.map
