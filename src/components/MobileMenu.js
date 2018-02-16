@@ -128,6 +128,10 @@ class MobileMenu extends Component {
     } else {
       this.setState({ attached: true })
     }
+
+    const ReactGA = require('react-ga');
+    ReactGA.initialize('UA-114332532-1');
+    ReactGA.pageview(window.location.pathname + window.location.search);
   }
   componentWillUnmount() {
     if (!this.props.attached)
