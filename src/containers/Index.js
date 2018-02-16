@@ -12,6 +12,10 @@ import Partners from 'sections/07_Partners'
 import Media from 'sections/08_Media'
 import Subscribe from 'sections/09_Subscribe'
 import Footer from 'sections/10_Footer'
+import ReactGA from 'react-ga'
+
+ReactGA.initialize('UA-114332532-1');
+ReactGA.pageview(window.location.pathname + window.location.search);
 
 const Index = ({ someData }) => (
   <div>

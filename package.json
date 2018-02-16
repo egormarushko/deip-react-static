@@ -18,6 +18,7 @@
     "prop-types": "^15.6.0",
     "react": "^16.1.0",
     "react-dom": "^16.1.0",
+    "react-ga": "^2.4.1",
     "react-static": "^4.0.1",
     "react-toggle-display": "^2.2.0",
     "recompose": "^0.26.0",
