@@ -1384,36 +1384,36 @@ function _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defi
 
 var Container = _styledComponents2.default.div.withConfig({
   displayName: '10_Footer__Container',
-  componentId: 's1ch2cio-0'
+  componentId: 's34fmit-0'
 })(['display:flex;padding:16px 32px 16px 32px;', ';'], _styles.m.lessThan('medium')(_templateObject));
 
 var Block = _styledComponents2.default.div.withConfig({
   displayName: '10_Footer__Block',
-  componentId: 's1ch2cio-1'
+  componentId: 's34fmit-1'
 })(['display:flex;flex-wrap:wrap;align-items:center;justify-content:center;width:', '%;margin-left:', '%;', ';'], 100 * 6 / 12, 100 * 3 / 12, _styles.m.lessThan('medium')(_templateObject2));
 
 var Wrap = _styledComponents2.default.div.withConfig({
   displayName: '10_Footer__Wrap',
-  componentId: 's1ch2cio-2'
+  componentId: 's34fmit-2'
 })(['display:flex;align-items:center;justify-content:flex-end;width:', '%;', ';'], 100 * 3 / 12, _styles.m.lessThan('medium')(_templateObject3));
 
 var Copyright = _styledComponents2.default.p.withConfig({
   displayName: '10_Footer__Copyright',
-  componentId: 's1ch2cio-3'
+  componentId: 's34fmit-3'
 })(['font-size:16px;color:', ';margin:0;'], function (p) {
   return p.theme.palette.text.secondary;
 });
 
 var Icon = (0, _styledComponents2.default)(_Icon2.default).withConfig({
   displayName: '10_Footer__Icon',
-  componentId: 's1ch2cio-4'
+  componentId: 's34fmit-4'
 })(['font-size:24px;color:', ';'], function (p) {
   return p.theme.palette.primary;
 });
 
 var Link = _styledComponents2.default.a.withConfig({
   displayName: '10_Footer__Link',
-  componentId: 's1ch2cio-5'
+  componentId: 's34fmit-5'
 })(['margin:16px;']);
 
 var Footer = function Footer(p) {
@@ -1437,7 +1437,7 @@ var Footer = function Footer(p) {
         ),
         _react2.default.createElement(
           Link,
-          { href: 'https://t.me/deip_world' },
+          { href: 'https://t.me/deipworld' },
           _react2.default.createElement(
             Icon,
             null,
@@ -2148,34 +2148,34 @@ function _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defi
 
 var Root = _styledComponents2.default.section.withConfig({
   displayName: '02_We__Root',
-  componentId: 's1mv5guo-0'
+  componentId: 's6h0mff-0'
 })(['overflow:hidden;position:relative;background:', ';padding:64px 0;', ';'], function (p) {
   return p.theme.palette.background.primary;
 }, _styles.m.lessThan('small')(_templateObject));
 
 var Container = _styledComponents2.default.div.withConfig({
   displayName: '02_We__Container',
-  componentId: 's1mv5guo-1'
+  componentId: 's6h0mff-1'
 })(['', ';text-align:center;'], _styles.container);
 
 var Decor = _styledComponents2.default.img.withConfig({
   displayName: '02_We__Decor',
-  componentId: 's1mv5guo-2'
+  componentId: 's6h0mff-2'
 })(['width:90%;margin-top:32px;']);
 
 var Icon = _styledComponents2.default.img.withConfig({
   displayName: '02_We__Icon',
-  componentId: 's1mv5guo-3'
+  componentId: 's6h0mff-3'
 })(['width:64px;height:64px;margin:0 auto 24px auto;', ';'], _styles.m.greaterThan('small')(_templateObject2));
 
 var Block = _styledComponents2.default.div.withConfig({
   displayName: '02_We__Block',
-  componentId: 's1mv5guo-4'
+  componentId: 's6h0mff-4'
 })(['display:flex;width:', '%;margin-left:', '%;', ';'], 100 * 10 / 12, 100 / 12, _styles.m.lessThan('small')(_templateObject3));
 
 var baseCell = _styledComponents2.default.div.withConfig({
   displayName: '02_We__baseCell',
-  componentId: 's1mv5guo-5'
+  componentId: 's6h0mff-5'
 })(['display:flex;width:', '%;', ';'], 100 * 3 / 10, _styles.m.lessThan('small')(_templateObject4));
 var TopCenter = baseCell.extend(_templateObject5, 100 * 3 / 12);
 
@@ -2192,16 +2192,6 @@ var We = function We(p) {
     _react2.default.createElement(
       Container,
       null,
-      _react2.default.createElement(
-        _Heading2.default,
-        null,
-        'Who we are'
-      ),
-      _react2.default.createElement(
-        _Heading2.default,
-        { type: 'sub' },
-        'What we propose'
-      ),
       _react2.default.createElement(
         TopCenter,
         null,
@@ -2334,24 +2324,24 @@ function _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defi
 
 var Bg = _styledComponents2.default.div.withConfig({
   displayName: '03_Roadmap__Bg',
-  componentId: 's17m9wdb-0'
+  componentId: 'zasuza-0'
 })(['background:linear-gradient(180deg,#331d50 51.81%,#247fad 149.89%);']);
 
 var Root = _styledComponents2.default.section.withConfig({
   displayName: '03_Roadmap__Root',
-  componentId: 's17m9wdb-1'
+  componentId: 'zasuza-1'
 })(['', ';position:relative;h1{color:#fff;}'], _styles.container);
 
 var Container = _Team.Container.extend(_templateObject, _styles.m.lessThan('small')(_templateObject2));
 
 var Small = _styledComponents2.default.p.withConfig({
   displayName: '03_Roadmap__Small',
-  componentId: 's17m9wdb-2'
+  componentId: 'zasuza-2'
 })(['font-weight:700;font-size:10px;color:rgba(255,255,255,0.3);text-transform:uppercase;margin:0 0 4px 0;']);
 
 var Headline = _styledComponents2.default.div.withConfig({
   displayName: '03_Roadmap__Headline',
-  componentId: 's17m9wdb-3'
+  componentId: 'zasuza-3'
 })(['padding:64px 0 32px 0;', ';', ';'], _styles.m.greaterThan('small')(_templateObject3), _styles.m.lessThan('small')(_templateObject4));
 
 // const Roadmaps = styled.div`
@@ -2418,7 +2408,7 @@ var Roadmap = function Roadmap(p) {
               null,
               _react2.default.createElement(_Roadmap.Entry, { done: true, label: 'January 2018', text: 'Core functionality implemented' }),
               _react2.default.createElement(_Roadmap.Entry, { label: 'February 2018', text: 'Emission distribution system completed' }),
-              _react2.default.createElement(_Roadmap.Entry, { label: 'March 2018', text: 'Test-net launch. Alfa-version of UI release. Wallet UI release (for testnet)' })
+              _react2.default.createElement(_Roadmap.Entry, { label: 'March 2018', text: 'Test-net launch. Alfa-version of UI release' })
             ),
             _react2.default.createElement(
               _Roadmap.SectionReverse,
@@ -2438,7 +2428,7 @@ var Roadmap = function Roadmap(p) {
               _Roadmap.SectionReverse,
               null,
               _react2.default.createElement(_Roadmap.Entry, { label: 'October 2018', text: 'Scientific Resources marketplace' }),
-              _react2.default.createElement(_Roadmap.Entry, { label: 'November 2018', text: 'Funding Agency DAO' })
+              _react2.default.createElement(_Roadmap.Entry, { label: 'November 2018', text: 'Granting Agency DAO' })
             )
           )
         )
@@ -5308,4 +5298,4 @@ exports.default = function () {
 /***/ })
 /******/ ]);
 });
-//# sourceMappingURL=app.static.e17169d2.js.map
+//# sourceMappingURL=app.static.8ee2903d.js.map
