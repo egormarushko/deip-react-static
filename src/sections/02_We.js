@@ -91,9 +91,6 @@ const RightBottom = baseCell.extend`
 const We = p => (
   <Root {...p}>
     <Container>
-      <Heading>Who we are</Heading>
-      <Heading type="sub">What we propose</Heading>
-
       <TopCenter>
         <Icon src={iconPen} />
         <Heading type="title">Publishing platform</Heading>

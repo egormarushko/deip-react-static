@@ -60,7 +60,7 @@ const Footer = p => (
         <Link href="https://gitlab.com/DEIP">
           <Icon>gitlab</Icon>
         </Link>
-        <Link href="https://t.me/deip_world">
+        <Link href="https://t.me/deipworld">
           <Icon>telegram</Icon>
         </Link>
         <Link href="https://deipteam.slack.com/messages">
