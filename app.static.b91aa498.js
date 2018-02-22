@@ -1384,36 +1384,36 @@ function _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defi
 
 var Container = _styledComponents2.default.div.withConfig({
   displayName: '10_Footer__Container',
-  componentId: 's34fmit-0'
+  componentId: 'tiymvh-0'
 })(['display:flex;padding:16px 32px 16px 32px;', ';'], _styles.m.lessThan('medium')(_templateObject));
 
 var Block = _styledComponents2.default.div.withConfig({
   displayName: '10_Footer__Block',
-  componentId: 's34fmit-1'
+  componentId: 'tiymvh-1'
 })(['display:flex;flex-wrap:wrap;align-items:center;justify-content:center;width:', '%;margin-left:', '%;', ';'], 100 * 6 / 12, 100 * 3 / 12, _styles.m.lessThan('medium')(_templateObject2));
 
 var Wrap = _styledComponents2.default.div.withConfig({
   displayName: '10_Footer__Wrap',
-  componentId: 's34fmit-2'
+  componentId: 'tiymvh-2'
 })(['display:flex;align-items:center;justify-content:flex-end;width:', '%;', ';'], 100 * 3 / 12, _styles.m.lessThan('medium')(_templateObject3));
 
 var Copyright = _styledComponents2.default.p.withConfig({
   displayName: '10_Footer__Copyright',
-  componentId: 's34fmit-3'
+  componentId: 'tiymvh-3'
 })(['font-size:16px;color:', ';margin:0;'], function (p) {
   return p.theme.palette.text.secondary;
 });
 
 var Icon = (0, _styledComponents2.default)(_Icon2.default).withConfig({
   displayName: '10_Footer__Icon',
-  componentId: 's34fmit-4'
+  componentId: 'tiymvh-4'
 })(['font-size:24px;color:', ';'], function (p) {
   return p.theme.palette.primary;
 });
 
 var Link = _styledComponents2.default.a.withConfig({
   displayName: '10_Footer__Link',
-  componentId: 's34fmit-5'
+  componentId: 'tiymvh-5'
 })(['margin:16px;']);
 
 var Footer = function Footer(p) {
@@ -1491,7 +1491,7 @@ var Footer = function Footer(p) {
         ),
         _react2.default.createElement(
           Link,
-          { href: 'mailto:team@deip.world' },
+          { href: 'mailto:info@deip.world' },
           _react2.default.createElement(
             Icon,
             null,
@@ -5298,4 +5298,4 @@ exports.default = function () {
 /***/ })
 /******/ ]);
 });
-//# sourceMappingURL=app.static.8ee2903d.js.map
+//# sourceMappingURL=app.static.b91aa498.js.map
