@@ -78,7 +78,7 @@ const Footer = p => (
         <Link href="https://www.facebook.com/DEIPword/">
           <Icon>facebook</Icon>
         </Link>
-        <Link href="mailto:team@deip.world">
+        <Link href="mailto:info@deip.world">
           <Icon>envelope</Icon>
         </Link>
       </Block>
