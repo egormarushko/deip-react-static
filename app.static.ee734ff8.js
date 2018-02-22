@@ -1384,36 +1384,36 @@ function _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defi
 
 var Container = _styledComponents2.default.div.withConfig({
   displayName: '10_Footer__Container',
-  componentId: 'tiymvh-0'
+  componentId: 's1yqflx0-0'
 })(['display:flex;padding:16px 32px 16px 32px;', ';'], _styles.m.lessThan('medium')(_templateObject));
 
 var Block = _styledComponents2.default.div.withConfig({
   displayName: '10_Footer__Block',
-  componentId: 'tiymvh-1'
+  componentId: 's1yqflx0-1'
 })(['display:flex;flex-wrap:wrap;align-items:center;justify-content:center;width:', '%;margin-left:', '%;', ';'], 100 * 6 / 12, 100 * 3 / 12, _styles.m.lessThan('medium')(_templateObject2));
 
 var Wrap = _styledComponents2.default.div.withConfig({
   displayName: '10_Footer__Wrap',
-  componentId: 'tiymvh-2'
+  componentId: 's1yqflx0-2'
 })(['display:flex;align-items:center;justify-content:flex-end;width:', '%;', ';'], 100 * 3 / 12, _styles.m.lessThan('medium')(_templateObject3));
 
 var Copyright = _styledComponents2.default.p.withConfig({
   displayName: '10_Footer__Copyright',
-  componentId: 'tiymvh-3'
+  componentId: 's1yqflx0-3'
 })(['font-size:16px;color:', ';margin:0;'], function (p) {
   return p.theme.palette.text.secondary;
 });
 
 var Icon = (0, _styledComponents2.default)(_Icon2.default).withConfig({
   displayName: '10_Footer__Icon',
-  componentId: 'tiymvh-4'
+  componentId: 's1yqflx0-4'
 })(['font-size:24px;color:', ';'], function (p) {
   return p.theme.palette.primary;
 });
 
 var Link = _styledComponents2.default.a.withConfig({
   displayName: '10_Footer__Link',
-  componentId: 'tiymvh-5'
+  componentId: 's1yqflx0-5'
 })(['margin:16px;']);
 
 var Footer = function Footer(p) {
@@ -1482,7 +1482,7 @@ var Footer = function Footer(p) {
         ),
         _react2.default.createElement(
           Link,
-          { href: 'https://www.facebook.com/DEIPword/' },
+          { href: 'https://www.facebook.com/DEIPworld/' },
           _react2.default.createElement(
             Icon,
             null,
@@ -5298,4 +5298,4 @@ exports.default = function () {
 /***/ })
 /******/ ]);
 });
-//# sourceMappingURL=app.static.b91aa498.js.map
+//# sourceMappingURL=app.static.ee734ff8.js.map
