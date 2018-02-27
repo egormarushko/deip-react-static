@@ -4,7 +4,7 @@ import { ServerStyleSheet } from 'styled-components'
 export default {
   siteRoot: '',
   getSiteProps: () => ({
-    title: 'DEIP — decentralized research platform'
+    title: 'DEIP — decentralized scientific platform'
   }),
   getRoutes: async () => {
     return [
