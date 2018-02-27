@@ -1821,7 +1821,7 @@ var Index = function Index(_ref) {
       _react2.default.createElement(
         'title',
         null,
-        'DEIP \u2014 decentralized research platform'
+        'DEIP \u2014 decentralized scientific platform'
       )
     ),
     _react2.default.createElement(_Hero2.default, { id: 'hero' }),
@@ -1893,22 +1893,22 @@ function _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defi
 
 var Root = _styledComponents2.default.section.withConfig({
   displayName: '00_Hero__Root',
-  componentId: 's17xwbgr-0'
+  componentId: 'snnvtz-0'
 })(['position:relative;text-align:center;height:100vh;']);
 
 var Container = _styledComponents2.default.div.withConfig({
   displayName: '00_Hero__Container',
-  componentId: 's17xwbgr-1'
+  componentId: 'snnvtz-1'
 })(['', ';display:flex;flex-flow:column;align-items:center;justify-content:center;padding-bottom:5vh;height:100vh;'], _styles.container);
 
 var Description = _styledComponents2.default.p.withConfig({
   displayName: '00_Hero__Description',
-  componentId: 's17xwbgr-2'
+  componentId: 'snnvtz-2'
 })(['font-weight:400;font-size:24px;letter-spacing:2.16px;color:#fff;margin:0;', ';'], _styles.m.lessThan('small')(_templateObject));
 
 var ButtonsLine = _styledComponents2.default.div.withConfig({
   displayName: '00_Hero__ButtonsLine',
-  componentId: 's17xwbgr-3'
+  componentId: 'snnvtz-3'
 })(['text-align:center;margin-top:50px;', ';', '{', ';', ';}'], _styles.m.lessThan('small')(_templateObject2), _Button2.default, _styles.m.greaterThan('small')(_templateObject3), _styles.m.lessThan('small')(_templateObject4));
 
 var Hero = function Hero() {
@@ -1929,7 +1929,7 @@ var Hero = function Hero() {
       _react2.default.createElement(
         Description,
         null,
-        'Decentralized research platform'
+        'decentralized scientific platform'
       ),
       _react2.default.createElement(
         ButtonsLine,
@@ -5298,4 +5298,4 @@ exports.default = function () {
 /***/ })
 /******/ ]);
 });
-//# sourceMappingURL=app.static.ee734ff8.js.map
+//# sourceMappingURL=app.static.27290740.js.map
