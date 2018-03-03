@@ -74,9 +74,9 @@ export const Block = styled.div`
 
 // reused in the advisors section
 export const BlockIncomplete = styled.div`
-  width: ${100 * 2 / 2.75}%;
+  width: 51%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   &:first-of-type {
     margin-top: 48px;
   }
