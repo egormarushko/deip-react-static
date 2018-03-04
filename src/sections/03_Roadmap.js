@@ -97,7 +97,7 @@ const Roadmap = p => (
             </SectionReverse>
             <Section>
               <Entry done label="January 2018" text="Core functionality implemented" />
-              <Entry label="February 2018" text="Emission distribution system completed" />                
+              <Entry done label="February 2018" text="Emission distribution system completed" />                
               <Entry label="March 2018" text="Test-net launch. Alfa-version of UI release" />                                        
             </Section>
             <SectionReverse>

@@ -6,6 +6,8 @@ import { Container as c } from './04_Team'
 import Heading from 'components/Heading'
 import partner from 'components/Partner'
 
+import blockchainforscience from 'components/images/blockchainforscience.png'
+
 const ph = 'http://via.placeholder.com/350x150?text=Partner'
 
 const Bg = styled.div`background: ${p => p.theme.palette.background.primary};`
@@ -47,13 +49,13 @@ const Partners = p => (
     <Root {...p}>
       <Container>
         <Heading>Our partners</Heading>
-        <Heading type="sub">Change me</Heading>
+        {/* <Heading type="sub">Change me</Heading> */}
         <Block>
+          <Partner src={blockchainforscience} href="https://www.blockchainforscience.com/" />
+          {/* <Partner src={ph} href="#" />
           <Partner src={ph} href="#" />
           <Partner src={ph} href="#" />
-          <Partner src={ph} href="#" />
-          <Partner src={ph} href="#" />
-          <Partner src={ph} href="#" />
+          <Partner src={ph} href="#" /> */}
         </Block>
       </Container>
     </Root>

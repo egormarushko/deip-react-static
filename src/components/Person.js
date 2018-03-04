@@ -61,7 +61,7 @@ const A = styled.a`
   }
 `
 
-const Person = ({ special, src, name, role, facebook, linkedin, github, ...rest }) => (
+const Person = ({ special, src, name, role, facebook, linkedin, github, twitter, researchgate, ...rest }) => (
   <Root {...rest}>
     <Avatar special={special} src={src} />
     <Info>
@@ -82,6 +82,16 @@ const Person = ({ special, src, name, role, facebook, linkedin, github, ...rest 
       {github && (
         <A href={github}>
           <Icon>github-square</Icon>
+        </A>
+      )}
+      {twitter && (
+        <A href={twitter}>
+          <Icon>twitter-square</Icon>
+        </A>
+      )}
+      {researchgate && (
+        <A href={researchgate}>
+          <Icon>researchgate-square</Icon>
         </A>
       )}
     </div>
