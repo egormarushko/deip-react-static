@@ -7,6 +7,8 @@ import Heading from 'components/Heading'
 import partner from 'components/Partner'
 
 import blockchainforscience from 'components/images/blockchainforscience.png'
+import ecocity from 'components/images/ecocity.png'
+import blockchainbelarus from 'components/images/blockchainbelarus.png'
 
 const ph = 'http://via.placeholder.com/350x150?text=Partner'
 
@@ -52,9 +54,9 @@ const Partners = p => (
         {/* <Heading type="sub">Change me</Heading> */}
         <Block>
           <Partner src={blockchainforscience} href="https://www.blockchainforscience.com/" />
+          <Partner src={blockchainbelarus} href="http://blockchainbelarus.by/en" />
+          <Partner src={ecocity} href="https://ecocity.by/" />
           {/* <Partner src={ph} href="#" />
-          <Partner src={ph} href="#" />
-          <Partner src={ph} href="#" />
           <Partner src={ph} href="#" /> */}
         </Block>
       </Container>
