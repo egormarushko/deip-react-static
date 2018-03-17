@@ -16,7 +16,7 @@ import emarushko from 'components/images/team/emarushko.png'
 import sdzeranov from 'components/images/team/sdzeranov.png'
 import akorotkov from 'components/images/team/akorotkov.png'
 import amekibel from 'components/images/team/amekibel.png'
-import ndanilevich from 'components/images/team/ndanilevich.png'
+import mbahutskaya from 'components/images/team/mbahutskaya.png'
 
 const personsFirstRow = [
   { src: ashkor, name: 'Alex Shkor', role: 'BLOCKCHAIN ARCHITECT', linkedin: 'https://www.linkedin.com/in/alexshkor/', github: 'https://github.com/alexshkor' },
@@ -33,10 +33,9 @@ const personsSecondRow = [
 ]
 
 const personsThirdRow = [
-  { src: ndanilevich, name: 'Natalya Danilevich', role: 'CONTENT WRITER'}, 
   { src: emarushko, name: 'Egor Marushko', role: 'BLOCKCHAIN DEVELOPER', linkedin: 'https://www.linkedin.com/in/egor-marushko-477175122/', github: 'https://github.com/egormarushko'},
   { src: sdzeranov, name: 'Serge Dzeranov', role: 'BLOCKCHAIN DEVELOPER', linkedin: 'https://www.linkedin.com/in/sergey-dzeranov-b86a20127/', github: 'https://gitlab.com/Dzeranov' },
-  { src: akorotkov, name: 'Alexey Korotkov', role: 'BLOCKCHAIN DEVELOPER', linkedin: 'https://www.linkedin.com/in/alexey-korotkov-7b2339123/'},
+  { src: mbahutskaya, name: 'Masha Bahutskaya', role: 'UX/UI DESIGNER', linkedin: ''},
 ]
 
 // reused in the advisors section

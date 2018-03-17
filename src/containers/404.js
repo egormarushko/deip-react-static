@@ -1,7 +1,11 @@
 import React from 'react'
+import { Head } from 'react-static'
 
 export default () => (
   <div>
+    <Head>
+      <title>DEIP | 404</title>
+    </Head>
     <h1>404 - Oh no's! We couldn't find that page :(</h1>
   </div>
 )
