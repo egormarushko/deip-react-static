@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import { m, container } from '../util/styles'
 
 import Heading from 'components/Heading'
-import { Root, Container, Person, BlockIncomplete } from './04_Team'
+import { Root, Container, Person, BlockIncomplete, BlockIncompleteAdvisor } from './04_Team'
 
 import akulichkin from 'components/images/team/akulichkin.png'
 import nsvyaznoy from 'components/images/team/nsvyaznoy.png'
@@ -44,7 +44,7 @@ const Advisors = p => (
       <Heading>Advisors</Heading>
       <Heading type="sub">Who's mentoring DEIP team</Heading>
       <Block>{personsFirstRow.map(p => <Person special {...p} key={p.name} />)}</Block>
-      <BlockIncomplete>{personsSecondRow.map(p => <Person special {...p} key={p.name} />)}</BlockIncomplete>
+      <BlockIncompleteAdvisor>{personsSecondRow.map(p => <Person special {...p} key={p.name} />)}</BlockIncompleteAdvisor>
     </Container>
   </Root>
 )

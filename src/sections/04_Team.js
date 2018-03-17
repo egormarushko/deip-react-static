@@ -35,7 +35,7 @@ const personsSecondRow = [
 const personsThirdRow = [
   { src: emarushko, name: 'Egor Marushko', role: 'BLOCKCHAIN DEVELOPER', linkedin: 'https://www.linkedin.com/in/egor-marushko-477175122/', github: 'https://github.com/egormarushko'},
   { src: sdzeranov, name: 'Serge Dzeranov', role: 'BLOCKCHAIN DEVELOPER', linkedin: 'https://www.linkedin.com/in/sergey-dzeranov-b86a20127/', github: 'https://gitlab.com/Dzeranov' },
-  { src: mbahutskaya, name: 'Masha Bahutskaya', role: 'UX/UI DESIGNER', linkedin: ''},
+  { src: mbahutskaya, name: 'Masha Bahutskaya', role: 'UX/UI DESIGNER', linkedin: 'https://www.linkedin.com/in/brickrena/'},
 ]
 
 // reused in the advisors section
@@ -72,10 +72,27 @@ export const Block = styled.div`
 `
 
 // reused in the advisors section
-export const BlockIncomplete = styled.div`
+export const BlockIncompleteAdvisor = styled.div`
   width: 51%;
   display: flex;
   justify-content: space-around;
+  &:first-of-type {
+    margin-top: 48px;
+  }
+
+  ${m.lessThan('small')`
+    width: 100%;
+    flex-flow: column;
+    align-items: center;
+    justify-content: flex-start;
+  `};
+`
+
+// reused in the advisors section
+export const BlockIncomplete = styled.div`
+  width: 72.5%;
+  display: flex;
+  justify-content: space-between;
   &:first-of-type {
     margin-top: 48px;
   }
@@ -103,7 +120,7 @@ const Team = p => (
       <Heading type="sub">Who's creating DEIP platform</Heading>
       <Block>{personsFirstRow.map(p => <Person {...p} key={p.name} />)}</Block>
       <Block>{personsSecondRow.map(p => <Person {...p} key={p.name} />)}</Block>
-      <Block>{personsThirdRow.map(p => <Person {...p} key={p.name} />)}</Block>
+      <BlockIncomplete>{personsThirdRow.map(p => <Person {...p} key={p.name} />)}</BlockIncomplete>
     </Container>
   </Root>
 )
