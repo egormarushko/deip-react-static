@@ -193,7 +193,7 @@ exports.default = Heading;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.Person = exports.BlockIncomplete = exports.Block = exports.Container = exports.Root = undefined;
+exports.Person = exports.BlockIncomplete = exports.BlockIncompleteAdvisor = exports.Block = exports.Container = exports.Root = undefined;
 
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
@@ -263,9 +263,9 @@ var _amekibel = __webpack_require__(47);
 
 var _amekibel2 = _interopRequireDefault(_amekibel);
 
-var _ndanilevich = __webpack_require__(48);
+var _mbahutskaya = __webpack_require__(48);
 
-var _ndanilevich2 = _interopRequireDefault(_ndanilevich);
+var _mbahutskaya2 = _interopRequireDefault(_mbahutskaya);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -275,36 +275,42 @@ var personsFirstRow = [{ src: _ashkor2.default, name: 'Alex Shkor', role: 'BLOCK
 
 var personsSecondRow = [{ src: _arusetskiy2.default, name: 'Artyom Ruseckiy', role: 'SCIENTIST, MATHEMATICIAN', linkedin: 'https://www.linkedin.com/in/artyom-ruseckiy-8521a89a/' }, { src: _ybokach2.default, name: 'Yura Bokach', role: 'PROJECT MANAGER' }, { src: _akastsiushkina2.default, name: 'Anastasiya Kastsiushkina', role: 'PR & COMMUNICATION MANAGER', linkedin: 'https://www.linkedin.com/in/kastsiushkina/' }, { src: _amekibel2.default, name: 'Alan Mekibel', role: 'MARKETING MANAGER', linkedin: 'https://www.linkedin.com/in/amekibel/' }];
 
-var personsThirdRow = [{ src: _ndanilevich2.default, name: 'Natalya Danilevich', role: 'CONTENT WRITER' }, { src: _emarushko2.default, name: 'Egor Marushko', role: 'BLOCKCHAIN DEVELOPER', linkedin: 'https://www.linkedin.com/in/egor-marushko-477175122/', github: 'https://github.com/egormarushko' }, { src: _sdzeranov2.default, name: 'Serge Dzeranov', role: 'BLOCKCHAIN DEVELOPER', linkedin: 'https://www.linkedin.com/in/sergey-dzeranov-b86a20127/', github: 'https://gitlab.com/Dzeranov' }, { src: _akorotkov2.default, name: 'Alexey Korotkov', role: 'BLOCKCHAIN DEVELOPER', linkedin: 'https://www.linkedin.com/in/alexey-korotkov-7b2339123/' }];
+var personsThirdRow = [{ src: _emarushko2.default, name: 'Egor Marushko', role: 'BLOCKCHAIN DEVELOPER', linkedin: 'https://www.linkedin.com/in/egor-marushko-477175122/', github: 'https://github.com/egormarushko' }, { src: _sdzeranov2.default, name: 'Serge Dzeranov', role: 'BLOCKCHAIN DEVELOPER', linkedin: 'https://www.linkedin.com/in/sergey-dzeranov-b86a20127/', github: 'https://gitlab.com/Dzeranov' }, { src: _mbahutskaya2.default, name: 'Masha Bahutskaya', role: 'UX/UI DESIGNER', linkedin: 'https://www.linkedin.com/in/brickrena/' }];
 
 // reused in the advisors section
 var Root = exports.Root = _styledComponents2.default.section.withConfig({
   displayName: '04_Team__Root',
-  componentId: 'ueh319-0'
+  componentId: 's1h14aai-0'
 })(['', ';'], _styles.container);
 
 // reused in the advisors section
 var Container = exports.Container = _styledComponents2.default.div.withConfig({
   displayName: '04_Team__Container',
-  componentId: 'ueh319-1'
+  componentId: 's1h14aai-1'
 })(['text-align:center;width:', '%;margin-left:', '%;margin-top:64px;margin-bottom:64px;', ';'], 100 * 2 / 3, 100 / 6, _styles.m.lessThan('small')(_templateObject));
 
 // reused in the advisors section
 var Block = exports.Block = _styledComponents2.default.div.withConfig({
   displayName: '04_Team__Block',
-  componentId: 'ueh319-2'
+  componentId: 's1h14aai-2'
 })(['display:flex;justify-content:space-between;&:first-of-type{margin-top:48px;}', ';'], _styles.m.lessThan('small')(_templateObject2));
+
+// reused in the advisors section
+var BlockIncompleteAdvisor = exports.BlockIncompleteAdvisor = _styledComponents2.default.div.withConfig({
+  displayName: '04_Team__BlockIncompleteAdvisor',
+  componentId: 's1h14aai-3'
+})(['width:51%;display:flex;justify-content:space-around;&:first-of-type{margin-top:48px;}', ';'], _styles.m.lessThan('small')(_templateObject3));
 
 // reused in the advisors section
 var BlockIncomplete = exports.BlockIncomplete = _styledComponents2.default.div.withConfig({
   displayName: '04_Team__BlockIncomplete',
-  componentId: 'ueh319-3'
-})(['width:51%;display:flex;justify-content:space-around;&:first-of-type{margin-top:48px;}', ';'], _styles.m.lessThan('small')(_templateObject3));
+  componentId: 's1h14aai-4'
+})(['width:72.5%;display:flex;justify-content:space-between;&:first-of-type{margin-top:48px;}', ';'], _styles.m.lessThan('small')(_templateObject3));
 
 // reused in the advisors section
 var Person = exports.Person = (0, _styledComponents2.default)(_Person2.default).withConfig({
   displayName: '04_Team__Person',
-  componentId: 'ueh319-4'
+  componentId: 's1h14aai-5'
 })(['margin:24px 0;&:list-of-type{margin-bottom:0;}']);
 
 var Team = function Team(p) {
@@ -339,7 +345,7 @@ var Team = function Team(p) {
         })
       ),
       _react2.default.createElement(
-        Block,
+        BlockIncomplete,
         null,
         personsThirdRow.map(function (p) {
           return _react2.default.createElement(Person, _extends({}, p, { key: p.name }));
@@ -353,6 +359,12 @@ exports.default = Team;
 
 /***/ }),
 /* 6 */
+/***/ (function(module, exports) {
+
+module.exports = require("react-static");
+
+/***/ }),
+/* 7 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -372,7 +384,7 @@ var _propTypes = __webpack_require__(2);
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
-var _reactStatic = __webpack_require__(8);
+var _reactStatic = __webpack_require__(6);
 
 var _styledComponents = __webpack_require__(1);
 
@@ -453,7 +465,7 @@ exports.default = (0, _styledComponents2.default)(Button).withConfig({
 })(['']);
 
 /***/ }),
-/* 7 */
+/* 8 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -511,12 +523,6 @@ Text.propTypes = {
 };
 
 exports.default = Text;
-
-/***/ }),
-/* 8 */
-/***/ (function(module, exports) {
-
-module.exports = require("react-static");
 
 /***/ }),
 /* 9 */
@@ -613,7 +619,7 @@ var _propTypes = __webpack_require__(2);
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
-var _reactStatic = __webpack_require__(8);
+var _reactStatic = __webpack_require__(6);
 
 var _styledComponents = __webpack_require__(1);
 
@@ -621,7 +627,7 @@ var _styledComponents2 = _interopRequireDefault(_styledComponents);
 
 var _styles = __webpack_require__(3);
 
-var _Button = __webpack_require__(6);
+var _Button = __webpack_require__(7);
 
 var _Button2 = _interopRequireDefault(_Button);
 
@@ -835,7 +841,7 @@ var _Icon = __webpack_require__(9);
 
 var _Icon2 = _interopRequireDefault(_Icon);
 
-var _Button = __webpack_require__(6);
+var _Button = __webpack_require__(7);
 
 var _Button2 = _interopRequireDefault(_Button);
 
@@ -1228,7 +1234,7 @@ var _styledComponents2 = _interopRequireDefault(_styledComponents);
 
 var _styles = __webpack_require__(3);
 
-var _Text = __webpack_require__(7);
+var _Text = __webpack_require__(8);
 
 var _Text2 = _interopRequireDefault(_Text);
 
@@ -1631,7 +1637,7 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactStatic = __webpack_require__(8);
+var _reactStatic = __webpack_require__(6);
 
 var _styledComponents = __webpack_require__(1);
 
@@ -1792,7 +1798,7 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactStatic = __webpack_require__(8);
+var _reactStatic = __webpack_require__(6);
 
 var _Hero = __webpack_require__(25);
 
@@ -1914,7 +1920,7 @@ var _Logo = __webpack_require__(28);
 
 var _Logo2 = _interopRequireDefault(_Logo);
 
-var _Button = __webpack_require__(6);
+var _Button = __webpack_require__(7);
 
 var _Button2 = _interopRequireDefault(_Button);
 
@@ -2057,7 +2063,7 @@ var _Heading = __webpack_require__(4);
 
 var _Heading2 = _interopRequireDefault(_Heading);
 
-var _Text = __webpack_require__(7);
+var _Text = __webpack_require__(8);
 
 var _Text2 = _interopRequireDefault(_Text);
 
@@ -2153,7 +2159,7 @@ var _Heading = __webpack_require__(4);
 
 var _Heading2 = _interopRequireDefault(_Heading);
 
-var _Text = __webpack_require__(7);
+var _Text = __webpack_require__(8);
 
 var _Text2 = _interopRequireDefault(_Text);
 
@@ -2538,9 +2544,9 @@ module.exports = __webpack_require__.p + "static/amekibel.da99f2c4.png";
 
 /***/ }),
 /* 48 */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, exports) {
 
-module.exports = __webpack_require__.p + "static/ndanilevich.9e54b8df.png";
+module.exports = "data:image/png;base64,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"
 
 /***/ }),
 /* 49 */
@@ -2789,7 +2795,7 @@ function _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defi
 
 var Block = exports.Block = _styledComponents2.default.div.withConfig({
   displayName: '05_Advisors__Block',
-  componentId: 's1f4wwlc-0'
+  componentId: 'sec71o-0'
 })(['display:flex;justify-content:space-around;&:first-of-type{margin-top:48px;}', ';'], _styles.m.lessThan('small')(_templateObject));
 
 var personsFirstRow = [{ src: _dklevzhits2.default, name: 'Dmitry Klevzhits', role: 'SCIENTIFIC ADVISOR, PhD IN ECONOMICS', linkedin: 'https://www.linkedin.com/in/dmitry-klevzhits-25917413/' }, { src: _ayantsevich2.default, name: 'Aleksei Yantsevich', role: 'SENIOR RESEARCHER IN BIOORGANIC CHEMISTRY, PhD', researchgate: 'https://www.researchgate.net/profile/Aliaksei_Yantsevich' }, { src: _apobol2.default, name: 'Anna Pobol', role: 'SCIENTIFIC ADVISOR, PROFESSOR, PHD IN ECONOMICS', linkedin: 'https://www.linkedin.com/in/apobol/' }, { src: _soenkebartling2.default, name: 'PD Dr. Sönke Bartling', role: 'SCIENTIFIC ADVISOR, BLOCKCHAINFORSCIENCE FOUNDER', linkedin: 'https://www.linkedin.com/in/soenkebartling/', twitter: 'https://twitter.com/soenkeba', researchgate: 'https://www.researchgate.net/profile/Soenke_Bartling' }];
@@ -2821,7 +2827,7 @@ var Advisors = function Advisors(p) {
         })
       ),
       _react2.default.createElement(
-        _Team.BlockIncomplete,
+        _Team.BlockIncompleteAdvisor,
         null,
         personsSecondRow.map(function (p) {
           return _react2.default.createElement(_Team.Person, _extends({ special: true }, p, { key: p.name }));
@@ -2906,7 +2912,7 @@ var _MessageBox = __webpack_require__(61);
 
 var _MessageBox2 = _interopRequireDefault(_MessageBox);
 
-var _Button = __webpack_require__(6);
+var _Button = __webpack_require__(7);
 
 var _Button2 = _interopRequireDefault(_Button);
 
@@ -3037,7 +3043,7 @@ var _Heading = __webpack_require__(4);
 
 var _Heading2 = _interopRequireDefault(_Heading);
 
-var _Text = __webpack_require__(7);
+var _Text = __webpack_require__(8);
 
 var _Text2 = _interopRequireDefault(_Text);
 
@@ -3325,7 +3331,7 @@ var _Heading = __webpack_require__(4);
 
 var _Heading2 = _interopRequireDefault(_Heading);
 
-var _Button = __webpack_require__(6);
+var _Button = __webpack_require__(7);
 
 var _Button2 = _interopRequireDefault(_Button);
 
@@ -3439,7 +3445,7 @@ var _styledComponents = __webpack_require__(1);
 
 var _styledComponents2 = _interopRequireDefault(_styledComponents);
 
-var _Text = __webpack_require__(7);
+var _Text = __webpack_require__(8);
 
 var _Text2 = _interopRequireDefault(_Text);
 
@@ -3910,7 +3916,7 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactStatic = __webpack_require__(8);
+var _reactStatic = __webpack_require__(6);
 
 var _Poll = __webpack_require__(77);
 
@@ -3927,6 +3933,15 @@ var Join = function Join(_ref) {
   return _react2.default.createElement(
     'div',
     null,
+    _react2.default.createElement(
+      _reactStatic.Head,
+      null,
+      _react2.default.createElement(
+        'title',
+        null,
+        'DEIP | Join Us'
+      )
+    ),
     _react2.default.createElement(_Poll2.default, { id: 'poll' }),
     _react2.default.createElement(_Footer2.default, { id: 'footer' })
   );
@@ -3976,13 +3991,13 @@ var _Heading = __webpack_require__(4);
 
 var _Heading2 = _interopRequireDefault(_Heading);
 
-var _Text = __webpack_require__(7);
+var _Text = __webpack_require__(8);
 
 var _Text2 = _interopRequireDefault(_Text);
 
 var _Shower = __webpack_require__(78);
 
-var _Button = __webpack_require__(6);
+var _Button = __webpack_require__(7);
 
 var _Button2 = _interopRequireDefault(_Button);
 
@@ -5143,7 +5158,7 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactStatic = __webpack_require__(8);
+var _reactStatic = __webpack_require__(6);
 
 var _HeroBackground = __webpack_require__(14);
 
@@ -5168,6 +5183,15 @@ var Whitepaper = function Whitepaper(_ref) {
   return _react2.default.createElement(
     'div',
     null,
+    _react2.default.createElement(
+      _reactStatic.Head,
+      null,
+      _react2.default.createElement(
+        'title',
+        null,
+        'DEIP | White Paper'
+      )
+    ),
     _react2.default.createElement(_Menu2.default, { attached: true }),
     _react2.default.createElement(_MobileMenu2.default, { attached: true }),
     _react2.default.createElement(_LanguageSwitcher2.default, { id: 'language_switcher' })
@@ -5204,7 +5228,7 @@ var _Heading = __webpack_require__(4);
 
 var _Heading2 = _interopRequireDefault(_Heading);
 
-var _Button = __webpack_require__(6);
+var _Button = __webpack_require__(7);
 
 var _Button2 = _interopRequireDefault(_Button);
 
@@ -5295,7 +5319,7 @@ var _styledComponents = __webpack_require__(1);
 
 var _styledComponents2 = _interopRequireDefault(_styledComponents);
 
-var _Text = __webpack_require__(7);
+var _Text = __webpack_require__(8);
 
 var _Text2 = _interopRequireDefault(_Text);
 
@@ -5352,12 +5376,23 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
+var _reactStatic = __webpack_require__(6);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 exports.default = function () {
   return _react2.default.createElement(
     'div',
     null,
+    _react2.default.createElement(
+      _reactStatic.Head,
+      null,
+      _react2.default.createElement(
+        'title',
+        null,
+        'DEIP | 404'
+      )
+    ),
     _react2.default.createElement(
       'h1',
       null,
@@ -5369,4 +5404,4 @@ exports.default = function () {
 /***/ })
 /******/ ]);
 });
-//# sourceMappingURL=app.static.9de01281.js.map
+//# sourceMappingURL=app.static.9ef64b04.js.map
