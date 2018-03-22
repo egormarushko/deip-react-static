@@ -6,6 +6,7 @@ import { m } from '../util/styles'
 import Text from 'components/Text'
 import Heading from 'components/Heading'
 import icon from 'components/Icon'
+import academicIcon from 'components/AcademicIcon'
 
 const Root = styled.div`
   display: flex;
@@ -39,6 +40,13 @@ const Info = styled.div`
 `
 
 const Icon = styled(icon)`
+  font-size: 18px;
+  ${m.lessThan('small')`
+    font-size: 24px;
+  `};
+`
+
+const AcademicIcon = styled(academicIcon)`
   font-size: 18px;
   ${m.lessThan('small')`
     font-size: 24px;
@@ -91,7 +99,7 @@ const Person = ({ special, src, name, role, facebook, linkedin, github, twitter,
       )}
       {researchgate && (
         <A href={researchgate}>
-          <Icon>researchgate-square</Icon>
+          <AcademicIcon>researchgate-square</AcademicIcon>
         </A>
       )}
     </div>
@@ -106,6 +114,7 @@ Person.propTypes = {
   facebook: PropTypes.string,
   linkedin: PropTypes.string,
   github: PropTypes.string,
+  researchgate: PropTypes.string,
 }
 
 export default Person

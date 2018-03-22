@@ -14,7 +14,7 @@ import ybokach from 'components/images/team/ybokach.png'
 import akastsiushkina from 'components/images/team/akastsiushkina.png'
 import emarushko from 'components/images/team/emarushko.png'
 import sdzeranov from 'components/images/team/sdzeranov.png'
-import akorotkov from 'components/images/team/akorotkov.png'
+import nignatiev from 'components/images/team/nignatiev.png'
 import amekibel from 'components/images/team/amekibel.png'
 import mbahutskaya from 'components/images/team/mbahutskaya.png'
 
@@ -35,6 +35,7 @@ const personsSecondRow = [
 const personsThirdRow = [
   { src: emarushko, name: 'Egor Marushko', role: 'BLOCKCHAIN DEVELOPER', linkedin: 'https://www.linkedin.com/in/egor-marushko-477175122/', github: 'https://github.com/egormarushko'},
   { src: sdzeranov, name: 'Serge Dzeranov', role: 'BLOCKCHAIN DEVELOPER', linkedin: 'https://www.linkedin.com/in/sergey-dzeranov-b86a20127/', github: 'https://gitlab.com/Dzeranov' },
+  { src: nignatiev, name: 'Nikolay Ignatiev', role: 'FRONTEND DEVELOPER' },
   { src: mbahutskaya, name: 'Masha Bahutskaya', role: 'UX/UI DESIGNER', linkedin: 'https://www.linkedin.com/in/brickrena/'},
 ]
 
@@ -120,7 +121,7 @@ const Team = p => (
       <Heading type="sub">Who's creating DEIP platform</Heading>
       <Block>{personsFirstRow.map(p => <Person {...p} key={p.name} />)}</Block>
       <Block>{personsSecondRow.map(p => <Person {...p} key={p.name} />)}</Block>
-      <BlockIncomplete>{personsThirdRow.map(p => <Person {...p} key={p.name} />)}</BlockIncomplete>
+      <Block>{personsThirdRow.map(p => <Person {...p} key={p.name} />)}</Block>
     </Container>
   </Root>
 )
