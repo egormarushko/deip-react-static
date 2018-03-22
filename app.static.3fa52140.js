@@ -219,51 +219,51 @@ var _Person = __webpack_require__(15);
 
 var _Person2 = _interopRequireDefault(_Person);
 
-var _ashkor = __webpack_require__(37);
+var _ashkor = __webpack_require__(38);
 
 var _ashkor2 = _interopRequireDefault(_ashkor);
 
-var _etsaryk = __webpack_require__(38);
+var _etsaryk = __webpack_require__(39);
 
 var _etsaryk2 = _interopRequireDefault(_etsaryk);
 
-var _aermolaev = __webpack_require__(39);
+var _aermolaev = __webpack_require__(40);
 
 var _aermolaev2 = _interopRequireDefault(_aermolaev);
 
-var _akulik = __webpack_require__(40);
+var _akulik = __webpack_require__(41);
 
 var _akulik2 = _interopRequireDefault(_akulik);
 
-var _arusetskiy = __webpack_require__(41);
+var _arusetskiy = __webpack_require__(42);
 
 var _arusetskiy2 = _interopRequireDefault(_arusetskiy);
 
-var _ybokach = __webpack_require__(42);
+var _ybokach = __webpack_require__(43);
 
 var _ybokach2 = _interopRequireDefault(_ybokach);
 
-var _akastsiushkina = __webpack_require__(43);
+var _akastsiushkina = __webpack_require__(44);
 
 var _akastsiushkina2 = _interopRequireDefault(_akastsiushkina);
 
-var _emarushko = __webpack_require__(44);
+var _emarushko = __webpack_require__(45);
 
 var _emarushko2 = _interopRequireDefault(_emarushko);
 
-var _sdzeranov = __webpack_require__(45);
+var _sdzeranov = __webpack_require__(46);
 
 var _sdzeranov2 = _interopRequireDefault(_sdzeranov);
 
-var _akorotkov = __webpack_require__(46);
+var _nignatiev = __webpack_require__(47);
 
-var _akorotkov2 = _interopRequireDefault(_akorotkov);
+var _nignatiev2 = _interopRequireDefault(_nignatiev);
 
-var _amekibel = __webpack_require__(47);
+var _amekibel = __webpack_require__(48);
 
 var _amekibel2 = _interopRequireDefault(_amekibel);
 
-var _mbahutskaya = __webpack_require__(48);
+var _mbahutskaya = __webpack_require__(49);
 
 var _mbahutskaya2 = _interopRequireDefault(_mbahutskaya);
 
@@ -275,42 +275,42 @@ var personsFirstRow = [{ src: _ashkor2.default, name: 'Alex Shkor', role: 'BLOCK
 
 var personsSecondRow = [{ src: _arusetskiy2.default, name: 'Artyom Ruseckiy', role: 'SCIENTIST, MATHEMATICIAN', linkedin: 'https://www.linkedin.com/in/artyom-ruseckiy-8521a89a/' }, { src: _ybokach2.default, name: 'Yura Bokach', role: 'PROJECT MANAGER' }, { src: _akastsiushkina2.default, name: 'Anastasiya Kastsiushkina', role: 'PR & COMMUNICATION MANAGER', linkedin: 'https://www.linkedin.com/in/kastsiushkina/' }, { src: _amekibel2.default, name: 'Alan Mekibel', role: 'MARKETING MANAGER', linkedin: 'https://www.linkedin.com/in/amekibel/' }];
 
-var personsThirdRow = [{ src: _emarushko2.default, name: 'Egor Marushko', role: 'BLOCKCHAIN DEVELOPER', linkedin: 'https://www.linkedin.com/in/egor-marushko-477175122/', github: 'https://github.com/egormarushko' }, { src: _sdzeranov2.default, name: 'Serge Dzeranov', role: 'BLOCKCHAIN DEVELOPER', linkedin: 'https://www.linkedin.com/in/sergey-dzeranov-b86a20127/', github: 'https://gitlab.com/Dzeranov' }, { src: _mbahutskaya2.default, name: 'Masha Bahutskaya', role: 'UX/UI DESIGNER', linkedin: 'https://www.linkedin.com/in/brickrena/' }];
+var personsThirdRow = [{ src: _emarushko2.default, name: 'Egor Marushko', role: 'BLOCKCHAIN DEVELOPER', linkedin: 'https://www.linkedin.com/in/egor-marushko-477175122/', github: 'https://github.com/egormarushko' }, { src: _sdzeranov2.default, name: 'Serge Dzeranov', role: 'BLOCKCHAIN DEVELOPER', linkedin: 'https://www.linkedin.com/in/sergey-dzeranov-b86a20127/', github: 'https://gitlab.com/Dzeranov' }, { src: _nignatiev2.default, name: 'Nikolay Ignatiev', role: 'FRONTEND DEVELOPER' }, { src: _mbahutskaya2.default, name: 'Masha Bahutskaya', role: 'UX/UI DESIGNER', linkedin: 'https://www.linkedin.com/in/brickrena/' }];
 
 // reused in the advisors section
 var Root = exports.Root = _styledComponents2.default.section.withConfig({
   displayName: '04_Team__Root',
-  componentId: 's1h14aai-0'
+  componentId: 's1qk5u6u-0'
 })(['', ';'], _styles.container);
 
 // reused in the advisors section
 var Container = exports.Container = _styledComponents2.default.div.withConfig({
   displayName: '04_Team__Container',
-  componentId: 's1h14aai-1'
+  componentId: 's1qk5u6u-1'
 })(['text-align:center;width:', '%;margin-left:', '%;margin-top:64px;margin-bottom:64px;', ';'], 100 * 2 / 3, 100 / 6, _styles.m.lessThan('small')(_templateObject));
 
 // reused in the advisors section
 var Block = exports.Block = _styledComponents2.default.div.withConfig({
   displayName: '04_Team__Block',
-  componentId: 's1h14aai-2'
+  componentId: 's1qk5u6u-2'
 })(['display:flex;justify-content:space-between;&:first-of-type{margin-top:48px;}', ';'], _styles.m.lessThan('small')(_templateObject2));
 
 // reused in the advisors section
 var BlockIncompleteAdvisor = exports.BlockIncompleteAdvisor = _styledComponents2.default.div.withConfig({
   displayName: '04_Team__BlockIncompleteAdvisor',
-  componentId: 's1h14aai-3'
+  componentId: 's1qk5u6u-3'
 })(['width:51%;display:flex;justify-content:space-around;&:first-of-type{margin-top:48px;}', ';'], _styles.m.lessThan('small')(_templateObject3));
 
 // reused in the advisors section
 var BlockIncomplete = exports.BlockIncomplete = _styledComponents2.default.div.withConfig({
   displayName: '04_Team__BlockIncomplete',
-  componentId: 's1h14aai-4'
+  componentId: 's1qk5u6u-4'
 })(['width:72.5%;display:flex;justify-content:space-between;&:first-of-type{margin-top:48px;}', ';'], _styles.m.lessThan('small')(_templateObject3));
 
 // reused in the advisors section
 var Person = exports.Person = (0, _styledComponents2.default)(_Person2.default).withConfig({
   displayName: '04_Team__Person',
-  componentId: 's1h14aai-5'
+  componentId: 's1qk5u6u-5'
 })(['margin:24px 0;&:list-of-type{margin-bottom:0;}']);
 
 var Team = function Team(p) {
@@ -345,7 +345,7 @@ var Team = function Team(p) {
         })
       ),
       _react2.default.createElement(
-        BlockIncomplete,
+        Block,
         null,
         personsThirdRow.map(function (p) {
           return _react2.default.createElement(Person, _extends({}, p, { key: p.name }));
@@ -1246,6 +1246,10 @@ var _Icon = __webpack_require__(9);
 
 var _Icon2 = _interopRequireDefault(_Icon);
 
+var _AcademicIcon = __webpack_require__(37);
+
+var _AcademicIcon2 = _interopRequireDefault(_AcademicIcon);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
@@ -1254,7 +1258,7 @@ function _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defi
 
 var Root = _styledComponents2.default.div.withConfig({
   displayName: 'Person__Root',
-  componentId: 'ry32f-0'
+  componentId: 's18vzr4-0'
 })(['display:flex;flex-direction:column;align-items:center;width:132px;']);
 
 var special = function special(p) {
@@ -1263,22 +1267,27 @@ var special = function special(p) {
 
 var Avatar = _styledComponents2.default.img.withConfig({
   displayName: 'Person__Avatar',
-  componentId: 'ry32f-1'
+  componentId: 's18vzr4-1'
 })(['border-radius:100%;width:132px;height:132px;margin-bottom:8px;', ';'], special);
 
 var Info = _styledComponents2.default.div.withConfig({
   displayName: 'Person__Info',
-  componentId: 'ry32f-2'
+  componentId: 's18vzr4-2'
 })(['text-align:center;margin-bottom:8px;p:first-child{font-weight:500;}p{margin:0;}']);
 
 var Icon = (0, _styledComponents2.default)(_Icon2.default).withConfig({
   displayName: 'Person__Icon',
-  componentId: 'ry32f-3'
+  componentId: 's18vzr4-3'
+})(['font-size:18px;', ';'], _styles.m.lessThan('small')(_templateObject));
+
+var AcademicIcon = (0, _styledComponents2.default)(_AcademicIcon2.default).withConfig({
+  displayName: 'Person__AcademicIcon',
+  componentId: 's18vzr4-4'
 })(['font-size:18px;', ';'], _styles.m.lessThan('small')(_templateObject));
 
 var A = _styledComponents2.default.a.withConfig({
   displayName: 'Person__A',
-  componentId: 'ry32f-4'
+  componentId: 's18vzr4-5'
 })(['display:inline-block;color:', ';opacity:0.3;text-decoration:none;transition:opacity 0.15s;&:hover{opacity:1;}&:not(:last-child){margin-right:10px;}'], function (p) {
   return p.theme.palette.primary;
 });
@@ -1356,7 +1365,7 @@ var Person = function Person(_ref) {
         A,
         { href: researchgate },
         _react2.default.createElement(
-          Icon,
+          AcademicIcon,
           null,
           'researchgate-square'
         )
@@ -1372,7 +1381,8 @@ Person.propTypes = {
   role: _propTypes2.default.string,
   facebook: _propTypes2.default.string,
   linkedin: _propTypes2.default.string,
-  github: _propTypes2.default.string
+  github: _propTypes2.default.string,
+  researchgate: _propTypes2.default.string
 };
 
 exports.default = Person;
@@ -1707,15 +1717,15 @@ var _Index = __webpack_require__(24);
 
 var _Index2 = _interopRequireDefault(_Index);
 
-var _Join = __webpack_require__(76);
+var _Join = __webpack_require__(77);
 
 var _Join2 = _interopRequireDefault(_Join);
 
-var _Whitepaper = __webpack_require__(85);
+var _Whitepaper = __webpack_require__(86);
 
 var _Whitepaper2 = _interopRequireDefault(_Whitepaper);
 
-var _ = __webpack_require__(88);
+var _ = __webpack_require__(89);
 
 var _2 = _interopRequireDefault(_);
 
@@ -1820,23 +1830,23 @@ var _Team = __webpack_require__(5);
 
 var _Team2 = _interopRequireDefault(_Team);
 
-var _Advisors = __webpack_require__(53);
+var _Advisors = __webpack_require__(54);
 
 var _Advisors2 = _interopRequireDefault(_Advisors);
 
-var _Researchers = __webpack_require__(60);
+var _Researchers = __webpack_require__(61);
 
 var _Researchers2 = _interopRequireDefault(_Researchers);
 
-var _Partners = __webpack_require__(62);
+var _Partners = __webpack_require__(63);
 
 var _Partners2 = _interopRequireDefault(_Partners);
 
-var _Media = __webpack_require__(67);
+var _Media = __webpack_require__(68);
 
 var _Media2 = _interopRequireDefault(_Media);
 
-var _Subscribe = __webpack_require__(72);
+var _Subscribe = __webpack_require__(73);
 
 var _Subscribe2 = _interopRequireDefault(_Subscribe);
 
@@ -2345,13 +2355,13 @@ var _Heading = __webpack_require__(4);
 
 var _Heading2 = _interopRequireDefault(_Heading);
 
-var _Roadmap = __webpack_require__(49);
+var _Roadmap = __webpack_require__(50);
 
-var _roadmap = __webpack_require__(51);
+var _roadmap = __webpack_require__(52);
 
 var _roadmap2 = _interopRequireDefault(_roadmap);
 
-var _roadmap_mobile = __webpack_require__(52);
+var _roadmap_mobile = __webpack_require__(53);
 
 var _roadmap_mobile2 = _interopRequireDefault(_roadmap_mobile);
 
@@ -2480,76 +2490,147 @@ exports.default = Roadmap;
 /* 37 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "static/ashkor.7ff44c16.png";
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _propTypes = __webpack_require__(2);
+
+var _propTypes2 = _interopRequireDefault(_propTypes);
+
+var _styledComponents = __webpack_require__(1);
+
+var _styledComponents2 = _interopRequireDefault(_styledComponents);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
+
+var modular = function modular(value) {
+  return value * 8 + 'px';
+};
+
+var margins = function margins(p) {
+  return (0, _styledComponents.css)(['margin-left:', ';margin-right:', ';'], function (p) {
+    return p.ml ? modular(p.ml) : '0';
+  }, function (p) {
+    return p.mr ? modular(p.mr) : '0';
+  });
+};
+
+var Root = _styledComponents2.default.i.withConfig({
+  displayName: 'AcademicIcon__Root',
+  componentId: 's1j7zjba-0'
+})(['font-size:', ';', ';'], function (p) {
+  return p.size ? p.size + 'px' : 'inherit';
+}, margins);
+
+var AcademicIcon = function AcademicIcon(_ref) {
+  var className = _ref.className,
+      children = _ref.children,
+      rest = _objectWithoutProperties(_ref, ['className', 'children']);
+
+  var cn = 'ai ai-' + children;
+  if (className) {
+    cn = cn + ' ' + className;
+  }
+
+  return _react2.default.createElement(Root, _extends({ className: cn }, rest));
+};
+
+AcademicIcon.propTypes = {
+  className: _propTypes2.default.string,
+  size: _propTypes2.default.number,
+  ml: _propTypes2.default.number,
+  mr: _propTypes2.default.number,
+  children: _propTypes2.default.string.isRequired
+};
+
+exports.default = AcademicIcon;
 
 /***/ }),
 /* 38 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "static/etsaryk.052cb4d2.png";
+module.exports = __webpack_require__.p + "static/ashkor.7ff44c16.png";
 
 /***/ }),
 /* 39 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "static/aermolaev.bf4059ea.png";
+module.exports = __webpack_require__.p + "static/etsaryk.052cb4d2.png";
 
 /***/ }),
 /* 40 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "static/akulik.39060d33.png";
+module.exports = __webpack_require__.p + "static/aermolaev.bf4059ea.png";
 
 /***/ }),
 /* 41 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "static/arusetskiy.ccb7b92f.png";
+module.exports = __webpack_require__.p + "static/akulik.39060d33.png";
 
 /***/ }),
 /* 42 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "static/ybokach.acb12e7e.png";
+module.exports = __webpack_require__.p + "static/arusetskiy.ccb7b92f.png";
 
 /***/ }),
 /* 43 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "static/akastsiushkina.ce4ec45f.png";
+module.exports = __webpack_require__.p + "static/ybokach.acb12e7e.png";
 
 /***/ }),
 /* 44 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "static/emarushko.9a95db57.png";
+module.exports = __webpack_require__.p + "static/akastsiushkina.ce4ec45f.png";
 
 /***/ }),
 /* 45 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "static/sdzeranov.43d6c226.png";
+module.exports = __webpack_require__.p + "static/emarushko.9a95db57.png";
 
 /***/ }),
 /* 46 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "static/akorotkov.5d2141cd.png";
+module.exports = __webpack_require__.p + "static/sdzeranov.43d6c226.png";
 
 /***/ }),
 /* 47 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "static/amekibel.da99f2c4.png";
+module.exports = __webpack_require__.p + "static/nignatiev.5ab584fd.png";
 
 /***/ }),
 /* 48 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/amekibel.da99f2c4.png";
+
+/***/ }),
+/* 49 */
 /***/ (function(module, exports) {
 
 module.exports = "data:image/png;base64,/9j/4AAQSkZJRgABAQEASABIAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAC0ALQDASIAAhEBAxEB/8QAHAAAAAcBAQAAAAAAAAAAAAAAAAEDBAUGBwII/8QAOhAAAQMCBAMFBgUDBAMAAAAAAQACAwQRBRIhMQZBUQcTImFxFDKBkaHBI0JisdEkQ1IVM1PwFjRy/8QAGQEAAwEBAQAAAAAAAAAAAAAAAQIDBAAF/8QAJxEAAwACAgICAQMFAAAAAAAAAAECAxEhMRJBEyJRBDJxI4GhsfD/2gAMAwEAAhEDEQA/ANpRhEEfNIMdBBAILjgwEaII1xwEEFy+RkbC97gGgXJK447Scs8UDC+WRjGDdzjYLOOKu1GLDnvpcMDZJRcGQ6gLKcS4mxHFpnSVtZNLfYFxsPh/CR3+BvA36s454eo3FrsRjkePyxAuP0UdL2kYQ33Iqh3q0D7rBmT5bOkcWg6gbEppVVc892NcRH/i3n6lJu6fA2pSNhxTtpoqQuZTUfePH+Un8BVqo7bsdmuaSko2Dm0xlxHzOqy2aB7WkiFrm22DtU0D2AksLmka2O49CqJCNm0YX2418czGYrhsMrDu+ElhHwNwtM4d46wLiQBtJVBk5/sy+Fx9Oq8ruqu9p/dBcBYuO5SNPWT004fHI4a3uCjoGz2oEFjHZp2nVFTUtwfG5u8BsIal51byAceY8+S2a9/VcmdoJBBBE4CNEjRQrCsgjQTHCQQtqgjSB2GEEEdlwQDZGgguOCOgusg7ROOXSSSYZh8mWBhs+Rp9887eSuPHvEQwjCXU8MmWomadRu1mxPqdl57xCqdJUn/kdyH5VK658UUifYjLOZJSC0OeddTt6rhrwHHIMzuruXokW3JyDc7lKSO7llgdSl16GEJ52Qm7yXSdTr8k0GKSBxte222vyT6DC5a113Xspel4OfIC5rT/ACi7ieGDwqitmeSd3iFnW3HNcTQPfKx7WW01FleaLg95lDHMIPmpebhEmnLI2OLr2v1XfNP5O+KvwZk2Lu2PA11XDYri1rgHfzV0r+DKqlZcAE2v00UNJh80Icx7MthrobhVm0yblrsi8PqH0ddDOLHI65HUcx8l624axD/VOGcMrS4uM1O1xcdzpa589F5RjpvHcjS+y2nscxuoMEuB1brtEftNLfkwuIc356onejWkEXPRdAWXACsugEXNdgIoUK3kgukExwx9oah7Q1QbqiQckBUydE/xC+ROiob1Riob1UIJpP8AFAzSA2sh8YfInRMChJMyKJ0sjg1jAXOJ5AKNppXvGoULx3iYouHZIA4h9R4Tb/Hn/HxUr+g8cmTcb47JimISVF9JHXjYeTRo0fLX1VIfdrg8m7ydVJ1sjpqh2t+QUcW56loB942HkOZUF+SwrHCIw57tAlKGjfWVAduLpOqLnSx07fed4jbkrZgWG5GMIHJTyX4oeJ8mS2D4IxrAC25PkrhSYVEyNoyi9tSm+HQiNrQL3U7C3TY6rz6p0zcpSRxHh8QIOQEJ9BRN5MsEcbS6ykI25WqmOdiWyKxDBYKundGG2I909FlnEWD1FPnZJFmy6XtYrbRtqo3EsIpcQhcJWeK1rjn5Fap3JnaTR57p8NBnb3rrQ3GYtIBPlqtD4Gp6ir40ir42AU0MDow4HS2waOuqg8UoKbBuJIKYgGndIMw8r/wtowzCKLD2FtPGGHf181qXPJnfHBKk21vujD78028YNig1xzWum2T0PAbpQJCNOAnQrCQRoJhSne0h+wSsbiXC7QhBS9U8EIbyTu0ujtHAeACSE1lq2g7BOZOeiZvps+tiujXsFb9DqiqQ8XWddouKGeuELXeFnhA8hv8AX9leZCKChlmI1aPCPPksX4krDPXTHNexyX69T+6zfqGnXii+JaW2QRtle87kpHD2iaaWd3ut8LPTmVxXymKnDB779B8UqCKTC5iN42W+Nkmh98nNBarxF0lr66ei1LBaT+nYbWFuayvhgF1Zq0u8huVqba+ro6NpayniAH9x4usmeW60aMNJLktNLA1tjbUqUhaPh5rO4uOKqCUNko4pm9YZgT8lZsM4lp68CzXRv5hyl8Xjyy3yKuEWZuhtyTyN2ZoCi4584BBTKv4npcKce9bI+3JjblVhLZOtloDQBsk5NG2VaoeNWYg8Mhw6qDT+Z7LKe9oE0XiY6N3Q81W0vHgnO98mIdpD+74jAFyba2Nlt3D9aMR4fw6uY65fCzMT1tYrE+1mMRcRwOGhfGCtC7LMUbPwvFRSu/FiJA8xfT0Ktif1RHJ2y+POuqSYbvXUp1uuWe8nomh3GnATeP7JwFSRGHZBC6CcUgwANkfxTJ1SGpP24dVkeZI0fE2SGVt9UMrEw9sG9106taBuNkVmR3xMi+KKlsVKWg6RtMh9dm/U/RYbWP7+Zxbtn+a03jKvIw2ck6vcB8AL/ufostce7pQ+2uW4HmVNV5PZRz4rRFVL+9rhrdrNksZGyUD3TAmORzjoelgEyeS2R5+Ce1YEeCw+Tb/Nyt1ok1tMkMApxDGZGFxduAHWsE4qcRrJJnltPG9jP+QXA+ae8NxsMsL3AFj2Nv6jT7K9DhqCotPAA1ztSLaFZ7y+NvY+LCqxooNLHU11BJWvoqMthIuG3Y/XopWgr3UkPtXdv7pgu4E3IHUHmrDVcOPyEEsaL8m6lQuL0j6SkbRxG8tQcgb66JvNW9NCvG8a2mWqj43wEYU6QVjXzNafww05rqk45jNVVOfJI2aOO2fu2Czi3qTyCsr+z7DRwvJJTRu9vp2iTPmPjtq4W8xdKVvCYqS2oikL45WB1rciF28cynIUs9U5t6/gqGEYh3kD6mPDq0xwavnhlN2Dqba2WqcLY27EsPs45XjYSHNccjfRR+B8NNpYXwtZkjltnDW2zW2urZQ4PRYdAGwQtYevVI8if7UP8TS+z/yzIe0UHGMepw17IZIbxeIEteQb78la+zvDWUUULPb3T1E8eeRjWWYzfQHqmeK4cytxYPk1MlW57bjYDS31V24PwhtFROmcPETlaedgqOtuZj+5LDNLzrI9rpfz/wB/om5HkDK7cc0IHZiFzUg5kKbdXYEuCQjS4SEeyXCpJNh2QRoJxSlyREtSDaQuJNypQRttsu2xtHJYPhT7NXzNEY6k8CYzte0ODb2srE+Nrgms1IHRv05FdWJegzmfsyjjKdz6aOInV7gPidfuqliDg2INbsNfgNlZ+IbOrLu2iaXAHrsFT8UlALg0+Qv5IYlpBt7ZCSuLQ7roPupOp/Ewkx9ItPhb+FFSi4Y2+7/spuEB4DDtlyn43CsyckrwnUAsbG8Oyg3a5ouWnnpzBWqUGMUkUbWyTtaQOYI+yyHhh/cShrtwVqNPWRR0gcbaDdY8try5NWOHrhj2ux+gDDkmzk8mtJ+yhcOiZiGJHEJjbu9IozuPMprJK7EZnPLrMHutHNSFFVRU1OIZICC3842JU6vS4KTi2/s+i6YO28bwdRbZR0FdS0VRJhk8gjMLiInO0Dmbgeo2TjCK+FwDmk5SNR0UdxbRe20baunjLZofzEe8FSK/pnZMe730WmgljkaLEW6hK1czIoi572tbyJ/7qqNwxUU1TG0uibm5jaxV1Z3EMZkyRtDBmLrbADqqRU1JHJjuWVKup/ZY3YlK0sjhYckfO/K/mSdvNXrCoXU+FQRyG8gYMx8zqVkfEXFMXEXEOE4Hhb3PpWVDHzuAsJH30aPIb+vototZtrKuGdfZkctcKV6GFSfEjp0pNFdFBHlKq+yS6HsfJLgJGNLBVkRnSCCCcUgxAOi6EITgBHZR0PsbiIIPibkdpyKc2SNW7u6aR/8Ai0n6INcHbMEx+TLO8c3Otrrt/wBKpWIPBl8tbK043U99XSOvoXkgeSqOIG89r6Nas8Gi2M93xfEqSjlLRf8AU0KPZ74HIBKTS5GAX5qnsVE9Sju69rtgX/vqrxW0j3Yc18MmltG33NlRsPkbK5mY6lgI9QrtS1Ylw9sYNiCNFjyr7bNeJ8ENgmMYjUyviFEwSRus5hcbhWef22CQtqcNd4TY5DdRgpZIqxldSWbUNIzfqCt+GcZxzSBmJUPiEufOw6NAGlwdSU3hNPgrE2uls4wORzZBkoJn87N2SvE/FLsFNJBJhVRNLWHLFGwi5/7dWak4hoZY3Clhc5+fPbQC/wA00fRMxHEWYrVQM7+JvdwC18ouTf6q6xqZEpt19p0UvCaSohx2UgZAXXc0agFXXEq52G8P1lVGwSzxwPdFEf7jwCQLc9ibeSRioWtrZJi0XcVn3aZxI6PGKCgopCH4fIJ3Fp2l5D4D91kxS/NhyPaSHPB+Bmq7RqavdCIr0kVZNE0ECOWQFxFjsDo63K62waKk9nuGOZQz4xUMmFTiErp398LO1OnwtsrpdejPR5+VeNOfwEQDyRBoC6KHNMSOmJZqSalQnkDOkEEE4COGyNEEaiMDVQ/E1X7HgFXLs7uyApclU/j6pLMDEWl5H7eQBP2S29Sx4W6MTr3/AIhF/wAgHz3VcqzmqH7cgpqvlvUTO5DQKBkdmfm6qUFaDaLXd+lIznwjXmUsdI3k8gAkKi4a1MuxfQ6p6wwtheD7riCrfhWINcQQ6zXix9VRoDngAt+ZP6OeSnkFj4TyUssbK460a5TRGaJs0Yu4e8pamiDy3NECTvcKocMY21v4cjrevNXmhrIHOBFgsfvRuhprZL4fRxxm/csbzvlUq0Z3HoAmFNiEAtdw6WTt9S17Q2IWB5rVNLx4IZNutsgeL8c/8dwCpxGNgfK20cQdtncbC/pv8FlfAXDtXxfxK6pqHOdDC7v55X6hz73DSfM/RaVxrw7W8T0FDhdDlY01TZJpH7MYGnxHrqdlbuHOHqLhnB4sPoWEMbq57vee7mSqYo42zPlvQ9oCe4cHRujcJHDI7l5eidIy4kWXK0Ja4M7e+Q0EXJBcKdtSrUk1KBPIGdoItEE4CPQRIEnYbn6KIwHEAXJsAs17QKoTOAafBCw7dToPur5imI02F0j5p5GtNtMx1JWP8T4o2shL4w4Me8uu783L7qOWuNF8S9lBxB4bG4/5FQ7tbDoVI4k+/h6Nuo0G8h8guno5i7x/TvPWQD6JtVB2Rt+d08dpSR/qlJ+iFRDnhjBGmqdHPoYwHLED0eVLMjDmghReXLdu4z6qcom94wC2qnYYJLC2Zi0Xsr7hNBJK1tpSqPh8RbNotF4dD8oDgsdrk1R0WKhw1kVnSEuPmVLRxtHom8Qs0apVrvkqJKUBtskqAgzu/wDn7qR5qFpXlr2uG6lmStfzsVpxUtaMuaXvYpzRIIKxACCCCKRx01KtOiSbulG7J0gM6QQuEEwCOUbX4kIGO7oi+2be/kBzKjsd4g9igeYYXyNZ7590W9TossxztEq5Y3sggZTi1g8uzG3kstX6RaY9skuJMZibiUvtbhLK0jLFmJA0vcqm4pisldVMMj9zYAC2gUG7EpaupdI95zHUuJuUTJr1rf0iwU2ueSnlwJVpvMRvfRMWG7nJzM+8jz0TNpyk+ZTT0BkjOD7JT9O8+yVebwxNtuT9FxMP6KDqHj9kM9g79Elk5zGr3xshc4jUnT1upfCHh1r81AVejns5CxHxUphL7SRAciAUMi2gQ+S40MH41wNFesJd3bBbooLD8McC1zmuAcNDZSjJfZQW31usVdm2S2U8wcwDmU5sNAdFD4BIakucQTY63U+9nwTSnS2CnpndNcDQJ/GUzhGQWPNOoyLKvjoi3sdNktoSu819kgNl0LhUm37I1CfQshdcBw56JvRYjRYjE+Shq4KljHmNzoXhwa4bg22Kunvok1oetOqVbskGFKtVJFZ2ghcIIgPMnGPHE+K1JjiJZTtddkfX9TupVEq6yaeU948ucdSSVy+TvJnuJuSbkrioAFRZoGp+izJaLN7HNNpmc4+EDVcU8pdWMF9S7M4oPPdQDzXFD/vvcbXDSh6YfwKvJyOPUkpuzxObblqnLwDT3TWI+NvouQa7Jef/ANePqBm+oRSty9/5OaVzUu8ULerbH9/sla3QyEcw0+qZBfQwqG3c02/Ll+Sc4e0tlB1suHNL4y47WBCfYewd6ByIshfQI7Nr4bdHWYHAXD8RrbE3TXFKcNeWtGt+iiuEq98MZp3HVnTorW2nbUyZ3ahYrr0boQtw60UdMQ/3n6gKfa4OGqgnxkSNe24A0sncUrtC4302QVvoLldkwx7XNsBtzSrG7EKLjrG3sbp7FUh1rKs7ZGkkPxsjJ5XTbvCdCVxJI4AaqmiOh6vP3G3F9XgnaTikmAVfsgGSOfurZZXtb4i4bE3Nr+S1ni3ihnC/DNViTyDK1uSBp/NIdGj7/BeWJJ5KioknmkL5ZHFz3HdxJuT81bCiWVnpHhTtZwXFaaGLFZm0FcW2eXi0Tj1DuXobLRYpGSxNkjc17HC7XNNw4dQV4sjnc3RpIVs4X7Qcb4YkYKSpMlKD4qWUl0bvhyPmFdIiz1XdBUDBu1zhrEMNZPW1JoKjZ8D2l1j1BA1CCOgHmMHK3KNtCl7B02Y75UEFnZaQ5uY5NtZHQgBjzzdYEoIJPQ/sOUn2e3w+qbxe8xBBFdHPskZ/9+Een3TioJMEpJuWtbZBBFHP2NmH8I+n8J9h+s0d+dv3QQQsMF4wlxjxCmLT712nzFrq+Uj3CFuu5sggsN9m2Oh8zXROYWjLsggjB1BmNue1k5i8JFtEEFaSbHsZva67ewIIKhIwbtuxGpdjVDhxfamZEZgwc3E2ufgPqVlzdHfC6CC0Yv2ozZP3HbToAu2a2QQVCYu1xA3QQQROP//Z"
 
 /***/ }),
-/* 49 */
+/* 50 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2585,7 +2666,7 @@ var _styledComponents2 = _interopRequireDefault(_styledComponents);
 
 var _styles = __webpack_require__(3);
 
-var _bg = __webpack_require__(50);
+var _bg = __webpack_require__(51);
 
 var _bg2 = _interopRequireDefault(_bg);
 
@@ -2716,25 +2797,25 @@ var Popup = exports.Popup = function Popup(_ref2) {
 };
 
 /***/ }),
-/* 50 */
+/* 51 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "static/bg.ebfd0c34.png";
 
 /***/ }),
-/* 51 */
+/* 52 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "static/roadmap.b1d587c0.svg";
 
 /***/ }),
-/* 52 */
+/* 53 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "static/roadmap_mobile.6eedd7c7.svg";
 
 /***/ }),
-/* 53 */
+/* 54 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2765,27 +2846,27 @@ var _Heading2 = _interopRequireDefault(_Heading);
 
 var _Team = __webpack_require__(5);
 
-var _akulichkin = __webpack_require__(54);
+var _akulichkin = __webpack_require__(55);
 
 var _akulichkin2 = _interopRequireDefault(_akulichkin);
 
-var _nsvyaznoy = __webpack_require__(55);
+var _nsvyaznoy = __webpack_require__(56);
 
 var _nsvyaznoy2 = _interopRequireDefault(_nsvyaznoy);
 
-var _ayantsevich = __webpack_require__(56);
+var _ayantsevich = __webpack_require__(57);
 
 var _ayantsevich2 = _interopRequireDefault(_ayantsevich);
 
-var _dklevzhits = __webpack_require__(57);
+var _dklevzhits = __webpack_require__(58);
 
 var _dklevzhits2 = _interopRequireDefault(_dklevzhits);
 
-var _apobol = __webpack_require__(58);
+var _apobol = __webpack_require__(59);
 
 var _apobol2 = _interopRequireDefault(_apobol);
 
-var _soenkebartling = __webpack_require__(59);
+var _soenkebartling = __webpack_require__(60);
 
 var _soenkebartling2 = _interopRequireDefault(_soenkebartling);
 
@@ -2840,43 +2921,43 @@ var Advisors = function Advisors(p) {
 exports.default = Advisors;
 
 /***/ }),
-/* 54 */
+/* 55 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "static/akulichkin.5d20cb3b.png";
 
 /***/ }),
-/* 55 */
+/* 56 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "static/nsvyaznoy.aa798147.png";
 
 /***/ }),
-/* 56 */
+/* 57 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "static/ayantsevich.ac4ef1f3.png";
 
 /***/ }),
-/* 57 */
+/* 58 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "static/dklevzhits.fba700ae.png";
 
 /***/ }),
-/* 58 */
+/* 59 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "static/apobol.ab41fe4b.png";
 
 /***/ }),
-/* 59 */
+/* 60 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "static/soenkebartling.ff945b3f.png";
 
 /***/ }),
-/* 60 */
+/* 61 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2908,7 +2989,7 @@ var _Person = __webpack_require__(15);
 
 var _Person2 = _interopRequireDefault(_Person);
 
-var _MessageBox = __webpack_require__(61);
+var _MessageBox = __webpack_require__(62);
 
 var _MessageBox2 = _interopRequireDefault(_MessageBox);
 
@@ -3013,7 +3094,7 @@ var Researchers = function Researchers(p) {
 exports.default = Researchers;
 
 /***/ }),
-/* 61 */
+/* 62 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3125,7 +3206,7 @@ MessageBox.propTypes = {
 exports.default = MessageBox;
 
 /***/ }),
-/* 62 */
+/* 63 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3155,19 +3236,19 @@ var _Heading = __webpack_require__(4);
 
 var _Heading2 = _interopRequireDefault(_Heading);
 
-var _Partner = __webpack_require__(63);
+var _Partner = __webpack_require__(64);
 
 var _Partner2 = _interopRequireDefault(_Partner);
 
-var _blockchainforscience = __webpack_require__(64);
+var _blockchainforscience = __webpack_require__(65);
 
 var _blockchainforscience2 = _interopRequireDefault(_blockchainforscience);
 
-var _ecocity = __webpack_require__(65);
+var _ecocity = __webpack_require__(66);
 
 var _ecocity2 = _interopRequireDefault(_ecocity);
 
-var _blockchainbelarus = __webpack_require__(66);
+var _blockchainbelarus = __webpack_require__(67);
 
 var _blockchainbelarus2 = _interopRequireDefault(_blockchainbelarus);
 
@@ -3231,7 +3312,7 @@ var Partners = function Partners(p) {
 exports.default = Partners;
 
 /***/ }),
-/* 63 */
+/* 64 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3289,25 +3370,25 @@ Partner.propTypes = {
 exports.default = Partner;
 
 /***/ }),
-/* 64 */
+/* 65 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "static/blockchainforscience.2b52c062.png";
 
 /***/ }),
-/* 65 */
+/* 66 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "static/ecocity.2885a6c1.png";
 
 /***/ }),
-/* 66 */
+/* 67 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "static/blockchainbelarus.ec1747d2.png";
 
 /***/ }),
-/* 67 */
+/* 68 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3335,19 +3416,19 @@ var _Button = __webpack_require__(7);
 
 var _Button2 = _interopRequireDefault(_Button);
 
-var _Mention = __webpack_require__(68);
+var _Mention = __webpack_require__(69);
 
 var _Mention2 = _interopRequireDefault(_Mention);
 
-var _icon_meduza = __webpack_require__(69);
+var _icon_meduza = __webpack_require__(70);
 
 var _icon_meduza2 = _interopRequireDefault(_icon_meduza);
 
-var _icon_medium = __webpack_require__(70);
+var _icon_medium = __webpack_require__(71);
 
 var _icon_medium2 = _interopRequireDefault(_icon_medium);
 
-var _icon_tj = __webpack_require__(71);
+var _icon_tj = __webpack_require__(72);
 
 var _icon_tj2 = _interopRequireDefault(_icon_tj);
 
@@ -3421,7 +3502,7 @@ var Media = function Media(p) {
 exports.default = Media;
 
 /***/ }),
-/* 68 */
+/* 69 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3496,25 +3577,25 @@ Mention.propTypes = {
 exports.default = Mention;
 
 /***/ }),
-/* 69 */
+/* 70 */
 /***/ (function(module, exports) {
 
 module.exports = "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDYiIGhlaWdodD0iMjciIHZpZXdCb3g9IjAgMCA0NiAyNyIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4KPHRpdGxlPk1lZHV6YV9sb2dvPC90aXRsZT4KPGRlc2M+Q3JlYXRlZCB1c2luZyBGaWdtYTwvZGVzYz4KPGcgaWQ9IkNhbnZhcyIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTI4NSAtNjg2OSkiPgo8ZyBpZD0iTWVkdXphX2xvZ28iPgo8ZyBpZD0iSW1wb3J0ZWQgTGF5ZXJzIj4KPHVzZSB4bGluazpocmVmPSIjcGF0aDBfZmlsbCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMjg1IDY4NjkpIiBmaWxsPSIjMzMxRDUwIi8+CjwvZz4KPC9nPgo8L2c+CjxkZWZzPgo8cGF0aCBpZD0icGF0aDBfZmlsbCIgZmlsbC1ydWxlPSJldmVub2RkIiBkPSJNIDE4Ljg3MyA3LjA1NTc1TCAxOC44NzMgMjQuNDU5OUwgMjcuMTI3IDI3TCAyNy4xMjcgNy4wNTU3NUwgMzIuNDM2NSA3LjA1NTc1TCAzMi40MzY1IDI0LjQ1OTlMIDQwLjY0MjIgMjdMIDQ2IDE5Ljk0NDNMIDQwLjY5MDQgMTkuOTQ0M0wgNDAuNjkwNCAyLjc3NTI2TCAzMi40ODQ4IDBMIDI3LjEyNyA2LjExNDk4TCAyNy4xMjcgMi43NzUyNkwgMTguOTIxMyAwTCAxMy41NjM1IDYuMTE0OThMIDEzLjU2MzUgMi43NzUyNkwgNS4zNTc4MiAwTCAwIDcuMDU1NzVMIDUuMzA5NTUgNy4wNTU3NUwgNS4zMDk1NSAyNC40NTk5TCAxMy41NjM1IDI3TCAxMy41NjM1IDcuMDU1NzVMIDE4Ljg3MyA3LjA1NTc1WiIvPgo8L2RlZnM+Cjwvc3ZnPgo="
 
 /***/ }),
-/* 70 */
+/* 71 */
 /***/ (function(module, exports) {
 
 module.exports = "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMjgiIHZpZXdCb3g9IjAgMCAzMiAyOCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4KPHRpdGxlPiYjMjM5OyYjMTM2OyYjMTg2OzwvdGl0bGU+CjxkZXNjPkNyZWF0ZWQgdXNpbmcgRmlnbWE8L2Rlc2M+CjxnIGlkPSJDYW52YXMiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0yOTUgLTY2MDUpIj4KPGcgaWQ9IiYjMjM5OyYjMTM2OyYjMTg2OyI+Cjx1c2UgeGxpbms6aHJlZj0iI3BhdGgwX2ZpbGwiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDI5NSA2NjA1LjA0KSIgZmlsbD0iIzMzMUQ1MCIvPgo8L2c+CjwvZz4KPGRlZnM+CjxwYXRoIGlkPSJwYXRoMF9maWxsIiBkPSJNIDEwLjY2MDcgNS4wNTM1N0MgMTAuNjYwNyA1LjAzNTcxIDEwLjYyNSA0Ljk4MjE0IDEwLjYwNzEgNC45NjQyOEwgMS40ODIxNCAwLjM5Mjg1N0MgMS4yMzIxNCAwLjI2Nzg1NyAwLjk4MjE0MyAwLjEyNSAwLjY5NjQyOCAwLjEyNUMgMC4yMTQyODUgMC4xMjUgMCAwLjUzNTcxMyAwIDAuOTgyMTQxTCAwIDIxLjMzOTNDIDAgMjEuODc1IDAuMzkyODU4IDIyLjUxNzkgMC44OTI4NTggMjIuNzY3OUwgOS4xOTY0MyAyNi45Mjg2QyA5LjM3NSAyNy4wMTc5IDkuNTcxNDMgMjcuMDcxNCA5Ljc4NTcxIDI3LjA3MTRDIDEwLjM5MjkgMjcuMDcxNCAxMC42NjA3IDI2LjU1MzYgMTAuNjYwNyAyNkwgMTAuNjYwNyA1LjA1MzU3Wk0gMTEuODAzNiA2Ljg1NzE0TCAxMS44MDM2IDE3LjU3MTRMIDIxLjMzOTMgMjIuMzIxNEwgMTEuODAzNiA2Ljg1NzE0Wk0gMzIgNy4xNzg1N0wgMjIuMzU3MSAyMi44MzkzTCAzMC4yMzIxIDI2Ljc2NzlDIDMwLjQ4MjEgMjYuOTEwNyAzMC43Njc5IDI3IDMxLjA3MTQgMjdDIDMxLjY2MDcgMjcgMzIgMjYuNTg5MyAzMiAyNkwgMzIgNy4xNzg1N1pNIDMxLjk0NjQgNS4wMzU3MUMgMzEuOTQ2NCA0Ljk4MjE0IDMxLjkxMDcgNC45NDY0MyAzMS44NzUgNC45Mjg1N0wgMjIuMjE0MyAwLjEwNzE0MUMgMjIuMDcxNCAwLjAzNTcxMzIgMjEuOTEwNyAwIDIxLjc1IDBDIDIxLjM3NSAwIDIxLjAxNzkgMC4xNzg1NyAyMC44MjE0IDAuNUwgMTUuMDM1NyA5LjkxMDcxTCAyMiAyMS4yMzIxQyAyMi43MTQzIDIwLjA4OTMgMzEuOTQ2NCA1LjEwNzE0IDMxLjk0NjQgNS4wMzU3MVoiLz4KPC9kZWZzPgo8L3N2Zz4K"
 
 /***/ }),
-/* 71 */
+/* 72 */
 /***/ (function(module, exports) {
 
 module.exports = "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMiAzMiIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4KPHRpdGxlPkdyb3VwIDY8L3RpdGxlPgo8ZGVzYz5DcmVhdGVkIHVzaW5nIEZpZ21hPC9kZXNjPgo8ZyBpZD0iQ2FudmFzIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMjk1IC02NzM1KSI+CjxnIGlkPSJHcm91cCA2Ij4KPGcgaWQ9IlZlY3RvciAyIj4KPHVzZSB4bGluazpocmVmPSIjcGF0aDBfZmlsbCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMjk1IDY3MzUpIiBmaWxsPSIjMzMxRDUwIi8+CjwvZz4KPC9nPgo8L2c+CjxkZWZzPgo8cGF0aCBpZD0icGF0aDBfZmlsbCIgZD0iTSAwIDBMIDMyIDBMIDMyIDguNjU4ODJMIDIwLjU3MTQgOC42NTg4MkwgMjAuNTcxNCAyNC40NzA2TCAxMS44MDk1IDMyTCAwIDMyTCAwIDI0LjA5NDFMIDExLjgwOTUgMjQuMDk0MUwgMTEuODA5NSA4LjY1ODgyTCAwIDguNjU4ODJMIDAgMFoiLz4KPC9kZWZzPgo8L3N2Zz4K"
 
 /***/ }),
-/* 72 */
+/* 73 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3543,7 +3624,7 @@ var _Heading = __webpack_require__(4);
 
 var _Heading2 = _interopRequireDefault(_Heading);
 
-var _SubscribeInput = __webpack_require__(73);
+var _SubscribeInput = __webpack_require__(74);
 
 var _SubscribeInput2 = _interopRequireDefault(_SubscribeInput);
 
@@ -3610,7 +3691,7 @@ var Subscribe = function Subscribe(p) {
 exports.default = Subscribe;
 
 /***/ }),
-/* 73 */
+/* 74 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3636,7 +3717,7 @@ var _icon_send = __webpack_require__(16);
 
 var _icon_send2 = _interopRequireDefault(_icon_send);
 
-var _SubscribeForm = __webpack_require__(74);
+var _SubscribeForm = __webpack_require__(75);
 
 var _SubscribeForm2 = _interopRequireDefault(_SubscribeForm);
 
@@ -3693,7 +3774,7 @@ var Input = function Input() {
 exports.default = Input;
 
 /***/ }),
-/* 74 */
+/* 75 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3713,7 +3794,7 @@ var _propTypes = __webpack_require__(2);
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
-var _jsonp = __webpack_require__(75);
+var _jsonp = __webpack_require__(76);
 
 var _jsonp2 = _interopRequireDefault(_jsonp);
 
@@ -3896,13 +3977,13 @@ var SubscribeForm = function (_React$Component) {
 exports.default = SubscribeForm;
 
 /***/ }),
-/* 75 */
+/* 76 */
 /***/ (function(module, exports) {
 
 module.exports = require("jsonp");
 
 /***/ }),
-/* 76 */
+/* 77 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3918,7 +3999,7 @@ var _react2 = _interopRequireDefault(_react);
 
 var _reactStatic = __webpack_require__(6);
 
-var _Poll = __webpack_require__(77);
+var _Poll = __webpack_require__(78);
 
 var _Poll2 = _interopRequireDefault(_Poll);
 
@@ -3950,7 +4031,7 @@ var Join = function Join(_ref) {
 exports.default = (0, _reactStatic.getSiteProps)(Join);
 
 /***/ }),
-/* 77 */
+/* 78 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3995,33 +4076,33 @@ var _Text = __webpack_require__(8);
 
 var _Text2 = _interopRequireDefault(_Text);
 
-var _Shower = __webpack_require__(78);
+var _Shower = __webpack_require__(79);
 
 var _Button = __webpack_require__(7);
 
 var _Button2 = _interopRequireDefault(_Button);
 
-var _RadioButton = __webpack_require__(79);
+var _RadioButton = __webpack_require__(80);
 
 var _RadioButton2 = _interopRequireDefault(_RadioButton);
 
-var _Input = __webpack_require__(80);
+var _Input = __webpack_require__(81);
 
 var _Input2 = _interopRequireDefault(_Input);
 
-var _Checkbox = __webpack_require__(81);
+var _Checkbox = __webpack_require__(82);
 
 var _Checkbox2 = _interopRequireDefault(_Checkbox);
 
-var _TextArea = __webpack_require__(82);
+var _TextArea = __webpack_require__(83);
 
 var _TextArea2 = _interopRequireDefault(_TextArea);
 
-var _axios = __webpack_require__(83);
+var _axios = __webpack_require__(84);
 
 var _axios2 = _interopRequireDefault(_axios);
 
-var _reactToggleDisplay = __webpack_require__(84);
+var _reactToggleDisplay = __webpack_require__(85);
 
 var _reactToggleDisplay2 = _interopRequireDefault(_reactToggleDisplay);
 
@@ -4762,7 +4843,7 @@ var Poll = function (_Component) {
 exports.default = Poll;
 
 /***/ }),
-/* 78 */
+/* 79 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4816,7 +4897,7 @@ Show.propTypes = {
 };
 
 /***/ }),
-/* 79 */
+/* 80 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4908,7 +4989,7 @@ RadioButton.propTypes = {
 exports.default = RadioButton;
 
 /***/ }),
-/* 80 */
+/* 81 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4995,7 +5076,7 @@ Input.propTypes = {
 exports.default = Input;
 
 /***/ }),
-/* 81 */
+/* 82 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5094,7 +5175,7 @@ Checkbox.propTypes = {
 exports.default = Checkbox;
 
 /***/ }),
-/* 82 */
+/* 83 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5132,19 +5213,19 @@ var TextArea = _styledComponents2.default.textarea.withConfig({
 exports.default = TextArea;
 
 /***/ }),
-/* 83 */
+/* 84 */
 /***/ (function(module, exports) {
 
 module.exports = require("axios");
 
 /***/ }),
-/* 84 */
+/* 85 */
 /***/ (function(module, exports) {
 
 module.exports = require("react-toggle-display");
 
 /***/ }),
-/* 85 */
+/* 86 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5172,7 +5253,7 @@ var _MobileMenu = __webpack_require__(12);
 
 var _MobileMenu2 = _interopRequireDefault(_MobileMenu);
 
-var _LanguageSwitcher = __webpack_require__(86);
+var _LanguageSwitcher = __webpack_require__(87);
 
 var _LanguageSwitcher2 = _interopRequireDefault(_LanguageSwitcher);
 
@@ -5201,7 +5282,7 @@ var Whitepaper = function Whitepaper(_ref) {
 exports.default = (0, _reactStatic.getSiteProps)(Whitepaper);
 
 /***/ }),
-/* 86 */
+/* 87 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5232,7 +5313,7 @@ var _Button = __webpack_require__(7);
 
 var _Button2 = _interopRequireDefault(_Button);
 
-var _Language = __webpack_require__(87);
+var _Language = __webpack_require__(88);
 
 var _Language2 = _interopRequireDefault(_Language);
 
@@ -5295,7 +5376,7 @@ var LanguageSwitcher = function LanguageSwitcher(p) {
 exports.default = LanguageSwitcher;
 
 /***/ }),
-/* 87 */
+/* 88 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5362,7 +5443,7 @@ Language.propTypes = {
 exports.default = Language;
 
 /***/ }),
-/* 88 */
+/* 89 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5404,4 +5485,4 @@ exports.default = function () {
 /***/ })
 /******/ ]);
 });
-//# sourceMappingURL=app.static.9ef64b04.js.map
+//# sourceMappingURL=app.static.3fa52140.js.map
