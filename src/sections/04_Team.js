@@ -74,12 +74,12 @@ export const Block = styled.div`
 
 // reused in the advisors section
 export const BlockIncompleteAdvisor = styled.div`
-  width: 51%;
-  display: flex;
-  justify-content: space-around;
+  width: 72.5%;
+  display: inline-flex;
+  justify-content: space-between;
   &:first-of-type {
-    margin-top: 48px;
-  }
+  margin-top: 48px;
+}
 
   ${m.lessThan('small')`
     width: 100%;
