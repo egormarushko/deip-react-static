@@ -11,6 +11,7 @@ import ayantsevich from 'components/images/team/ayantsevich.png'
 import dklevzhits from 'components/images/team/dklevzhits.png'
 import apobol from 'components/images/team/apobol.png'
 import soenkebartling from 'components/images/team/soenkebartling.png'
+import aadamiants from 'components/images/team/aadamiants.png'
 
 export const Block = styled.div`
   display: flex;
@@ -35,7 +36,8 @@ const personsFirstRow = [
 
 const personsSecondRow = [
   { src: akulichkin, name: 'Anton Kulichkin', role: 'PARTNERSHIP ADVISOR', linkedin: 'https://www.linkedin.com/in/anton-kulichkin-b158a886/'},  
-  { src: nsvyaznoy, name: 'Nikolay Svyaznoy', role: 'MARKETING ADVISOR'}
+  { src: nsvyaznoy, name: 'Nikolay Svyaznoy', role: 'MARKETING ADVISOR'},
+  { src: aadamiants, name: 'Alexander Adamiants', role: 'PARTNERSHIP ADVISOR', facebook: 'https://www.facebook.com/alexander.adamiants'}
 ]
 
 const Advisors = p => (
