@@ -280,37 +280,37 @@ var personsThirdRow = [{ src: _emarushko2.default, name: 'Egor Marushko', role: 
 // reused in the advisors section
 var Root = exports.Root = _styledComponents2.default.section.withConfig({
   displayName: '04_Team__Root',
-  componentId: 's1qk5u6u-0'
+  componentId: 's1pwro9n-0'
 })(['', ';'], _styles.container);
 
 // reused in the advisors section
 var Container = exports.Container = _styledComponents2.default.div.withConfig({
   displayName: '04_Team__Container',
-  componentId: 's1qk5u6u-1'
+  componentId: 's1pwro9n-1'
 })(['text-align:center;width:', '%;margin-left:', '%;margin-top:64px;margin-bottom:64px;', ';'], 100 * 2 / 3, 100 / 6, _styles.m.lessThan('small')(_templateObject));
 
 // reused in the advisors section
 var Block = exports.Block = _styledComponents2.default.div.withConfig({
   displayName: '04_Team__Block',
-  componentId: 's1qk5u6u-2'
+  componentId: 's1pwro9n-2'
 })(['display:flex;justify-content:space-between;&:first-of-type{margin-top:48px;}', ';'], _styles.m.lessThan('small')(_templateObject2));
 
 // reused in the advisors section
 var BlockIncompleteAdvisor = exports.BlockIncompleteAdvisor = _styledComponents2.default.div.withConfig({
   displayName: '04_Team__BlockIncompleteAdvisor',
-  componentId: 's1qk5u6u-3'
-})(['width:51%;display:flex;justify-content:space-around;&:first-of-type{margin-top:48px;}', ';'], _styles.m.lessThan('small')(_templateObject3));
+  componentId: 's1pwro9n-3'
+})(['width:72.5%;display:inline-flex;justify-content:space-between;&:first-of-type{margin-top:48px;}', ';'], _styles.m.lessThan('small')(_templateObject3));
 
 // reused in the advisors section
 var BlockIncomplete = exports.BlockIncomplete = _styledComponents2.default.div.withConfig({
   displayName: '04_Team__BlockIncomplete',
-  componentId: 's1qk5u6u-4'
+  componentId: 's1pwro9n-4'
 })(['width:72.5%;display:flex;justify-content:space-between;&:first-of-type{margin-top:48px;}', ';'], _styles.m.lessThan('small')(_templateObject3));
 
 // reused in the advisors section
 var Person = exports.Person = (0, _styledComponents2.default)(_Person2.default).withConfig({
   displayName: '04_Team__Person',
-  componentId: 's1qk5u6u-5'
+  componentId: 's1pwro9n-5'
 })(['margin:24px 0;&:list-of-type{margin-bottom:0;}']);
 
 var Team = function Team(p) {
@@ -5506,4 +5506,4 @@ exports.default = function () {
 /***/ })
 /******/ ]);
 });
-//# sourceMappingURL=app.static.d64f6cce.js.map
+//# sourceMappingURL=app.static.62836bf5.js.map
