@@ -70,3 +70,8 @@ exports.US = [
     { value: 'WI', label: 'Wisconsin' },
     { value: 'WY', label: 'Wyoming' },
 ];
+
+exports.countries = [
+    { name: 'Belarus' },
+    { name: 'Russia' }
+];

@@ -24,6 +24,8 @@ import { Creatable } from 'react-select'
 
 import { isEmail } from 'validator';
 
+import { countries } from '../components/data/Country';
+
 const Select = styled.select`
   border-radius: 5px;
   border: 1px solid ${p => p.theme.palette.primaryLight};
@@ -150,22 +152,44 @@ const Checkbox = styled(checkbox) `
 class TokensaleForm extends Component {
   state = {
     isVisibleSuccesSubscriptionMessage: false,
-
     tokensaleName: '',
     tokensaleEmail: '',
-    tokensalePerson: '',
+    tokensalePerson: 'person',
     tokensaleCountry: '',
-    tokensaleAmount: false,
+    tokensaleAmount: '5 000 - 10 000',
+  }
+
+  amounts = {
+    company: [
+      '25 000 - 100 000', 
+      '100 000 - 500 000', 
+      '500 000 - 1 000 000', 
+      '1 000 000 - 3 000 000'
+    ],
+    person: [
+      '5 000 - 10 000',
+      '10 000 - 50 000',
+      '50 000 - 100 000',
+      '100 000 - 500 000'
+    ]
   }
 
   setShow = e => this.setState({ value: e.target.id })
+
   setValue = e => {
     this.setState({ [e.target.name]: e.target.type === 'checkbox' ? e.target.checked : e.target.value })
   }
+
+  setPerson = e => {
+    this.setValue(e);
+    this.setState({ tokensaleAmount: this.amounts[ e.target.value ][0] });
+  }
+
   sendForm = e => {
     e.preventDefault();
 
     var self = this;
+
     var form = {
       generalInfo: {
         fullName: this.state.tokensaleName,
@@ -178,8 +202,8 @@ class TokensaleForm extends Component {
         tokensaleCountry: this.state.tokensaleCountry,
         tokensaleAmount: this.state.tokensaleAmount,
       }
-
     };
+
     console.log(form);
     debugger    
     
@@ -196,13 +220,15 @@ class TokensaleForm extends Component {
 
   handleClickTest = () => {
     debugger    
-    this.form.validateAll();
+    this;
+    // this.form.validateAll();
   };
 
   render() {
     const { setShow } = this
     const { sendForm } = this
     const { setValue } = this
+    const { setPerson } = this
     const { handleClickTest } = this
 
     return (
@@ -225,24 +251,32 @@ class TokensaleForm extends Component {
                 </ControlBlock>
                 <VerticalBlock>
                   <Text>[Test Header Text]:</Text>
-                  <Select name="tokensalePerson" onChange={setValue}>
+
+                  <Select name="tokensalePerson" onChange={setPerson}>
                     <option value="person">Person</option>
                     <option value="company">Company</option>
                   </Select>
+
                   <Text>Country of residence:</Text>
                   <Select name="tokensaleCountry" onChange={setValue}>
-                    <option value="grapefruit">Grapefruit</option>
-                    <option value="lime">Lime</option>
-                    <option value="coconut">Coconut</option>
-                    <option value="mango">Mango</option>
+                    <option value=""></option>
+                    {
+                      countries.map((country, i) => 
+                        <option key={ i } value={ country.name }>{ country.name }</option>
+                      )
+                    }
                   </Select>
+                  
                   <Text>Planned contribution:</Text>
-                  <Select name="tokensaleAmount" onChange={setValue}>
-                    <option value="grapefruit">Grapefruit</option>
-                    <option value="lime">Lime</option>
-                    <option value="coconut">Coconut</option>
-                    <option value="mango">Mango</option>
+                  <Select name="tokensaleAmount" value={this.state.tokensaleAmount} onChange={setValue}>
+                      {
+                        this.amounts[ this.state.tokensalePerson ].map((amount, i) => 
+                          <option key={ i } value={ amount }>{ amount }</option>
+                        )
+                      }
                   </Select>
+                  
+
                 </VerticalBlock>
                 {/* <VerticalBlock>
                       <Text>Identification:</Text>
@@ -253,7 +287,7 @@ class TokensaleForm extends Component {
               </Section>
               <Section>
                 <ControlBlock>
-                  <Checkbox type="checkbox">
+                  <Checkbox type="checkbox" name="chekbox1">
                     Prepare your previous researches to be included into genesis block
                     </Checkbox>
                 </ControlBlock>
