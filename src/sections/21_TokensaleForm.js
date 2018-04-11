@@ -22,7 +22,8 @@ import FileInput from 'react-simple-file-input'
 import CssBaseline from 'material-ui/CssBaseline'
 import { Creatable } from 'react-select'
 
-import { isEmail } from 'validator';
+import validator from 'validator';
+import { Validate, ValidateGroup, ErrorMessage } from "react-validate";
 
 import { countries } from '../components/data/Country';
 
@@ -64,7 +65,7 @@ const required = (value, props) => {
 };
 
 const email = (value) => {
-  if (!isEmail(value)) {
+  if (!validator.isEmail(value)) {
     return <span className="form-error is-visible">${value} is not a valid email.</span>;
   }
 };
@@ -219,7 +220,7 @@ class TokensaleForm extends Component {
   }
 
   handleClickTest = () => {
-    debugger    
+    // debugger    
     this;
     // this.form.validateAll();
   };
@@ -231,6 +232,8 @@ class TokensaleForm extends Component {
     const { setPerson } = this
     const { handleClickTest } = this
 
+    const validateEmail = validator.isEmail;
+
     return (
       <Root {...this.props}>
         <Menu attached />
@@ -238,6 +241,8 @@ class TokensaleForm extends Component {
         <Container>
           <ToggleDisplay show={!this.state.isVisibleSuccesSubscriptionMessage} tag="section">
             <form ref={c => { this.form = c }} onSubmit={this.sendForm} action="">
+            <ValidateGroup>
+
               <Section>
                 <Heading>Pre-sale</Heading>
               </Section>
@@ -246,8 +251,25 @@ class TokensaleForm extends Component {
               </Description>
               <Section>
                 <ControlBlock>
-                  <Input name="tokensaleName" header="Name:" placeholder="e.g. John Doe" onChange={this.handleClickTest} validations={[required, email]}/>
-                  <Input name="tokensaleEmail" header="Email:" placeholder="name@email.com" onChange={setValue} validations={[required]}/>
+
+                  <Input name="tokensaleName" 
+                    header="Name:" 
+                    type="text"
+                    placeholder="e.g. John Doe" 
+                    onChange={this.handleClickTest} 
+                    validations={[required, email]}
+                  />
+
+                  <Validate validators={[validateEmail]}>
+                    <Input name="tokensaleEmail" 
+                      header="Email:" 
+                      type="email"
+                      placeholder="name@email.com" 
+                      onChange={setValue}
+                    />
+                    <ErrorMessage>Not a valid email</ErrorMessage>
+                  </Validate>
+
                 </ControlBlock>
                 <VerticalBlock>
                   <Text>[Test Header Text]:</Text>
@@ -295,7 +317,9 @@ class TokensaleForm extends Component {
 
               <Button submit primary>
                 Send
-            </Button>
+              </Button>
+
+              </ValidateGroup>
             </form>
           </ToggleDisplay>
           <ToggleDisplay show={this.state.isVisibleSuccesSubscriptionMessage} >
