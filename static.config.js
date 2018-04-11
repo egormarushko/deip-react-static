@@ -24,6 +24,11 @@ export default {
         getProps: () => ({ someData: 'someData' }),
       },
       {
+        path: '/tokensale',
+        component: 'src/containers/Tokensale',
+        getProps: () => ({ someData: 'someData' }),
+      },
+      {
         is404: true,
         component: 'src/containers/404',
       },
