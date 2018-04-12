@@ -70,7 +70,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /******/ 	__webpack_require__.p = "/";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 18);
+/******/ 	return __webpack_require__(__webpack_require__.s = 25);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -105,7 +105,7 @@ exports.m = exports.container = undefined;
 
 var _styledComponents = __webpack_require__(1);
 
-var _styledMediaQuery = __webpack_require__(26);
+var _styledMediaQuery = __webpack_require__(33);
 
 var container = exports.container = function container(p) {
   return (0, _styledComponents.css)(['max-width:', ';margin-left:auto;margin-right:auto;'], function (p) {
@@ -219,51 +219,51 @@ var _Person = __webpack_require__(15);
 
 var _Person2 = _interopRequireDefault(_Person);
 
-var _ashkor = __webpack_require__(38);
+var _ashkor = __webpack_require__(45);
 
 var _ashkor2 = _interopRequireDefault(_ashkor);
 
-var _etsaryk = __webpack_require__(39);
+var _etsaryk = __webpack_require__(46);
 
 var _etsaryk2 = _interopRequireDefault(_etsaryk);
 
-var _aermolaev = __webpack_require__(40);
+var _aermolaev = __webpack_require__(47);
 
 var _aermolaev2 = _interopRequireDefault(_aermolaev);
 
-var _akulik = __webpack_require__(41);
+var _akulik = __webpack_require__(48);
 
 var _akulik2 = _interopRequireDefault(_akulik);
 
-var _arusetskiy = __webpack_require__(42);
+var _arusetskiy = __webpack_require__(49);
 
 var _arusetskiy2 = _interopRequireDefault(_arusetskiy);
 
-var _ybokach = __webpack_require__(43);
+var _ybokach = __webpack_require__(50);
 
 var _ybokach2 = _interopRequireDefault(_ybokach);
 
-var _akastsiushkina = __webpack_require__(44);
+var _akastsiushkina = __webpack_require__(51);
 
 var _akastsiushkina2 = _interopRequireDefault(_akastsiushkina);
 
-var _emarushko = __webpack_require__(45);
+var _emarushko = __webpack_require__(52);
 
 var _emarushko2 = _interopRequireDefault(_emarushko);
 
-var _sdzeranov = __webpack_require__(46);
+var _sdzeranov = __webpack_require__(53);
 
 var _sdzeranov2 = _interopRequireDefault(_sdzeranov);
 
-var _nignatiev = __webpack_require__(47);
+var _nignatiev = __webpack_require__(54);
 
 var _nignatiev2 = _interopRequireDefault(_nignatiev);
 
-var _amekibel = __webpack_require__(48);
+var _amekibel = __webpack_require__(55);
 
 var _amekibel2 = _interopRequireDefault(_amekibel);
 
-var _mbahutskaya = __webpack_require__(49);
+var _mbahutskaya = __webpack_require__(56);
 
 var _mbahutskaya2 = _interopRequireDefault(_mbahutskaya);
 
@@ -359,12 +359,72 @@ exports.default = Team;
 
 /***/ }),
 /* 6 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _templateObject = _taggedTemplateLiteral(['\n  font-weight: 300;\n  font-size: 16px;\n  line-height: 1.5;\n  color: ', ';\n'], ['\n  font-weight: 300;\n  font-size: 16px;\n  line-height: 1.5;\n  color: ', ';\n']),
+    _templateObject2 = _taggedTemplateLiteral(['\n  font-size: 12px;\n  color: ', ';\n'], ['\n  font-size: 12px;\n  color: ', ';\n']);
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _propTypes = __webpack_require__(2);
+
+var _propTypes2 = _interopRequireDefault(_propTypes);
+
+var _styledComponents = __webpack_require__(1);
+
+var _styledComponents2 = _interopRequireDefault(_styledComponents);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
+
+function _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
+
+var p = _styledComponents2.default.p.withConfig({
+  displayName: 'Text__p',
+  componentId: 's1ldn5q5-0'
+})(['margin:0;']);
+
+var Normal = p.extend(_templateObject, function (p) {
+  return p.theme.palette.primary;
+});
+
+var Small = p.extend(_templateObject2, function (p) {
+  return p.theme.palette.text.secondary;
+});
+
+var Text = function Text(_ref) {
+  var type = _ref.type,
+      rest = _objectWithoutProperties(_ref, ['type']);
+
+  if (type === 'normal') return _react2.default.createElement(Normal, rest);
+  if (type === 'small') return _react2.default.createElement(Small, rest);
+  return _react2.default.createElement(Normal, rest);
+};
+
+Text.propTypes = {
+  type: _propTypes2.default.oneOf(['normal', 'small'])
+};
+
+exports.default = Text;
+
+/***/ }),
+/* 7 */
 /***/ (function(module, exports) {
 
 module.exports = require("react-static");
 
 /***/ }),
-/* 7 */
+/* 8 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -384,7 +444,7 @@ var _propTypes = __webpack_require__(2);
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
-var _reactStatic = __webpack_require__(6);
+var _reactStatic = __webpack_require__(7);
 
 var _styledComponents = __webpack_require__(1);
 
@@ -463,66 +523,6 @@ exports.default = (0, _styledComponents2.default)(Button).withConfig({
   displayName: 'Button',
   componentId: 'nkkmj8-3'
 })(['']);
-
-/***/ }),
-/* 8 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _templateObject = _taggedTemplateLiteral(['\n  font-weight: 300;\n  font-size: 16px;\n  line-height: 1.5;\n  color: ', ';\n'], ['\n  font-weight: 300;\n  font-size: 16px;\n  line-height: 1.5;\n  color: ', ';\n']),
-    _templateObject2 = _taggedTemplateLiteral(['\n  font-size: 12px;\n  color: ', ';\n'], ['\n  font-size: 12px;\n  color: ', ';\n']);
-
-var _react = __webpack_require__(0);
-
-var _react2 = _interopRequireDefault(_react);
-
-var _propTypes = __webpack_require__(2);
-
-var _propTypes2 = _interopRequireDefault(_propTypes);
-
-var _styledComponents = __webpack_require__(1);
-
-var _styledComponents2 = _interopRequireDefault(_styledComponents);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
-
-function _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
-
-var p = _styledComponents2.default.p.withConfig({
-  displayName: 'Text__p',
-  componentId: 's1ldn5q5-0'
-})(['margin:0;']);
-
-var Normal = p.extend(_templateObject, function (p) {
-  return p.theme.palette.primary;
-});
-
-var Small = p.extend(_templateObject2, function (p) {
-  return p.theme.palette.text.secondary;
-});
-
-var Text = function Text(_ref) {
-  var type = _ref.type,
-      rest = _objectWithoutProperties(_ref, ['type']);
-
-  if (type === 'normal') return _react2.default.createElement(Normal, rest);
-  if (type === 'small') return _react2.default.createElement(Small, rest);
-  return _react2.default.createElement(Normal, rest);
-};
-
-Text.propTypes = {
-  type: _propTypes2.default.oneOf(['normal', 'small'])
-};
-
-exports.default = Text;
 
 /***/ }),
 /* 9 */
@@ -619,7 +619,7 @@ var _propTypes = __webpack_require__(2);
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
-var _reactStatic = __webpack_require__(6);
+var _reactStatic = __webpack_require__(7);
 
 var _styledComponents = __webpack_require__(1);
 
@@ -627,7 +627,7 @@ var _styledComponents2 = _interopRequireDefault(_styledComponents);
 
 var _styles = __webpack_require__(3);
 
-var _Button = __webpack_require__(7);
+var _Button = __webpack_require__(8);
 
 var _Button2 = _interopRequireDefault(_Button);
 
@@ -718,7 +718,7 @@ var Menu = function (_Component) {
         this.setState({ attached: true });
       }
 
-      var ReactGA = __webpack_require__(13);
+      var ReactGA = __webpack_require__(14);
       ReactGA.initialize('UA-114332532-1');
       ReactGA.pageview(window.location.pathname + window.location.search);
     }
@@ -841,7 +841,7 @@ var _Icon = __webpack_require__(9);
 
 var _Icon2 = _interopRequireDefault(_Icon);
 
-var _Button = __webpack_require__(7);
+var _Button = __webpack_require__(8);
 
 var _Button2 = _interopRequireDefault(_Button);
 
@@ -936,7 +936,7 @@ var MobileMenu = function (_Component) {
         this.setState({ attached: true });
       }
 
-      var ReactGA = __webpack_require__(13);
+      var ReactGA = __webpack_require__(14);
       ReactGA.initialize('UA-114332532-1');
       ReactGA.pageview(window.location.pathname + window.location.search);
     }
@@ -1032,12 +1032,6 @@ exports.default = MobileMenu;
 
 /***/ }),
 /* 13 */
-/***/ (function(module, exports) {
-
-module.exports = require("react-ga");
-
-/***/ }),
-/* 14 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1065,7 +1059,7 @@ var _styledComponents2 = _interopRequireDefault(_styledComponents);
 
 var _styles = __webpack_require__(3);
 
-var _icon_mouse = __webpack_require__(27);
+var _icon_mouse = __webpack_require__(34);
 
 var _icon_mouse2 = _interopRequireDefault(_icon_mouse);
 
@@ -1208,6 +1202,12 @@ var HeroBackground = function (_React$Component) {
 exports.default = HeroBackground;
 
 /***/ }),
+/* 14 */
+/***/ (function(module, exports) {
+
+module.exports = require("react-ga");
+
+/***/ }),
 /* 15 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -1234,7 +1234,7 @@ var _styledComponents2 = _interopRequireDefault(_styledComponents);
 
 var _styles = __webpack_require__(3);
 
-var _Text = __webpack_require__(8);
+var _Text = __webpack_require__(6);
 
 var _Text2 = _interopRequireDefault(_Text);
 
@@ -1246,7 +1246,7 @@ var _Icon = __webpack_require__(9);
 
 var _Icon2 = _interopRequireDefault(_Icon);
 
-var _AcademicIcon = __webpack_require__(37);
+var _AcademicIcon = __webpack_require__(44);
 
 var _AcademicIcon2 = _interopRequireDefault(_AcademicIcon);
 
@@ -1571,20 +1571,402 @@ exports.default = Footer;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
+exports.Show = exports.Shower = undefined;
 
 var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactDom = __webpack_require__(19);
+var _propTypes = __webpack_require__(2);
 
-var _reactDom2 = _interopRequireDefault(_reactDom);
+var _propTypes2 = _interopRequireDefault(_propTypes);
 
-var _reactHotLoader = __webpack_require__(20);
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var Shower = exports.Shower = function Shower(_ref) {
+  var value = _ref.value,
+      children = _ref.children;
+  return _react2.default.createElement(
+    'div',
+    null,
+    _react2.default.Children.map(children, function (child) {
+      return child.props.value == value ? child : null;
+    })
+  );
+};
+
+Shower.propTypes = {
+  value: _propTypes2.default.string.isRequired,
+  children: _propTypes2.default.node.isRequired
+};
+
+var Show = exports.Show = function Show(_ref2) {
+  var value = _ref2.value,
+      children = _ref2.children;
+  return _react2.default.createElement(
+    'div',
+    null,
+    children
+  );
+};
+
+Show.propTypes = {
+  value: _propTypes2.default.string.isRequired,
+  children: _propTypes2.default.node.isRequired
+};
+
+/***/ }),
+/* 19 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _propTypes = __webpack_require__(2);
+
+var _propTypes2 = _interopRequireDefault(_propTypes);
 
 var _styledComponents = __webpack_require__(1);
 
-var _App = __webpack_require__(21);
+var _styledComponents2 = _interopRequireDefault(_styledComponents);
+
+var _Icon = __webpack_require__(9);
+
+var _Icon2 = _interopRequireDefault(_Icon);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
+
+var Root = _styledComponents2.default.div.withConfig({
+  displayName: 'RadioButton__Root',
+  componentId: 'sml6sz-0'
+})(['']);
+
+var Radio = _styledComponents2.default.input.attrs({
+  type: 'radio'
+}).withConfig({
+  displayName: 'RadioButton__Radio',
+  componentId: 'sml6sz-1'
+})(['display:none;&:checked + label{border:1px solid ', ';background:', ';color:#fff;}'], function (p) {
+  return p.theme.palette.primary;
+}, function (p) {
+  return p.theme.palette.primary;
+});
+
+var Label = _styledComponents2.default.label.withConfig({
+  displayName: 'RadioButton__Label',
+  componentId: 'sml6sz-2'
+})(['display:inline-block;border-radius:5px;border:1px solid ', ';font-size:16px;font-weight:700;color:', ';height:49px;line-height:49px;width:100%;cursor:pointer;text-align:center;text-decoration:none;transition:border 0.15s,background 0.15s,color 0.15s;'], function (p) {
+  return p.theme.palette.primaryLight;
+}, function (p) {
+  return p.theme.palette.primaryLight;
+});
+
+var RadioButton = function RadioButton(_ref) {
+  var id = _ref.id,
+      name = _ref.name,
+      icon = _ref.icon,
+      checked = _ref.checked,
+      children = _ref.children,
+      onClick = _ref.onClick,
+      rest = _objectWithoutProperties(_ref, ['id', 'name', 'icon', 'checked', 'children', 'onClick']);
+
+  return _react2.default.createElement(
+    Root,
+    rest,
+    _react2.default.createElement(Radio, { id: id, name: name, defaultChecked: checked, onClick: onClick }),
+    _react2.default.createElement(
+      Label,
+      { htmlFor: id },
+      _react2.default.createElement(
+        _Icon2.default,
+        { size: 18, mr: 1 },
+        icon
+      ),
+      children
+    )
+  );
+};
+
+RadioButton.propTypes = {
+  id: _propTypes2.default.string.isRequired,
+  name: _propTypes2.default.string.isRequired,
+  icon: _propTypes2.default.string.isRequired,
+  children: _propTypes2.default.node.isRequired,
+  onClick: _propTypes2.default.func.isRequired
+};
+
+exports.default = RadioButton;
+
+/***/ }),
+/* 20 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _propTypes = __webpack_require__(2);
+
+var _propTypes2 = _interopRequireDefault(_propTypes);
+
+var _styledComponents = __webpack_require__(1);
+
+var _styledComponents2 = _interopRequireDefault(_styledComponents);
+
+var _polished = __webpack_require__(11);
+
+var _Icon = __webpack_require__(9);
+
+var _Icon2 = _interopRequireDefault(_Icon);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
+
+var Root = _styledComponents2.default.div.withConfig({
+  displayName: 'Input__Root',
+  componentId: 's1l2yb49-0'
+})(['position:relative;']);
+
+var ph = function ph(p) {
+  return (0, _polished.placeholder)({ color: p.theme.palette.text.secondary });
+};
+
+var Comp = _styledComponents2.default.input.withConfig({
+  displayName: 'Input__Comp',
+  componentId: 's1l2yb49-1'
+})(['border-radius:5px;border:1px solid ', ';font-size:16px;color:1px solid ', ';line-height:49px;padding:0 48px 0 16px;width:100%;min-width:0;transition:border 0.15s;', ';& + i{color:', ';transition:color 0.15s;}&:focus{outline:none;border:1px solid ', ';}&:focus + i{color:', ';}'], function (p) {
+  return p.theme.palette.primaryLight;
+}, function (p) {
+  return p.theme.palette.primary;
+}, ph, function (p) {
+  return p.theme.palette.primaryLight;
+}, function (p) {
+  return p.theme.palette.primary;
+}, function (p) {
+  return p.theme.palette.primary;
+});
+
+var Icon = (0, _styledComponents2.default)(_Icon2.default).withConfig({
+  displayName: 'Input__Icon',
+  componentId: 's1l2yb49-2'
+})(['position:absolute;font-size:18px;line-height:49px;top:2px;right:16px;']);
+
+var Input = function Input(_ref) {
+  var icon = _ref.icon,
+      type = _ref.type,
+      name = _ref.name,
+      placeholder = _ref.placeholder,
+      rest = _objectWithoutProperties(_ref, ['icon', 'type', 'name', 'placeholder']);
+
+  return _react2.default.createElement(
+    Root,
+    rest,
+    _react2.default.createElement(Comp, { type: type, name: name, placeholder: placeholder }),
+    _react2.default.createElement(
+      Icon,
+      null,
+      icon
+    )
+  );
+};
+
+Input.propTypes = {
+  icon: _propTypes2.default.string.isRequired
+};
+
+exports.default = Input;
+
+/***/ }),
+/* 21 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _propTypes = __webpack_require__(2);
+
+var _propTypes2 = _interopRequireDefault(_propTypes);
+
+var _styledComponents = __webpack_require__(1);
+
+var _styledComponents2 = _interopRequireDefault(_styledComponents);
+
+var _polished = __webpack_require__(11);
+
+var _Icon = __webpack_require__(9);
+
+var _Icon2 = _interopRequireDefault(_Icon);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
+
+var Root = _styledComponents2.default.div.withConfig({
+  displayName: 'Checkbox__Root',
+  componentId: 's1iuu2q3-0'
+})(['display:inline-flex;']);
+
+var Check = _styledComponents2.default.div.withConfig({
+  displayName: 'Checkbox__Check',
+  componentId: 's1iuu2q3-1'
+})(['border-radius:4px;border:1px solid ', ';text-align:center;color:', ';width:25px;min-width:25px;height:25px;line-height:25px;margin-right:16px;cursor:pointer;'], function (p) {
+  return p.theme.palette.primary;
+}, function (p) {
+  return p.theme.palette.primary;
+});
+
+var Comp = _styledComponents2.default.input.attrs({
+  type: 'checkbox'
+}).withConfig({
+  displayName: 'Checkbox__Comp',
+  componentId: 's1iuu2q3-2'
+})(['position:absolute;opacity:0;width:25px;min-width:25px;height:25px;line-height:25px;cursor:pointer;& ~ .full{display:none;}& ~ .empty{display:block;}&:checked ~ .full{display:block;}&:checked ~ .empty{display:none;}']);
+
+var Label = _styledComponents2.default.label.withConfig({
+  displayName: 'Checkbox__Label',
+  componentId: 's1iuu2q3-3'
+})(['font-size:16px;padding-top:2px;cursor:pointer;']);
+
+var Checkbox = function Checkbox(_ref) {
+  var name = _ref.name,
+      checked = _ref.checked,
+      children = _ref.children,
+      className = _ref.className,
+      rest = _objectWithoutProperties(_ref, ['name', 'checked', 'children', 'className']);
+
+  return _react2.default.createElement(
+    Root,
+    { className: className },
+    _react2.default.createElement(Comp, _extends({ id: name, name: name, defaultChecked: checked }, rest)),
+    _react2.default.createElement(
+      Check,
+      { className: 'full' },
+      _react2.default.createElement(
+        _Icon2.default,
+        null,
+        'check'
+      )
+    ),
+    _react2.default.createElement(Check, { className: 'empty' }),
+    _react2.default.createElement(
+      Label,
+      { htmlFor: name },
+      children
+    )
+  );
+};
+
+Checkbox.propTypes = {
+  name: _propTypes2.default.string.isRequired,
+  checked: _propTypes2.default.bool,
+  className: _propTypes2.default.string,
+  children: _propTypes2.default.node.isRequired
+};
+
+exports.default = Checkbox;
+
+/***/ }),
+/* 22 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _styledComponents = __webpack_require__(1);
+
+var _styledComponents2 = _interopRequireDefault(_styledComponents);
+
+var _polished = __webpack_require__(11);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var TextArea = _styledComponents2.default.textarea.withConfig({
+  displayName: 'TextArea',
+  componentId: 'coy5jc-0'
+})(['border-radius:5px;border:1px solid ', ';font-size:16px;color:1px solid ', ';padding:16px;width:100%;min-width:0;transition:border 0.15s;&:focus{outline:none;border:1px solid ', ';}&::placeholder{font-family:Roboto,sans-serif;color:', ';}'], function (p) {
+  return p.theme.palette.primaryLight;
+}, function (p) {
+  return p.theme.palette.primary;
+}, function (p) {
+  return p.theme.palette.primary;
+}, function (p) {
+  return p.theme.palette.text.secondary;
+});
+
+exports.default = TextArea;
+
+/***/ }),
+/* 23 */
+/***/ (function(module, exports) {
+
+module.exports = require("axios");
+
+/***/ }),
+/* 24 */
+/***/ (function(module, exports) {
+
+module.exports = require("react-toggle-display");
+
+/***/ }),
+/* 25 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactDom = __webpack_require__(26);
+
+var _reactDom2 = _interopRequireDefault(_reactDom);
+
+var _reactHotLoader = __webpack_require__(27);
+
+var _styledComponents = __webpack_require__(1);
+
+var _App = __webpack_require__(28);
 
 var _App2 = _interopRequireDefault(_App);
 
@@ -1619,19 +2001,19 @@ if (typeof document !== 'undefined') {
 }
 
 /***/ }),
-/* 19 */
+/* 26 */
 /***/ (function(module, exports) {
 
 module.exports = require("react-dom");
 
 /***/ }),
-/* 20 */
+/* 27 */
 /***/ (function(module, exports) {
 
 module.exports = require("react-hot-loader");
 
 /***/ }),
-/* 21 */
+/* 28 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1647,13 +2029,13 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactStatic = __webpack_require__(6);
+var _reactStatic = __webpack_require__(7);
 
 var _styledComponents = __webpack_require__(1);
 
 var _styledComponents2 = _interopRequireDefault(_styledComponents);
 
-var _reactStaticRoutes = __webpack_require__(22);
+var _reactStaticRoutes = __webpack_require__(29);
 
 var _reactStaticRoutes2 = _interopRequireDefault(_reactStaticRoutes);
 
@@ -1695,7 +2077,7 @@ exports.default = function () {
 };
 
 /***/ }),
-/* 22 */
+/* 29 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1711,13 +2093,13 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactRouterDom = __webpack_require__(23);
+var _reactRouterDom = __webpack_require__(30);
 
-var _Index = __webpack_require__(24);
+var _Index = __webpack_require__(31);
 
 var _Index2 = _interopRequireDefault(_Index);
 
-var _Join = __webpack_require__(80);
+var _Join = __webpack_require__(87);
 
 var _Join2 = _interopRequireDefault(_Join);
 
@@ -1725,7 +2107,11 @@ var _Whitepaper = __webpack_require__(89);
 
 var _Whitepaper2 = _interopRequireDefault(_Whitepaper);
 
-var _ = __webpack_require__(92);
+var _Tokensale = __webpack_require__(92);
+
+var _Tokensale2 = _interopRequireDefault(_Tokensale);
+
+var _ = __webpack_require__(101);
 
 var _2 = _interopRequireDefault(_);
 
@@ -1741,9 +2127,10 @@ var templateMap = {
   t_0: _Index2.default,
   t_1: _Join2.default,
   t_2: _Whitepaper2.default,
-  t_3: _2.default
+  t_3: _Tokensale2.default,
+  t_4: _2.default
 };
-var templateTree = { c: { "404": { t: "t_3" }, "/": { t: "t_0" }, "join": { t: "t_1" }, "whitepaper": { t: "t_2" } } };
+var templateTree = { c: { "404": { t: "t_4" }, "/": { t: "t_0" }, "join": { t: "t_1" }, "whitepaper": { t: "t_2" }, "tokensale": { t: "t_3" } } };
 
 var getTemplateForPath = function getTemplateForPath(path) {
   var parts = path === '/' ? ['/'] : path.split('/').filter(function (d) {
@@ -1788,13 +2175,13 @@ var Routes = function (_Component) {
 exports.default = Routes;
 
 /***/ }),
-/* 23 */
+/* 30 */
 /***/ (function(module, exports) {
 
 module.exports = require("react-router-dom");
 
 /***/ }),
-/* 24 */
+/* 31 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1808,21 +2195,21 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactStatic = __webpack_require__(6);
+var _reactStatic = __webpack_require__(7);
 
-var _Hero = __webpack_require__(25);
+var _Hero = __webpack_require__(32);
 
 var _Hero2 = _interopRequireDefault(_Hero);
 
-var _Vision = __webpack_require__(29);
+var _Vision = __webpack_require__(36);
 
 var _Vision2 = _interopRequireDefault(_Vision);
 
-var _We = __webpack_require__(31);
+var _We = __webpack_require__(38);
 
 var _We2 = _interopRequireDefault(_We);
 
-var _Roadmap = __webpack_require__(36);
+var _Roadmap = __webpack_require__(43);
 
 var _Roadmap2 = _interopRequireDefault(_Roadmap);
 
@@ -1830,23 +2217,23 @@ var _Team = __webpack_require__(5);
 
 var _Team2 = _interopRequireDefault(_Team);
 
-var _Advisors = __webpack_require__(54);
+var _Advisors = __webpack_require__(61);
 
 var _Advisors2 = _interopRequireDefault(_Advisors);
 
-var _Researchers = __webpack_require__(63);
+var _Researchers = __webpack_require__(70);
 
 var _Researchers2 = _interopRequireDefault(_Researchers);
 
-var _Partners = __webpack_require__(65);
+var _Partners = __webpack_require__(72);
 
 var _Partners2 = _interopRequireDefault(_Partners);
 
-var _Media = __webpack_require__(71);
+var _Media = __webpack_require__(78);
 
 var _Media2 = _interopRequireDefault(_Media);
 
-var _Subscribe = __webpack_require__(76);
+var _Subscribe = __webpack_require__(83);
 
 var _Subscribe2 = _interopRequireDefault(_Subscribe);
 
@@ -1885,7 +2272,7 @@ var Index = function Index(_ref) {
 exports.default = (0, _reactStatic.getSiteProps)(Index);
 
 /***/ }),
-/* 25 */
+/* 32 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1922,15 +2309,15 @@ var _MobileMenu = __webpack_require__(12);
 
 var _MobileMenu2 = _interopRequireDefault(_MobileMenu);
 
-var _HeroBackground = __webpack_require__(14);
+var _HeroBackground = __webpack_require__(13);
 
 var _HeroBackground2 = _interopRequireDefault(_HeroBackground);
 
-var _Logo = __webpack_require__(28);
+var _Logo = __webpack_require__(35);
 
 var _Logo2 = _interopRequireDefault(_Logo);
 
-var _Button = __webpack_require__(7);
+var _Button = __webpack_require__(8);
 
 var _Button2 = _interopRequireDefault(_Button);
 
@@ -1999,19 +2386,19 @@ var Hero = function Hero() {
 exports.default = Hero;
 
 /***/ }),
-/* 26 */
+/* 33 */
 /***/ (function(module, exports) {
 
 module.exports = require("styled-media-query");
 
 /***/ }),
-/* 27 */
+/* 34 */
 /***/ (function(module, exports) {
 
 module.exports = "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTgiIGhlaWdodD0iNjEiIHZpZXdCb3g9IjAgMCAxOCA2MSIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4KPHRpdGxlPm1vdXNlXzE8L3RpdGxlPgo8ZGVzYz5DcmVhdGVkIHVzaW5nIEZpZ21hPC9kZXNjPgo8ZyBpZD0iQ2FudmFzIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSg1MjYgLTc3NCkiPgo8ZyBpZD0ibW91c2VfMSI+CjxnIGlkPSJSZWN0YW5nbGUgMiI+Cjx1c2UgeGxpbms6aHJlZj0iI3BhdGgwX2ZpbGwiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC01MTggODA3KSIgZmlsbD0iI0ZGRkZGRiIvPgo8L2c+CjxnIGlkPSJWZWN0b3IiPgo8dXNlIHhsaW5rOmhyZWY9IiNwYXRoMV9maWxsIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtNTI1LjI1IDc3NCkiIGZpbGw9IiNGRkZGRkYiLz4KPC9nPgo8L2c+CjwvZz4KPGRlZnM+CjxwYXRoIGlkPSJwYXRoMF9maWxsIiBkPSJNIDAgMEwgMiAwTCAyIDI4TCAwIDI4TCAwIDBaIi8+CjxwYXRoIGlkPSJwYXRoMV9maWxsIiBkPSJNIDguMjUxMjkgNC40OTIxOWUtMDVDIDguMjUwODkgNC40OTIxOWUtMDUgOC4yNTA0NCAwIDguMjQ5OTkgMEMgOC4yNDk1NCAwIDguMjQ5MTQgNC40OTIxOWUtMDUgOC4yNDg2OSA0LjQ5MjE5ZS0wNUMgMy43MDAyNiAwLjAwMDc2MzY3MiAtMS45MTkyN2UtMDggMy43MDEzOCAtMS45MTkyN2UtMDggOC4yNTAwNEwgLTEuOTE5MjdlLTA4IDE0Ljc1QyAtMS45MTkyN2UtMDggMTkuMjk5MSAzLjcwMDkzIDIzIDguMjQ5OTkgMjNDIDEyLjc5OTEgMjMgMTYuNSAxOS4yOTkxIDE2LjUgMTQuNzVMIDE2LjUgOC4yNTAwNEMgMTYuNSAzLjcwMTM4IDEyLjc5OTggMC4wMDA3NjM2NzIgOC4yNTEyOSA0LjQ5MjE5ZS0wNVpNIDguMjQ5OTkgNi4wMDAwM0MgOC42NjM1NCA2LjAwMDAzIDkuMDAwMDEgNi4zMzY1IDkuMDAwMDEgNi43NTAwNUwgOS4wMDAwMSA4LjI1MDA0QyA5LjAwMDAxIDguNjYzNTkgOC42NjM1NCA5LjAwMDA1IDguMjQ5OTkgOS4wMDAwNUMgNy44MzY0NCA5LjAwMDA1IDcuNDk5OTggOC42NjM1OSA3LjQ5OTk4IDguMjUwMDRMIDcuNDk5OTggNi43NTAwNUMgNy40OTk5OCA2LjMzNjUgNy44MzY0NCA2LjAwMDAzIDguMjQ5OTkgNi4wMDAwM1pNIDE1IDE0Ljc1QyAxNSAxOC40NzIgMTEuOTcxOSAyMS41IDguMjQ5OTkgMjEuNUMgNC41MjgwNCAyMS41IDEuNDk5OTkgMTguNDcyIDEuNDk5OTkgMTQuNzVMIDEuNDk5OTkgOC4yNTAwNEMgMS40OTk5OSA0Ljc4MTU3IDQuMTI5NjcgMS45MTYyMyA3LjQ5OTk4IDEuNTQxOTRMIDcuNDk5OTggNC42MjkwNkMgNi42MjcwMSA0LjkzODY3IDUuOTk5OTkgNS43NzIzMyA1Ljk5OTk5IDYuNzUwMDVMIDUuOTk5OTkgOC4yNTAwNEMgNS45OTk5OSA5LjQ5MDY5IDcuMDA5MzQgMTAuNSA4LjI0OTk5IDEwLjVDIDkuNDkwNjQgMTAuNSAxMC41IDkuNDkwNjkgMTAuNSA4LjI1MDA0TCAxMC41IDYuNzUwMDVDIDEwLjUgNS43NzIyOCA5Ljg3MjkzIDQuOTM4NjcgOS4wMDAwMSA0LjYyOTA2TCA5LjAwMDAxIDEuNTQxOTRDIDEyLjM3MDMgMS45MTYyMyAxNSA0Ljc4MTU3IDE1IDguMjUwMDRMIDE1IDE0Ljc1TCAxNSAxNC43NVoiLz4KPC9kZWZzPgo8L3N2Zz4K"
 
 /***/ }),
-/* 28 */
+/* 35 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2045,7 +2432,7 @@ var Logo = _styledComponents2.default.h1.withConfig({
 exports.default = Logo;
 
 /***/ }),
-/* 29 */
+/* 36 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2073,11 +2460,11 @@ var _Heading = __webpack_require__(4);
 
 var _Heading2 = _interopRequireDefault(_Heading);
 
-var _Text = __webpack_require__(8);
+var _Text = __webpack_require__(6);
 
 var _Text2 = _interopRequireDefault(_Text);
 
-var _vision = __webpack_require__(30);
+var _vision = __webpack_require__(37);
 
 var _vision2 = _interopRequireDefault(_vision);
 
@@ -2130,13 +2517,13 @@ var Vision = function Vision(p) {
 exports.default = Vision;
 
 /***/ }),
-/* 30 */
+/* 37 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "static/vision.dde4bb84.svg";
 
 /***/ }),
-/* 31 */
+/* 38 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2169,23 +2556,23 @@ var _Heading = __webpack_require__(4);
 
 var _Heading2 = _interopRequireDefault(_Heading);
 
-var _Text = __webpack_require__(8);
+var _Text = __webpack_require__(6);
 
 var _Text2 = _interopRequireDefault(_Text);
 
-var _we = __webpack_require__(32);
+var _we = __webpack_require__(39);
 
 var _we2 = _interopRequireDefault(_we);
 
-var _icon_dollar = __webpack_require__(33);
+var _icon_dollar = __webpack_require__(40);
 
 var _icon_dollar2 = _interopRequireDefault(_icon_dollar);
 
-var _icon_pen = __webpack_require__(34);
+var _icon_pen = __webpack_require__(41);
 
 var _icon_pen2 = _interopRequireDefault(_icon_pen);
 
-var _icon_speech = __webpack_require__(35);
+var _icon_speech = __webpack_require__(42);
 
 var _icon_speech2 = _interopRequireDefault(_icon_speech);
 
@@ -2300,31 +2687,31 @@ var We = function We(p) {
 exports.default = We;
 
 /***/ }),
-/* 32 */
+/* 39 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "static/we.3f7681bc.svg";
 
 /***/ }),
-/* 33 */
+/* 40 */
 /***/ (function(module, exports) {
 
 module.exports = "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDgiIGhlaWdodD0iNDgiIHZpZXdCb3g9IjAgMCA0OCA0OCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4KPHRpdGxlPkdyb3VwIDExPC90aXRsZT4KPGRlc2M+Q3JlYXRlZCB1c2luZyBGaWdtYTwvZGVzYz4KPGcgaWQ9IkNhbnZhcyIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTE2NzYgLTIwMTMpIj4KPGcgaWQ9Ikdyb3VwIDExIj4KPGcgaWQ9IkVsbGlwc2UgOC4zIj4KPHVzZSB4bGluazpocmVmPSIjcGF0aDBfZmlsbCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTY3NiAyMDEzKSIgZmlsbD0idXJsKCNwYWludDBfbGluZWFyKSIvPgo8L2c+CjxnIGlkPSIkIj4KPHVzZSB4bGluazpocmVmPSIjcGF0aDFfZmlsbCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTY5MyAyMDI1LjgyKSIgZmlsbD0iI0ZGRkZGRiIvPgo8L2c+CjwvZz4KPC9nPgo8ZGVmcz4KPGxpbmVhckdyYWRpZW50IGlkPSJwYWludDBfbGluZWFyIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMCIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiIGdyYWRpZW50VHJhbnNmb3JtPSJtYXRyaXgoMCA0Ni40NjQ2IC00Ni4zNDcxIDAgMjMuNjI1NyAyNC41NDIpIj4KPHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjMzMxRDUwIi8+CjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iIzI0N0ZBRCIvPgo8L2xpbmVhckdyYWRpZW50Pgo8cGF0aCBpZD0icGF0aDBfZmlsbCIgZD0iTSA0Ny4yNTE1IDIzLjY4NTZDIDQ3LjI1MTUgMzYuNzY2OSAzNi42NzM5IDQ3LjM3MTMgMjMuNjI1NyA0Ny4zNzEzQyAxMC41Nzc2IDQ3LjM3MTMgMCAzNi43NjY5IDAgMjMuNjg1NkMgMCAxMC42MDQ0IDEwLjU3NzYgMCAyMy42MjU3IDBDIDM2LjY3MzkgMCA0Ny4yNTE1IDEwLjYwNDQgNDcuMjUxNSAyMy42ODU2WiIvPgo8cGF0aCBpZD0icGF0aDFfZmlsbCIgZD0iTSAxLjAwOTQ5IDE0LjE2MzhDIDEuMDA5NDkgMTUuNzkyNSAxLjQ2MTEgMTcuMTAwNiAyLjM2NDMzIDE4LjA4ODFDIDMuMjg1MjYgMTkuMDc1NyA0LjY3NTUyIDE5LjYyMTUgNi41MzUxIDE5LjcyNTRMIDYuNTM1MSAxMS4wNzEyTCA1LjI4NjUzIDEwLjc4NTNDIDQuNzE5OCAxMC42NjQgNC4xNTMwNyAxMC41MDgxIDMuNTg2MzQgMTAuMzE3NUMgMy4wMzczMiAxMC4xMDk2IDIuNTMyNTcgOS44NDEwNSAyLjA3MjExIDkuNTExODZDIDEuNjI5MzUgOS4xNjUzNSAxLjI2NjI5IDguNzMyMiAwLjk4MjkyMiA4LjIxMjQzQyAwLjcxNzI2OCA3LjY3NTMzIDAuNTg0NDQgNy4wMDgyOSAwLjU4NDQ0IDYuMjExM0MgMC41ODQ0NCA1LjkxNjc2IDAuNjI4NzE2IDUuNTA5NiAwLjcxNzI2OCA0Ljk4OTgzQyAwLjgwNTgxOSA0LjQ1MjczIDEuMDQ0OTEgMy45MTU2MyAxLjQzNDU0IDMuMzc4NTNDIDEuODQxODcgMi44NDE0MyAyLjQzNTE3IDIuMzczNjMgMy4yMTQ0MiAxLjk3NTE0QyA0LjAxMTM4IDEuNTU5MzIgNS4xMTgyOCAxLjMyNTQyIDYuNTM1MSAxLjI3MzQ1TCA2LjUzNTEgMEwgNy4zODUyIDBMIDcuMzg1MiAxLjI3MzQ1QyA5LjIyNzA3IDEuMzA4MSAxMC42OTcgMS43NzU4OSAxMS43OTUxIDIuNjc2ODRDIDEyLjg5MzEgMy41Nzc3OCAxMy40Nzc1IDUuMDE1ODIgMTMuNTQ4NCA2Ljk5MDk2TCAxMi41Mzg5IDYuOTkwOTZDIDEyLjQzMjYgNS4yOTMwMyAxMS45Mjc5IDQuMDg4ODkgMTEuMDI0NyAzLjM3ODUzQyAxMC4xMjE0IDIuNjUwODUgOC45MDgyOSAyLjI2OTY4IDcuMzg1MiAyLjIzNTAzTCA3LjM4NTIgMTAuMjkxNUwgOS40NTczMSAxMC43ODUzQyAxMC4zMjUxIDEwLjk5MzIgMTEuMDUxMiAxMS4yNjE4IDExLjYzNTcgMTEuNTkxQyAxMi4yMjAxIDExLjkwMjggMTIuNjg5NCAxMi4yNjY3IDEzLjA0MzYgMTIuNjgyNUMgMTMuMzk3OCAxMy4wODEgMTMuNjQ1OCAxMy41MjI4IDEzLjc4NzUgMTQuMDA3OUMgMTMuOTI5MiAxNC40NzU3IDE0IDE0Ljk3ODIgMTQgMTUuNTE1M0MgMTQgMTYuNDg1NSAxMy44MDUyIDE3LjI5OTggMTMuNDE1NiAxNy45NTgyQyAxMy4wNDM2IDE4LjU5OTIgMTIuNTQ3OCAxOS4xMjc3IDExLjkyNzkgMTkuNTQzNUMgMTEuMzA4IDE5Ljk0MiAxMC41OTk2IDIwLjIyNzkgOS44MDI2NiAyMC40MDExQyA5LjAwNTY5IDIwLjU5MTcgOC4xOTk4NyAyMC42OTU3IDcuMzg1MiAyMC43MTNMIDcuMzg1MiAyM0wgNi41MzUxIDIzTCA2LjUzNTEgMjAuNzEzQyA1LjU2MTA0IDIwLjYyNjQgNC42NjY2NyAyMC40NTMxIDMuODUxOTkgMjAuMTkzMkMgMy4wNTUwMyAxOS45MTYgMi4zNzMxOCAxOS41MTc1IDEuODA2NDUgMTguOTk3N0MgMS4yMzk3MiAxOC40NzggMC43OTY5NjQgMTcuODI4MiAwLjQ3ODE3OCAxNy4wNDg2QyAwLjE1OTM5MyAxNi4yNTE2IDAgMTUuMjkgMCAxNC4xNjM4TCAxLjAwOTQ5IDE0LjE2MzhaTSA2LjUzNTEgMTAuMDU3NkwgNi41MzUxIDIuMjYxMDJDIDUuNjMxODggMi4yOTU2NyA0Ljg3MDM0IDIuNDI1NjEgNC4yNTA0NyAyLjY1MDg1QyAzLjYzMDYxIDIuODU4NzYgMy4xMTcwMSAzLjEzNTk3IDIuNzA5NjggMy40ODI0OUMgMi4zMjAwNSAzLjgyOSAyLjAzNjY5IDQuMjM2MTYgMS44NTk1OCA0LjcwMzk1QyAxLjY4MjQ4IDUuMTcxNzUgMS41OTM5MyA1LjY3NDIgMS41OTM5MyA2LjIxMTNDIDEuNTkzOTMgNi44MTc3IDEuNjkxMzMgNy4zMjg4MSAxLjg4NjE1IDcuNzQ0NjNDIDIuMDk4NjcgOC4xNDMxMyAyLjM3MzE4IDguNDgwOTggMi43MDk2OCA4Ljc1ODE5QyAzLjA2Mzg4IDkuMDE4MDggMy40NzEyMiA5LjIzNDY1IDMuOTMxNjkgOS40MDc5MUMgNC40MDk4NyA5LjU2Mzg0IDQuOTE0NjEgOS43MDI0NSA1LjQ0NTkyIDkuODIzNzNMIDYuNTM1MSAxMC4wNTc2Wk0gNy4zODUyIDE5LjcyNTRDIDguMTQ2NzQgMTkuNzI1NCA4Ljg2NDAxIDE5LjY0NzUgOS41MzcgMTkuNDkxNUMgMTAuMjEgMTkuMzM1NiAxMC44MDMzIDE5LjA5MyAxMS4zMTY5IDE4Ljc2MzhDIDExLjgzMDUgMTguNDE3MyAxMi4yMzc4IDE3Ljk4NDIgMTIuNTM4OSAxNy40NjQ0QyAxMi44NCAxNi45MjczIDEyLjk5MDUgMTYuMjc3NiAxMi45OTA1IDE1LjUxNTNDIDEyLjk5MDUgMTQuNTI3NyAxMi42NzE3IDEzLjcyMiAxMi4wMzQyIDEzLjA5ODNDIDExLjM5NjYgMTIuNDc0NiAxMC4zODcxIDExLjk4OTUgOS4wMDU2OSAxMS42NDI5TCA3LjM4NTIgMTEuMjUzMUwgNy4zODUyIDE5LjcyNTRaIi8+CjwvZGVmcz4KPC9zdmc+Cg=="
 
 /***/ }),
-/* 34 */
+/* 41 */
 /***/ (function(module, exports) {
 
 module.exports = "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDgiIGhlaWdodD0iNDgiIHZpZXdCb3g9IjAgMCA0OCA0OCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4KPHRpdGxlPkdyb3VwIDEyPC90aXRsZT4KPGRlc2M+Q3JlYXRlZCB1c2luZyBGaWdtYTwvZGVzYz4KPGcgaWQ9IkNhbnZhcyIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTE2NzYgLTE3OTkpIj4KPGcgaWQ9Ikdyb3VwIDEyIj4KPGcgaWQ9Ikdyb3VwIDkiPgo8ZyBpZD0iRWxsaXBzZSA4LjQiPgo8dXNlIHhsaW5rOmhyZWY9IiNwYXRoMF9maWxsIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxNjc2IDE3OTkpIiBmaWxsPSJ1cmwoI3BhaW50MF9saW5lYXIpIi8+CjwvZz4KPGcgaWQ9ImZvdW50YWluLXBlbiI+CjxnIGlkPSJHcm91cCI+CjxnIGlkPSJHcm91cCI+CjxnIGlkPSJWZWN0b3IiPgo8dXNlIHhsaW5rOmhyZWY9IiNwYXRoMV9maWxsIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxNjkxLjQ0IDE4MTMpIiBmaWxsPSIjRkZGRkZGIi8+CjwvZz4KPGcgaWQ9IlZlY3RvciI+Cjx1c2UgeGxpbms6aHJlZj0iI3BhdGgyX2ZpbGwiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDE2OTkuNDIgMTgxMykiIGZpbGw9IiNGRkZGRkYiLz4KPC9nPgo8L2c+CjxnIGlkPSJWZWN0b3IiPgo8dXNlIHhsaW5rOmhyZWY9IiNwYXRoM19maWxsIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxNjk5LjQyIDE4MjIuNDUpIiBmaWxsPSIjRkZGRkZGIi8+CjwvZz4KPGcgaWQ9IlZlY3RvciI+Cjx1c2UgeGxpbms6aHJlZj0iI3BhdGg0X2ZpbGwiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDE2OTguMiAxODE5Ljk5KSIgZmlsbD0iI0ZGRkZGRiIvPgo8L2c+CjxnIGlkPSJWZWN0b3IiPgo8dXNlIHhsaW5rOmhyZWY9IiNwYXRoNV9maWxsIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxNjkyLjIxIDE4MTMpIiBmaWxsPSIjRkZGRkZGIi8+CjwvZz4KPC9nPgo8L2c+CjwvZz4KPC9nPgo8L2c+CjxkZWZzPgo8bGluZWFyR3JhZGllbnQgaWQ9InBhaW50MF9saW5lYXIiIHgxPSIwIiB5MT0iMCIgeDI9IjEiIHkyPSIwIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgZ3JhZGllbnRUcmFuc2Zvcm09Im1hdHJpeCgwIDQ2LjQ2NDYgLTQ2LjM0NzEgMCAyMy42MjU3IDI0LjU0MikiPgo8c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiMzMzFENTAiLz4KPHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjMjQ3RkFEIi8+CjwvbGluZWFyR3JhZGllbnQ+CjxwYXRoIGlkPSJwYXRoMF9maWxsIiBkPSJNIDQ3LjI1MTUgMjMuNjg1NkMgNDcuMjUxNSAzNi43NjY5IDM2LjY3MzkgNDcuMzcxMyAyMy42MjU3IDQ3LjM3MTNDIDEwLjU3NzYgNDcuMzcxMyAwIDM2Ljc2NjkgMCAyMy42ODU2QyAwIDEwLjYwNDQgMTAuNTc3NiAwIDIzLjYyNTcgMEMgMzYuNjczOSAwIDQ3LjI1MTUgMTAuNjA0NCA0Ny4yNTE1IDIzLjY4NTZaIi8+CjxwYXRoIGlkPSJwYXRoMV9maWxsIiBkPSJNIDguMzE2NzQgMjIuOTk5OUMgOC4xMjY5NCAyMi45OTk5IDcuOTcyOSAyMi44NDM4IDcuOTcyOSAyMi42NTE0QyA3Ljk3MjkgMTQuOTUyNyAwLjE4Nzc0MiA3LjQ4MDU0IDAuMTA4NjU5IDcuNDA2NjZDIDAuMDI0NzYzIDcuMzI3MiAtMC4wMTQ0MzQ0IDcuMjEwMTEgMC4wMDQ4MjA0NyA3LjA5NTExQyAwLjAyNDA3NTQgNi45ODAxMSAwLjA5ODM0NDIgNi44ODE4NCAwLjIwMzU1OCA2LjgzNDQ1QyA1LjI2Mjc4IDQuNTM1ODUgMy45NDg2MyAwLjYzMTQ0OCAzLjg5MDE4IDAuNDY2MjY3QyAzLjgyNjIzIDAuMjg1MDU1IDMuOTE5MDYgMC4wODU3MjMgNC4wOTc4NiAwLjAyMDIwODFDIDQuMjc0NTkgLTAuMDQzOTEyOCA0LjQ3MzMzIDAuMDQ5NDgwNyA0LjUzNzk3IDAuMjMwNjkyQyA0LjU1Mzc5IDAuMjc1OTk1IDYuMDMyMjkgNC42NTY0MyAwLjkzODY4MiA3LjI1MTkzQyAyLjUyMzA4IDguODU3MDQgOC42NjA1OCAxNS41MzQ3IDguNjYwNTggMjIuNjUxNEMgOC42NjA1OCAyMi44NDM4IDguNTA2NTQgMjIuOTk5OSA4LjMxNjc0IDIyLjk5OTlaIi8+CjxwYXRoIGlkPSJwYXRoMl9maWxsIiBkPSJNIDAuMzQzODM3IDIyLjk5OTZDIDAuMTU0MDM5IDIyLjk5OTYgMCAyMi44NDM1IDAgMjIuNjUxMUMgMCAxNS41MzQ0IDYuMTM3NDkgOC44NTY3NyA3LjcyMjU4IDcuMjUxNjVDIDIuNjI4OTggNC42NTU0NiA0LjEwNzQ4IDAuMjc1NzE5IDQuMTIzMjkgMC4yMzA0MTZDIDQuMTg3MjUgMC4wNDkyMDQ3IDQuMzgzMjQgLTAuMDQzNDkxOCA0LjU2MjAzIDAuMDE5OTMyMUMgNC43NDAxNCAwLjA4NDc1IDQuODMzNjYgMC4yODMzODUgNC43NzEwOCAwLjQ2NTI5NEMgNC43MTMzMiAwLjYzMDQ3NSAzLjQxOTEyIDQuNTQ1MzMgOC40NTcwMiA2LjgzNDE3QyA4LjU2MjIzIDYuODgxNTcgOC42MzY1IDYuOTc5ODQgOC42NTU3NiA3LjA5NDg0QyA4LjY3NDMyIDcuMjA5ODQgOC42MzU4MSA3LjMyNjkzIDguNTUxOTIgNy40MDYzOEMgOC40NzI4MyA3LjQ4MDI2IDAuNjg3Njc0IDE0Ljk1OCAwLjY4NzY3NCAyMi42NTExQyAwLjY4NzY3NCAyMi44NDM1IDAuNTMzNjM1IDIyLjk5OTYgMC4zNDM4MzcgMjIuOTk5NloiLz4KPHBhdGggaWQ9InBhdGgzX2ZpbGwiIGQ9Ik0gMC4zNDM4MzcgMTMuNTQ5N0MgMC4xNTQwMzkgMTMuNTQ5NyAwIDEzLjM5MzYgMCAxMy4yMDEyTCAwIDAuMzQ4NDgzQyAwIDAuMTU2MTIgMC4xNTQwMzkgMS4wNjM0OWUtMDggMC4zNDM4MzcgMS4wNjM0OWUtMDhDIDAuNTMzNjM1IDEuMDYzNDllLTA4IDAuNjg3Njc0IDAuMTU2MTIgMC42ODc2NzQgMC4zNDg0ODNMIDAuNjg3Njc0IDEzLjIwMTJDIDAuNjg3Njc0IDEzLjM5MzYgMC41MzM2MzUgMTMuNTQ5NyAwLjM0MzgzNyAxMy41NDk3WiIvPgo8cGF0aCBpZD0icGF0aDRfZmlsbCIgZD0iTSAxLjU1NjIxIDMuMTU0NDdDIDAuNjk3OTg5IDMuMTU0NDcgMy4yMDAzOWUtMDcgMi40NDcwNSAzLjIwMDM5ZS0wNyAxLjU3NzkzQyAzLjIwMDM5ZS0wNyAwLjcwODExOCAwLjY5Nzk4OSAtNS4zMTc0M2UtMDkgMS41NTYyMSAtNS4zMTc0M2UtMDlDIDIuNDE0NDIgLTUuMzE3NDNlLTA5IDMuMTEyNDEgMC43MDgxMTggMy4xMTI0MSAxLjU3NzkzQyAzLjExMjQxIDIuNDQ3MDUgMi40MTQ0MiAzLjE1NDQ3IDEuNTU2MjEgMy4xNTQ0N1pNIDEuNTU2MjEgMC42OTY5NjZDIDEuMDc3NTkgMC42OTY5NjYgMC42ODc2NzUgMS4wOTE0NSAwLjY4NzY3NSAxLjU3NzkzQyAwLjY4NzY3NSAyLjA2MjMyIDEuMDc2OSAyLjQ1NzUgMS41NTYyMSAyLjQ1NzVDIDIuMDM1NTIgMi40NTc1IDIuNDI0NzQgMi4wNjMwMiAyLjQyNDc0IDEuNTc3OTNDIDIuNDI0NzQgMS4wOTIxNSAyLjAzNDgzIDAuNjk2OTY2IDEuNTU2MjEgMC42OTY5NjZaIi8+CjxwYXRoIGlkPSJwYXRoNV9maWxsIiBkPSJNIDE0Ljc1MDYgMC42OTY5NjZMIDAuMzQzODM3IDAuNjk2OTY2QyAwLjE1NDAzOSAwLjY5Njk2NiA2LjU1ODE3ZS0wOCAwLjU0MDg0NiA2LjU1ODE3ZS0wOCAwLjM0ODQ4M0MgNi41NTgxN2UtMDggMC4xNTYxMiAwLjE1NDAzOSAwIDAuMzQzODM3IDBMIDE0Ljc0OTkgMEMgMTQuOTM5NyAwIDE1LjA5MzggMC4xNTYxMiAxNS4wOTM4IDAuMzQ4NDgzQyAxNS4wOTM4IDAuNTQwODQ2IDE0Ljk0MDQgMC42OTY5NjYgMTQuNzUwNiAwLjY5Njk2NloiLz4KPC9kZWZzPgo8L3N2Zz4K"
 
 /***/ }),
-/* 35 */
+/* 42 */
 /***/ (function(module, exports) {
 
 module.exports = "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDgiIGhlaWdodD0iNDgiIHZpZXdCb3g9IjAgMCA0OCA0OCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4KPHRpdGxlPkdyb3VwIDEwPC90aXRsZT4KPGRlc2M+Q3JlYXRlZCB1c2luZyBGaWdtYTwvZGVzYz4KPGcgaWQ9IkNhbnZhcyIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTE2NzYgLTIyMjUpIj4KPGcgaWQ9Ikdyb3VwIDEwIj4KPGcgaWQ9IkVsbGlwc2UgOC42Ij4KPHVzZSB4bGluazpocmVmPSIjcGF0aDBfZmlsbCIgdHJhbnNmb3JtPSJtYXRyaXgoLTEgMCAwIDEgMTcyMy4yNSAyMjI1KSIgZmlsbD0idXJsKCNwYWludDBfbGluZWFyKSIvPgo8L2c+CjxnIGlkPSJzcGVlY2gtYnViYmxlIj4KPGcgaWQ9Ikdyb3VwIj4KPGcgaWQ9IlZlY3RvciI+Cjx1c2UgeGxpbms6aHJlZj0iI3BhdGgxX2ZpbGwiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDE2ODcgMjIzNy4yMykiIGZpbGw9IiNGRkZGRkYiLz4KPC9nPgo8ZyBpZD0iVmVjdG9yIj4KPHVzZSB4bGluazpocmVmPSIjcGF0aDJfZmlsbCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTcwNC45OSAyMjQ3LjAyKSIgZmlsbD0iI0ZGRkZGRiIvPgo8L2c+CjxnIGlkPSJWZWN0b3IiPgo8dXNlIHhsaW5rOmhyZWY9IiNwYXRoM19maWxsIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxNjk5LjE3IDIyNDcuMDIpIiBmaWxsPSIjRkZGRkZGIi8+CjwvZz4KPGcgaWQ9IlZlY3RvciI+Cjx1c2UgeGxpbms6aHJlZj0iI3BhdGg0X2ZpbGwiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDE2OTMuMzUgMjI0Ny4wMikiIGZpbGw9IiNGRkZGRkYiLz4KPC9nPgo8L2c+CjwvZz4KPC9nPgo8L2c+CjxkZWZzPgo8bGluZWFyR3JhZGllbnQgaWQ9InBhaW50MF9saW5lYXIiIHgxPSIwIiB5MT0iMCIgeDI9IjEiIHkyPSIwIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgZ3JhZGllbnRUcmFuc2Zvcm09Im1hdHJpeCgwIDQ2LjQ2NDYgLTQ2LjM0NzEgMCAyMy42MjU3IDI0LjU0MikiPgo8c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiMzMzFENTAiLz4KPHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjMjQ3RkFEIi8+CjwvbGluZWFyR3JhZGllbnQ+CjxwYXRoIGlkPSJwYXRoMF9maWxsIiBkPSJNIDQ3LjI1MTUgMjMuNjg1NkMgNDcuMjUxNSAzNi43NjY5IDM2LjY3MzkgNDcuMzcxMyAyMy42MjU3IDQ3LjM3MTNDIDEwLjU3NzYgNDcuMzcxMyAwIDM2Ljc2NjkgMCAyMy42ODU2QyAwIDEwLjYwNDQgMTAuNTc3NiAwIDIzLjYyNTcgMEMgMzYuNjczOSAwIDQ3LjI1MTUgMTAuNjA0NCA0Ny4yNTE1IDIzLjY4NTZaIi8+CjxwYXRoIGlkPSJwYXRoMV9maWxsIiBkPSJNIDUuNzIwOTkgMjVDIDUuNjU3MzUgMjUgNS41OTI5MyAyNC45ODQ2IDUuNTM0NzkgMjQuOTUzN0MgNS40MDc1MiAyNC44ODY2IDUuMzI4MTcgMjQuNzU1NSA1LjMyODE3IDI0LjYxNDNMIDUuMzI4MTcgMTkuMTE5NUMgMS44ODk0NSAxNy4zNjM5IDAgMTQuMjkwMiAwIDEwLjQzOUMgMCA0LjQ4NzU0IDUuNTcyNSAtMS44Mzg5N2UtMTAgMTIuOTYzIC0xLjgzODk3ZS0xMEMgMjAuMzUzNCAtMS44Mzg5N2UtMTAgMjUuOTI1OSA0LjQ4NzU0IDI1LjkyNTkgMTAuNDM5QyAyNS45MjU5IDE2LjM4OTggMjAuMzUzNCAyMC44NzczIDEyLjk2MyAyMC44NzczQyAxMi43MjAyIDIwLjg3NzMgMTIuNDgyMiAyMC44NjQyIDEyLjI0MzMgMjAuODUxOEwgMTIuMjI3NiAyMC44NTExTCA1LjkzNzA0IDI0LjkzNkMgNS44NzE4MyAyNC45Nzg0IDUuNzk2NDEgMjUgNS43MjA5OSAyNVpNIDEyLjk2MyAwLjc3MTMxOUMgNi4wMjExIDAuNzcxMzE5IDAuNzg1NjM0IDQuOTI3OTYgMC43ODU2MzQgMTAuNDM5QyAwLjc4NTYzNCAxMy4wMDIxIDEuNjcxODMgMTYuNDg3NyA1Ljg5NDYxIDE4LjUzNzFDIDYuMDI4MTcgMTguNjAxOSA2LjExMzAyIDE4LjczNjEgNi4xMTMwMiAxOC44ODI3TCA2LjExMzAyIDIzLjg5N0wgMTEuOTAyNCAyMC4xMzc2QyAxMS45NzMxIDIwLjA5MTMgMTIuMDU4NyAyMC4wNjQzIDEyLjEzOTYgMjAuMDc0NEwgMTIuMjg1NyAyMC4wODIxQyAxMi41MTA0IDIwLjA5NDQgMTIuNzM0MyAyMC4xMDYgMTIuOTYyMiAyMC4xMDZDIDE5LjkwNCAyMC4xMDYgMjUuMTM5NSAxNS45NTAxIDI1LjEzOTUgMTAuNDM5QyAyNS4xMzk1IDQuOTI3OTYgMTkuOTA0OCAwLjc3MTMxOSAxMi45NjMgMC43NzEzMTlaIi8+CjxwYXRoIGlkPSJwYXRoMl9maWxsIiBkPSJNIDAuNzk1ODQ4IDEuNTYyNjlDIDEuMjM1MzggMS41NjI2OSAxLjU5MTcgMS4yMTI4NyAxLjU5MTcgMC43ODEzNDdDIDEuNTkxNyAwLjM0OTgyMSAxLjIzNTM4IDAgMC43OTU4NDggMEMgMC4zNTYzMTMgMCAwIDAuMzQ5ODIxIDAgMC43ODEzNDdDIDAgMS4yMTI4NyAwLjM1NjMxMyAxLjU2MjY5IDAuNzk1ODQ4IDEuNTYyNjlaIi8+CjxwYXRoIGlkPSJwYXRoM19maWxsIiBkPSJNIDAuNzk1ODQ3IDEuNTYyNjlDIDEuMjM1MzggMS41NjI2OSAxLjU5MTcgMS4yMTI4NyAxLjU5MTcgMC43ODEzNDdDIDEuNTkxNyAwLjM0OTgyMSAxLjIzNTM4IDAgMC43OTU4NDcgMEMgMC4zNTYzMTMgMCAwIDAuMzQ5ODIxIDAgMC43ODEzNDdDIDAgMS4yMTI4NyAwLjM1NjMxMyAxLjU2MjY5IDAuNzk1ODQ3IDEuNTYyNjlaIi8+CjxwYXRoIGlkPSJwYXRoNF9maWxsIiBkPSJNIDAuNzk1ODQ3IDEuNTYyNjlDIDEuMjM1MzggMS41NjI2OSAxLjU5MTY5IDEuMjEyODcgMS41OTE2OSAwLjc4MTM0N0MgMS41OTE2OSAwLjM0OTgyMSAxLjIzNTM4IDAgMC43OTU4NDcgMEMgMC4zNTYzMTMgMCAwIDAuMzQ5ODIxIDAgMC43ODEzNDdDIDAgMS4yMTI4NyAwLjM1NjMxMyAxLjU2MjY5IDAuNzk1ODQ3IDEuNTYyNjlaIi8+CjwvZGVmcz4KPC9zdmc+Cg=="
 
 /***/ }),
-/* 36 */
+/* 43 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2355,13 +2742,13 @@ var _Heading = __webpack_require__(4);
 
 var _Heading2 = _interopRequireDefault(_Heading);
 
-var _Roadmap = __webpack_require__(50);
+var _Roadmap = __webpack_require__(57);
 
-var _roadmap = __webpack_require__(52);
+var _roadmap = __webpack_require__(59);
 
 var _roadmap2 = _interopRequireDefault(_roadmap);
 
-var _roadmap_mobile = __webpack_require__(53);
+var _roadmap_mobile = __webpack_require__(60);
 
 var _roadmap_mobile2 = _interopRequireDefault(_roadmap_mobile);
 
@@ -2487,7 +2874,7 @@ var Roadmap = function Roadmap(p) {
 exports.default = Roadmap;
 
 /***/ }),
-/* 37 */
+/* 44 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2558,79 +2945,79 @@ AcademicIcon.propTypes = {
 exports.default = AcademicIcon;
 
 /***/ }),
-/* 38 */
+/* 45 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "static/ashkor.7ff44c16.png";
 
 /***/ }),
-/* 39 */
+/* 46 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "static/etsaryk.052cb4d2.png";
 
 /***/ }),
-/* 40 */
+/* 47 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "static/aermolaev.bf4059ea.png";
 
 /***/ }),
-/* 41 */
+/* 48 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "static/akulik.39060d33.png";
 
 /***/ }),
-/* 42 */
+/* 49 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "static/arusetskiy.ccb7b92f.png";
 
 /***/ }),
-/* 43 */
+/* 50 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "static/ybokach.acb12e7e.png";
 
 /***/ }),
-/* 44 */
+/* 51 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "static/akastsiushkina.ce4ec45f.png";
 
 /***/ }),
-/* 45 */
+/* 52 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "static/emarushko.9a95db57.png";
 
 /***/ }),
-/* 46 */
+/* 53 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "static/sdzeranov.43d6c226.png";
 
 /***/ }),
-/* 47 */
+/* 54 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "static/nignatiev.5ab584fd.png";
 
 /***/ }),
-/* 48 */
+/* 55 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "static/amekibel.da99f2c4.png";
 
 /***/ }),
-/* 49 */
+/* 56 */
 /***/ (function(module, exports) {
 
 module.exports = "data:image/png;base64,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"
 
 /***/ }),
-/* 50 */
+/* 57 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2666,7 +3053,7 @@ var _styledComponents2 = _interopRequireDefault(_styledComponents);
 
 var _styles = __webpack_require__(3);
 
-var _bg = __webpack_require__(51);
+var _bg = __webpack_require__(58);
 
 var _bg2 = _interopRequireDefault(_bg);
 
@@ -2797,25 +3184,25 @@ var Popup = exports.Popup = function Popup(_ref2) {
 };
 
 /***/ }),
-/* 51 */
+/* 58 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "static/bg.ebfd0c34.png";
 
 /***/ }),
-/* 52 */
+/* 59 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "static/roadmap.b1d587c0.svg";
 
 /***/ }),
-/* 53 */
+/* 60 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "static/roadmap_mobile.6eedd7c7.svg";
 
 /***/ }),
-/* 54 */
+/* 61 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2846,35 +3233,35 @@ var _Heading2 = _interopRequireDefault(_Heading);
 
 var _Team = __webpack_require__(5);
 
-var _hdecastro = __webpack_require__(55);
+var _hdecastro = __webpack_require__(62);
 
 var _hdecastro2 = _interopRequireDefault(_hdecastro);
 
-var _akulichkin = __webpack_require__(56);
+var _akulichkin = __webpack_require__(63);
 
 var _akulichkin2 = _interopRequireDefault(_akulichkin);
 
-var _nsvyaznoy = __webpack_require__(57);
+var _nsvyaznoy = __webpack_require__(64);
 
 var _nsvyaznoy2 = _interopRequireDefault(_nsvyaznoy);
 
-var _ayantsevich = __webpack_require__(58);
+var _ayantsevich = __webpack_require__(65);
 
 var _ayantsevich2 = _interopRequireDefault(_ayantsevich);
 
-var _dklevzhits = __webpack_require__(59);
+var _dklevzhits = __webpack_require__(66);
 
 var _dklevzhits2 = _interopRequireDefault(_dklevzhits);
 
-var _apobol = __webpack_require__(60);
+var _apobol = __webpack_require__(67);
 
 var _apobol2 = _interopRequireDefault(_apobol);
 
-var _soenkebartling = __webpack_require__(61);
+var _soenkebartling = __webpack_require__(68);
 
 var _soenkebartling2 = _interopRequireDefault(_soenkebartling);
 
-var _aadamiants = __webpack_require__(62);
+var _aadamiants = __webpack_require__(69);
 
 var _aadamiants2 = _interopRequireDefault(_aadamiants);
 
@@ -2929,55 +3316,55 @@ var Advisors = function Advisors(p) {
 exports.default = Advisors;
 
 /***/ }),
-/* 55 */
+/* 62 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "static/hdecastro.f53e8981.png";
 
 /***/ }),
-/* 56 */
+/* 63 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "static/akulichkin.5d20cb3b.png";
 
 /***/ }),
-/* 57 */
+/* 64 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "static/nsvyaznoy.aa798147.png";
 
 /***/ }),
-/* 58 */
+/* 65 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "static/ayantsevich.ac4ef1f3.png";
 
 /***/ }),
-/* 59 */
+/* 66 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "static/dklevzhits.fba700ae.png";
 
 /***/ }),
-/* 60 */
+/* 67 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "static/apobol.ab41fe4b.png";
 
 /***/ }),
-/* 61 */
+/* 68 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "static/soenkebartling.ff945b3f.png";
 
 /***/ }),
-/* 62 */
+/* 69 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "static/aadamiants.756c88e5.png";
 
 /***/ }),
-/* 63 */
+/* 70 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3009,11 +3396,11 @@ var _Person = __webpack_require__(15);
 
 var _Person2 = _interopRequireDefault(_Person);
 
-var _MessageBox = __webpack_require__(64);
+var _MessageBox = __webpack_require__(71);
 
 var _MessageBox2 = _interopRequireDefault(_MessageBox);
 
-var _Button = __webpack_require__(7);
+var _Button = __webpack_require__(8);
 
 var _Button2 = _interopRequireDefault(_Button);
 
@@ -3114,7 +3501,7 @@ var Researchers = function Researchers(p) {
 exports.default = Researchers;
 
 /***/ }),
-/* 64 */
+/* 71 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3144,7 +3531,7 @@ var _Heading = __webpack_require__(4);
 
 var _Heading2 = _interopRequireDefault(_Heading);
 
-var _Text = __webpack_require__(8);
+var _Text = __webpack_require__(6);
 
 var _Text2 = _interopRequireDefault(_Text);
 
@@ -3226,7 +3613,7 @@ MessageBox.propTypes = {
 exports.default = MessageBox;
 
 /***/ }),
-/* 65 */
+/* 72 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3256,23 +3643,23 @@ var _Heading = __webpack_require__(4);
 
 var _Heading2 = _interopRequireDefault(_Heading);
 
-var _Partner = __webpack_require__(66);
+var _Partner = __webpack_require__(73);
 
 var _Partner2 = _interopRequireDefault(_Partner);
 
-var _blockchainforscience = __webpack_require__(67);
+var _blockchainforscience = __webpack_require__(74);
 
 var _blockchainforscience2 = _interopRequireDefault(_blockchainforscience);
 
-var _ecocity = __webpack_require__(68);
+var _ecocity = __webpack_require__(75);
 
 var _ecocity2 = _interopRequireDefault(_ecocity);
 
-var _blockchainbelarus = __webpack_require__(69);
+var _blockchainbelarus = __webpack_require__(76);
 
 var _blockchainbelarus2 = _interopRequireDefault(_blockchainbelarus);
 
-var _eclab = __webpack_require__(70);
+var _eclab = __webpack_require__(77);
 
 var _eclab2 = _interopRequireDefault(_eclab);
 
@@ -3337,7 +3724,7 @@ var Partners = function Partners(p) {
 exports.default = Partners;
 
 /***/ }),
-/* 66 */
+/* 73 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3395,31 +3782,31 @@ Partner.propTypes = {
 exports.default = Partner;
 
 /***/ }),
-/* 67 */
+/* 74 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "static/blockchainforscience.2b52c062.png";
 
 /***/ }),
-/* 68 */
+/* 75 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "static/ecocity.2885a6c1.png";
 
 /***/ }),
-/* 69 */
+/* 76 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "static/blockchainbelarus.ec1747d2.png";
 
 /***/ }),
-/* 70 */
+/* 77 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "static/eclab.0f8fe3a5.png";
 
 /***/ }),
-/* 71 */
+/* 78 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3443,23 +3830,23 @@ var _Heading = __webpack_require__(4);
 
 var _Heading2 = _interopRequireDefault(_Heading);
 
-var _Button = __webpack_require__(7);
+var _Button = __webpack_require__(8);
 
 var _Button2 = _interopRequireDefault(_Button);
 
-var _Mention = __webpack_require__(72);
+var _Mention = __webpack_require__(79);
 
 var _Mention2 = _interopRequireDefault(_Mention);
 
-var _icon_meduza = __webpack_require__(73);
+var _icon_meduza = __webpack_require__(80);
 
 var _icon_meduza2 = _interopRequireDefault(_icon_meduza);
 
-var _icon_medium = __webpack_require__(74);
+var _icon_medium = __webpack_require__(81);
 
 var _icon_medium2 = _interopRequireDefault(_icon_medium);
 
-var _icon_tj = __webpack_require__(75);
+var _icon_tj = __webpack_require__(82);
 
 var _icon_tj2 = _interopRequireDefault(_icon_tj);
 
@@ -3533,7 +3920,7 @@ var Media = function Media(p) {
 exports.default = Media;
 
 /***/ }),
-/* 72 */
+/* 79 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3557,7 +3944,7 @@ var _styledComponents = __webpack_require__(1);
 
 var _styledComponents2 = _interopRequireDefault(_styledComponents);
 
-var _Text = __webpack_require__(8);
+var _Text = __webpack_require__(6);
 
 var _Text2 = _interopRequireDefault(_Text);
 
@@ -3608,25 +3995,25 @@ Mention.propTypes = {
 exports.default = Mention;
 
 /***/ }),
-/* 73 */
+/* 80 */
 /***/ (function(module, exports) {
 
 module.exports = "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDYiIGhlaWdodD0iMjciIHZpZXdCb3g9IjAgMCA0NiAyNyIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4KPHRpdGxlPk1lZHV6YV9sb2dvPC90aXRsZT4KPGRlc2M+Q3JlYXRlZCB1c2luZyBGaWdtYTwvZGVzYz4KPGcgaWQ9IkNhbnZhcyIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTI4NSAtNjg2OSkiPgo8ZyBpZD0iTWVkdXphX2xvZ28iPgo8ZyBpZD0iSW1wb3J0ZWQgTGF5ZXJzIj4KPHVzZSB4bGluazpocmVmPSIjcGF0aDBfZmlsbCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMjg1IDY4NjkpIiBmaWxsPSIjMzMxRDUwIi8+CjwvZz4KPC9nPgo8L2c+CjxkZWZzPgo8cGF0aCBpZD0icGF0aDBfZmlsbCIgZmlsbC1ydWxlPSJldmVub2RkIiBkPSJNIDE4Ljg3MyA3LjA1NTc1TCAxOC44NzMgMjQuNDU5OUwgMjcuMTI3IDI3TCAyNy4xMjcgNy4wNTU3NUwgMzIuNDM2NSA3LjA1NTc1TCAzMi40MzY1IDI0LjQ1OTlMIDQwLjY0MjIgMjdMIDQ2IDE5Ljk0NDNMIDQwLjY5MDQgMTkuOTQ0M0wgNDAuNjkwNCAyLjc3NTI2TCAzMi40ODQ4IDBMIDI3LjEyNyA2LjExNDk4TCAyNy4xMjcgMi43NzUyNkwgMTguOTIxMyAwTCAxMy41NjM1IDYuMTE0OThMIDEzLjU2MzUgMi43NzUyNkwgNS4zNTc4MiAwTCAwIDcuMDU1NzVMIDUuMzA5NTUgNy4wNTU3NUwgNS4zMDk1NSAyNC40NTk5TCAxMy41NjM1IDI3TCAxMy41NjM1IDcuMDU1NzVMIDE4Ljg3MyA3LjA1NTc1WiIvPgo8L2RlZnM+Cjwvc3ZnPgo="
 
 /***/ }),
-/* 74 */
+/* 81 */
 /***/ (function(module, exports) {
 
 module.exports = "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMjgiIHZpZXdCb3g9IjAgMCAzMiAyOCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4KPHRpdGxlPiYjMjM5OyYjMTM2OyYjMTg2OzwvdGl0bGU+CjxkZXNjPkNyZWF0ZWQgdXNpbmcgRmlnbWE8L2Rlc2M+CjxnIGlkPSJDYW52YXMiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0yOTUgLTY2MDUpIj4KPGcgaWQ9IiYjMjM5OyYjMTM2OyYjMTg2OyI+Cjx1c2UgeGxpbms6aHJlZj0iI3BhdGgwX2ZpbGwiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDI5NSA2NjA1LjA0KSIgZmlsbD0iIzMzMUQ1MCIvPgo8L2c+CjwvZz4KPGRlZnM+CjxwYXRoIGlkPSJwYXRoMF9maWxsIiBkPSJNIDEwLjY2MDcgNS4wNTM1N0MgMTAuNjYwNyA1LjAzNTcxIDEwLjYyNSA0Ljk4MjE0IDEwLjYwNzEgNC45NjQyOEwgMS40ODIxNCAwLjM5Mjg1N0MgMS4yMzIxNCAwLjI2Nzg1NyAwLjk4MjE0MyAwLjEyNSAwLjY5NjQyOCAwLjEyNUMgMC4yMTQyODUgMC4xMjUgMCAwLjUzNTcxMyAwIDAuOTgyMTQxTCAwIDIxLjMzOTNDIDAgMjEuODc1IDAuMzkyODU4IDIyLjUxNzkgMC44OTI4NTggMjIuNzY3OUwgOS4xOTY0MyAyNi45Mjg2QyA5LjM3NSAyNy4wMTc5IDkuNTcxNDMgMjcuMDcxNCA5Ljc4NTcxIDI3LjA3MTRDIDEwLjM5MjkgMjcuMDcxNCAxMC42NjA3IDI2LjU1MzYgMTAuNjYwNyAyNkwgMTAuNjYwNyA1LjA1MzU3Wk0gMTEuODAzNiA2Ljg1NzE0TCAxMS44MDM2IDE3LjU3MTRMIDIxLjMzOTMgMjIuMzIxNEwgMTEuODAzNiA2Ljg1NzE0Wk0gMzIgNy4xNzg1N0wgMjIuMzU3MSAyMi44MzkzTCAzMC4yMzIxIDI2Ljc2NzlDIDMwLjQ4MjEgMjYuOTEwNyAzMC43Njc5IDI3IDMxLjA3MTQgMjdDIDMxLjY2MDcgMjcgMzIgMjYuNTg5MyAzMiAyNkwgMzIgNy4xNzg1N1pNIDMxLjk0NjQgNS4wMzU3MUMgMzEuOTQ2NCA0Ljk4MjE0IDMxLjkxMDcgNC45NDY0MyAzMS44NzUgNC45Mjg1N0wgMjIuMjE0MyAwLjEwNzE0MUMgMjIuMDcxNCAwLjAzNTcxMzIgMjEuOTEwNyAwIDIxLjc1IDBDIDIxLjM3NSAwIDIxLjAxNzkgMC4xNzg1NyAyMC44MjE0IDAuNUwgMTUuMDM1NyA5LjkxMDcxTCAyMiAyMS4yMzIxQyAyMi43MTQzIDIwLjA4OTMgMzEuOTQ2NCA1LjEwNzE0IDMxLjk0NjQgNS4wMzU3MVoiLz4KPC9kZWZzPgo8L3N2Zz4K"
 
 /***/ }),
-/* 75 */
+/* 82 */
 /***/ (function(module, exports) {
 
 module.exports = "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMiAzMiIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4KPHRpdGxlPkdyb3VwIDY8L3RpdGxlPgo8ZGVzYz5DcmVhdGVkIHVzaW5nIEZpZ21hPC9kZXNjPgo8ZyBpZD0iQ2FudmFzIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMjk1IC02NzM1KSI+CjxnIGlkPSJHcm91cCA2Ij4KPGcgaWQ9IlZlY3RvciAyIj4KPHVzZSB4bGluazpocmVmPSIjcGF0aDBfZmlsbCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMjk1IDY3MzUpIiBmaWxsPSIjMzMxRDUwIi8+CjwvZz4KPC9nPgo8L2c+CjxkZWZzPgo8cGF0aCBpZD0icGF0aDBfZmlsbCIgZD0iTSAwIDBMIDMyIDBMIDMyIDguNjU4ODJMIDIwLjU3MTQgOC42NTg4MkwgMjAuNTcxNCAyNC40NzA2TCAxMS44MDk1IDMyTCAwIDMyTCAwIDI0LjA5NDFMIDExLjgwOTUgMjQuMDk0MUwgMTEuODA5NSA4LjY1ODgyTCAwIDguNjU4ODJMIDAgMFoiLz4KPC9kZWZzPgo8L3N2Zz4K"
 
 /***/ }),
-/* 76 */
+/* 83 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3655,7 +4042,7 @@ var _Heading = __webpack_require__(4);
 
 var _Heading2 = _interopRequireDefault(_Heading);
 
-var _SubscribeInput = __webpack_require__(77);
+var _SubscribeInput = __webpack_require__(84);
 
 var _SubscribeInput2 = _interopRequireDefault(_SubscribeInput);
 
@@ -3722,7 +4109,7 @@ var Subscribe = function Subscribe(p) {
 exports.default = Subscribe;
 
 /***/ }),
-/* 77 */
+/* 84 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3748,7 +4135,7 @@ var _icon_send = __webpack_require__(16);
 
 var _icon_send2 = _interopRequireDefault(_icon_send);
 
-var _SubscribeForm = __webpack_require__(78);
+var _SubscribeForm = __webpack_require__(85);
 
 var _SubscribeForm2 = _interopRequireDefault(_SubscribeForm);
 
@@ -3805,7 +4192,7 @@ var Input = function Input() {
 exports.default = Input;
 
 /***/ }),
-/* 78 */
+/* 85 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3825,7 +4212,7 @@ var _propTypes = __webpack_require__(2);
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
-var _jsonp = __webpack_require__(79);
+var _jsonp = __webpack_require__(86);
 
 var _jsonp2 = _interopRequireDefault(_jsonp);
 
@@ -4008,13 +4395,13 @@ var SubscribeForm = function (_React$Component) {
 exports.default = SubscribeForm;
 
 /***/ }),
-/* 79 */
+/* 86 */
 /***/ (function(module, exports) {
 
 module.exports = require("jsonp");
 
 /***/ }),
-/* 80 */
+/* 87 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4028,9 +4415,9 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactStatic = __webpack_require__(6);
+var _reactStatic = __webpack_require__(7);
 
-var _Poll = __webpack_require__(81);
+var _Poll = __webpack_require__(88);
 
 var _Poll2 = _interopRequireDefault(_Poll);
 
@@ -4062,7 +4449,7 @@ var Join = function Join(_ref) {
 exports.default = (0, _reactStatic.getSiteProps)(Join);
 
 /***/ }),
-/* 81 */
+/* 88 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4103,37 +4490,37 @@ var _Heading = __webpack_require__(4);
 
 var _Heading2 = _interopRequireDefault(_Heading);
 
-var _Text = __webpack_require__(8);
+var _Text = __webpack_require__(6);
 
 var _Text2 = _interopRequireDefault(_Text);
 
-var _Shower = __webpack_require__(82);
+var _Shower = __webpack_require__(18);
 
-var _Button = __webpack_require__(7);
+var _Button = __webpack_require__(8);
 
 var _Button2 = _interopRequireDefault(_Button);
 
-var _RadioButton = __webpack_require__(83);
+var _RadioButton = __webpack_require__(19);
 
 var _RadioButton2 = _interopRequireDefault(_RadioButton);
 
-var _Input = __webpack_require__(84);
+var _Input = __webpack_require__(20);
 
 var _Input2 = _interopRequireDefault(_Input);
 
-var _Checkbox = __webpack_require__(85);
+var _Checkbox = __webpack_require__(21);
 
 var _Checkbox2 = _interopRequireDefault(_Checkbox);
 
-var _TextArea = __webpack_require__(86);
+var _TextArea = __webpack_require__(22);
 
 var _TextArea2 = _interopRequireDefault(_TextArea);
 
-var _axios = __webpack_require__(87);
+var _axios = __webpack_require__(23);
 
 var _axios2 = _interopRequireDefault(_axios);
 
-var _reactToggleDisplay = __webpack_require__(88);
+var _reactToggleDisplay = __webpack_require__(24);
 
 var _reactToggleDisplay2 = _interopRequireDefault(_reactToggleDisplay);
 
@@ -4151,42 +4538,42 @@ function _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defi
 
 var Root = _styledComponents2.default.section.withConfig({
   displayName: '20_Poll__Root',
-  componentId: 's8rlvha-0'
+  componentId: 'zpq9sm-0'
 })(['', ';padding:48px 0 0 0;'], _styles.container);
 
 var Section = _styledComponents2.default.div.withConfig({
   displayName: '20_Poll__Section',
-  componentId: 's8rlvha-1'
+  componentId: 'zpq9sm-1'
 })(['margin:48px 0;']);
 
 var Message = _styledComponents2.default.div.withConfig({
   displayName: '20_Poll__Message',
-  componentId: 's8rlvha-2'
+  componentId: 'zpq9sm-2'
 })(['padding-top:100px;height:450px;']);
 
 var Description = (0, _styledComponents2.default)(_Text2.default).withConfig({
   displayName: '20_Poll__Description',
-  componentId: 's8rlvha-3'
+  componentId: 'zpq9sm-3'
 })(['display:block;width:', '%;margin:0 auto;', ';'], 100 * 6 / 8, _styles.m.lessThan('small')(_templateObject));
 
 var ControlBlock = _styledComponents2.default.div.withConfig({
   displayName: '20_Poll__ControlBlock',
-  componentId: 's8rlvha-4'
+  componentId: 'zpq9sm-4'
 })(['display:flex;flex-wrap:wrap;text-align:left;margin:0 -16px 32px -16px;', ';'], _styles.m.lessThan('small')(_templateObject2));
 
 var Radio = (0, _styledComponents2.default)(_RadioButton2.default).withConfig({
   displayName: '20_Poll__Radio',
-  componentId: 's8rlvha-5'
+  componentId: 'zpq9sm-5'
 })(['width:calc(100% / 4 - 32px);margin:16px;', ';'], _styles.m.lessThan('small')(_templateObject3));
 
 var Input = (0, _styledComponents2.default)(_Input2.default).withConfig({
   displayName: '20_Poll__Input',
-  componentId: 's8rlvha-6'
+  componentId: 'zpq9sm-6'
 })(['width:calc(100% / 2 - 32px);margin:16px;', ';'], _styles.m.lessThan('small')(_templateObject4));
 
 var Checkbox = (0, _styledComponents2.default)(_Checkbox2.default).withConfig({
   displayName: '20_Poll__Checkbox',
-  componentId: 's8rlvha-7'
+  componentId: 'zpq9sm-7'
 })(['width:calc(100% / 2 - 32px);margin:16px;', ';'], _styles.m.lessThan('small')(_templateObject4));
 
 var Poll = function (_Component) {
@@ -4299,7 +4686,7 @@ var Poll = function (_Component) {
 
       };
       console.log(form);
-      _axios2.default.post('http://146.185.140.12:3000/api/subscriber', form).then(function (response) {
+      _axios2.default.post('http://146.185.140.12/api/subscriber', form).then(function (response) {
         self.state.isVisibleSuccesSubscriptionMessage = true;
         self.forceUpdate();
         console.log(response);
@@ -4325,7 +4712,7 @@ var Poll = function (_Component) {
         }
 
       };
-      _axios2.default.post('http://146.185.140.12:3000/api/subscriber', form).then(function (response) {
+      _axios2.default.post('http://146.185.140.12/api/subscriber', form).then(function (response) {
         self.state.isVisibleSuccesSubscriptionMessage = true;
         self.forceUpdate();
         console.log(response);
@@ -4355,7 +4742,7 @@ var Poll = function (_Component) {
 
       };
       console.log(form);
-      _axios2.default.post('http://146.185.140.12:3000/api/subscriber', form).then(function (response) {
+      _axios2.default.post('http://146.185.140.12/api/subscriber', form).then(function (response) {
         self.state.isVisibleSuccesSubscriptionMessage = true;
         self.forceUpdate();
         console.log(response);
@@ -4384,7 +4771,7 @@ var Poll = function (_Component) {
 
       };
       console.log(form);
-      _axios2.default.post('http://146.185.140.12:3000/api/subscriber', form).then(function (response) {
+      _axios2.default.post('http://146.185.140.12/api/subscriber', form).then(function (response) {
         self.state.isVisibleSuccesSubscriptionMessage = true;
         self.forceUpdate();
         console.log(response);
@@ -4874,388 +5261,6 @@ var Poll = function (_Component) {
 exports.default = Poll;
 
 /***/ }),
-/* 82 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.Show = exports.Shower = undefined;
-
-var _react = __webpack_require__(0);
-
-var _react2 = _interopRequireDefault(_react);
-
-var _propTypes = __webpack_require__(2);
-
-var _propTypes2 = _interopRequireDefault(_propTypes);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-var Shower = exports.Shower = function Shower(_ref) {
-  var value = _ref.value,
-      children = _ref.children;
-  return _react2.default.createElement(
-    'div',
-    null,
-    _react2.default.Children.map(children, function (child) {
-      return child.props.value == value ? child : null;
-    })
-  );
-};
-
-Shower.propTypes = {
-  value: _propTypes2.default.string.isRequired,
-  children: _propTypes2.default.node.isRequired
-};
-
-var Show = exports.Show = function Show(_ref2) {
-  var value = _ref2.value,
-      children = _ref2.children;
-  return _react2.default.createElement(
-    'div',
-    null,
-    children
-  );
-};
-
-Show.propTypes = {
-  value: _propTypes2.default.string.isRequired,
-  children: _propTypes2.default.node.isRequired
-};
-
-/***/ }),
-/* 83 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _react = __webpack_require__(0);
-
-var _react2 = _interopRequireDefault(_react);
-
-var _propTypes = __webpack_require__(2);
-
-var _propTypes2 = _interopRequireDefault(_propTypes);
-
-var _styledComponents = __webpack_require__(1);
-
-var _styledComponents2 = _interopRequireDefault(_styledComponents);
-
-var _Icon = __webpack_require__(9);
-
-var _Icon2 = _interopRequireDefault(_Icon);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
-
-var Root = _styledComponents2.default.div.withConfig({
-  displayName: 'RadioButton__Root',
-  componentId: 'sml6sz-0'
-})(['']);
-
-var Radio = _styledComponents2.default.input.attrs({
-  type: 'radio'
-}).withConfig({
-  displayName: 'RadioButton__Radio',
-  componentId: 'sml6sz-1'
-})(['display:none;&:checked + label{border:1px solid ', ';background:', ';color:#fff;}'], function (p) {
-  return p.theme.palette.primary;
-}, function (p) {
-  return p.theme.palette.primary;
-});
-
-var Label = _styledComponents2.default.label.withConfig({
-  displayName: 'RadioButton__Label',
-  componentId: 'sml6sz-2'
-})(['display:inline-block;border-radius:5px;border:1px solid ', ';font-size:16px;font-weight:700;color:', ';height:49px;line-height:49px;width:100%;cursor:pointer;text-align:center;text-decoration:none;transition:border 0.15s,background 0.15s,color 0.15s;'], function (p) {
-  return p.theme.palette.primaryLight;
-}, function (p) {
-  return p.theme.palette.primaryLight;
-});
-
-var RadioButton = function RadioButton(_ref) {
-  var id = _ref.id,
-      name = _ref.name,
-      icon = _ref.icon,
-      checked = _ref.checked,
-      children = _ref.children,
-      onClick = _ref.onClick,
-      rest = _objectWithoutProperties(_ref, ['id', 'name', 'icon', 'checked', 'children', 'onClick']);
-
-  return _react2.default.createElement(
-    Root,
-    rest,
-    _react2.default.createElement(Radio, { id: id, name: name, defaultChecked: checked, onClick: onClick }),
-    _react2.default.createElement(
-      Label,
-      { htmlFor: id },
-      _react2.default.createElement(
-        _Icon2.default,
-        { size: 18, mr: 1 },
-        icon
-      ),
-      children
-    )
-  );
-};
-
-RadioButton.propTypes = {
-  id: _propTypes2.default.string.isRequired,
-  name: _propTypes2.default.string.isRequired,
-  icon: _propTypes2.default.string.isRequired,
-  children: _propTypes2.default.node.isRequired,
-  onClick: _propTypes2.default.func.isRequired
-};
-
-exports.default = RadioButton;
-
-/***/ }),
-/* 84 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _react = __webpack_require__(0);
-
-var _react2 = _interopRequireDefault(_react);
-
-var _propTypes = __webpack_require__(2);
-
-var _propTypes2 = _interopRequireDefault(_propTypes);
-
-var _styledComponents = __webpack_require__(1);
-
-var _styledComponents2 = _interopRequireDefault(_styledComponents);
-
-var _polished = __webpack_require__(11);
-
-var _Icon = __webpack_require__(9);
-
-var _Icon2 = _interopRequireDefault(_Icon);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
-
-var Root = _styledComponents2.default.div.withConfig({
-  displayName: 'Input__Root',
-  componentId: 's1l2yb49-0'
-})(['position:relative;']);
-
-var ph = function ph(p) {
-  return (0, _polished.placeholder)({ color: p.theme.palette.text.secondary });
-};
-
-var Comp = _styledComponents2.default.input.withConfig({
-  displayName: 'Input__Comp',
-  componentId: 's1l2yb49-1'
-})(['border-radius:5px;border:1px solid ', ';font-size:16px;color:1px solid ', ';line-height:49px;padding:0 48px 0 16px;width:100%;min-width:0;transition:border 0.15s;', ';& + i{color:', ';transition:color 0.15s;}&:focus{outline:none;border:1px solid ', ';}&:focus + i{color:', ';}'], function (p) {
-  return p.theme.palette.primaryLight;
-}, function (p) {
-  return p.theme.palette.primary;
-}, ph, function (p) {
-  return p.theme.palette.primaryLight;
-}, function (p) {
-  return p.theme.palette.primary;
-}, function (p) {
-  return p.theme.palette.primary;
-});
-
-var Icon = (0, _styledComponents2.default)(_Icon2.default).withConfig({
-  displayName: 'Input__Icon',
-  componentId: 's1l2yb49-2'
-})(['position:absolute;font-size:18px;line-height:49px;top:2px;right:16px;']);
-
-var Input = function Input(_ref) {
-  var icon = _ref.icon,
-      type = _ref.type,
-      name = _ref.name,
-      placeholder = _ref.placeholder,
-      rest = _objectWithoutProperties(_ref, ['icon', 'type', 'name', 'placeholder']);
-
-  return _react2.default.createElement(
-    Root,
-    rest,
-    _react2.default.createElement(Comp, { type: type, name: name, placeholder: placeholder }),
-    _react2.default.createElement(
-      Icon,
-      null,
-      icon
-    )
-  );
-};
-
-Input.propTypes = {
-  icon: _propTypes2.default.string.isRequired
-};
-
-exports.default = Input;
-
-/***/ }),
-/* 85 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
-
-var _react = __webpack_require__(0);
-
-var _react2 = _interopRequireDefault(_react);
-
-var _propTypes = __webpack_require__(2);
-
-var _propTypes2 = _interopRequireDefault(_propTypes);
-
-var _styledComponents = __webpack_require__(1);
-
-var _styledComponents2 = _interopRequireDefault(_styledComponents);
-
-var _polished = __webpack_require__(11);
-
-var _Icon = __webpack_require__(9);
-
-var _Icon2 = _interopRequireDefault(_Icon);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
-
-var Root = _styledComponents2.default.div.withConfig({
-  displayName: 'Checkbox__Root',
-  componentId: 's1iuu2q3-0'
-})(['display:inline-flex;']);
-
-var Check = _styledComponents2.default.div.withConfig({
-  displayName: 'Checkbox__Check',
-  componentId: 's1iuu2q3-1'
-})(['border-radius:4px;border:1px solid ', ';text-align:center;color:', ';width:25px;min-width:25px;height:25px;line-height:25px;margin-right:16px;cursor:pointer;'], function (p) {
-  return p.theme.palette.primary;
-}, function (p) {
-  return p.theme.palette.primary;
-});
-
-var Comp = _styledComponents2.default.input.attrs({
-  type: 'checkbox'
-}).withConfig({
-  displayName: 'Checkbox__Comp',
-  componentId: 's1iuu2q3-2'
-})(['position:absolute;opacity:0;width:25px;min-width:25px;height:25px;line-height:25px;cursor:pointer;& ~ .full{display:none;}& ~ .empty{display:block;}&:checked ~ .full{display:block;}&:checked ~ .empty{display:none;}']);
-
-var Label = _styledComponents2.default.label.withConfig({
-  displayName: 'Checkbox__Label',
-  componentId: 's1iuu2q3-3'
-})(['font-size:16px;padding-top:2px;cursor:pointer;']);
-
-var Checkbox = function Checkbox(_ref) {
-  var name = _ref.name,
-      checked = _ref.checked,
-      children = _ref.children,
-      className = _ref.className,
-      rest = _objectWithoutProperties(_ref, ['name', 'checked', 'children', 'className']);
-
-  return _react2.default.createElement(
-    Root,
-    { className: className },
-    _react2.default.createElement(Comp, _extends({ id: name, name: name, defaultChecked: checked }, rest)),
-    _react2.default.createElement(
-      Check,
-      { className: 'full' },
-      _react2.default.createElement(
-        _Icon2.default,
-        null,
-        'check'
-      )
-    ),
-    _react2.default.createElement(Check, { className: 'empty' }),
-    _react2.default.createElement(
-      Label,
-      { htmlFor: name },
-      children
-    )
-  );
-};
-
-Checkbox.propTypes = {
-  name: _propTypes2.default.string.isRequired,
-  checked: _propTypes2.default.bool,
-  className: _propTypes2.default.string,
-  children: _propTypes2.default.node.isRequired
-};
-
-exports.default = Checkbox;
-
-/***/ }),
-/* 86 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _react = __webpack_require__(0);
-
-var _react2 = _interopRequireDefault(_react);
-
-var _styledComponents = __webpack_require__(1);
-
-var _styledComponents2 = _interopRequireDefault(_styledComponents);
-
-var _polished = __webpack_require__(11);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-var TextArea = _styledComponents2.default.textarea.withConfig({
-  displayName: 'TextArea',
-  componentId: 'coy5jc-0'
-})(['border-radius:5px;border:1px solid ', ';font-size:16px;color:1px solid ', ';padding:16px;width:100%;min-width:0;transition:border 0.15s;&:focus{outline:none;border:1px solid ', ';}&::placeholder{font-family:Roboto,sans-serif;color:', ';}'], function (p) {
-  return p.theme.palette.primaryLight;
-}, function (p) {
-  return p.theme.palette.primary;
-}, function (p) {
-  return p.theme.palette.primary;
-}, function (p) {
-  return p.theme.palette.text.secondary;
-});
-
-exports.default = TextArea;
-
-/***/ }),
-/* 87 */
-/***/ (function(module, exports) {
-
-module.exports = require("axios");
-
-/***/ }),
-/* 88 */
-/***/ (function(module, exports) {
-
-module.exports = require("react-toggle-display");
-
-/***/ }),
 /* 89 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -5270,9 +5275,9 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactStatic = __webpack_require__(6);
+var _reactStatic = __webpack_require__(7);
 
-var _HeroBackground = __webpack_require__(14);
+var _HeroBackground = __webpack_require__(13);
 
 var _HeroBackground2 = _interopRequireDefault(_HeroBackground);
 
@@ -5340,7 +5345,7 @@ var _Heading = __webpack_require__(4);
 
 var _Heading2 = _interopRequireDefault(_Heading);
 
-var _Button = __webpack_require__(7);
+var _Button = __webpack_require__(8);
 
 var _Button2 = _interopRequireDefault(_Button);
 
@@ -5431,7 +5436,7 @@ var _styledComponents = __webpack_require__(1);
 
 var _styledComponents2 = _interopRequireDefault(_styledComponents);
 
-var _Text = __webpack_require__(8);
+var _Text = __webpack_require__(6);
 
 var _Text2 = _interopRequireDefault(_Text);
 
@@ -5488,7 +5493,639 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactStatic = __webpack_require__(6);
+var _reactStatic = __webpack_require__(7);
+
+var _HeroBackground = __webpack_require__(13);
+
+var _HeroBackground2 = _interopRequireDefault(_HeroBackground);
+
+var _Menu = __webpack_require__(10);
+
+var _Menu2 = _interopRequireDefault(_Menu);
+
+var _MobileMenu = __webpack_require__(12);
+
+var _MobileMenu2 = _interopRequireDefault(_MobileMenu);
+
+var _TokensaleForm = __webpack_require__(93);
+
+var _TokensaleForm2 = _interopRequireDefault(_TokensaleForm);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var Tokensale = function Tokensale(_ref) {
+  var someData = _ref.someData;
+  return _react2.default.createElement(
+    'div',
+    null,
+    _react2.default.createElement(
+      _reactStatic.Head,
+      null,
+      _react2.default.createElement(
+        'title',
+        null,
+        'DEIP | Token Sale'
+      )
+    ),
+    _react2.default.createElement(_TokensaleForm2.default, null)
+  );
+};
+
+exports.default = (0, _reactStatic.getSiteProps)(Tokensale);
+
+/***/ }),
+/* 93 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _templateObject = _taggedTemplateLiteral(['\n  width: 100%;\n  margin: 8px;\n'], ['\n  width: 100%;\n  margin: 8px;\n']),
+    _templateObject2 = _taggedTemplateLiteral(['\n    text-align: left;\n    width: 100%;\n    margin: 0;\n  '], ['\n    text-align: left;\n    width: 100%;\n    margin: 0;\n  ']),
+    _templateObject3 = _taggedTemplateLiteral(['\n    margin: 0 -8px 32px -8px;\n  '], ['\n    margin: 0 -8px 32px -8px;\n  ']),
+    _templateObject4 = _taggedTemplateLiteral(['\n  width: 100%;\n  margin: 8px;\n  '], ['\n  width: 100%;\n  margin: 8px;\n  ']),
+    _templateObject5 = _taggedTemplateLiteral(['\n    width: 100%;\n    margin: 8px;\n  '], ['\n    width: 100%;\n    margin: 8px;\n  ']),
+    _templateObject6 = _taggedTemplateLiteral(['\n    margin: 8px;\n  '], ['\n    margin: 8px;\n  ']);
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _styledComponents = __webpack_require__(1);
+
+var _styledComponents2 = _interopRequireDefault(_styledComponents);
+
+var _styles = __webpack_require__(3);
+
+var _Team = __webpack_require__(5);
+
+var _Menu = __webpack_require__(10);
+
+var _Menu2 = _interopRequireDefault(_Menu);
+
+var _MobileMenu = __webpack_require__(12);
+
+var _MobileMenu2 = _interopRequireDefault(_MobileMenu);
+
+var _Heading = __webpack_require__(4);
+
+var _Heading2 = _interopRequireDefault(_Heading);
+
+var _Text = __webpack_require__(6);
+
+var _Text2 = _interopRequireDefault(_Text);
+
+var _Shower = __webpack_require__(18);
+
+var _Button = __webpack_require__(8);
+
+var _Button2 = _interopRequireDefault(_Button);
+
+var _RadioButton = __webpack_require__(19);
+
+var _RadioButton2 = _interopRequireDefault(_RadioButton);
+
+var _Input = __webpack_require__(20);
+
+var _Input2 = _interopRequireDefault(_Input);
+
+var _InputFull = __webpack_require__(94);
+
+var _InputFull2 = _interopRequireDefault(_InputFull);
+
+var _Checkbox = __webpack_require__(21);
+
+var _Checkbox2 = _interopRequireDefault(_Checkbox);
+
+var _TextArea = __webpack_require__(22);
+
+var _TextArea2 = _interopRequireDefault(_TextArea);
+
+var _axios = __webpack_require__(23);
+
+var _axios2 = _interopRequireDefault(_axios);
+
+var _reactToggleDisplay = __webpack_require__(24);
+
+var _reactToggleDisplay2 = _interopRequireDefault(_reactToggleDisplay);
+
+var _reactSimpleFileInput = __webpack_require__(95);
+
+var _reactSimpleFileInput2 = _interopRequireDefault(_reactSimpleFileInput);
+
+var _CssBaseline = __webpack_require__(96);
+
+var _CssBaseline2 = _interopRequireDefault(_CssBaseline);
+
+var _reactSelect = __webpack_require__(97);
+
+var _validator = __webpack_require__(98);
+
+var _validator2 = _interopRequireDefault(_validator);
+
+var _reactValidate = __webpack_require__(99);
+
+var _Country = __webpack_require__(100);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+function _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
+
+var Select = _styledComponents2.default.select.withConfig({
+  displayName: '21_TokensaleForm__Select',
+  componentId: 'p4x12x-0'
+})(['border-radius:5px;border:1px solid ', ';font-size:16px;color:1px solid ', ';line-height:49px;padding:10px 48px 10px 16px;width:100%;min-width:0;transition:border 0.15s;position:relative;background-color:white;'], function (p) {
+  return p.theme.palette.primaryLight;
+}, function (p) {
+  return p.theme.palette.primary;
+});
+var SelectBlock = _styledComponents2.default.div.withConfig({
+  displayName: '21_TokensaleForm__SelectBlock',
+  componentId: 'p4x12x-1'
+})(['width:calc(100% / 2 - 32px);margin:16px;', ';'], _styles.m.lessThan('small')(_templateObject));
+
+var CreatableDropdown = (0, _styledComponents2.default)(_reactSelect.Creatable).withConfig({
+  displayName: '21_TokensaleForm__CreatableDropdown',
+  componentId: 'p4x12x-2'
+})(['bottom:0;color:#aaa;left:0;line-height:34px;padding-left:10px;padding-right:10px;position:absolute;right:0;top:0;max-width:100%;overflow:hidden;-o-text-overflow:ellipsis;text-overflow:ellipsis;white-space:nowrap;']);
+
+var required = function required(value, props) {
+  if (!value || props.isCheckable && !props.checked) {
+    return _react2.default.createElement(
+      'span',
+      { className: 'form-error is-visible' },
+      'Required'
+    );
+  }
+};
+
+var email = function email(value) {
+  if (!_validator2.default.isEmail(value)) {
+    return _react2.default.createElement(
+      'span',
+      { className: 'form-error is-visible' },
+      '$',
+      value,
+      ' is not a valid email.'
+    );
+  }
+};
+
+var myOptions = [{ value: 'one', text: 'One' }, { value: 'two', text: 'Two' }, { value: 'stream', text: 'hello, twitch' }];
+
+var Root = _styledComponents2.default.section.withConfig({
+  displayName: '21_TokensaleForm__Root',
+  componentId: 'p4x12x-3'
+})(['', ';padding:48px 0 0 0;'], _styles.container);
+
+var Section = _styledComponents2.default.div.withConfig({
+  displayName: '21_TokensaleForm__Section',
+  componentId: 'p4x12x-4'
+})(['margin:48px 0;']);
+
+var Message = _styledComponents2.default.div.withConfig({
+  displayName: '21_TokensaleForm__Message',
+  componentId: 'p4x12x-5'
+})(['padding-top:100px;height:450px;']);
+
+var Description = (0, _styledComponents2.default)(_Text2.default).withConfig({
+  displayName: '21_TokensaleForm__Description',
+  componentId: 'p4x12x-6'
+})(['display:block;width:', '%;margin:0 auto;', ';'], 100 * 6 / 8, _styles.m.lessThan('small')(_templateObject2));
+
+var ControlBlock = _styledComponents2.default.div.withConfig({
+  displayName: '21_TokensaleForm__ControlBlock',
+  componentId: 'p4x12x-7'
+})(['display:flex;flex-wrap:wrap;text-align:left;margin:0 -16px 16px -16px;', ';'], _styles.m.lessThan('small')(_templateObject3));
+var VerticalBlock = _styledComponents2.default.div.withConfig({
+  displayName: '21_TokensaleForm__VerticalBlock',
+  componentId: 'p4x12x-8'
+})(['display:table-cell;flex-wrap:wrap;text-align:left;margin:0 -16px 32px -16px;', ';'], _styles.m.lessThan('small')(_templateObject3));
+
+var Radio = (0, _styledComponents2.default)(_RadioButton2.default).withConfig({
+  displayName: '21_TokensaleForm__Radio',
+  componentId: 'p4x12x-9'
+})(['width:calc(100% / 2 - 32px);margin:16px;', ';'], _styles.m.lessThan('small')(_templateObject4));
+
+var Input = (0, _styledComponents2.default)(_InputFull2.default).withConfig({
+  displayName: '21_TokensaleForm__Input',
+  componentId: 'p4x12x-10'
+})(['width:calc(100% / 2 - 32px);margin:16px;', ';'], _styles.m.lessThan('small')(_templateObject5));
+
+var Checkbox = (0, _styledComponents2.default)(_Checkbox2.default).withConfig({
+  displayName: '21_TokensaleForm__Checkbox',
+  componentId: 'p4x12x-11'
+})(['width:100%;margin:16px;', ';'], _styles.m.lessThan('small')(_templateObject6));
+
+var TokensaleForm = function (_Component) {
+  _inherits(TokensaleForm, _Component);
+
+  function TokensaleForm() {
+    var _ref;
+
+    var _temp, _this, _ret;
+
+    _classCallCheck(this, TokensaleForm);
+
+    for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+      args[_key] = arguments[_key];
+    }
+
+    return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = TokensaleForm.__proto__ || Object.getPrototypeOf(TokensaleForm)).call.apply(_ref, [this].concat(args))), _this), _this.state = {
+      isVisibleSuccesSubscriptionMessage: false,
+      tokensaleName: '',
+      tokensaleEmail: '',
+      tokensalePerson: 'person',
+      tokensaleCountry: '',
+      tokensaleAmount: '5 000 - 10 000'
+    }, _this.amounts = {
+      company: ['25 000 - 100 000', '100 000 - 500 000', '500 000 - 1 000 000', '1 000 000 - 3 000 000'],
+      person: ['5 000 - 10 000', '10 000 - 50 000', '50 000 - 100 000', '100 000 - 500 000']
+    }, _this.setShow = function (e) {
+      return _this.setState({ value: e.target.id });
+    }, _this.setValue = function (e) {
+      _this.setState(_defineProperty({}, e.target.name, e.target.type === 'checkbox' ? e.target.checked : e.target.value));
+    }, _this.setPerson = function (e) {
+      _this.setValue(e);
+      _this.setState({ tokensaleAmount: _this.amounts[e.target.value][0] });
+    }, _this.sendForm = function (e) {
+      e.preventDefault();
+
+      var self = _this;
+
+      var form = {
+        generalInfo: {
+          fullName: _this.state.tokensaleName,
+          email: _this.state.tokensaleEmail
+        },
+        researcherInfo: {
+          tokensaleName: _this.state.tokensaleName,
+          tokensaleEmail: _this.state.tokensaleEmail,
+          tokensalePerson: _this.state.tokensalePerson,
+          tokensaleCountry: _this.state.tokensaleCountry,
+          tokensaleAmount: _this.state.tokensaleAmount
+        }
+      };
+
+      console.log(form);
+      debugger;
+
+      _axios2.default.post('http://146.185.140.12:3000/api/subscriber', form).then(function (response) {
+        self.state.isVisibleSuccesSubscriptionMessage = true;
+        self.forceUpdate();
+        console.log(response);
+      }).catch(function (error) {
+        console.log(error);
+      });
+    }, _this.handleClickTest = function () {
+      // debugger    
+      _this;
+      // this.form.validateAll();
+    }, _temp), _possibleConstructorReturn(_this, _ret);
+  }
+
+  _createClass(TokensaleForm, [{
+    key: 'render',
+    value: function render() {
+      var _this2 = this;
+
+      var setShow = this.setShow;
+      var sendForm = this.sendForm;
+      var setValue = this.setValue;
+      var setPerson = this.setPerson;
+      var handleClickTest = this.handleClickTest;
+
+
+      var validateEmail = _validator2.default.isEmail;
+
+      return _react2.default.createElement(
+        Root,
+        this.props,
+        _react2.default.createElement(_Menu2.default, { attached: true }),
+        _react2.default.createElement(_MobileMenu2.default, { attached: true }),
+        _react2.default.createElement(
+          _Team.Container,
+          null,
+          _react2.default.createElement(
+            _reactToggleDisplay2.default,
+            { show: !this.state.isVisibleSuccesSubscriptionMessage, tag: 'section' },
+            _react2.default.createElement(
+              'form',
+              { ref: function ref(c) {
+                  _this2.form = c;
+                }, onSubmit: this.sendForm, action: '' },
+              _react2.default.createElement(
+                _reactValidate.ValidateGroup,
+                null,
+                _react2.default.createElement(
+                  Section,
+                  null,
+                  _react2.default.createElement(
+                    _Heading2.default,
+                    null,
+                    'Pre-sale'
+                  )
+                ),
+                _react2.default.createElement(
+                  Description,
+                  null,
+                  'The information you enter below will be verified by a member of our team, in order to make sure that the information you send is regulatory compliant, and that your local legislation allows you to participate.'
+                ),
+                _react2.default.createElement(
+                  Section,
+                  null,
+                  _react2.default.createElement(
+                    ControlBlock,
+                    null,
+                    _react2.default.createElement(Input, { name: 'tokensaleName',
+                      header: 'Name:',
+                      type: 'text',
+                      placeholder: 'e.g. John Doe',
+                      onChange: this.handleClickTest,
+                      validations: [required, email]
+                    }),
+                    _react2.default.createElement(Input, { name: 'tokensaleEmail',
+                      header: 'Email:',
+                      type: 'email',
+                      placeholder: 'name@email.com',
+                      onChange: setValue
+                    }),
+                    _react2.default.createElement(
+                      SelectBlock,
+                      null,
+                      _react2.default.createElement(
+                        _Text2.default,
+                        null,
+                        '[Test Header Text]:'
+                      ),
+                      _react2.default.createElement(
+                        Select,
+                        { name: 'tokensalePerson', onChange: setPerson },
+                        _react2.default.createElement(
+                          'option',
+                          { value: 'person' },
+                          'Person'
+                        ),
+                        _react2.default.createElement(
+                          'option',
+                          { value: 'company' },
+                          'Company'
+                        )
+                      )
+                    ),
+                    _react2.default.createElement(
+                      SelectBlock,
+                      null,
+                      _react2.default.createElement(
+                        _Text2.default,
+                        null,
+                        'Country of residence:'
+                      ),
+                      _react2.default.createElement(
+                        Select,
+                        { name: 'tokensaleCountry', onChange: setValue },
+                        _react2.default.createElement('option', { value: '' }),
+                        _Country.countries.map(function (country, i) {
+                          return _react2.default.createElement(
+                            'option',
+                            { key: i, value: country.name },
+                            country.name
+                          );
+                        })
+                      )
+                    ),
+                    _react2.default.createElement(
+                      SelectBlock,
+                      null,
+                      _react2.default.createElement(
+                        _Text2.default,
+                        null,
+                        'Planned contribution:'
+                      ),
+                      _react2.default.createElement(
+                        Select,
+                        { name: 'tokensaleAmount', value: this.state.tokensaleAmount, onChange: setValue },
+                        this.amounts[this.state.tokensalePerson].map(function (amount, i) {
+                          return _react2.default.createElement(
+                            'option',
+                            { key: i, value: amount },
+                            amount
+                          );
+                        })
+                      )
+                    )
+                  ),
+                  _react2.default.createElement(
+                    ControlBlock,
+                    null,
+                    _react2.default.createElement(
+                      Checkbox,
+                      { type: 'checkbox', name: 'chekbox1' },
+                      'By accessing/registering the DEIP Platform, I expressly understand, accept and agree with the processing and storage by the Company of my personal data and the free circulation of such data.'
+                    )
+                  )
+                ),
+                _react2.default.createElement(
+                  _Button2.default,
+                  { submit: true, primary: true },
+                  'Send'
+                )
+              )
+            )
+          ),
+          _react2.default.createElement(
+            _reactToggleDisplay2.default,
+            { show: this.state.isVisibleSuccesSubscriptionMessage },
+            _react2.default.createElement(
+              'form',
+              { onSubmit: this.sendForm, action: '' },
+              _react2.default.createElement(
+                Message,
+                null,
+                _react2.default.createElement(
+                  _Text2.default,
+                  null,
+                  'Thank you for joining DEIP community. We have added you to our initial users list and provide you with a link as soon as an alfa version of DEIP platform is released.'
+                )
+              )
+            )
+          )
+        )
+      );
+    }
+  }]);
+
+  return TokensaleForm;
+}(_react.Component);
+
+exports.default = TokensaleForm;
+
+/***/ }),
+/* 94 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _templateObject = _taggedTemplateLiteral(['\n  padding-bottom: 10px;\n'], ['\n  padding-bottom: 10px;\n']);
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _propTypes = __webpack_require__(2);
+
+var _propTypes2 = _interopRequireDefault(_propTypes);
+
+var _styledComponents = __webpack_require__(1);
+
+var _styledComponents2 = _interopRequireDefault(_styledComponents);
+
+var _polished = __webpack_require__(11);
+
+var _Text = __webpack_require__(6);
+
+var _Text2 = _interopRequireDefault(_Text);
+
+var _Icon = __webpack_require__(9);
+
+var _Icon2 = _interopRequireDefault(_Icon);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
+
+function _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
+
+var Root = _styledComponents2.default.div.withConfig({
+  displayName: 'InputFull__Root',
+  componentId: 's1jnr980-0'
+})(['position:relative;']);
+
+var ph = function ph(p) {
+  return (0, _polished.placeholder)({ color: p.theme.palette.text.secondary });
+};
+
+var p = _styledComponents2.default.p.withConfig({
+  displayName: 'InputFull__p',
+  componentId: 's1jnr980-1'
+})(['margin:0;']);
+
+var HeaderInput = p.extend(_templateObject);
+
+var Comp = _styledComponents2.default.input.withConfig({
+  displayName: 'InputFull__Comp',
+  componentId: 's1jnr980-2'
+})(['border-radius:5px;border:1px solid ', ';font-size:16px;color:1px solid ', ';line-height:49px;padding:0 0px 0 16px;width:100%;min-width:0;transition:border 0.15s;', ';& + i{color:', ';transition:color 0.15s;}&:focus{outline:none;border:1px solid ', ';}&:focus + i{color:', ';}'], function (p) {
+  return p.theme.palette.primaryLight;
+}, function (p) {
+  return p.theme.palette.primary;
+}, ph, function (p) {
+  return p.theme.palette.primaryLight;
+}, function (p) {
+  return p.theme.palette.primary;
+}, function (p) {
+  return p.theme.palette.primary;
+});
+
+var InputFull = function InputFull(_ref) {
+  var type = _ref.type,
+      name = _ref.name,
+      placeholder = _ref.placeholder,
+      header = _ref.header,
+      rest = _objectWithoutProperties(_ref, ['type', 'name', 'placeholder', 'header']);
+
+  return _react2.default.createElement(
+    Root,
+    rest,
+    _react2.default.createElement(
+      HeaderInput,
+      null,
+      header
+    ),
+    _react2.default.createElement(Comp, { type: type, name: name, placeholder: placeholder })
+  );
+};
+
+exports.default = InputFull;
+
+/***/ }),
+/* 95 */
+/***/ (function(module, exports) {
+
+module.exports = require("react-simple-file-input");
+
+/***/ }),
+/* 96 */
+/***/ (function(module, exports) {
+
+module.exports = require("material-ui/CssBaseline");
+
+/***/ }),
+/* 97 */
+/***/ (function(module, exports) {
+
+module.exports = require("react-select");
+
+/***/ }),
+/* 98 */
+/***/ (function(module, exports) {
+
+module.exports = require("validator");
+
+/***/ }),
+/* 99 */
+/***/ (function(module, exports) {
+
+module.exports = require("react-validate");
+
+/***/ }),
+/* 100 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+exports.AU = [{ value: 'australian-capital-territory', label: 'Australian Capital Territory', className: 'State-ACT' }, { value: 'new-south-wales', label: 'New South Wales', className: 'State-NSW' }, { value: 'victoria', label: 'Victoria', className: 'State-Vic' }, { value: 'queensland', label: 'Queensland', className: 'State-Qld' }, { value: 'western-australia', label: 'Western Australia', className: 'State-WA' }, { value: 'south-australia', label: 'South Australia', className: 'State-SA' }, { value: 'tasmania', label: 'Tasmania', className: 'State-Tas' }, { value: 'northern-territory', label: 'Northern Territory', className: 'State-NT' }];
+
+exports.US = [{ value: 'AL', label: 'Alabama', disabled: true }, { value: 'AK', label: 'Alaska' }, { value: 'AS', label: 'American Samoa' }, { value: 'AZ', label: 'Arizona' }, { value: 'AR', label: 'Arkansas' }, { value: 'CA', label: 'California' }, { value: 'CO', label: 'Colorado' }, { value: 'CT', label: 'Connecticut' }, { value: 'DE', label: 'Delaware' }, { value: 'DC', label: 'District Of Columbia' }, { value: 'FM', label: 'Federated States Of Micronesia' }, { value: 'FL', label: 'Florida' }, { value: 'GA', label: 'Georgia' }, { value: 'GU', label: 'Guam' }, { value: 'HI', label: 'Hawaii' }, { value: 'ID', label: 'Idaho' }, { value: 'IL', label: 'Illinois' }, { value: 'IN', label: 'Indiana' }, { value: 'IA', label: 'Iowa' }, { value: 'KS', label: 'Kansas' }, { value: 'KY', label: 'Kentucky' }, { value: 'LA', label: 'Louisiana' }, { value: 'ME', label: 'Maine' }, { value: 'MH', label: 'Marshall Islands' }, { value: 'MD', label: 'Maryland' }, { value: 'MA', label: 'Massachusetts' }, { value: 'MI', label: 'Michigan' }, { value: 'MN', label: 'Minnesota' }, { value: 'MS', label: 'Mississippi' }, { value: 'MO', label: 'Missouri' }, { value: 'MT', label: 'Montana' }, { value: 'NE', label: 'Nebraska' }, { value: 'NV', label: 'Nevada' }, { value: 'NH', label: 'New Hampshire' }, { value: 'NJ', label: 'New Jersey' }, { value: 'NM', label: 'New Mexico' }, { value: 'NY', label: 'New York' }, { value: 'NC', label: 'North Carolina' }, { value: 'ND', label: 'North Dakota' }, { value: 'MP', label: 'Northern Mariana Islands' }, { value: 'OH', label: 'Ohio' }, { value: 'OK', label: 'Oklahoma' }, { value: 'OR', label: 'Oregon' }, { value: 'PW', label: 'Palau' }, { value: 'PA', label: 'Pennsylvania' }, { value: 'PR', label: 'Puerto Rico' }, { value: 'RI', label: 'Rhode Island' }, { value: 'SC', label: 'South Carolina' }, { value: 'SD', label: 'South Dakota' }, { value: 'TN', label: 'Tennessee' }, { value: 'TX', label: 'Texas' }, { value: 'UT', label: 'Utah' }, { value: 'VT', label: 'Vermont' }, { value: 'VI', label: 'Virgin Islands' }, { value: 'VA', label: 'Virginia' }, { value: 'WA', label: 'Washington' }, { value: 'WV', label: 'West Virginia' }, { value: 'WI', label: 'Wisconsin' }, { value: 'WY', label: 'Wyoming' }];
+
+exports.countries = [{ name: 'Belarus' }, { name: 'Russia' }];
+
+/***/ }),
+/* 101 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactStatic = __webpack_require__(7);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -5516,4 +6153,4 @@ exports.default = function () {
 /***/ })
 /******/ ]);
 });
-//# sourceMappingURL=app.static.18284d5b.js.map
+//# sourceMappingURL=app.static.39aaf50e.js.map
