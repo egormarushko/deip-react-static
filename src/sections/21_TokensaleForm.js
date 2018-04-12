@@ -33,12 +33,21 @@ const Select = styled.select`
   font-size: 16px;
   color: 1px solid ${p => p.theme.palette.primary};
   line-height: 49px;
-  padding: 0 48px 0 16px;
+  padding: 10px 48px 10px 16px;
   width: 100%;
   min-width: 0;
   transition: border 0.15s;
   position: relative;
   background-color: white;
+`
+const SelectBlock = styled.div`
+width: calc(100% / 2 - 32px);
+margin: 16px;
+
+${m.lessThan('small') `
+  width: 100%;
+  margin: 8px;
+`};
 `
 
 const CreatableDropdown = styled(Creatable) `
@@ -141,11 +150,10 @@ const Input = styled(inputfull) `
 `
 
 const Checkbox = styled(checkbox) `
-  width: calc(100% / 2 - 32px);
+  width: 100%;
   margin: 16px;
 
   ${m.lessThan('small') `
-    width: 100%;
     margin: 8px;
   `};
 `
@@ -250,56 +258,57 @@ class TokensaleForm extends Component {
                 The information you enter below will be verified by a member of our team, in order to make sure that the information you send is regulatory compliant, and that your local legislation allows you to participate.
               </Description>
               <Section>
-                <ControlBlock>
+                  <ControlBlock>
 
-                  <Input name="tokensaleName" 
-                    header="Name:" 
-                    type="text"
-                    placeholder="e.g. John Doe" 
-                    onChange={this.handleClickTest} 
-                    validations={[required, email]}
-                  />
+                    <Input name="tokensaleName"
+                      header="Name:"
+                      type="text"
+                      placeholder="e.g. John Doe"
+                      onChange={this.handleClickTest}
+                      validations={[required, email]}
+                    />
 
-                  <Validate validators={[validateEmail]}>
-                    <Input name="tokensaleEmail" 
-                      header="Email:" 
+                    <Input name="tokensaleEmail"
+                      header="Email:"
                       type="email"
-                      placeholder="name@email.com" 
+                      placeholder="name@email.com"
                       onChange={setValue}
                     />
-                    <ErrorMessage>Not a valid email</ErrorMessage>
-                  </Validate>
+                    <SelectBlock>
+                      <Text>[Test Header Text]:</Text>
+                      <Select name="tokensalePerson" onChange={setPerson}>
+                        <option value="person">Person</option>
+                        <option value="company">Company</option>
+                      </Select>
+                    </SelectBlock>
 
+                    <SelectBlock>
+                      <Text>Country of residence:</Text>
+                      <Select name="tokensaleCountry" onChange={setValue}>
+                        <option value=""></option>
+                        {
+                          countries.map((country, i) =>
+                            <option key={i} value={country.name}>{country.name}</option>
+                          )
+                        }
+                      </Select>
+                    </SelectBlock>
+                    <SelectBlock>
+                      <Text>Planned contribution:</Text>
+                      <Select name="tokensaleAmount" value={this.state.tokensaleAmount} onChange={setValue}>
+                        {
+                          this.amounts[this.state.tokensalePerson].map((amount, i) =>
+                            <option key={i} value={amount}>{amount}</option>
+                          )
+                        }
+                      </Select>
+                    </SelectBlock>
+                  </ControlBlock>
+                  <ControlBlock>
+                  <Checkbox type="checkbox" name="chekbox1">
+                  By accessing/registering the DEIP Platform, I expressly understand, accept and agree with the processing and storage by the Company of my personal data and the free circulation of such data.
+                    </Checkbox>
                 </ControlBlock>
-                <VerticalBlock>
-                  <Text>[Test Header Text]:</Text>
-
-                  <Select name="tokensalePerson" onChange={setPerson}>
-                    <option value="person">Person</option>
-                    <option value="company">Company</option>
-                  </Select>
-
-                  <Text>Country of residence:</Text>
-                  <Select name="tokensaleCountry" onChange={setValue}>
-                    <option value=""></option>
-                    {
-                      countries.map((country, i) => 
-                        <option key={ i } value={ country.name }>{ country.name }</option>
-                      )
-                    }
-                  </Select>
-                  
-                  <Text>Planned contribution:</Text>
-                  <Select name="tokensaleAmount" value={this.state.tokensaleAmount} onChange={setValue}>
-                      {
-                        this.amounts[ this.state.tokensalePerson ].map((amount, i) => 
-                          <option key={ i } value={ amount }>{ amount }</option>
-                        )
-                      }
-                  </Select>
-                  
-
-                </VerticalBlock>
                 {/* <VerticalBlock>
                       <Text>Identification:</Text>
                       <FileInput
@@ -307,14 +316,6 @@ class TokensaleForm extends Component {
                       />
                     </VerticalBlock> */}
               </Section>
-              <Section>
-                <ControlBlock>
-                  <Checkbox type="checkbox" name="chekbox1">
-                    Prepare your previous researches to be included into genesis block
-                    </Checkbox>
-                </ControlBlock>
-              </Section>
-
               <Button submit primary>
                 Send
               </Button>
