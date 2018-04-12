@@ -24,7 +24,6 @@ import { Creatable } from 'react-select'
 
 import validator from 'validator';
 import { Validate, ValidateGroup, ErrorMessage } from "react-validate";
-
 import { countries } from '../components/data/Country';
 
 const Select = styled.select`
@@ -164,7 +163,7 @@ class TokensaleForm extends Component {
     tokensaleName: '',
     tokensaleEmail: '',
     tokensalePerson: 'person',
-    tokensaleCountry: '',
+    tokensaleCountry: 'afghanistan',
     tokensaleAmount: '5 000 - 10 000',
   }
 
@@ -200,23 +199,16 @@ class TokensaleForm extends Component {
     var self = this;
 
     var form = {
-      generalInfo: {
-        fullName: this.state.tokensaleName,
-        email: this.state.tokensaleEmail
-      },
-      researcherInfo: {
-        tokensaleName: this.state.tokensaleName,
-        tokensaleEmail: this.state.tokensaleEmail,
-        tokensalePerson: this.state.tokensalePerson,
-        tokensaleCountry: this.state.tokensaleCountry,
-        tokensaleAmount: this.state.tokensaleAmount,
-      }
+      name: this.state.tokensaleName,
+      email: this.state.tokensaleEmail,
+      party: this.state.tokensalePerson,
+      country: this.state.tokensaleCountry,
+      amount: this.state.tokensaleAmount
     };
 
     console.log(form);
-    debugger    
-    
-    axios.post('http://146.185.140.12:3000/api/subscriber', form)
+
+    axios.post('http://146.185.140.12/api/token-sale-request', form)
       .then(function (response) {
         self.state.isVisibleSuccesSubscriptionMessage = true;
         self.forceUpdate();
@@ -238,7 +230,6 @@ class TokensaleForm extends Component {
     const { sendForm } = this
     const { setValue } = this
     const { setPerson } = this
-    const { handleClickTest } = this
 
     const validateEmail = validator.isEmail;
 
@@ -263,19 +254,20 @@ class TokensaleForm extends Component {
                     <Input name="tokensaleName"
                       header="Name:"
                       type="text"
+                      defaultValue=""
+                      required={true}
                       placeholder="e.g. John Doe"
-                      onChange={this.handleClickTest}
-                      validations={[required, email]}
-                    />
-
-                    <Input name="tokensaleEmail"
-                      header="Email:"
-                      type="email"
-                      placeholder="name@email.com"
                       onChange={setValue}
                     />
+                      <Input name="tokensaleEmail"
+                        header="Email:"
+                        type="email"
+                        required={true}
+                        placeholder="name@email.com"
+                        onChange={setValue}
+                      />
                     <SelectBlock>
-                      <Text>[Test Header Text]:</Text>
+                      <Text>Party:</Text>
                       <Select name="tokensalePerson" onChange={setPerson}>
                         <option value="person">Person</option>
                         <option value="company">Company</option>
@@ -285,7 +277,6 @@ class TokensaleForm extends Component {
                     <SelectBlock>
                       <Text>Country of residence:</Text>
                       <Select name="tokensaleCountry" onChange={setValue}>
-                        <option value=""></option>
                         {
                           countries.map((country, i) =>
                             <option key={i} value={country.name}>{country.name}</option>
@@ -305,7 +296,7 @@ class TokensaleForm extends Component {
                     </SelectBlock>
                   </ControlBlock>
                   <ControlBlock>
-                  <Checkbox type="checkbox" name="chekbox1">
+                  <Checkbox required={true} type="checkbox" name="tokensaleAgreement">
                   By accessing/registering the DEIP Platform, I expressly understand, accept and agree with the processing and storage by the Company of my personal data and the free circulation of such data.
                     </Checkbox>
                 </ControlBlock>
@@ -316,7 +307,7 @@ class TokensaleForm extends Component {
                       />
                     </VerticalBlock> */}
               </Section>
-              <Button submit primary>
+                <Button submit primary>
                 Send
               </Button>
 

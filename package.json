@@ -25,6 +25,7 @@
     "react-simple-file-input": "^2.1.0",
     "react-static": "^4.0.1",
     "react-toggle-display": "^2.2.0",
+    "react-validate": "^0.2.1",
     "react-validation": "^3.0.7",
     "recompose": "^0.26.0",
     "styled-components": "^2.2.3",

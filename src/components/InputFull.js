@@ -44,10 +44,10 @@ const Comp = styled.input`
   }
 `
 
-const InputFull = ({ type, name, placeholder, header, ...rest }) => (
+const InputFull = ({ type, name, placeholder, header, required, ...rest }) => (
   <Root {...rest}>
     <HeaderInput>{header}</HeaderInput>
-    <Comp type={type} name={name} placeholder={placeholder} />
+    <Comp type={type} name={name} placeholder={placeholder} required={required} />
   </Root>
 )
 
