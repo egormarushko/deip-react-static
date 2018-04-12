@@ -1742,7 +1742,7 @@ function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in ob
 
 var Root = _styledComponents2.default.div.withConfig({
   displayName: 'Input__Root',
-  componentId: 's1l2yb49-0'
+  componentId: 'e48itk-0'
 })(['position:relative;']);
 
 var ph = function ph(p) {
@@ -1751,7 +1751,7 @@ var ph = function ph(p) {
 
 var Comp = _styledComponents2.default.input.withConfig({
   displayName: 'Input__Comp',
-  componentId: 's1l2yb49-1'
+  componentId: 'e48itk-1'
 })(['border-radius:5px;border:1px solid ', ';font-size:16px;color:1px solid ', ';line-height:49px;padding:0 48px 0 16px;width:100%;min-width:0;transition:border 0.15s;', ';& + i{color:', ';transition:color 0.15s;}&:focus{outline:none;border:1px solid ', ';}&:focus + i{color:', ';}'], function (p) {
   return p.theme.palette.primaryLight;
 }, function (p) {
@@ -1766,7 +1766,7 @@ var Comp = _styledComponents2.default.input.withConfig({
 
 var Icon = (0, _styledComponents2.default)(_Icon2.default).withConfig({
   displayName: 'Input__Icon',
-  componentId: 's1l2yb49-2'
+  componentId: 'e48itk-2'
 })(['position:absolute;font-size:18px;line-height:49px;top:2px;right:16px;']);
 
 var Input = function Input(_ref) {
@@ -1774,12 +1774,13 @@ var Input = function Input(_ref) {
       type = _ref.type,
       name = _ref.name,
       placeholder = _ref.placeholder,
-      rest = _objectWithoutProperties(_ref, ['icon', 'type', 'name', 'placeholder']);
+      required = _ref.required,
+      rest = _objectWithoutProperties(_ref, ['icon', 'type', 'name', 'placeholder', 'required']);
 
   return _react2.default.createElement(
     Root,
     rest,
-    _react2.default.createElement(Comp, { type: type, name: name, placeholder: placeholder }),
+    _react2.default.createElement(Comp, { type: type, name: name, placeholder: placeholder, required: required }),
     _react2.default.createElement(
       Icon,
       null,
@@ -5647,7 +5648,7 @@ function _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defi
 
 var Select = _styledComponents2.default.select.withConfig({
   displayName: '21_TokensaleForm__Select',
-  componentId: 'p4x12x-0'
+  componentId: 's1esnsr8-0'
 })(['border-radius:5px;border:1px solid ', ';font-size:16px;color:1px solid ', ';line-height:49px;padding:10px 48px 10px 16px;width:100%;min-width:0;transition:border 0.15s;position:relative;background-color:white;'], function (p) {
   return p.theme.palette.primaryLight;
 }, function (p) {
@@ -5655,12 +5656,12 @@ var Select = _styledComponents2.default.select.withConfig({
 });
 var SelectBlock = _styledComponents2.default.div.withConfig({
   displayName: '21_TokensaleForm__SelectBlock',
-  componentId: 'p4x12x-1'
+  componentId: 's1esnsr8-1'
 })(['width:calc(100% / 2 - 32px);margin:16px;', ';'], _styles.m.lessThan('small')(_templateObject));
 
 var CreatableDropdown = (0, _styledComponents2.default)(_reactSelect.Creatable).withConfig({
   displayName: '21_TokensaleForm__CreatableDropdown',
-  componentId: 'p4x12x-2'
+  componentId: 's1esnsr8-2'
 })(['bottom:0;color:#aaa;left:0;line-height:34px;padding-left:10px;padding-right:10px;position:absolute;right:0;top:0;max-width:100%;overflow:hidden;-o-text-overflow:ellipsis;text-overflow:ellipsis;white-space:nowrap;']);
 
 var required = function required(value, props) {
@@ -5689,46 +5690,46 @@ var myOptions = [{ value: 'one', text: 'One' }, { value: 'two', text: 'Two' }, {
 
 var Root = _styledComponents2.default.section.withConfig({
   displayName: '21_TokensaleForm__Root',
-  componentId: 'p4x12x-3'
+  componentId: 's1esnsr8-3'
 })(['', ';padding:48px 0 0 0;'], _styles.container);
 
 var Section = _styledComponents2.default.div.withConfig({
   displayName: '21_TokensaleForm__Section',
-  componentId: 'p4x12x-4'
+  componentId: 's1esnsr8-4'
 })(['margin:48px 0;']);
 
 var Message = _styledComponents2.default.div.withConfig({
   displayName: '21_TokensaleForm__Message',
-  componentId: 'p4x12x-5'
+  componentId: 's1esnsr8-5'
 })(['padding-top:100px;height:450px;']);
 
 var Description = (0, _styledComponents2.default)(_Text2.default).withConfig({
   displayName: '21_TokensaleForm__Description',
-  componentId: 'p4x12x-6'
+  componentId: 's1esnsr8-6'
 })(['display:block;width:', '%;margin:0 auto;', ';'], 100 * 6 / 8, _styles.m.lessThan('small')(_templateObject2));
 
 var ControlBlock = _styledComponents2.default.div.withConfig({
   displayName: '21_TokensaleForm__ControlBlock',
-  componentId: 'p4x12x-7'
+  componentId: 's1esnsr8-7'
 })(['display:flex;flex-wrap:wrap;text-align:left;margin:0 -16px 16px -16px;', ';'], _styles.m.lessThan('small')(_templateObject3));
 var VerticalBlock = _styledComponents2.default.div.withConfig({
   displayName: '21_TokensaleForm__VerticalBlock',
-  componentId: 'p4x12x-8'
+  componentId: 's1esnsr8-8'
 })(['display:table-cell;flex-wrap:wrap;text-align:left;margin:0 -16px 32px -16px;', ';'], _styles.m.lessThan('small')(_templateObject3));
 
 var Radio = (0, _styledComponents2.default)(_RadioButton2.default).withConfig({
   displayName: '21_TokensaleForm__Radio',
-  componentId: 'p4x12x-9'
+  componentId: 's1esnsr8-9'
 })(['width:calc(100% / 2 - 32px);margin:16px;', ';'], _styles.m.lessThan('small')(_templateObject4));
 
 var Input = (0, _styledComponents2.default)(_InputFull2.default).withConfig({
   displayName: '21_TokensaleForm__Input',
-  componentId: 'p4x12x-10'
+  componentId: 's1esnsr8-10'
 })(['width:calc(100% / 2 - 32px);margin:16px;', ';'], _styles.m.lessThan('small')(_templateObject5));
 
 var Checkbox = (0, _styledComponents2.default)(_Checkbox2.default).withConfig({
   displayName: '21_TokensaleForm__Checkbox',
-  componentId: 'p4x12x-11'
+  componentId: 's1esnsr8-11'
 })(['width:100%;margin:16px;', ';'], _styles.m.lessThan('small')(_templateObject6));
 
 var TokensaleForm = function (_Component) {
@@ -5750,7 +5751,7 @@ var TokensaleForm = function (_Component) {
       tokensaleName: '',
       tokensaleEmail: '',
       tokensalePerson: 'person',
-      tokensaleCountry: '',
+      tokensaleCountry: 'afghanistan',
       tokensaleAmount: '5 000 - 10 000'
     }, _this.amounts = {
       company: ['25 000 - 100 000', '100 000 - 500 000', '500 000 - 1 000 000', '1 000 000 - 3 000 000'],
@@ -5768,23 +5769,16 @@ var TokensaleForm = function (_Component) {
       var self = _this;
 
       var form = {
-        generalInfo: {
-          fullName: _this.state.tokensaleName,
-          email: _this.state.tokensaleEmail
-        },
-        researcherInfo: {
-          tokensaleName: _this.state.tokensaleName,
-          tokensaleEmail: _this.state.tokensaleEmail,
-          tokensalePerson: _this.state.tokensalePerson,
-          tokensaleCountry: _this.state.tokensaleCountry,
-          tokensaleAmount: _this.state.tokensaleAmount
-        }
+        name: _this.state.tokensaleName,
+        email: _this.state.tokensaleEmail,
+        party: _this.state.tokensalePerson,
+        country: _this.state.tokensaleCountry,
+        amount: _this.state.tokensaleAmount
       };
 
       console.log(form);
-      debugger;
 
-      _axios2.default.post('http://146.185.140.12:3000/api/subscriber', form).then(function (response) {
+      _axios2.default.post('http://146.185.140.12/api/token-sale-request', form).then(function (response) {
         self.state.isVisibleSuccesSubscriptionMessage = true;
         self.forceUpdate();
         console.log(response);
@@ -5807,7 +5801,6 @@ var TokensaleForm = function (_Component) {
       var sendForm = this.sendForm;
       var setValue = this.setValue;
       var setPerson = this.setPerson;
-      var handleClickTest = this.handleClickTest;
 
 
       var validateEmail = _validator2.default.isEmail;
@@ -5854,13 +5847,15 @@ var TokensaleForm = function (_Component) {
                     _react2.default.createElement(Input, { name: 'tokensaleName',
                       header: 'Name:',
                       type: 'text',
+                      defaultValue: '',
+                      required: true,
                       placeholder: 'e.g. John Doe',
-                      onChange: this.handleClickTest,
-                      validations: [required, email]
+                      onChange: setValue
                     }),
                     _react2.default.createElement(Input, { name: 'tokensaleEmail',
                       header: 'Email:',
                       type: 'email',
+                      required: true,
                       placeholder: 'name@email.com',
                       onChange: setValue
                     }),
@@ -5870,7 +5865,7 @@ var TokensaleForm = function (_Component) {
                       _react2.default.createElement(
                         _Text2.default,
                         null,
-                        '[Test Header Text]:'
+                        'Party:'
                       ),
                       _react2.default.createElement(
                         Select,
@@ -5898,7 +5893,6 @@ var TokensaleForm = function (_Component) {
                       _react2.default.createElement(
                         Select,
                         { name: 'tokensaleCountry', onChange: setValue },
-                        _react2.default.createElement('option', { value: '' }),
                         _Country.countries.map(function (country, i) {
                           return _react2.default.createElement(
                             'option',
@@ -5934,7 +5928,7 @@ var TokensaleForm = function (_Component) {
                     null,
                     _react2.default.createElement(
                       Checkbox,
-                      { type: 'checkbox', name: 'chekbox1' },
+                      { required: true, type: 'checkbox', name: 'tokensaleAgreement' },
                       'By accessing/registering the DEIP Platform, I expressly understand, accept and agree with the processing and storage by the Company of my personal data and the free circulation of such data.'
                     )
                   )
@@ -6017,7 +6011,7 @@ function _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defi
 
 var Root = _styledComponents2.default.div.withConfig({
   displayName: 'InputFull__Root',
-  componentId: 's1jnr980-0'
+  componentId: 's8vxe4n-0'
 })(['position:relative;']);
 
 var ph = function ph(p) {
@@ -6026,14 +6020,14 @@ var ph = function ph(p) {
 
 var p = _styledComponents2.default.p.withConfig({
   displayName: 'InputFull__p',
-  componentId: 's1jnr980-1'
+  componentId: 's8vxe4n-1'
 })(['margin:0;']);
 
 var HeaderInput = p.extend(_templateObject);
 
 var Comp = _styledComponents2.default.input.withConfig({
   displayName: 'InputFull__Comp',
-  componentId: 's1jnr980-2'
+  componentId: 's8vxe4n-2'
 })(['border-radius:5px;border:1px solid ', ';font-size:16px;color:1px solid ', ';line-height:49px;padding:0 0px 0 16px;width:100%;min-width:0;transition:border 0.15s;', ';& + i{color:', ';transition:color 0.15s;}&:focus{outline:none;border:1px solid ', ';}&:focus + i{color:', ';}'], function (p) {
   return p.theme.palette.primaryLight;
 }, function (p) {
@@ -6051,7 +6045,8 @@ var InputFull = function InputFull(_ref) {
       name = _ref.name,
       placeholder = _ref.placeholder,
       header = _ref.header,
-      rest = _objectWithoutProperties(_ref, ['type', 'name', 'placeholder', 'header']);
+      required = _ref.required,
+      rest = _objectWithoutProperties(_ref, ['type', 'name', 'placeholder', 'header', 'required']);
 
   return _react2.default.createElement(
     Root,
@@ -6061,7 +6056,7 @@ var InputFull = function InputFull(_ref) {
       null,
       header
     ),
-    _react2.default.createElement(Comp, { type: type, name: name, placeholder: placeholder })
+    _react2.default.createElement(Comp, { type: type, name: name, placeholder: placeholder, required: required })
   );
 };
 
@@ -6104,11 +6099,7 @@ module.exports = require("react-validate");
 "use strict";
 
 
-exports.AU = [{ value: 'australian-capital-territory', label: 'Australian Capital Territory', className: 'State-ACT' }, { value: 'new-south-wales', label: 'New South Wales', className: 'State-NSW' }, { value: 'victoria', label: 'Victoria', className: 'State-Vic' }, { value: 'queensland', label: 'Queensland', className: 'State-Qld' }, { value: 'western-australia', label: 'Western Australia', className: 'State-WA' }, { value: 'south-australia', label: 'South Australia', className: 'State-SA' }, { value: 'tasmania', label: 'Tasmania', className: 'State-Tas' }, { value: 'northern-territory', label: 'Northern Territory', className: 'State-NT' }];
-
-exports.US = [{ value: 'AL', label: 'Alabama', disabled: true }, { value: 'AK', label: 'Alaska' }, { value: 'AS', label: 'American Samoa' }, { value: 'AZ', label: 'Arizona' }, { value: 'AR', label: 'Arkansas' }, { value: 'CA', label: 'California' }, { value: 'CO', label: 'Colorado' }, { value: 'CT', label: 'Connecticut' }, { value: 'DE', label: 'Delaware' }, { value: 'DC', label: 'District Of Columbia' }, { value: 'FM', label: 'Federated States Of Micronesia' }, { value: 'FL', label: 'Florida' }, { value: 'GA', label: 'Georgia' }, { value: 'GU', label: 'Guam' }, { value: 'HI', label: 'Hawaii' }, { value: 'ID', label: 'Idaho' }, { value: 'IL', label: 'Illinois' }, { value: 'IN', label: 'Indiana' }, { value: 'IA', label: 'Iowa' }, { value: 'KS', label: 'Kansas' }, { value: 'KY', label: 'Kentucky' }, { value: 'LA', label: 'Louisiana' }, { value: 'ME', label: 'Maine' }, { value: 'MH', label: 'Marshall Islands' }, { value: 'MD', label: 'Maryland' }, { value: 'MA', label: 'Massachusetts' }, { value: 'MI', label: 'Michigan' }, { value: 'MN', label: 'Minnesota' }, { value: 'MS', label: 'Mississippi' }, { value: 'MO', label: 'Missouri' }, { value: 'MT', label: 'Montana' }, { value: 'NE', label: 'Nebraska' }, { value: 'NV', label: 'Nevada' }, { value: 'NH', label: 'New Hampshire' }, { value: 'NJ', label: 'New Jersey' }, { value: 'NM', label: 'New Mexico' }, { value: 'NY', label: 'New York' }, { value: 'NC', label: 'North Carolina' }, { value: 'ND', label: 'North Dakota' }, { value: 'MP', label: 'Northern Mariana Islands' }, { value: 'OH', label: 'Ohio' }, { value: 'OK', label: 'Oklahoma' }, { value: 'OR', label: 'Oregon' }, { value: 'PW', label: 'Palau' }, { value: 'PA', label: 'Pennsylvania' }, { value: 'PR', label: 'Puerto Rico' }, { value: 'RI', label: 'Rhode Island' }, { value: 'SC', label: 'South Carolina' }, { value: 'SD', label: 'South Dakota' }, { value: 'TN', label: 'Tennessee' }, { value: 'TX', label: 'Texas' }, { value: 'UT', label: 'Utah' }, { value: 'VT', label: 'Vermont' }, { value: 'VI', label: 'Virgin Islands' }, { value: 'VA', label: 'Virginia' }, { value: 'WA', label: 'Washington' }, { value: 'WV', label: 'West Virginia' }, { value: 'WI', label: 'Wisconsin' }, { value: 'WY', label: 'Wyoming' }];
-
-exports.countries = [{ name: 'Belarus' }, { name: 'Russia' }];
+exports.countries = [{ name: 'Afghanistan', code: 'AF' }, { name: 'Åland Islands', code: 'AX' }, { name: 'Albania', code: 'AL' }, { name: 'Algeria', code: 'DZ' }, { name: 'American Samoa', code: 'AS' }, { name: 'AndorrA', code: 'AD' }, { name: 'Angola', code: 'AO' }, { name: 'Anguilla', code: 'AI' }, { name: 'Antarctica', code: 'AQ' }, { name: 'Antigua and Barbuda', code: 'AG' }, { name: 'Argentina', code: 'AR' }, { name: 'Armenia', code: 'AM' }, { name: 'Aruba', code: 'AW' }, { name: 'Australia', code: 'AU' }, { name: 'Austria', code: 'AT' }, { name: 'Azerbaijan', code: 'AZ' }, { name: 'Bahamas', code: 'BS' }, { name: 'Bahrain', code: 'BH' }, { name: 'Bangladesh', code: 'BD' }, { name: 'Barbados', code: 'BB' }, { name: 'Belarus', code: 'BY' }, { name: 'Belgium', code: 'BE' }, { name: 'Belize', code: 'BZ' }, { name: 'Benin', code: 'BJ' }, { name: 'Bermuda', code: 'BM' }, { name: 'Bhutan', code: 'BT' }, { name: 'Bolivia', code: 'BO' }, { name: 'Bosnia and Herzegovina', code: 'BA' }, { name: 'Botswana', code: 'BW' }, { name: 'Bouvet Island', code: 'BV' }, { name: 'Brazil', code: 'BR' }, { name: 'British Indian Ocean Territory', code: 'IO' }, { name: 'Brunei Darussalam', code: 'BN' }, { name: 'Bulgaria', code: 'BG' }, { name: 'Burkina Faso', code: 'BF' }, { name: 'Burundi', code: 'BI' }, { name: 'Cambodia', code: 'KH' }, { name: 'Cameroon', code: 'CM' }, { name: 'Canada', code: 'CA' }, { name: 'Cape Verde', code: 'CV' }, { name: 'Cayman Islands', code: 'KY' }, { name: 'Central African Republic', code: 'CF' }, { name: 'Chad', code: 'TD' }, { name: 'Chile', code: 'CL' }, { name: 'China', code: 'CN' }, { name: 'Christmas Island', code: 'CX' }, { name: 'Cocos (Keeling) Islands', code: 'CC' }, { name: 'Colombia', code: 'CO' }, { name: 'Comoros', code: 'KM' }, { name: 'Congo', code: 'CG' }, { name: 'Congo, The Democratic Republic of the', code: 'CD' }, { name: 'Cook Islands', code: 'CK' }, { name: 'Costa Rica', code: 'CR' }, { name: 'Cote D\'Ivoire', code: 'CI' }, { name: 'Croatia', code: 'HR' }, { name: 'Cuba', code: 'CU' }, { name: 'Cyprus', code: 'CY' }, { name: 'Czech Republic', code: 'CZ' }, { name: 'Denmark', code: 'DK' }, { name: 'Djibouti', code: 'DJ' }, { name: 'Dominica', code: 'DM' }, { name: 'Dominican Republic', code: 'DO' }, { name: 'Ecuador', code: 'EC' }, { name: 'Egypt', code: 'EG' }, { name: 'El Salvador', code: 'SV' }, { name: 'Equatorial Guinea', code: 'GQ' }, { name: 'Eritrea', code: 'ER' }, { name: 'Estonia', code: 'EE' }, { name: 'Ethiopia', code: 'ET' }, { name: 'Falkland Islands (Malvinas)', code: 'FK' }, { name: 'Faroe Islands', code: 'FO' }, { name: 'Fiji', code: 'FJ' }, { name: 'Finland', code: 'FI' }, { name: 'France', code: 'FR' }, { name: 'French Guiana', code: 'GF' }, { name: 'French Polynesia', code: 'PF' }, { name: 'French Southern Territories', code: 'TF' }, { name: 'Gabon', code: 'GA' }, { name: 'Gambia', code: 'GM' }, { name: 'Georgia', code: 'GE' }, { name: 'Germany', code: 'DE' }, { name: 'Ghana', code: 'GH' }, { name: 'Gibraltar', code: 'GI' }, { name: 'Greece', code: 'GR' }, { name: 'Greenland', code: 'GL' }, { name: 'Grenada', code: 'GD' }, { name: 'Guadeloupe', code: 'GP' }, { name: 'Guam', code: 'GU' }, { name: 'Guatemala', code: 'GT' }, { name: 'Guernsey', code: 'GG' }, { name: 'Guinea', code: 'GN' }, { name: 'Guinea-Bissau', code: 'GW' }, { name: 'Guyana', code: 'GY' }, { name: 'Haiti', code: 'HT' }, { name: 'Heard Island and Mcdonald Islands', code: 'HM' }, { name: 'Holy See (Vatican City State)', code: 'VA' }, { name: 'Honduras', code: 'HN' }, { name: 'Hong Kong', code: 'HK' }, { name: 'Hungary', code: 'HU' }, { name: 'Iceland', code: 'IS' }, { name: 'India', code: 'IN' }, { name: 'Indonesia', code: 'ID' }, { name: 'Iran, Islamic Republic Of', code: 'IR' }, { name: 'Iraq', code: 'IQ' }, { name: 'Ireland', code: 'IE' }, { name: 'Isle of Man', code: 'IM' }, { name: 'Israel', code: 'IL' }, { name: 'Italy', code: 'IT' }, { name: 'Jamaica', code: 'JM' }, { name: 'Japan', code: 'JP' }, { name: 'Jersey', code: 'JE' }, { name: 'Jordan', code: 'JO' }, { name: 'Kazakhstan', code: 'KZ' }, { name: 'Kenya', code: 'KE' }, { name: 'Kiribati', code: 'KI' }, { name: 'Korea, Democratic People\'S Republic of', code: 'KP' }, { name: 'Korea, Republic of', code: 'KR' }, { name: 'Kuwait', code: 'KW' }, { name: 'Kyrgyzstan', code: 'KG' }, { name: 'Lao People\'S Democratic Republic', code: 'LA' }, { name: 'Latvia', code: 'LV' }, { name: 'Lebanon', code: 'LB' }, { name: 'Lesotho', code: 'LS' }, { name: 'Liberia', code: 'LR' }, { name: 'Libyan Arab Jamahiriya', code: 'LY' }, { name: 'Liechtenstein', code: 'LI' }, { name: 'Lithuania', code: 'LT' }, { name: 'Luxembourg', code: 'LU' }, { name: 'Macao', code: 'MO' }, { name: 'Macedonia, The Former Yugoslav Republic of', code: 'MK' }, { name: 'Madagascar', code: 'MG' }, { name: 'Malawi', code: 'MW' }, { name: 'Malaysia', code: 'MY' }, { name: 'Maldives', code: 'MV' }, { name: 'Mali', code: 'ML' }, { name: 'Malta', code: 'MT' }, { name: 'Marshall Islands', code: 'MH' }, { name: 'Martinique', code: 'MQ' }, { name: 'Mauritania', code: 'MR' }, { name: 'Mauritius', code: 'MU' }, { name: 'Mayotte', code: 'YT' }, { name: 'Mexico', code: 'MX' }, { name: 'Micronesia, Federated States of', code: 'FM' }, { name: 'Moldova, Republic of', code: 'MD' }, { name: 'Monaco', code: 'MC' }, { name: 'Mongolia', code: 'MN' }, { name: 'Montserrat', code: 'MS' }, { name: 'Morocco', code: 'MA' }, { name: 'Mozambique', code: 'MZ' }, { name: 'Myanmar', code: 'MM' }, { name: 'Namibia', code: 'NA' }, { name: 'Nauru', code: 'NR' }, { name: 'Nepal', code: 'NP' }, { name: 'Netherlands', code: 'NL' }, { name: 'Netherlands Antilles', code: 'AN' }, { name: 'New Caledonia', code: 'NC' }, { name: 'New Zealand', code: 'NZ' }, { name: 'Nicaragua', code: 'NI' }, { name: 'Niger', code: 'NE' }, { name: 'Nigeria', code: 'NG' }, { name: 'Niue', code: 'NU' }, { name: 'Norfolk Island', code: 'NF' }, { name: 'Northern Mariana Islands', code: 'MP' }, { name: 'Norway', code: 'NO' }, { name: 'Oman', code: 'OM' }, { name: 'Pakistan', code: 'PK' }, { name: 'Palau', code: 'PW' }, { name: 'Palestinian Territory, Occupied', code: 'PS' }, { name: 'Panama', code: 'PA' }, { name: 'Papua New Guinea', code: 'PG' }, { name: 'Paraguay', code: 'PY' }, { name: 'Peru', code: 'PE' }, { name: 'Philippines', code: 'PH' }, { name: 'Pitcairn', code: 'PN' }, { name: 'Poland', code: 'PL' }, { name: 'Portugal', code: 'PT' }, { name: 'Puerto Rico', code: 'PR' }, { name: 'Qatar', code: 'QA' }, { name: 'Reunion', code: 'RE' }, { name: 'Romania', code: 'RO' }, { name: 'Russian Federation', code: 'RU' }, { name: 'RWANDA', code: 'RW' }, { name: 'Saint Helena', code: 'SH' }, { name: 'Saint Kitts and Nevis', code: 'KN' }, { name: 'Saint Lucia', code: 'LC' }, { name: 'Saint Pierre and Miquelon', code: 'PM' }, { name: 'Saint Vincent and the Grenadines', code: 'VC' }, { name: 'Samoa', code: 'WS' }, { name: 'San Marino', code: 'SM' }, { name: 'Sao Tome and Principe', code: 'ST' }, { name: 'Saudi Arabia', code: 'SA' }, { name: 'Senegal', code: 'SN' }, { name: 'Serbia and Montenegro', code: 'CS' }, { name: 'Seychelles', code: 'SC' }, { name: 'Sierra Leone', code: 'SL' }, { name: 'Singapore', code: 'SG' }, { name: 'Slovakia', code: 'SK' }, { name: 'Slovenia', code: 'SI' }, { name: 'Solomon Islands', code: 'SB' }, { name: 'Somalia', code: 'SO' }, { name: 'South Africa', code: 'ZA' }, { name: 'South Georgia and the South Sandwich Islands', code: 'GS' }, { name: 'Spain', code: 'ES' }, { name: 'Sri Lanka', code: 'LK' }, { name: 'Sudan', code: 'SD' }, { name: 'Suriname', code: 'SR' }, { name: 'Svalbard and Jan Mayen', code: 'SJ' }, { name: 'Swaziland', code: 'SZ' }, { name: 'Sweden', code: 'SE' }, { name: 'Switzerland', code: 'CH' }, { name: 'Syrian Arab Republic', code: 'SY' }, { name: 'Taiwan, Province of China', code: 'TW' }, { name: 'Tajikistan', code: 'TJ' }, { name: 'Tanzania, United Republic of', code: 'TZ' }, { name: 'Thailand', code: 'TH' }, { name: 'Timor-Leste', code: 'TL' }, { name: 'Togo', code: 'TG' }, { name: 'Tokelau', code: 'TK' }, { name: 'Tonga', code: 'TO' }, { name: 'Trinidad and Tobago', code: 'TT' }, { name: 'Tunisia', code: 'TN' }, { name: 'Turkey', code: 'TR' }, { name: 'Turkmenistan', code: 'TM' }, { name: 'Turks and Caicos Islands', code: 'TC' }, { name: 'Tuvalu', code: 'TV' }, { name: 'Uganda', code: 'UG' }, { name: 'Ukraine', code: 'UA' }, { name: 'United Arab Emirates', code: 'AE' }, { name: 'United Kingdom', code: 'GB' }, { name: 'United States', code: 'US' }, { name: 'United States Minor Outlying Islands', code: 'UM' }, { name: 'Uruguay', code: 'UY' }, { name: 'Uzbekistan', code: 'UZ' }, { name: 'Vanuatu', code: 'VU' }, { name: 'Venezuela', code: 'VE' }, { name: 'Viet Nam', code: 'VN' }, { name: 'Virgin Islands, British', code: 'VG' }, { name: 'Virgin Islands, U.S.', code: 'VI' }, { name: 'Wallis and Futuna', code: 'WF' }, { name: 'Western Sahara', code: 'EH' }, { name: 'Yemen', code: 'YE' }, { name: 'Zambia', code: 'ZM' }, { name: 'Zimbabwe', code: 'ZW' }];
 
 /***/ }),
 /* 101 */
@@ -6153,4 +6144,4 @@ exports.default = function () {
 /***/ })
 /******/ ]);
 });
-//# sourceMappingURL=app.static.39aaf50e.js.map
+//# sourceMappingURL=app.static.dda8a80c.js.map
