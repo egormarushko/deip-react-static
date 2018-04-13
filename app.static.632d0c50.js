@@ -4539,42 +4539,42 @@ function _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defi
 
 var Root = _styledComponents2.default.section.withConfig({
   displayName: '20_Poll__Root',
-  componentId: 'zpq9sm-0'
+  componentId: 's4u369g-0'
 })(['', ';padding:48px 0 0 0;'], _styles.container);
 
 var Section = _styledComponents2.default.div.withConfig({
   displayName: '20_Poll__Section',
-  componentId: 'zpq9sm-1'
+  componentId: 's4u369g-1'
 })(['margin:48px 0;']);
 
 var Message = _styledComponents2.default.div.withConfig({
   displayName: '20_Poll__Message',
-  componentId: 'zpq9sm-2'
+  componentId: 's4u369g-2'
 })(['padding-top:100px;height:450px;']);
 
 var Description = (0, _styledComponents2.default)(_Text2.default).withConfig({
   displayName: '20_Poll__Description',
-  componentId: 'zpq9sm-3'
+  componentId: 's4u369g-3'
 })(['display:block;width:', '%;margin:0 auto;', ';'], 100 * 6 / 8, _styles.m.lessThan('small')(_templateObject));
 
 var ControlBlock = _styledComponents2.default.div.withConfig({
   displayName: '20_Poll__ControlBlock',
-  componentId: 'zpq9sm-4'
+  componentId: 's4u369g-4'
 })(['display:flex;flex-wrap:wrap;text-align:left;margin:0 -16px 32px -16px;', ';'], _styles.m.lessThan('small')(_templateObject2));
 
 var Radio = (0, _styledComponents2.default)(_RadioButton2.default).withConfig({
   displayName: '20_Poll__Radio',
-  componentId: 'zpq9sm-5'
+  componentId: 's4u369g-5'
 })(['width:calc(100% / 4 - 32px);margin:16px;', ';'], _styles.m.lessThan('small')(_templateObject3));
 
 var Input = (0, _styledComponents2.default)(_Input2.default).withConfig({
   displayName: '20_Poll__Input',
-  componentId: 'zpq9sm-6'
+  componentId: 's4u369g-6'
 })(['width:calc(100% / 2 - 32px);margin:16px;', ';'], _styles.m.lessThan('small')(_templateObject4));
 
 var Checkbox = (0, _styledComponents2.default)(_Checkbox2.default).withConfig({
   displayName: '20_Poll__Checkbox',
-  componentId: 'zpq9sm-7'
+  componentId: 's4u369g-7'
 })(['width:calc(100% / 2 - 32px);margin:16px;', ';'], _styles.m.lessThan('small')(_templateObject4));
 
 var Poll = function (_Component) {
@@ -4698,18 +4698,18 @@ var Poll = function (_Component) {
       var self = _this;
       var form = {
         generalInfo: {
-          fullName: _this.collaboratorForm.name,
-          email: _this.collaboratorForm.email
+          fullName: _this.state.collaboratorName,
+          email: _this.state.collaboratorEmail
         },
         contributorInfo: {
-          region: _this.collaboratorForm.region,
-          promote: _this.collaboratorForm.promote,
-          speech: _this.collaboratorForm.speech,
-          attractResearchers: _this.collaboratorForm.attractResearchers,
-          participateInResearch: _this.collaboratorForm.participateInResearch,
-          gatherFeedback: _this.collaboratorForm.gatherFeedback,
-          advisor: _this.collaboratorForm.advisor,
-          message: _this.collaboratorForm.message
+          region: _this.state.collaboratorRegion,
+          promote: _this.state.collaboratorPromote,
+          speech: _this.state.collaboratorSpeech,
+          attractResearchers: _this.state.collaboratorAttractResearchers,
+          participateInResearch: _this.state.collaboratorParticipateInResearch,
+          gatherFeedback: _this.state.collaboratorGatherFeedback,
+          advisor: _this.state.collaboratorAdvisor,
+          message: _this.state.collaboratorMessage
         }
 
       };
@@ -4726,22 +4726,22 @@ var Poll = function (_Component) {
   _createClass(Poll, [{
     key: 'sendInvestorForm',
     value: function sendInvestorForm() {
-      var sel = this;
+      var self = this;
       var form = {
         generalInfo: {
-          fullName: this.investorForm.name,
-          email: this.investorForm.email
+          fullName: this.state.investorName,
+          email: this.state.investorEmail
         },
         investorInfo: {
-          buyResearchesTokens: this.investorForm.buyResearchesTokens,
-          privatePresale: this.investorForm.privatePresale,
-          crowdsale: this.investorForm.crowdsale,
-          researchesGrant: this.investorForm.researchesGrant,
-          disciplineGrant: this.investorForm.disciplineGrant,
-          message: this.investorForm.message
+          buyResearchesTokens: this.state.investorBuyResearchTokens,
+          privatePresale: this.state.investorPrivatePresale,
+          crowdsale: this.state.investorCrowdsale,
+          researchesGrant: this.state.investorResearchesGrant,
+          disciplineGrant: this.state.investorDisciplineGrant,
+          message: this.state.investorMessage
         }
-
       };
+
       console.log(form);
       _axios2.default.post('http://146.185.140.12/api/subscriber', form).then(function (response) {
         self.state.isVisibleSuccesSubscriptionMessage = true;
@@ -4757,17 +4757,17 @@ var Poll = function (_Component) {
       var self = this;
       var form = {
         generalInfo: {
-          fullName: this.organisationForm.delegateName,
-          email: this.organisationForm.email
+          fullName: this.state.organisationName,
+          email: this.state.organisationEmail
         },
         organisationInfo: {
-          organisationName: this.organisationForm.organisationName,
-          fieldOfActivity: this.organisationForm.fieldOfActivity,
-          applyTechnologies: this.organisationForm.applyTechnologies,
-          attractFunding: this.organisationForm.attractFunding,
-          determineDirection: this.organisationForm.determineDirection,
-          provideEquipment: this.organisationForm.provideEquipment,
-          message: this.organisationForm.message
+          organisationName: this.state.organisationDelegateName,
+          fieldOfActivity: this.state.organisationFieldOfActivity,
+          applyTechnologies: this.state.organisationApplyTechnologies,
+          attractFunding: this.state.organisationAttractFunding,
+          determineDirection: this.state.organisationDetermineDirection,
+          provideEquipment: this.state.organisationProvideEquipment,
+          message: this.state.organisationMessage
         }
 
       };
@@ -4874,18 +4874,20 @@ var Poll = function (_Component) {
                     _react2.default.createElement(
                       ControlBlock,
                       null,
-                      _react2.default.createElement(Input, { name: 'researcherName', icon: 'user', placeholder: 'Full name', onChange: setValue }),
+                      _react2.default.createElement(Input, { name: 'researcherName', icon: 'user', placeholder: 'Full name', onChange: setValue, required: true }),
                       _react2.default.createElement(Input, {
                         name: 'researcherAcademicDegree',
                         icon: 'graduation-cap',
                         placeholder: 'Academic degree',
+                        required: true,
                         onChange: setValue
                       }),
-                      _react2.default.createElement(Input, { name: 'researcherEmail', icon: 'envelope', placeholder: 'Email', onChange: setValue }),
+                      _react2.default.createElement(Input, { name: 'researcherEmail', icon: 'envelope', placeholder: 'Email', onChange: setValue, required: true, type: 'email' }),
                       _react2.default.createElement(Input, {
                         name: 'researcherAssociation',
                         icon: 'users',
                         placeholder: 'Association',
+                        required: true,
                         onChange: setValue
                       })
                     )
@@ -4991,9 +4993,9 @@ var Poll = function (_Component) {
                     _react2.default.createElement(
                       ControlBlock,
                       null,
-                      _react2.default.createElement(Input, { name: 'collaboratorName', icon: 'user', placeholder: 'Full name', onChange: setValue }),
-                      _react2.default.createElement(Input, { name: 'collaboratorRegion', icon: 'globe', placeholder: 'Region', onChange: setValue }),
-                      _react2.default.createElement(Input, { name: 'collaboratorEmail', icon: 'envelope', placeholder: 'Email', onChange: setValue })
+                      _react2.default.createElement(Input, { name: 'collaboratorName', icon: 'user', placeholder: 'Full name', required: true, onChange: setValue }),
+                      _react2.default.createElement(Input, { name: 'collaboratorRegion', icon: 'globe', placeholder: 'Region', required: true, onChange: setValue }),
+                      _react2.default.createElement(Input, { name: 'collaboratorEmail', icon: 'envelope', placeholder: 'Email', required: true, type: 'email', onChange: setValue })
                     )
                   ),
                   _react2.default.createElement(
@@ -5064,8 +5066,8 @@ var Poll = function (_Component) {
                     _react2.default.createElement(
                       ControlBlock,
                       null,
-                      _react2.default.createElement(Input, { name: 'investorName', icon: 'user', placeholder: 'Full name', onChange: setValue }),
-                      _react2.default.createElement(Input, { name: 'investorEmail', icon: 'envelope', placeholder: 'Email', onChange: setValue })
+                      _react2.default.createElement(Input, { name: 'investorName', icon: 'user', placeholder: 'Full name', required: true, onChange: setValue }),
+                      _react2.default.createElement(Input, { name: 'investorEmail', icon: 'envelope', placeholder: 'Email', required: true, type: 'email', onChange: setValue })
                     )
                   ),
                   _react2.default.createElement(
@@ -5161,21 +5163,24 @@ var Poll = function (_Component) {
                         name: 'organisationName',
                         icon: 'building',
                         placeholder: 'Organisation (Company, Univercity)',
+                        required: true,
                         onChange: setValue
                       }),
                       _react2.default.createElement(Input, {
                         name: 'organisationDelegateName',
                         icon: 'user',
                         placeholder: 'Contact person name',
+                        required: true,
                         onChange: setValue
                       }),
                       _react2.default.createElement(Input, {
                         name: 'organisationFieldOfActivity',
                         icon: 'book',
+                        required: true,
                         placeholder: 'Field of activity',
                         onChange: setValue
                       }),
-                      _react2.default.createElement(Input, { name: 'organisationEmail', icon: 'envelope', placeholder: 'Email', onChange: setValue })
+                      _react2.default.createElement(Input, { name: 'organisationEmail', icon: 'envelope', placeholder: 'Email', required: true, type: 'email', onChange: setValue })
                     )
                   ),
                   _react2.default.createElement(
@@ -6244,4 +6249,4 @@ exports.default = function () {
 /***/ })
 /******/ ]);
 });
-//# sourceMappingURL=app.static.fa9393b3.js.map
+//# sourceMappingURL=app.static.632d0c50.js.map
