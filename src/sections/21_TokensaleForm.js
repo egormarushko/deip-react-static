@@ -322,7 +322,7 @@ class TokensaleForm extends Component {
             <form onSubmit={this.sendForm} action="">
               <Message>
                 <Text>
-                Thank you for the participation. We will send you details soon.
+                Thank you for your interest in DEIP token sale. We will send you all the required details soon.
             </Text>
               </Message>
             </form>
