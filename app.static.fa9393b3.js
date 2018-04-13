@@ -5652,7 +5652,7 @@ function _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defi
 
 var Select = _styledComponents2.default.select.withConfig({
   displayName: '21_TokensaleForm__Select',
-  componentId: 's45hknm-0'
+  componentId: 's1ncqawz-0'
 })(['border-radius:5px;border:1px solid ', ';font-size:16px;color:1px solid ', ';line-height:49px;padding:0 0px 0 16px;width:100%;min-width:0;transition:border 0.15s;position:relative;background-color:white;-webkit-appearance:none;-moz-appearance:none;'], function (p) {
   return p.theme.palette.primaryLight;
 }, function (p) {
@@ -5660,12 +5660,12 @@ var Select = _styledComponents2.default.select.withConfig({
 });
 var SelectBlock = _styledComponents2.default.div.withConfig({
   displayName: '21_TokensaleForm__SelectBlock',
-  componentId: 's45hknm-1'
+  componentId: 's1ncqawz-1'
 })(['width:calc(100% / 2 - 32px);margin:16px;', ';'], _styles.m.lessThan('small')(_templateObject));
 
 var CreatableDropdown = (0, _styledComponents2.default)(_reactSelect.Creatable).withConfig({
   displayName: '21_TokensaleForm__CreatableDropdown',
-  componentId: 's45hknm-2'
+  componentId: 's1ncqawz-2'
 })(['bottom:0;color:#aaa;left:0;line-height:34px;padding-left:10px;padding-right:10px;position:absolute;right:0;top:0;max-width:100%;overflow:hidden;-o-text-overflow:ellipsis;text-overflow:ellipsis;white-space:nowrap;']);
 
 var required = function required(value, props) {
@@ -5694,51 +5694,51 @@ var myOptions = [{ value: 'one', text: 'One' }, { value: 'two', text: 'Two' }, {
 
 var Root = _styledComponents2.default.section.withConfig({
   displayName: '21_TokensaleForm__Root',
-  componentId: 's45hknm-3'
+  componentId: 's1ncqawz-3'
 })(['', ';padding:48px 0 0 0;'], _styles.container);
 
 var Section = _styledComponents2.default.div.withConfig({
   displayName: '21_TokensaleForm__Section',
-  componentId: 's45hknm-4'
+  componentId: 's1ncqawz-4'
 })(['margin:30px 0;']);
 
 var Message = _styledComponents2.default.div.withConfig({
   displayName: '21_TokensaleForm__Message',
-  componentId: 's45hknm-5'
+  componentId: 's1ncqawz-5'
 })(['padding-top:100px;height:450px;']);
 
 var Description = (0, _styledComponents2.default)(_Text2.default).withConfig({
   displayName: '21_TokensaleForm__Description',
-  componentId: 's45hknm-6'
+  componentId: 's1ncqawz-6'
 })(['display:block;width:', '%;margin:0 auto;', ';'], 100 * 6 / 8, _styles.m.lessThan('small')(_templateObject2));
 
 var ControlBlock = _styledComponents2.default.div.withConfig({
   displayName: '21_TokensaleForm__ControlBlock',
-  componentId: 's45hknm-7'
+  componentId: 's1ncqawz-7'
 })(['display:flex;flex-wrap:wrap;text-align:left;margin:0 -16px 16px -16px;', ';'], _styles.m.lessThan('small')(_templateObject3));
 var VerticalBlock = _styledComponents2.default.div.withConfig({
   displayName: '21_TokensaleForm__VerticalBlock',
-  componentId: 's45hknm-8'
+  componentId: 's1ncqawz-8'
 })(['display:table-cell;flex-wrap:wrap;text-align:left;margin:0 -16px 32px -16px;', ';'], _styles.m.lessThan('small')(_templateObject3));
 
 var Radio = (0, _styledComponents2.default)(_RadioButton2.default).withConfig({
   displayName: '21_TokensaleForm__Radio',
-  componentId: 's45hknm-9'
+  componentId: 's1ncqawz-9'
 })(['width:calc(100% / 2 - 32px);margin:16px;', ';'], _styles.m.lessThan('small')(_templateObject4));
 
 var Input = (0, _styledComponents2.default)(_InputFull2.default).withConfig({
   displayName: '21_TokensaleForm__Input',
-  componentId: 's45hknm-10'
+  componentId: 's1ncqawz-10'
 })(['width:calc(100% / 2 - 32px);margin:16px;', ';'], _styles.m.lessThan('small')(_templateObject5));
 
 var CustomSelect = (0, _styledComponents2.default)(_Select2.default).withConfig({
   displayName: '21_TokensaleForm__CustomSelect',
-  componentId: 's45hknm-11'
+  componentId: 's1ncqawz-11'
 })(['width:calc(100% / 2 - 32px);margin:16px;', ';'], _styles.m.lessThan('small')(_templateObject));
 
 var Checkbox = (0, _styledComponents2.default)(_Checkbox2.default).withConfig({
   displayName: '21_TokensaleForm__Checkbox',
-  componentId: 's45hknm-12'
+  componentId: 's1ncqawz-12'
 })(['width:100%;margin:16px;', ';'], _styles.m.lessThan('small')(_templateObject6));
 
 var TokensaleForm = function (_Component) {
@@ -5761,10 +5761,10 @@ var TokensaleForm = function (_Component) {
       tokensaleEmail: '',
       tokensalePerson: 'person',
       tokensaleCountry: 'afghanistan',
-      tokensaleAmount: '5 000 - 10 000'
+      tokensaleAmount: '€ 5,000 - € 10,000'
     }, _this.amounts = {
-      company: ['25 000 - 100 000', '100 000 - 500 000', '500 000 - 1 000 000', '1 000 000 - 3 000 000'],
-      person: ['5 000 - 10 000', '10 000 - 50 000', '50 000 - 100 000', '100 000 - 500 000']
+      company: ['€ 25,000 - € 100,000', '€ 100,000 - € 500,000', '€ 500,000 - € 1,000,000', '€ 1,000,000 - € 3,000,000'],
+      person: ['€ 5,000 - € 10,000', '€ 10,000 - € 50,000', '€ 50,000 - € 100,000', '€ 100,000 - € 500,000']
     }, _this.setShow = function (e) {
       return _this.setState({ value: e.target.id });
     }, _this.setValue = function (e) {
@@ -6244,4 +6244,4 @@ exports.default = function () {
 /***/ })
 /******/ ]);
 });
-//# sourceMappingURL=app.static.89c7aedb.js.map
+//# sourceMappingURL=app.static.fa9393b3.js.map
