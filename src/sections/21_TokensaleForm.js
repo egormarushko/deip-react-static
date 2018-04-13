@@ -15,6 +15,7 @@ import input from 'components/Input'
 import inputfull from 'components/InputFull'
 import checkbox from 'components/Checkbox'
 import TextArea from 'components/TextArea'
+import customSelect from 'components/Select'
 
 import axios from 'axios'
 import ToggleDisplay from 'react-toggle-display'
@@ -26,20 +27,22 @@ import validator from 'validator';
 import { Validate, ValidateGroup, ErrorMessage } from "react-validate";
 import { countries } from '../components/data/Country';
 
-const Select = styled.select`
+const Select = styled.select `
   border-radius: 5px;
   border: 1px solid ${p => p.theme.palette.primaryLight};
   font-size: 16px;
   color: 1px solid ${p => p.theme.palette.primary};
   line-height: 49px;
-  padding: 10px 48px 10px 16px;
+  padding: 0 0px 0 16px;
   width: 100%;
   min-width: 0;
   transition: border 0.15s;
   position: relative;
   background-color: white;
+  -webkit-appearance: none;
+  -moz-appearance: none;
 `
-const SelectBlock = styled.div`
+const SelectBlock = styled.div `
 width: calc(100% / 2 - 32px);
 margin: 16px;
 
@@ -89,7 +92,7 @@ const Root = styled.section`
   padding: 48px 0 0 0;
 `
 
-const Section = styled.div`margin: 48px 0;`
+const Section = styled.div`margin: 30px 0;`
 
 const Message = styled.div`
   padding-top: 100px;
@@ -146,6 +149,16 @@ const Input = styled(inputfull) `
     width: 100%;
     margin: 8px;
   `};
+`
+
+const CustomSelect = styled(customSelect) `
+width: calc(100% / 2 - 32px);
+margin: 16px;
+
+${m.lessThan('small') `
+  width: 100%;
+  margin: 8px;
+`};
 `
 
 const Checkbox = styled(checkbox) `
@@ -267,33 +280,24 @@ class TokensaleForm extends Component {
                         onChange={setValue}
                       />
                     <SelectBlock>
-                      <Text>Party:</Text>
+                      <Text style= {{ paddingBottom: '5px' }}>Party:</Text>
                       <Select name="tokensalePerson" onChange={setPerson}>
                         <option value="person">Person</option>
                         <option value="company">Company</option>
                       </Select>
                     </SelectBlock>
-
-                    <SelectBlock>
-                      <Text>Country of residence:</Text>
-                      <Select name="tokensaleCountry" onChange={setValue}>
-                        {
-                          countries.map((country, i) =>
-                            <option key={i} value={country.name}>{country.name}</option>
-                          )
-                        }
-                      </Select>
-                    </SelectBlock>
-                    <SelectBlock>
-                      <Text>Planned contribution:</Text>
-                      <Select name="tokensaleAmount" value={this.state.tokensaleAmount} onChange={setValue}>
-                        {
-                          this.amounts[this.state.tokensalePerson].map((amount, i) =>
-                            <option key={i} value={amount}>{amount}</option>
-                          )
-                        }
-                      </Select>
-                    </SelectBlock>
+                    <CustomSelect
+                      name ="tokensaleCountry"
+                      header = "Country of residence:"
+                      options = {countries}
+                      icon = "angle-down"
+                      onChange={setValue}/>
+                      <CustomSelect
+                      name ="tokensaleAmount"
+                      header = "Planned contribution:"
+                      options = {this.amounts[this.state.tokensalePerson]}
+                      icon = "angle-down"
+                      onChange={setValue}/>
                   </ControlBlock>
                   <ControlBlock>
                   <Checkbox required={true} type="checkbox" name="tokensaleAgreement">
