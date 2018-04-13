@@ -196,18 +196,18 @@ class Poll extends Component {
     var self = this;
     var form = {
       generalInfo: {
-        fullName: this.collaboratorForm.name,
-        email: this.collaboratorForm.email
+        fullName: this.state.collaboratorName,
+        email: this.state.collaboratorEmail
       },
       contributorInfo: {
-        region: this.collaboratorForm.region,
-        promote: this.collaboratorForm.promote,
-        speech: this.collaboratorForm.speech,
-        attractResearchers: this.collaboratorForm.attractResearchers,
-        participateInResearch: this.collaboratorForm.participateInResearch,
-        gatherFeedback: this.collaboratorForm.gatherFeedback,
-        advisor: this.collaboratorForm.advisor,
-        message: this.collaboratorForm.message
+        region: this.state.collaboratorRegion,
+        promote: this.state.collaboratorPromote,
+        speech: this.state.collaboratorSpeech,
+        attractResearchers: this.state.collaboratorAttractResearchers,
+        participateInResearch: this.state.collaboratorParticipateInResearch,
+        gatherFeedback: this.state.collaboratorGatherFeedback,
+        advisor: this.state.collaboratorAdvisor,
+        message: this.state.collaboratorMessage
       }
 
     };
@@ -223,22 +223,22 @@ class Poll extends Component {
       
   }
   sendInvestorForm() {
-    var sel = this;
+    var self = this;
     var form = {
       generalInfo: {
-        fullName: this.investorForm.name,
-        email: this.investorForm.email
+        fullName: this.state.investorName,
+        email: this.state.investorEmail
       },
       investorInfo: {
-        buyResearchesTokens: this.investorForm.buyResearchesTokens,
-        privatePresale: this.investorForm.privatePresale,
-        crowdsale: this.investorForm.crowdsale,
-        researchesGrant: this.investorForm.researchesGrant,
-        disciplineGrant: this.investorForm.disciplineGrant,
-        message: this.investorForm.message
+        buyResearchesTokens: this.state.investorBuyResearchTokens,
+        privatePresale: this.state.investorPrivatePresale,
+        crowdsale: this.state.investorCrowdsale,
+        researchesGrant: this.state.investorResearchesGrant,
+        disciplineGrant: this.state.investorDisciplineGrant,
+        message: this.state.investorMessage
       }
-
     };
+
     console.log(form);
     axios.post('http://146.185.140.12/api/subscriber', form)
       .then(function (response) {
@@ -254,17 +254,17 @@ class Poll extends Component {
     var self = this;
     var form = {
       generalInfo: {
-        fullName: this.organisationForm.delegateName,
-        email: this.organisationForm.email
+        fullName: this.state.organisationName,
+        email: this.state.organisationEmail
       },
       organisationInfo: {
-        organisationName: this.organisationForm.organisationName,
-        fieldOfActivity: this.organisationForm.fieldOfActivity,
-        applyTechnologies: this.organisationForm.applyTechnologies,
-        attractFunding: this.organisationForm.attractFunding,
-        determineDirection: this.organisationForm.determineDirection,
-        provideEquipment: this.organisationForm.provideEquipment,
-        message: this.organisationForm.message
+        organisationName: this.state.organisationDelegateName,
+        fieldOfActivity: this.state.organisationFieldOfActivity,
+        applyTechnologies: this.state.organisationApplyTechnologies,
+        attractFunding: this.state.organisationAttractFunding,
+        determineDirection: this.state.organisationDetermineDirection,
+        provideEquipment: this.state.organisationProvideEquipment,
+        message: this.state.organisationMessage
       }
 
     };
@@ -345,18 +345,20 @@ class Poll extends Component {
                   <Section>
                     <Heading type="sub">Basic information</Heading>
                     <ControlBlock>
-                      <Input name="researcherName" icon="user" placeholder="Full name" onChange={setValue} />
+                      <Input name="researcherName" icon="user" placeholder="Full name" onChange={setValue} required={true}/>
                       <Input
                         name="researcherAcademicDegree"
                         icon="graduation-cap"
                         placeholder="Academic degree"
+                        required={true}
                         onChange={setValue}
                       />
-                      <Input name="researcherEmail" icon="envelope" placeholder="Email" onChange={setValue} />
+                      <Input name="researcherEmail" icon="envelope" placeholder="Email" onChange={setValue} required={true} type="email"/>
                       <Input
                         name="researcherAssociation"
                         icon="users"
                         placeholder="Association"
+                        required={true}
                         onChange={setValue}
                       />
                     </ControlBlock>
@@ -416,9 +418,9 @@ class Poll extends Component {
                   <Section>
                     <Heading type="sub">Basic information</Heading>
                     <ControlBlock>
-                      <Input name="collaboratorName" icon="user" placeholder="Full name" onChange={setValue} />
-                      <Input name="collaboratorRegion" icon="globe" placeholder="Region" onChange={setValue} />
-                      <Input name="collaboratorEmail" icon="envelope" placeholder="Email" onChange={setValue} />
+                      <Input name="collaboratorName" icon="user" placeholder="Full name" required={true} onChange={setValue} />
+                      <Input name="collaboratorRegion" icon="globe" placeholder="Region" required={true} onChange={setValue} />
+                      <Input name="collaboratorEmail" icon="envelope" placeholder="Email" required={true} type="email" onChange={setValue} />
                     </ControlBlock>
                   </Section>
                   <Section>
@@ -461,8 +463,8 @@ class Poll extends Component {
                   <Section>
                     <Heading type="sub">Basic information</Heading>
                     <ControlBlock>
-                      <Input name="investorName" icon="user" placeholder="Full name" onChange={setValue} />
-                      <Input name="investorEmail" icon="envelope" placeholder="Email" onChange={setValue} />
+                      <Input name="investorName" icon="user" placeholder="Full name" required={true} onChange={setValue} />
+                      <Input name="investorEmail" icon="envelope" placeholder="Email"required={true} type="email" onChange={setValue} />
                     </ControlBlock>
                   </Section>
                   <Section>
@@ -519,21 +521,24 @@ class Poll extends Component {
                         name="organisationName"
                         icon="building"
                         placeholder="Organisation (Company, Univercity)"
+                        required={true}
                         onChange={setValue}
                       />
                       <Input
                         name="organisationDelegateName"
                         icon="user"
                         placeholder="Contact person name"
+                        required={true}
                         onChange={setValue}
                       />
                       <Input
                         name="organisationFieldOfActivity"
                         icon="book"
+                        required={true}
                         placeholder="Field of activity"
                         onChange={setValue}
                       />
-                      <Input name="organisationEmail" icon="envelope" placeholder="Email" onChange={setValue} />
+                      <Input name="organisationEmail" icon="envelope" placeholder="Email" required={true} type="email" onChange={setValue} />
                     </ControlBlock>
                   </Section>
                   <Section>
