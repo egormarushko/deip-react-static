@@ -1,4 +1,5 @@
 export const countries = [
+   'Belarus',  
    'Afghanistan',
    'Åland Islands',
    'Albania',
@@ -19,7 +20,6 @@ export const countries = [
    'Bahrain',
    'Bangladesh',
    'Barbados',
-   'Belarus',
    'Belgium',
    'Belize',
    'Benin',

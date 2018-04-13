@@ -259,7 +259,7 @@ class TokensaleForm extends Component {
                 <Heading>Pre-sale</Heading>
               </Section>
               <Description>
-                The information you enter below will be verified by a member of our team, in order to make sure that the information you send is regulatory compliant, and that your local legislation allows you to participate.
+              The information you enter below will be verified, in order to make sure that the information you send is regulatory compliant, and your local legislation allows you to participate.
               </Description>
               <Section>
                   <ControlBlock>
@@ -322,7 +322,7 @@ class TokensaleForm extends Component {
             <form onSubmit={this.sendForm} action="">
               <Message>
                 <Text>
-                  Thank you for joining DEIP community. We have added you to our initial users list and provide you with a link as soon as an alfa version of DEIP platform is released.
+                Thank you for the participation. We will send you details soon.
             </Text>
               </Message>
             </form>
