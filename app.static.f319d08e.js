@@ -5657,7 +5657,7 @@ function _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defi
 
 var Select = _styledComponents2.default.select.withConfig({
   displayName: '21_TokensaleForm__Select',
-  componentId: 's1ncqawz-0'
+  componentId: 'hvr8ng-0'
 })(['border-radius:5px;border:1px solid ', ';font-size:16px;color:1px solid ', ';line-height:49px;padding:0 0px 0 16px;width:100%;min-width:0;transition:border 0.15s;position:relative;background-color:white;-webkit-appearance:none;-moz-appearance:none;'], function (p) {
   return p.theme.palette.primaryLight;
 }, function (p) {
@@ -5665,12 +5665,12 @@ var Select = _styledComponents2.default.select.withConfig({
 });
 var SelectBlock = _styledComponents2.default.div.withConfig({
   displayName: '21_TokensaleForm__SelectBlock',
-  componentId: 's1ncqawz-1'
+  componentId: 'hvr8ng-1'
 })(['width:calc(100% / 2 - 32px);margin:16px;', ';'], _styles.m.lessThan('small')(_templateObject));
 
 var CreatableDropdown = (0, _styledComponents2.default)(_reactSelect.Creatable).withConfig({
   displayName: '21_TokensaleForm__CreatableDropdown',
-  componentId: 's1ncqawz-2'
+  componentId: 'hvr8ng-2'
 })(['bottom:0;color:#aaa;left:0;line-height:34px;padding-left:10px;padding-right:10px;position:absolute;right:0;top:0;max-width:100%;overflow:hidden;-o-text-overflow:ellipsis;text-overflow:ellipsis;white-space:nowrap;']);
 
 var required = function required(value, props) {
@@ -5699,51 +5699,51 @@ var myOptions = [{ value: 'one', text: 'One' }, { value: 'two', text: 'Two' }, {
 
 var Root = _styledComponents2.default.section.withConfig({
   displayName: '21_TokensaleForm__Root',
-  componentId: 's1ncqawz-3'
+  componentId: 'hvr8ng-3'
 })(['', ';padding:48px 0 0 0;'], _styles.container);
 
 var Section = _styledComponents2.default.div.withConfig({
   displayName: '21_TokensaleForm__Section',
-  componentId: 's1ncqawz-4'
+  componentId: 'hvr8ng-4'
 })(['margin:30px 0;']);
 
 var Message = _styledComponents2.default.div.withConfig({
   displayName: '21_TokensaleForm__Message',
-  componentId: 's1ncqawz-5'
+  componentId: 'hvr8ng-5'
 })(['padding-top:100px;height:450px;']);
 
 var Description = (0, _styledComponents2.default)(_Text2.default).withConfig({
   displayName: '21_TokensaleForm__Description',
-  componentId: 's1ncqawz-6'
+  componentId: 'hvr8ng-6'
 })(['display:block;width:', '%;margin:0 auto;', ';'], 100 * 6 / 8, _styles.m.lessThan('small')(_templateObject2));
 
 var ControlBlock = _styledComponents2.default.div.withConfig({
   displayName: '21_TokensaleForm__ControlBlock',
-  componentId: 's1ncqawz-7'
+  componentId: 'hvr8ng-7'
 })(['display:flex;flex-wrap:wrap;text-align:left;margin:0 -16px 16px -16px;', ';'], _styles.m.lessThan('small')(_templateObject3));
 var VerticalBlock = _styledComponents2.default.div.withConfig({
   displayName: '21_TokensaleForm__VerticalBlock',
-  componentId: 's1ncqawz-8'
+  componentId: 'hvr8ng-8'
 })(['display:table-cell;flex-wrap:wrap;text-align:left;margin:0 -16px 32px -16px;', ';'], _styles.m.lessThan('small')(_templateObject3));
 
 var Radio = (0, _styledComponents2.default)(_RadioButton2.default).withConfig({
   displayName: '21_TokensaleForm__Radio',
-  componentId: 's1ncqawz-9'
+  componentId: 'hvr8ng-9'
 })(['width:calc(100% / 2 - 32px);margin:16px;', ';'], _styles.m.lessThan('small')(_templateObject4));
 
 var Input = (0, _styledComponents2.default)(_InputFull2.default).withConfig({
   displayName: '21_TokensaleForm__Input',
-  componentId: 's1ncqawz-10'
+  componentId: 'hvr8ng-10'
 })(['width:calc(100% / 2 - 32px);margin:16px;', ';'], _styles.m.lessThan('small')(_templateObject5));
 
 var CustomSelect = (0, _styledComponents2.default)(_Select2.default).withConfig({
   displayName: '21_TokensaleForm__CustomSelect',
-  componentId: 's1ncqawz-11'
+  componentId: 'hvr8ng-11'
 })(['width:calc(100% / 2 - 32px);margin:16px;', ';'], _styles.m.lessThan('small')(_templateObject));
 
 var Checkbox = (0, _styledComponents2.default)(_Checkbox2.default).withConfig({
   displayName: '21_TokensaleForm__Checkbox',
-  componentId: 's1ncqawz-12'
+  componentId: 'hvr8ng-12'
 })(['width:100%;margin:16px;', ';'], _styles.m.lessThan('small')(_templateObject6));
 
 var TokensaleForm = function (_Component) {
@@ -5939,7 +5939,7 @@ var TokensaleForm = function (_Component) {
                 _react2.default.createElement(
                   _Text2.default,
                   null,
-                  'Thank you for the participation. We will send you details soon.'
+                  'Thank you for your interest in DEIP token sale. We will send you all the required details soon.'
                 )
               )
             )
@@ -6249,4 +6249,4 @@ exports.default = function () {
 /***/ })
 /******/ ]);
 });
-//# sourceMappingURL=app.static.632d0c50.js.map
+//# sourceMappingURL=app.static.f319d08e.js.map
