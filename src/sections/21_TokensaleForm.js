@@ -16,6 +16,7 @@ import inputfull from 'components/InputFull'
 import checkbox from 'components/Checkbox'
 import TextArea from 'components/TextArea'
 import customSelect from 'components/Select'
+import icon from 'components/Icon'
 
 import axios from 'axios'
 import ToggleDisplay from 'react-toggle-display'
@@ -41,32 +42,47 @@ const Select = styled.select `
   background-color: white;
   -webkit-appearance: none;
   -moz-appearance: none;
+
+  & + i {
+    color: ${p => p.theme.palette.primaryLight};
+    transition: color 0.15s;
+  }
+
+  &:focus {
+    outline: none;
+    border: 1px solid ${p => p.theme.palette.primary};
+  }
+
+  &:focus + i {
+    color: ${p => p.theme.palette.primary};
+  }
 `
 const SelectBlock = styled.div `
-width: calc(100% / 2 - 32px);
-margin: 16px;
+  width: calc(100% / 2 - 32px);
+  margin: 16px;
+  position: relative;
 
-${m.lessThan('small') `
-  width: 100%;
-  margin: 8px;
-`};
+  ${m.lessThan('small') `
+    width: 100%;
+    margin: 8px;
+  `};
 `
 
 const CreatableDropdown = styled(Creatable) `
-bottom: 0;
-color: #aaa;
-left: 0;
-line-height: 34px;
-padding-left: 10px;
-padding-right: 10px;
-position: absolute;
-right: 0;
-top: 0;
-max-width: 100%;
-overflow: hidden;
--o-text-overflow: ellipsis;
-text-overflow: ellipsis;
-white-space: nowrap;
+  bottom: 0;
+  color: #aaa;
+  left: 0;
+  line-height: 34px;
+  padding-left: 10px;
+  padding-right: 10px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  max-width: 100%;
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 `
 
 const required = (value, props) => {
@@ -141,6 +157,14 @@ const Radio = styled(radio) `
   `};
 `
 
+const Icon = styled(icon)`
+  position: absolute;
+  font-size: 18px;
+  line-height: 52px;
+  right: 16px;
+  pointer-events:none;
+`
+
 const Input = styled(inputfull) `
   width: calc(100% / 2 - 32px);
   margin: 16px;
@@ -152,13 +176,13 @@ const Input = styled(inputfull) `
 `
 
 const CustomSelect = styled(customSelect) `
-width: calc(100% / 2 - 32px);
-margin: 16px;
+  width: calc(100% / 2 - 32px);
+  margin: 16px;
 
-${m.lessThan('small') `
-  width: 100%;
-  margin: 8px;
-`};
+  ${m.lessThan('small') `
+    width: 100%;
+    margin: 8px;
+  `};
 `
 
 const Checkbox = styled(checkbox) `
@@ -176,7 +200,7 @@ class TokensaleForm extends Component {
     tokensaleName: '',
     tokensaleEmail: '',
     tokensalePerson: 'person',
-    tokensaleCountry: 'afghanistan',
+    tokensaleCountry: 'Belarus',
     tokensaleAmount: '€ 5,000 - € 10,000',
   }
 
@@ -233,7 +257,7 @@ class TokensaleForm extends Component {
   }
 
   handleClickTest = () => {
-    // debugger    
+    debugger    
     this;
     // this.form.validateAll();
   };
@@ -250,20 +274,23 @@ class TokensaleForm extends Component {
       <Root {...this.props}>
         <Menu attached />
         <MobileMenu attached />
+
         <Container>
           <ToggleDisplay show={!this.state.isVisibleSuccesSubscriptionMessage} tag="section">
+
             <form ref={c => { this.form = c }} onSubmit={this.sendForm} action="">
-            <ValidateGroup>
+              <ValidateGroup>
 
-              <Section>
-                <Heading>Pre-sale</Heading>
-              </Section>
-              <Description>
-              The information you enter below will be verified, in order to make sure that the information you send is regulatory compliant, and your local legislation allows you to participate.
-              </Description>
-              <Section>
+                <Section>
+                  <Heading>Pre-sale</Heading>
+                </Section>
+
+                <Description>
+                  The information you enter below will be verified, in order to make sure that the information you send is regulatory compliant, and your local legislation allows you to participate.
+                </Description>
+
+                <Section>
                   <ControlBlock>
-
                     <Input name="tokensaleName"
                       header="Name:"
                       type="text"
@@ -272,60 +299,54 @@ class TokensaleForm extends Component {
                       placeholder="e.g. John Doe"
                       onChange={setValue}
                     />
-                      <Input name="tokensaleEmail"
-                        header="Email:"
-                        type="email"
-                        required={true}
-                        placeholder="name@email.com"
-                        onChange={setValue}
-                      />
+                    <Input name="tokensaleEmail"
+                      header="Email:"
+                      type="email"
+                      required={true}
+                      placeholder="name@email.com"
+                      onChange={setValue}
+                    />
                     <SelectBlock>
-                      <Text style= {{ paddingBottom: '5px' }}>Party:</Text>
-                      <Select name="tokensalePerson" onChange={setPerson}>
-                        <option value="person">Person</option>
-                        <option value="company">Company</option>
-                      </Select>
+                        <Text style={{ paddingBottom: '5px' }}>Party:</Text>
+                        <Select name="tokensalePerson" onChange={setPerson}>
+                          <option value="person">Person</option>
+                          <option value="company">Company</option>
+                        </Select>
+                        <Icon>angle-down</Icon>
                     </SelectBlock>
                     <CustomSelect
                       name ="tokensaleCountry"
                       header = "Country of residence:"
                       options = {countries}
                       icon = "angle-down"
-                      onChange={setValue}/>
-                      <CustomSelect
+                      onChange={setValue}
+                    />
+                    <CustomSelect
                       name ="tokensaleAmount"
                       header = "Planned contribution:"
                       options = {this.amounts[this.state.tokensalePerson]}
                       icon = "angle-down"
-                      onChange={setValue}/>
+                      onChange={setValue}
+                    />
                   </ControlBlock>
+
                   <ControlBlock>
-                  <Checkbox required={true} type="checkbox" name="tokensaleAgreement">
-                  By accessing/registering the DEIP Platform, I expressly understand, accept and agree with the processing and storage by the Company of my personal data and the free circulation of such data.
+                    <Checkbox required={true} type="checkbox" name="tokensaleAgreement">
+                      By accessing/registering the DEIP Platform, I expressly understand, accept and agree with the processing and storage by the Company of my personal data and the free circulation of such data.
                     </Checkbox>
-                </ControlBlock>
-                {/* <VerticalBlock>
-                      <Text>Identification:</Text>
-                      <FileInput
-                        readAs='binary'
-                      />
-                    </VerticalBlock> */}
-              </Section>
-                <Button submit primary>
-                Send
-              </Button>
+                  </ControlBlock>
+                </Section>
+
+                <Button submit primary onClick={ this.handleClickTest }>Send</Button>
 
               </ValidateGroup>
             </form>
           </ToggleDisplay>
+
           <ToggleDisplay show={this.state.isVisibleSuccesSubscriptionMessage} >
-            <form onSubmit={this.sendForm} action="">
               <Message>
-                <Text>
-                Thank you for your interest in DEIP token sale. We will send you all the required details soon.
-            </Text>
+                <Text>Thank you for your interest in DEIP token sale. We will send you all the required details soon.</Text>
               </Message>
-            </form>
           </ToggleDisplay>
         </Container>
       </Root>
