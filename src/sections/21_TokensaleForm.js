@@ -34,6 +34,7 @@ const Select = styled.select `
   font-size: 16px;
   color: 1px solid ${p => p.theme.palette.primary};
   line-height: 49px;
+  height: 49px;
   padding: 0 0px 0 16px;
   width: 100%;
   min-width: 0;
@@ -259,7 +260,6 @@ class TokensaleForm extends Component {
   handleClickTest = () => {
     debugger    
     this;
-    // this.form.validateAll();
   };
 
   render() {
@@ -337,7 +337,7 @@ class TokensaleForm extends Component {
                   </ControlBlock>
                 </Section>
 
-                <Button submit primary onClick={ this.handleClickTest }>Send</Button>
+                <Button submit primary>Send</Button>
 
               </ValidateGroup>
             </form>

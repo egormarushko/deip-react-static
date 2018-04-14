@@ -16,6 +16,10 @@ const HeaderInput = p.extend`
   padding-bottom: 10px;
 `
 
+const ReqStar = styled.span`
+  color: #f00;
+`
+
 const Comp = styled.input`
   border-radius: 5px;
   border: 1px solid ${p => p.theme.palette.primaryLight};
@@ -26,6 +30,9 @@ const Comp = styled.input`
   width: 100%;
   min-width: 0;
   transition: border 0.15s;
+  
+  box-shadow: none;
+  outline: none;
 
   ${ph};
 
@@ -46,7 +53,10 @@ const Comp = styled.input`
 
 const InputFull = ({ type, name, placeholder, header, required, ...rest }) => (
   <Root {...rest}>
-    <HeaderInput>{header}</HeaderInput>
+    <HeaderInput>
+      {header}
+      { required === true ? <ReqStar>*</ReqStar> : null }
+    </HeaderInput>
     <Comp type={type} name={name} placeholder={placeholder} required={required} />
   </Root>
 )

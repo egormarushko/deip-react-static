@@ -22,6 +22,7 @@ const Comp = styled.select`
   font-size: 16px;
   color: 1px solid ${p => p.theme.palette.primary};
   line-height: 49px;
+  height: 49px;
   padding: 0 48px 0 16px;
   width: 100%;
   min-width: 0;
