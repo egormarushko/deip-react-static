@@ -74,19 +74,17 @@ export const Block = styled.div`
 
 // reused in the advisors section
 export const BlockIncompleteAdvisor = styled.div`
-  width: 72.5%;
-  display: inline-flex;
-  justify-content: space-between;
-  &:first-of-type {
+display: inline-flex;
+justify-content: space-around;
+&:first-of-type {
   margin-top: 48px;
 }
 
-  ${m.lessThan('small')`
-    width: 100%;
-    flex-flow: column;
-    align-items: center;
-    justify-content: flex-start;
-  `};
+${m.lessThan('small')`
+  flex-flow: column;
+  align-items: center;
+  justify-content: flex-start;
+`};
 `
 
 // reused in the advisors section
