@@ -32,7 +32,7 @@ export const Block = styled.div`
 const personsFirstRow = [
   { src: hdecastro, name: 'Julio O. De Castro', role: 'SCIENTIFIC ADVISOR, PROFESSOR AT IE BUSINESS SCHOOL (MADRID)', researchgate: 'https://www.researchgate.net/profile/Julio_Castro5'},    
   { src: soenkebartling, name: 'PD Dr. Sönke Bartling', role: 'SCIENTIFIC ADVISOR, BLOCKCHAINFORSCIENCE FOUNDER', linkedin: 'https://www.linkedin.com/in/soenkebartling/', twitter: 'https://twitter.com/soenkeba', researchgate: 'https://www.researchgate.net/profile/Soenke_Bartling'},  
-  { src: llozner, name: 'Leonid Lozner', role: 'PRODUCT ADVISOR', linkedin: 'https://www.linkedin.com/in/leonid-lozner-a83b0a57/'},  
+  { src: llozner, name: 'Leonid Lozner', role: 'PRODUCT ADVISOR, CO-FOUNDER OF EPAM Systems', linkedin: 'https://www.linkedin.com/in/leonid-lozner-a83b0a57/'},  
   { src: dklevzhits, name: 'Dmitry Klevzhits', role: 'SCIENTIFIC ADVISOR, PhD IN ECONOMICS', linkedin: 'https://www.linkedin.com/in/dmitry-klevzhits-25917413/'},  
 ]
 

@@ -182,7 +182,7 @@ class Poll extends Component {
 
     };
     console.log(form);
-    axios.post('http://146.185.140.12/api/subscriber', form)
+    axios.post('http://localhost:3000/api/subscriber', form)
       .then(function (response) {
         self.state.isVisibleSuccesSubscriptionMessage = true;
         self.forceUpdate();
