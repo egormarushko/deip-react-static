@@ -3277,10 +3277,10 @@ function _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defi
 
 var Block = exports.Block = _styledComponents2.default.div.withConfig({
   displayName: '05_Advisors__Block',
-  componentId: 's1chrdcu-0'
+  componentId: 'wv8g4r-0'
 })(['display:flex;justify-content:space-around;&:first-of-type{margin-top:48px;}', ';'], _styles.m.lessThan('small')(_templateObject));
 
-var personsFirstRow = [{ src: _hdecastro2.default, name: 'Julio O. De Castro', role: 'SCIENTIFIC ADVISOR, PROFESSOR AT IE BUSINESS SCHOOL (MADRID)', researchgate: 'https://www.researchgate.net/profile/Julio_Castro5' }, { src: _soenkebartling2.default, name: 'PD Dr. Sönke Bartling', role: 'SCIENTIFIC ADVISOR, BLOCKCHAINFORSCIENCE FOUNDER', linkedin: 'https://www.linkedin.com/in/soenkebartling/', twitter: 'https://twitter.com/soenkeba', researchgate: 'https://www.researchgate.net/profile/Soenke_Bartling' }, { src: _llozner2.default, name: 'Leonid Lozner', role: 'PRODUCT ADVISOR', linkedin: 'https://www.linkedin.com/in/leonid-lozner-a83b0a57/' }, { src: _dklevzhits2.default, name: 'Dmitry Klevzhits', role: 'SCIENTIFIC ADVISOR, PhD IN ECONOMICS', linkedin: 'https://www.linkedin.com/in/dmitry-klevzhits-25917413/' }];
+var personsFirstRow = [{ src: _hdecastro2.default, name: 'Julio O. De Castro', role: 'SCIENTIFIC ADVISOR, PROFESSOR AT IE BUSINESS SCHOOL (MADRID)', researchgate: 'https://www.researchgate.net/profile/Julio_Castro5' }, { src: _soenkebartling2.default, name: 'PD Dr. Sönke Bartling', role: 'SCIENTIFIC ADVISOR, BLOCKCHAINFORSCIENCE FOUNDER', linkedin: 'https://www.linkedin.com/in/soenkebartling/', twitter: 'https://twitter.com/soenkeba', researchgate: 'https://www.researchgate.net/profile/Soenke_Bartling' }, { src: _llozner2.default, name: 'Leonid Lozner', role: 'PRODUCT ADVISOR, CO-FOUNDER OF EPAM Systems', linkedin: 'https://www.linkedin.com/in/leonid-lozner-a83b0a57/' }, { src: _dklevzhits2.default, name: 'Dmitry Klevzhits', role: 'SCIENTIFIC ADVISOR, PhD IN ECONOMICS', linkedin: 'https://www.linkedin.com/in/dmitry-klevzhits-25917413/' }];
 
 var personsSecondRow = [{ src: _ayantsevich2.default, name: 'Aleksei Yantsevich', role: 'SENIOR RESEARCHER IN BIOORGANIC CHEMISTRY, PhD', researchgate: 'https://www.researchgate.net/profile/Aliaksei_Yantsevich' }, { src: _apobol2.default, name: 'Anna Pobol', role: 'SCIENTIFIC ADVISOR, PROFESSOR, PHD IN ECONOMICS', linkedin: 'https://www.linkedin.com/in/apobol/' }, { src: _akulichkin2.default, name: 'Anton Kulichkin', role: 'PARTNERSHIP ADVISOR', linkedin: 'https://www.linkedin.com/in/anton-kulichkin-b158a886/' }, { src: _nsvyaznoy2.default, name: 'Nikolay Svyaznoy', role: 'MARKETING ADVISOR' }];
 
@@ -4559,42 +4559,42 @@ function _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defi
 
 var Root = _styledComponents2.default.section.withConfig({
   displayName: '20_Poll__Root',
-  componentId: 's4u369g-0'
+  componentId: 'gd1el4-0'
 })(['', ';padding:48px 0 0 0;'], _styles.container);
 
 var Section = _styledComponents2.default.div.withConfig({
   displayName: '20_Poll__Section',
-  componentId: 's4u369g-1'
+  componentId: 'gd1el4-1'
 })(['margin:48px 0;']);
 
 var Message = _styledComponents2.default.div.withConfig({
   displayName: '20_Poll__Message',
-  componentId: 's4u369g-2'
+  componentId: 'gd1el4-2'
 })(['padding-top:100px;height:450px;']);
 
 var Description = (0, _styledComponents2.default)(_Text2.default).withConfig({
   displayName: '20_Poll__Description',
-  componentId: 's4u369g-3'
+  componentId: 'gd1el4-3'
 })(['display:block;width:', '%;margin:0 auto;', ';'], 100 * 6 / 8, _styles.m.lessThan('small')(_templateObject));
 
 var ControlBlock = _styledComponents2.default.div.withConfig({
   displayName: '20_Poll__ControlBlock',
-  componentId: 's4u369g-4'
+  componentId: 'gd1el4-4'
 })(['display:flex;flex-wrap:wrap;text-align:left;margin:0 -16px 32px -16px;', ';'], _styles.m.lessThan('small')(_templateObject2));
 
 var Radio = (0, _styledComponents2.default)(_RadioButton2.default).withConfig({
   displayName: '20_Poll__Radio',
-  componentId: 's4u369g-5'
+  componentId: 'gd1el4-5'
 })(['width:calc(100% / 4 - 32px);margin:16px;', ';'], _styles.m.lessThan('small')(_templateObject3));
 
 var Input = (0, _styledComponents2.default)(_Input2.default).withConfig({
   displayName: '20_Poll__Input',
-  componentId: 's4u369g-6'
+  componentId: 'gd1el4-6'
 })(['width:calc(100% / 2 - 32px);margin:16px;', ';'], _styles.m.lessThan('small')(_templateObject4));
 
 var Checkbox = (0, _styledComponents2.default)(_Checkbox2.default).withConfig({
   displayName: '20_Poll__Checkbox',
-  componentId: 's4u369g-7'
+  componentId: 'gd1el4-7'
 })(['width:calc(100% / 2 - 32px);margin:16px;', ';'], _styles.m.lessThan('small')(_templateObject4));
 
 var Poll = function (_Component) {
@@ -4707,7 +4707,7 @@ var Poll = function (_Component) {
 
       };
       console.log(form);
-      _axios2.default.post('http://146.185.140.12/api/subscriber', form).then(function (response) {
+      _axios2.default.post('http://localhost:3000/api/subscriber', form).then(function (response) {
         self.state.isVisibleSuccesSubscriptionMessage = true;
         self.forceUpdate();
         console.log(response);
@@ -6295,4 +6295,4 @@ exports.default = function () {
 /***/ })
 /******/ ]);
 });
-//# sourceMappingURL=app.static.0e1a4479.js.map
+//# sourceMappingURL=app.static.088a1fcb.js.map
