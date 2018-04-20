@@ -3277,10 +3277,10 @@ function _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defi
 
 var Block = exports.Block = _styledComponents2.default.div.withConfig({
   displayName: '05_Advisors__Block',
-  componentId: 'wv8g4r-0'
+  componentId: 's7z2ai2-0'
 })(['display:flex;justify-content:space-around;&:first-of-type{margin-top:48px;}', ';'], _styles.m.lessThan('small')(_templateObject));
 
-var personsFirstRow = [{ src: _hdecastro2.default, name: 'Julio O. De Castro', role: 'SCIENTIFIC ADVISOR, PROFESSOR AT IE BUSINESS SCHOOL (MADRID)', researchgate: 'https://www.researchgate.net/profile/Julio_Castro5' }, { src: _soenkebartling2.default, name: 'PD Dr. Sönke Bartling', role: 'SCIENTIFIC ADVISOR, BLOCKCHAINFORSCIENCE FOUNDER', linkedin: 'https://www.linkedin.com/in/soenkebartling/', twitter: 'https://twitter.com/soenkeba', researchgate: 'https://www.researchgate.net/profile/Soenke_Bartling' }, { src: _llozner2.default, name: 'Leonid Lozner', role: 'PRODUCT ADVISOR, CO-FOUNDER OF EPAM Systems', linkedin: 'https://www.linkedin.com/in/leonid-lozner-a83b0a57/' }, { src: _dklevzhits2.default, name: 'Dmitry Klevzhits', role: 'SCIENTIFIC ADVISOR, PhD IN ECONOMICS', linkedin: 'https://www.linkedin.com/in/dmitry-klevzhits-25917413/' }];
+var personsFirstRow = [{ src: _hdecastro2.default, name: 'Julio O. De Castro', role: 'SCIENTIFIC ADVISOR, PROFESSOR AT IE BUSINESS SCHOOL (MADRID)', researchgate: 'https://www.researchgate.net/profile/Julio_Castro5' }, { src: _soenkebartling2.default, name: 'PD Dr. Sönke Bartling', role: 'SCIENTIFIC ADVISOR, BLOCKCHAINFORSCIENCE FOUNDER', linkedin: 'https://www.linkedin.com/in/soenkebartling/', twitter: 'https://twitter.com/soenkeba', researchgate: 'https://www.researchgate.net/profile/Soenke_Bartling' }, { src: _llozner2.default, name: 'Leonid Lozner', role: 'PRODUCT ADVISOR, CO-FOUNDER OF EPAM SYSTEMS', linkedin: 'https://www.linkedin.com/in/leonid-lozner-a83b0a57/' }, { src: _dklevzhits2.default, name: 'Dmitry Klevzhits', role: 'SCIENTIFIC ADVISOR, PhD IN ECONOMICS', linkedin: 'https://www.linkedin.com/in/dmitry-klevzhits-25917413/' }];
 
 var personsSecondRow = [{ src: _ayantsevich2.default, name: 'Aleksei Yantsevich', role: 'SENIOR RESEARCHER IN BIOORGANIC CHEMISTRY, PhD', researchgate: 'https://www.researchgate.net/profile/Aliaksei_Yantsevich' }, { src: _apobol2.default, name: 'Anna Pobol', role: 'SCIENTIFIC ADVISOR, PROFESSOR, PHD IN ECONOMICS', linkedin: 'https://www.linkedin.com/in/apobol/' }, { src: _akulichkin2.default, name: 'Anton Kulichkin', role: 'PARTNERSHIP ADVISOR', linkedin: 'https://www.linkedin.com/in/anton-kulichkin-b158a886/' }, { src: _nsvyaznoy2.default, name: 'Nikolay Svyaznoy', role: 'MARKETING ADVISOR' }];
 
@@ -6295,4 +6295,4 @@ exports.default = function () {
 /***/ })
 /******/ ]);
 });
-//# sourceMappingURL=app.static.088a1fcb.js.map
+//# sourceMappingURL=app.static.6edc751c.js.map
