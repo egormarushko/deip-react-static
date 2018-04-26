@@ -16,7 +16,7 @@ import Footer from 'sections/10_Footer'
 const Index = ({ someData }) => (
   <div>
     <Head>
-      <title>DEIP — decentralized scientific platform</title>
+      <title>DEIP — decentralized research platform</title>
     </Head>
     <Hero id="hero" />
     <Vision id="vision" />

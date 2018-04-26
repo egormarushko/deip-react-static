@@ -66,7 +66,7 @@ const Hero = () => (
     <MobileMenu />
     <Container>
       <Logo>DEIP</Logo>
-      <Description>decentralized scientific platform</Description>
+      <Description>decentralized research platform</Description>
       <ButtonsLine>
         <Button primary to="/join">
           join us
