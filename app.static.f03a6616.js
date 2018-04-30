@@ -4569,42 +4569,42 @@ function _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defi
 
 var Root = _styledComponents2.default.section.withConfig({
   displayName: '20_Poll__Root',
-  componentId: 'gd1el4-0'
+  componentId: 's4u369g-0'
 })(['', ';padding:48px 0 0 0;'], _styles.container);
 
 var Section = _styledComponents2.default.div.withConfig({
   displayName: '20_Poll__Section',
-  componentId: 'gd1el4-1'
+  componentId: 's4u369g-1'
 })(['margin:48px 0;']);
 
 var Message = _styledComponents2.default.div.withConfig({
   displayName: '20_Poll__Message',
-  componentId: 'gd1el4-2'
+  componentId: 's4u369g-2'
 })(['padding-top:100px;height:450px;']);
 
 var Description = (0, _styledComponents2.default)(_Text2.default).withConfig({
   displayName: '20_Poll__Description',
-  componentId: 'gd1el4-3'
+  componentId: 's4u369g-3'
 })(['display:block;width:', '%;margin:0 auto;', ';'], 100 * 6 / 8, _styles.m.lessThan('small')(_templateObject));
 
 var ControlBlock = _styledComponents2.default.div.withConfig({
   displayName: '20_Poll__ControlBlock',
-  componentId: 'gd1el4-4'
+  componentId: 's4u369g-4'
 })(['display:flex;flex-wrap:wrap;text-align:left;margin:0 -16px 32px -16px;', ';'], _styles.m.lessThan('small')(_templateObject2));
 
 var Radio = (0, _styledComponents2.default)(_RadioButton2.default).withConfig({
   displayName: '20_Poll__Radio',
-  componentId: 'gd1el4-5'
+  componentId: 's4u369g-5'
 })(['width:calc(100% / 4 - 32px);margin:16px;', ';'], _styles.m.lessThan('small')(_templateObject3));
 
 var Input = (0, _styledComponents2.default)(_Input2.default).withConfig({
   displayName: '20_Poll__Input',
-  componentId: 'gd1el4-6'
+  componentId: 's4u369g-6'
 })(['width:calc(100% / 2 - 32px);margin:16px;', ';'], _styles.m.lessThan('small')(_templateObject4));
 
 var Checkbox = (0, _styledComponents2.default)(_Checkbox2.default).withConfig({
   displayName: '20_Poll__Checkbox',
-  componentId: 'gd1el4-7'
+  componentId: 's4u369g-7'
 })(['width:calc(100% / 2 - 32px);margin:16px;', ';'], _styles.m.lessThan('small')(_templateObject4));
 
 var Poll = function (_Component) {
@@ -4717,7 +4717,7 @@ var Poll = function (_Component) {
 
       };
       console.log(form);
-      _axios2.default.post('http://localhost:3000/api/subscriber', form).then(function (response) {
+      _axios2.default.post('http://146.185.140.12/api/subscriber', form).then(function (response) {
         self.state.isVisibleSuccesSubscriptionMessage = true;
         self.forceUpdate();
         console.log(response);
@@ -6305,4 +6305,4 @@ exports.default = function () {
 /***/ })
 /******/ ]);
 });
-//# sourceMappingURL=app.static.d718ca4a.js.map
+//# sourceMappingURL=app.static.f03a6616.js.map
