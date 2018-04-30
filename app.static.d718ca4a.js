@@ -115,7 +115,7 @@ var container = exports.container = function container(p) {
 
 var m = exports.m = (0, _styledMediaQuery.generateMedia)({
   small: '900px',
-  medium: '1024px'
+  medium: '1127px'
 
 });
 
@@ -644,21 +644,21 @@ function _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defi
 
 var Logo = exports.Logo = (0, _styledComponents2.default)(_reactStatic.Link).withConfig({
   displayName: 'Menu__Logo',
-  componentId: 's9e592i-0'
+  componentId: 's1k5dzqd-0'
 })(['visibility:hidden;font-weight:700;font-size:32px;text-decoration:none;color:', ';'], function (p) {
   return p.theme.palette.text.primary;
 });
 
 var Link = exports.Link = (0, _styledComponents2.default)(_reactStatic.Link).withConfig({
   displayName: 'Menu__Link',
-  componentId: 's9e592i-1'
+  componentId: 's1k5dzqd-1'
 })(['display:inline-block;font-weight:500;font-size:16px;color:#fff;text-transform:uppercase;text-decoration:none;&:not(:last-child){margin-right:32px;}']);
 
 var Anchor = exports.Anchor = Link.withComponent('a');
 
 var Nav = _styledComponents2.default.div.withConfig({
   displayName: 'Menu__Nav',
-  componentId: 's9e592i-2'
+  componentId: 's1k5dzqd-2'
 })(['']);
 
 var attached = (0, _styledComponents.css)(['position:fixed;background:#fff;box-shadow:0px 1px 14px rgba(0,0,0,0.12);', '{visibility:visible;}', ',', '{color:', ';}'], Logo, Link, Anchor, function (p) {
@@ -667,14 +667,14 @@ var attached = (0, _styledComponents.css)(['position:fixed;background:#fff;box-s
 
 var Root = _styledComponents2.default.div.withConfig({
   displayName: 'Menu__Root',
-  componentId: 's9e592i-3'
+  componentId: 's1k5dzqd-3'
 })(['z-index:10;position:absolute;width:100%;top:0;left:0;', ';', ';'], function (p) {
   return p.attached ? attached : '';
 }, _styles.m.lessThan('medium')(_templateObject));
 
 var Content = _styledComponents2.default.div.withConfig({
   displayName: 'Menu__Content',
-  componentId: 's9e592i-4'
+  componentId: 's1k5dzqd-4'
 })(['display:flex;align-items:center;justify-content:space-between;width:100%;height:60px;padding:0 48px;']);
 
 var Menu = function (_Component) {
@@ -777,6 +777,11 @@ var Menu = function (_Component) {
               { href: '/#partners' },
               'Partners'
             ),
+            _react2.default.createElement(
+              Anchor,
+              { href: '/presale' },
+              'Pre-sale'
+            ),
             attached ? _react2.default.createElement(
               _Button2.default,
               { primary: true, to: '/join' },
@@ -858,22 +863,22 @@ function _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defi
 
 var Toggler = _styledComponents2.default.a.withConfig({
   displayName: 'MobileMenu__Toggler',
-  componentId: 's188gplc-0'
+  componentId: 's1szpuo0-0'
 })(['font-size:24px;line-height:60px;color:#fff;width:60px;height:60px;.open{display:inline-block;}.close{display:none;}', ';'], _styles.m.greaterThan('medium')(_templateObject));
 
 var Top = _styledComponents2.default.div.withConfig({
   displayName: 'MobileMenu__Top',
-  componentId: 's188gplc-1'
+  componentId: 's1szpuo0-1'
 })(['display:flex;align-items:center;justify-content:space-between;padding-left:16px;height:60px;min-height:60px;']);
 
 var Nav = _styledComponents2.default.div.withConfig({
   displayName: 'MobileMenu__Nav',
-  componentId: 's188gplc-2'
+  componentId: 's1szpuo0-2'
 })(['display:none;flex-flow:column;align-items:center;justify-content:space-between;height:100%;']);
 
 var Links = _styledComponents2.default.div.withConfig({
   displayName: 'MobileMenu__Links',
-  componentId: 's188gplc-3'
+  componentId: 's1szpuo0-3'
 })(['display:flex;flex-flow:column;align-items:center;padding-top:32px;']);
 
 var opened = (0, _styledComponents.css)(['position:fixed;background:#fff;height:100%;.open{display:none;}.close{display:inline-block;}', '{visibility:visible;}', '{display:flex;}', ',', ',', '{color:inherit;}'], _Menu.Logo, Nav, _Menu.Link, _Menu.Anchor, Toggler);
@@ -882,7 +887,7 @@ var attached = (0, _styledComponents.css)(['position:fixed;background:#fff;box-s
 
 var Root = _styledComponents2.default.div.withConfig({
   displayName: 'MobileMenu__Root',
-  componentId: 's188gplc-4'
+  componentId: 's1szpuo0-4'
 })(['z-index:10;position:absolute;display:flex;flex-flow:column;width:100%;top:0;left:0;', ';', ';', ';', ',', '{margin:16px 0;}', '{width:50%;margin-bottom:32px;}'], function (p) {
   return p.attached ? attached : '';
 }, function (p) {
@@ -1010,6 +1015,11 @@ var MobileMenu = function (_Component) {
               _Menu.Anchor,
               { href: '/#partners', onClick: this.handleClick },
               'Partners'
+            ),
+            _react2.default.createElement(
+              _Menu.Anchor,
+              { href: '/presale', onClick: this.handleClick },
+              'Pre-sale'
             )
           ),
           _react2.default.createElement(
@@ -2132,7 +2142,7 @@ var templateMap = {
   t_3: _Tokensale2.default,
   t_4: _2.default
 };
-var templateTree = { c: { "404": { t: "t_4" }, "/": { t: "t_0" }, "join": { t: "t_1" }, "whitepaper": { t: "t_2" }, "tokensale": { t: "t_3" } } };
+var templateTree = { c: { "404": { t: "t_4" }, "/": { t: "t_0" }, "join": { t: "t_1" }, "whitepaper": { t: "t_2" }, "presale": { t: "t_3" } } };
 
 var getTemplateForPath = function getTemplateForPath(path) {
   var parts = path === '/' ? ['/'] : path.split('/').filter(function (d) {
@@ -6295,4 +6305,4 @@ exports.default = function () {
 /***/ })
 /******/ ]);
 });
-//# sourceMappingURL=app.static.0b011611.js.map
+//# sourceMappingURL=app.static.d718ca4a.js.map

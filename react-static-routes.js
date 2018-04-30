@@ -14,7 +14,7 @@ t_2: src_containers_Whitepaper,
 t_3: src_containers_Tokensale,
 t_4: src_containers_404
   }
-    const templateTree = {c:{"404":{t:"t_4"},"/":{t:"t_0"},"join":{t:"t_1"},"whitepaper":{t:"t_2"},"tokensale":{t:"t_3"}}}
+    const templateTree = {c:{"404":{t:"t_4"},"/":{t:"t_0"},"join":{t:"t_1"},"whitepaper":{t:"t_2"},"presale":{t:"t_3"}}}
     
     const getTemplateForPath = path => {
       const parts = path === '/' ? ['/'] : path.split('/').filter(d => d)
