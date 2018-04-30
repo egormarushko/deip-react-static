@@ -190,6 +190,9 @@ class MobileMenu extends Component {
             <Anchor href="/#partners" onClick={this.handleClick}>
               Partners
             </Anchor>
+            <Anchor href="/presale" onClick={this.handleClick}>
+              Pre-sale
+            </Anchor>
             {/* <Anchor href="/#researchers" onClick={this.handleClick}>
               Researches
             </Anchor> */}
