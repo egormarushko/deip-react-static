@@ -5690,7 +5690,7 @@ function _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defi
 
 var Select = _styledComponents2.default.select.withConfig({
   displayName: '21_TokensaleForm__Select',
-  componentId: 'tohlye-0'
+  componentId: 's1kkxyxf-0'
 })(['border-radius:5px;border:1px solid ', ';font-size:16px;color:1px solid ', ';line-height:49px;height:49px;padding:0 0px 0 16px;width:100%;min-width:0;transition:border 0.15s;position:relative;background-color:white;-webkit-appearance:none;-moz-appearance:none;& + i{color:', ';transition:color 0.15s;}&:focus{outline:none;border:1px solid ', ';}&:focus + i{color:', ';}'], function (p) {
   return p.theme.palette.primaryLight;
 }, function (p) {
@@ -5704,12 +5704,12 @@ var Select = _styledComponents2.default.select.withConfig({
 });
 var SelectBlock = _styledComponents2.default.div.withConfig({
   displayName: '21_TokensaleForm__SelectBlock',
-  componentId: 'tohlye-1'
+  componentId: 's1kkxyxf-1'
 })(['width:calc(100% / 2 - 32px);margin:16px;position:relative;', ';'], _styles.m.lessThan('small')(_templateObject));
 
 var CreatableDropdown = (0, _styledComponents2.default)(_reactSelect.Creatable).withConfig({
   displayName: '21_TokensaleForm__CreatableDropdown',
-  componentId: 'tohlye-2'
+  componentId: 's1kkxyxf-2'
 })(['bottom:0;color:#aaa;left:0;line-height:34px;padding-left:10px;padding-right:10px;position:absolute;right:0;top:0;max-width:100%;overflow:hidden;-o-text-overflow:ellipsis;text-overflow:ellipsis;white-space:nowrap;']);
 
 var required = function required(value, props) {
@@ -5738,56 +5738,56 @@ var myOptions = [{ value: 'one', text: 'One' }, { value: 'two', text: 'Two' }, {
 
 var Root = _styledComponents2.default.section.withConfig({
   displayName: '21_TokensaleForm__Root',
-  componentId: 'tohlye-3'
+  componentId: 's1kkxyxf-3'
 })(['', ';padding:48px 0 0 0;'], _styles.container);
 
 var Section = _styledComponents2.default.div.withConfig({
   displayName: '21_TokensaleForm__Section',
-  componentId: 'tohlye-4'
+  componentId: 's1kkxyxf-4'
 })(['margin:30px 0;']);
 
 var Message = _styledComponents2.default.div.withConfig({
   displayName: '21_TokensaleForm__Message',
-  componentId: 'tohlye-5'
+  componentId: 's1kkxyxf-5'
 })(['padding-top:100px;height:450px;']);
 
 var Description = (0, _styledComponents2.default)(_Text2.default).withConfig({
   displayName: '21_TokensaleForm__Description',
-  componentId: 'tohlye-6'
+  componentId: 's1kkxyxf-6'
 })(['display:block;width:', '%;margin:0 auto;', ';'], 100 * 6 / 8, _styles.m.lessThan('small')(_templateObject2));
 
 var ControlBlock = _styledComponents2.default.div.withConfig({
   displayName: '21_TokensaleForm__ControlBlock',
-  componentId: 'tohlye-7'
+  componentId: 's1kkxyxf-7'
 })(['display:flex;flex-wrap:wrap;text-align:left;margin:0 -16px 16px -16px;', ';'], _styles.m.lessThan('small')(_templateObject3));
 var VerticalBlock = _styledComponents2.default.div.withConfig({
   displayName: '21_TokensaleForm__VerticalBlock',
-  componentId: 'tohlye-8'
+  componentId: 's1kkxyxf-8'
 })(['display:table-cell;flex-wrap:wrap;text-align:left;margin:0 -16px 32px -16px;', ';'], _styles.m.lessThan('small')(_templateObject3));
 
 var Radio = (0, _styledComponents2.default)(_RadioButton2.default).withConfig({
   displayName: '21_TokensaleForm__Radio',
-  componentId: 'tohlye-9'
+  componentId: 's1kkxyxf-9'
 })(['width:calc(100% / 2 - 32px);margin:16px;', ';'], _styles.m.lessThan('small')(_templateObject4));
 
 var Icon = (0, _styledComponents2.default)(_Icon2.default).withConfig({
   displayName: '21_TokensaleForm__Icon',
-  componentId: 'tohlye-10'
+  componentId: 's1kkxyxf-10'
 })(['position:absolute;font-size:18px;line-height:52px;right:16px;pointer-events:none;']);
 
 var Input = (0, _styledComponents2.default)(_InputFull2.default).withConfig({
   displayName: '21_TokensaleForm__Input',
-  componentId: 'tohlye-11'
+  componentId: 's1kkxyxf-11'
 })(['width:calc(100% / 2 - 32px);margin:16px;', ';'], _styles.m.lessThan('small')(_templateObject));
 
 var CustomSelect = (0, _styledComponents2.default)(_Select2.default).withConfig({
   displayName: '21_TokensaleForm__CustomSelect',
-  componentId: 'tohlye-12'
+  componentId: 's1kkxyxf-12'
 })(['width:calc(100% / 2 - 32px);margin:16px;', ';'], _styles.m.lessThan('small')(_templateObject));
 
 var Checkbox = (0, _styledComponents2.default)(_Checkbox2.default).withConfig({
   displayName: '21_TokensaleForm__Checkbox',
-  componentId: 'tohlye-13'
+  componentId: 's1kkxyxf-13'
 })(['width:100%;margin:16px;', ';'], _styles.m.lessThan('small')(_templateObject5));
 
 var TokensaleForm = function (_Component) {
@@ -5812,8 +5812,8 @@ var TokensaleForm = function (_Component) {
       tokensaleCountry: 'Belarus',
       tokensaleAmount: '€ 5,000 - € 10,000'
     }, _this.amounts = {
-      company: ['€ 25,000 - € 100,000', '€ 100,000 - € 500,000', '€ 500,000 - € 1,000,000', '€ 1,000,000 - € 3,000,000'],
-      person: ['€ 5,000 - € 10,000', '€ 10,000 - € 50,000', '€ 50,000 - € 100,000', '€ 100,000 - € 500,000']
+      company: ['< € 25,000', '€ 25,000 - € 100,000', '€ 100,000 - € 500,000', '€ 500,000 - € 1,000,000', '€ 1,000,000 - € 3,000,000', '> € 3,000,000'],
+      person: ['< € 5,000', '€ 5,000 - € 10,000', '€ 10,000 - € 50,000', '€ 50,000 - € 100,000', '€ 100,000 - € 500,000', '> € 500,000']
     }, _this.setShow = function (e) {
       return _this.setState({ value: e.target.id });
     }, _this.setValue = function (e) {
@@ -6305,4 +6305,4 @@ exports.default = function () {
 /***/ })
 /******/ ]);
 });
-//# sourceMappingURL=app.static.cc6fd6fc.js.map
+//# sourceMappingURL=app.static.0ff2a375.js.map
