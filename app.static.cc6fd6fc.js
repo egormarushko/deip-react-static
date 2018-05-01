@@ -2770,24 +2770,24 @@ function _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defi
 
 var Bg = _styledComponents2.default.div.withConfig({
   displayName: '03_Roadmap__Bg',
-  componentId: 's1jww9hf-0'
+  componentId: 's12qxhz4-0'
 })(['background:linear-gradient(180deg,#331d50 51.81%,#247fad 149.89%);']);
 
 var Root = _styledComponents2.default.section.withConfig({
   displayName: '03_Roadmap__Root',
-  componentId: 's1jww9hf-1'
+  componentId: 's12qxhz4-1'
 })(['', ';position:relative;h1{color:#fff;}'], _styles.container);
 
 var Container = _Team.Container.extend(_templateObject, _styles.m.lessThan('small')(_templateObject2));
 
 var Small = _styledComponents2.default.p.withConfig({
   displayName: '03_Roadmap__Small',
-  componentId: 's1jww9hf-2'
+  componentId: 's12qxhz4-2'
 })(['font-weight:700;font-size:10px;color:rgba(255,255,255,0.3);text-transform:uppercase;margin:0 0 4px 0;']);
 
 var Headline = _styledComponents2.default.div.withConfig({
   displayName: '03_Roadmap__Headline',
-  componentId: 's1jww9hf-3'
+  componentId: 's12qxhz4-3'
 })(['padding:64px 0 32px 0;', ';', ';'], _styles.m.greaterThan('small')(_templateObject3), _styles.m.lessThan('small')(_templateObject4));
 
 // const Roadmaps = styled.div`
@@ -2859,7 +2859,7 @@ var Roadmap = function Roadmap(p) {
             _react2.default.createElement(
               _Roadmap.SectionReverse,
               null,
-              _react2.default.createElement(_Roadmap.Entry, { label: 'April 2018', text: 'Research Platform Beta UI Launch' }),
+              _react2.default.createElement(_Roadmap.Entry, { done: true, label: 'April 2018', text: 'Research Platform Beta UI Launch' }),
               _react2.default.createElement(_Roadmap.Entry, { label: 'May 2018', text: 'Expertise tokens distribution' }),
               _react2.default.createElement(_Roadmap.Entry, { label: 'June 2018', text: 'Main-net launch. Initial expertise tokens distribution. Initial research publishing preparation' })
             ),
@@ -6305,4 +6305,4 @@ exports.default = function () {
 /***/ })
 /******/ ]);
 });
-//# sourceMappingURL=app.static.f03a6616.js.map
+//# sourceMappingURL=app.static.cc6fd6fc.js.map
