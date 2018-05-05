@@ -360,6 +360,12 @@ exports.default = Team;
 
 /***/ }),
 /* 6 */
+/***/ (function(module, exports) {
+
+module.exports = require("react-static");
+
+/***/ }),
+/* 7 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -430,7 +436,7 @@ Icon.propTypes = {
 exports.default = Icon;
 
 /***/ }),
-/* 7 */
+/* 8 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -490,12 +496,6 @@ Text.propTypes = {
 exports.default = Text;
 
 /***/ }),
-/* 8 */
-/***/ (function(module, exports) {
-
-module.exports = require("react-static");
-
-/***/ }),
 /* 9 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -516,7 +516,7 @@ var _propTypes = __webpack_require__(2);
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
-var _reactStatic = __webpack_require__(8);
+var _reactStatic = __webpack_require__(6);
 
 var _styledComponents = __webpack_require__(1);
 
@@ -620,7 +620,7 @@ var _propTypes = __webpack_require__(2);
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
-var _reactStatic = __webpack_require__(8);
+var _reactStatic = __webpack_require__(6);
 
 var _styledComponents = __webpack_require__(1);
 
@@ -843,7 +843,7 @@ var _styles = __webpack_require__(3);
 
 var _Menu = __webpack_require__(10);
 
-var _Icon = __webpack_require__(6);
+var _Icon = __webpack_require__(7);
 
 var _Icon2 = _interopRequireDefault(_Icon);
 
@@ -1245,7 +1245,7 @@ var _styledComponents2 = _interopRequireDefault(_styledComponents);
 
 var _styles = __webpack_require__(3);
 
-var _Text = __webpack_require__(7);
+var _Text = __webpack_require__(8);
 
 var _Text2 = _interopRequireDefault(_Text);
 
@@ -1253,7 +1253,7 @@ var _Heading = __webpack_require__(4);
 
 var _Heading2 = _interopRequireDefault(_Heading);
 
-var _Icon = __webpack_require__(6);
+var _Icon = __webpack_require__(7);
 
 var _Icon2 = _interopRequireDefault(_Icon);
 
@@ -1431,7 +1431,7 @@ var _styles = __webpack_require__(3);
 
 var _Team = __webpack_require__(5);
 
-var _Icon = __webpack_require__(6);
+var _Icon = __webpack_require__(7);
 
 var _Icon2 = _interopRequireDefault(_Icon);
 
@@ -1649,7 +1649,7 @@ var _styledComponents = __webpack_require__(1);
 
 var _styledComponents2 = _interopRequireDefault(_styledComponents);
 
-var _Icon = __webpack_require__(6);
+var _Icon = __webpack_require__(7);
 
 var _Icon2 = _interopRequireDefault(_Icon);
 
@@ -1743,7 +1743,7 @@ var _styledComponents2 = _interopRequireDefault(_styledComponents);
 
 var _polished = __webpack_require__(11);
 
-var _Icon = __webpack_require__(6);
+var _Icon = __webpack_require__(7);
 
 var _Icon2 = _interopRequireDefault(_Icon);
 
@@ -1833,7 +1833,7 @@ var _styledComponents2 = _interopRequireDefault(_styledComponents);
 
 var _polished = __webpack_require__(11);
 
-var _Icon = __webpack_require__(6);
+var _Icon = __webpack_require__(7);
 
 var _Icon2 = _interopRequireDefault(_Icon);
 
@@ -2041,7 +2041,7 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactStatic = __webpack_require__(8);
+var _reactStatic = __webpack_require__(6);
 
 var _styledComponents = __webpack_require__(1);
 
@@ -2207,7 +2207,7 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactStatic = __webpack_require__(8);
+var _reactStatic = __webpack_require__(6);
 
 var _Hero = __webpack_require__(32);
 
@@ -2472,7 +2472,7 @@ var _Heading = __webpack_require__(4);
 
 var _Heading2 = _interopRequireDefault(_Heading);
 
-var _Text = __webpack_require__(7);
+var _Text = __webpack_require__(8);
 
 var _Text2 = _interopRequireDefault(_Text);
 
@@ -2568,7 +2568,7 @@ var _Heading = __webpack_require__(4);
 
 var _Heading2 = _interopRequireDefault(_Heading);
 
-var _Text = __webpack_require__(7);
+var _Text = __webpack_require__(8);
 
 var _Text2 = _interopRequireDefault(_Text);
 
@@ -3562,7 +3562,7 @@ var _Heading = __webpack_require__(4);
 
 var _Heading2 = _interopRequireDefault(_Heading);
 
-var _Text = __webpack_require__(7);
+var _Text = __webpack_require__(8);
 
 var _Text2 = _interopRequireDefault(_Text);
 
@@ -3975,7 +3975,7 @@ var _styledComponents = __webpack_require__(1);
 
 var _styledComponents2 = _interopRequireDefault(_styledComponents);
 
-var _Text = __webpack_require__(7);
+var _Text = __webpack_require__(8);
 
 var _Text2 = _interopRequireDefault(_Text);
 
@@ -4446,7 +4446,7 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactStatic = __webpack_require__(8);
+var _reactStatic = __webpack_require__(6);
 
 var _Poll = __webpack_require__(89);
 
@@ -4521,7 +4521,7 @@ var _Heading = __webpack_require__(4);
 
 var _Heading2 = _interopRequireDefault(_Heading);
 
-var _Text = __webpack_require__(7);
+var _Text = __webpack_require__(8);
 
 var _Text2 = _interopRequireDefault(_Text);
 
@@ -5311,7 +5311,7 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactStatic = __webpack_require__(8);
+var _reactStatic = __webpack_require__(6);
 
 var _HeroBackground = __webpack_require__(13);
 
@@ -5472,7 +5472,7 @@ var _styledComponents = __webpack_require__(1);
 
 var _styledComponents2 = _interopRequireDefault(_styledComponents);
 
-var _Text = __webpack_require__(7);
+var _Text = __webpack_require__(8);
 
 var _Text2 = _interopRequireDefault(_Text);
 
@@ -5529,7 +5529,7 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactStatic = __webpack_require__(8);
+var _reactStatic = __webpack_require__(6);
 
 var _HeroBackground = __webpack_require__(13);
 
@@ -5592,6 +5592,8 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
+var _reactStatic = __webpack_require__(6);
+
 var _styledComponents = __webpack_require__(1);
 
 var _styledComponents2 = _interopRequireDefault(_styledComponents);
@@ -5612,7 +5614,7 @@ var _Heading = __webpack_require__(4);
 
 var _Heading2 = _interopRequireDefault(_Heading);
 
-var _Text = __webpack_require__(7);
+var _Text = __webpack_require__(8);
 
 var _Text2 = _interopRequireDefault(_Text);
 
@@ -5646,7 +5648,7 @@ var _Select = __webpack_require__(96);
 
 var _Select2 = _interopRequireDefault(_Select);
 
-var _Icon = __webpack_require__(6);
+var _Icon = __webpack_require__(7);
 
 var _Icon2 = _interopRequireDefault(_Icon);
 
@@ -5688,9 +5690,14 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
 function _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
 
+var Link = (0, _styledComponents2.default)(_reactStatic.Link).withConfig({
+  displayName: '21_TokensaleForm__Link',
+  componentId: 's1076x8r-0'
+})(['display:inline-block;font-weight:500;font-size:16px;color:#000000;text-decoration:none;&:not(:last-child){margin-right:32px;}']);
+
 var Select = _styledComponents2.default.select.withConfig({
   displayName: '21_TokensaleForm__Select',
-  componentId: 'yw146t-0'
+  componentId: 's1076x8r-1'
 })(['border-radius:5px;border:1px solid ', ';font-size:16px;color:1px solid ', ';line-height:49px;height:49px;padding:0 0px 0 16px;width:100%;min-width:0;transition:border 0.15s;position:relative;background-color:white;-webkit-appearance:none;-moz-appearance:none;& + i{color:', ';transition:color 0.15s;}&:focus{outline:none;border:1px solid ', ';}&:focus + i{color:', ';}'], function (p) {
   return p.theme.palette.primaryLight;
 }, function (p) {
@@ -5704,12 +5711,12 @@ var Select = _styledComponents2.default.select.withConfig({
 });
 var SelectBlock = _styledComponents2.default.div.withConfig({
   displayName: '21_TokensaleForm__SelectBlock',
-  componentId: 'yw146t-1'
+  componentId: 's1076x8r-2'
 })(['width:calc(100% / 2 - 32px);margin:16px;position:relative;', ';'], _styles.m.lessThan('small')(_templateObject));
 
 var CreatableDropdown = (0, _styledComponents2.default)(_reactSelect.Creatable).withConfig({
   displayName: '21_TokensaleForm__CreatableDropdown',
-  componentId: 'yw146t-2'
+  componentId: 's1076x8r-3'
 })(['bottom:0;color:#aaa;left:0;line-height:34px;padding-left:10px;padding-right:10px;position:absolute;right:0;top:0;max-width:100%;overflow:hidden;-o-text-overflow:ellipsis;text-overflow:ellipsis;white-space:nowrap;']);
 
 var required = function required(value, props) {
@@ -5738,56 +5745,56 @@ var myOptions = [{ value: 'one', text: 'One' }, { value: 'two', text: 'Two' }, {
 
 var Root = _styledComponents2.default.section.withConfig({
   displayName: '21_TokensaleForm__Root',
-  componentId: 'yw146t-3'
+  componentId: 's1076x8r-4'
 })(['', ';padding:48px 0 0 0;'], _styles.container);
 
 var Section = _styledComponents2.default.div.withConfig({
   displayName: '21_TokensaleForm__Section',
-  componentId: 'yw146t-4'
+  componentId: 's1076x8r-5'
 })(['margin:30px 0;']);
 
 var Message = _styledComponents2.default.div.withConfig({
   displayName: '21_TokensaleForm__Message',
-  componentId: 'yw146t-5'
+  componentId: 's1076x8r-6'
 })(['padding-top:100px;height:450px;']);
 
 var Description = (0, _styledComponents2.default)(_Text2.default).withConfig({
   displayName: '21_TokensaleForm__Description',
-  componentId: 'yw146t-6'
+  componentId: 's1076x8r-7'
 })(['display:block;width:', '%;margin:0 auto;', ';'], 100 * 6 / 8, _styles.m.lessThan('small')(_templateObject2));
 
 var ControlBlock = _styledComponents2.default.div.withConfig({
   displayName: '21_TokensaleForm__ControlBlock',
-  componentId: 'yw146t-7'
+  componentId: 's1076x8r-8'
 })(['display:flex;flex-wrap:wrap;text-align:left;margin:0 -16px 16px -16px;', ';'], _styles.m.lessThan('small')(_templateObject3));
 var VerticalBlock = _styledComponents2.default.div.withConfig({
   displayName: '21_TokensaleForm__VerticalBlock',
-  componentId: 'yw146t-8'
+  componentId: 's1076x8r-9'
 })(['display:table-cell;flex-wrap:wrap;text-align:left;margin:0 -16px 32px -16px;', ';'], _styles.m.lessThan('small')(_templateObject3));
 
 var Radio = (0, _styledComponents2.default)(_RadioButton2.default).withConfig({
   displayName: '21_TokensaleForm__Radio',
-  componentId: 'yw146t-9'
+  componentId: 's1076x8r-10'
 })(['width:calc(100% / 2 - 32px);margin:16px;', ';'], _styles.m.lessThan('small')(_templateObject4));
 
 var Icon = (0, _styledComponents2.default)(_Icon2.default).withConfig({
   displayName: '21_TokensaleForm__Icon',
-  componentId: 'yw146t-10'
+  componentId: 's1076x8r-11'
 })(['position:absolute;font-size:18px;line-height:52px;right:16px;pointer-events:none;']);
 
 var Input = (0, _styledComponents2.default)(_InputFull2.default).withConfig({
   displayName: '21_TokensaleForm__Input',
-  componentId: 'yw146t-11'
+  componentId: 's1076x8r-12'
 })(['width:calc(100% / 2 - 32px);margin:16px;', ';'], _styles.m.lessThan('small')(_templateObject));
 
 var CustomSelect = (0, _styledComponents2.default)(_Select2.default).withConfig({
   displayName: '21_TokensaleForm__CustomSelect',
-  componentId: 'yw146t-12'
+  componentId: 's1076x8r-13'
 })(['width:calc(100% / 2 - 32px);margin:16px;', ';'], _styles.m.lessThan('small')(_templateObject));
 
 var Checkbox = (0, _styledComponents2.default)(_Checkbox2.default).withConfig({
   displayName: '21_TokensaleForm__Checkbox',
-  componentId: 'yw146t-13'
+  componentId: 's1076x8r-14'
 })(['width:100%;margin:16px;', ';'], _styles.m.lessThan('small')(_templateObject5));
 
 var TokensaleForm = function (_Component) {
@@ -5967,6 +5974,16 @@ var TokensaleForm = function (_Component) {
                       { required: true, type: 'checkbox', name: 'tokensaleAgreement' },
                       'By accessing/registering the DEIP Platform, I expressly understand, accept and agree with the processing and storage by the Company of my personal data and the free circulation of such data.'
                     )
+                  ),
+                  _react2.default.createElement(
+                    _Text2.default,
+                    null,
+                    'By clicking Send, you agree to our ',
+                    _react2.default.createElement(
+                      Link,
+                      { to: '/TERMS_FOR _REQUEST.pdf', target: '_blank' },
+                      'Terms for request'
+                    )
                   )
                 ),
                 _react2.default.createElement(
@@ -6027,11 +6044,11 @@ var _styledComponents2 = _interopRequireDefault(_styledComponents);
 
 var _polished = __webpack_require__(11);
 
-var _Text = __webpack_require__(7);
+var _Text = __webpack_require__(8);
 
 var _Text2 = _interopRequireDefault(_Text);
 
-var _Icon = __webpack_require__(6);
+var _Icon = __webpack_require__(7);
 
 var _Icon2 = _interopRequireDefault(_Icon);
 
@@ -6131,7 +6148,7 @@ var _styledComponents2 = _interopRequireDefault(_styledComponents);
 
 var _polished = __webpack_require__(11);
 
-var _Icon = __webpack_require__(6);
+var _Icon = __webpack_require__(7);
 
 var _Icon2 = _interopRequireDefault(_Icon);
 
@@ -6277,7 +6294,7 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactStatic = __webpack_require__(8);
+var _reactStatic = __webpack_require__(6);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -6305,4 +6322,4 @@ exports.default = function () {
 /***/ })
 /******/ ]);
 });
-//# sourceMappingURL=app.static.ff69fc1e.js.map
+//# sourceMappingURL=app.static.ff34610d.js.map
