@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Link as link } from 'react-static'
 import styled from 'styled-components'
 import { m, container } from '../util/styles'
 
@@ -27,6 +28,17 @@ import { Creatable } from 'react-select'
 import validator from 'validator';
 import { Validate, ValidateGroup, ErrorMessage } from "react-validate";
 import { countries } from '../components/data/Country';
+
+const Link = styled(link)`
+  display: inline-block;
+  font-weight: 500;
+  font-size: 16px;
+  color: #000000;
+  text-decoration: none;
+  &:not(:last-child) {
+    margin-right: 32px;
+  }
+`
 
 const Select = styled.select `
   border-radius: 5px;
@@ -335,8 +347,9 @@ class TokensaleForm extends Component {
                   <ControlBlock>
                     <Checkbox required={true} type="checkbox" name="tokensaleAgreement">
                       By accessing/registering the DEIP Platform, I expressly understand, accept and agree with the processing and storage by the Company of my personal data and the free circulation of such data.
-                    </Checkbox>
+                    </Checkbox>      
                   </ControlBlock>
+                  <Text>By clicking Send, you agree to our <Link to="/TERMS_FOR _REQUEST.pdf" target="_blank">Terms for request</Link></Text> 
                 </Section>
 
                 <Button submit primary>Send</Button>
