@@ -350,7 +350,7 @@ class TokensaleForm extends Component {
                       By accessing/registering the DEIP Platform, you expressly understand, accept and agree with the processing and storage by the Company of my personal data and the free circulation of such data.
                     </Checkbox>      
                   </ControlBlock>
-                  <Text>By clicking Send, you agree to our <Link to="/TERMS_FOR _REQUEST.pdf" target="_blank">Terms for request</Link></Text> 
+                  <Text>By clicking Send, you agree to our <Link to="/TERMS_OF_REQUEST.pdf" target="_blank">Terms of request</Link></Text> 
                 </Section>
 
                 <Button submit primary>Send</Button>
