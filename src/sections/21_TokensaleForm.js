@@ -202,7 +202,7 @@ class TokensaleForm extends Component {
     tokensaleEmail: '',
     tokensalePerson: 'person',
     tokensaleCountry: 'Belarus',
-    tokensaleAmount: '€ 5,000 - € 10,000',
+    tokensaleAmount: '< € 5,000',
   }
 
   amounts = {
@@ -210,9 +210,7 @@ class TokensaleForm extends Component {
       '< € 25,000',
       '€ 25,000 - € 100,000', 
       '€ 100,000 - € 500,000', 
-      '€ 500,000 - € 1,000,000', 
-      '€ 1,000,000 - € 3,000,000',
-      '> € 3,000,000'
+      '€ 500,000 - € 1,000,000' 
     ],
     person: [
       '< € 5,000',
